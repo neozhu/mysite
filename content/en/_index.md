@@ -3,28 +3,30 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Build your next Hugo website with stackable content bricks
+# Build business application with Blazor Studio  
 
-Hugobricks is a free website theme for Hugo. It makes building Hugo websites child's play due to its stackable (LEGO-like) content bricks. How about this 'intro brick' with a clear call-to-action? Stack it on top of some image bricks and a pricing table and build a complete website in seconds!
+Blazor Studio focuses on developing high-quality business web applications using Blazor — from open-source projects to enterprise solutions. Every app is built with clean architecture and great performance in mind.
+Got a project in mind? Let’s chat!
 
-{{< button "Get started for free" "/get-started/" >}}
+{{< button "Contact me" "/contact/" >}}
 
-![](/uploads/illustrations/cuate/assets.svg)
+![](/uploads/illustrations/cuate/assets.png)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}
 
-## What’s included in Hugobricks?
+## What’s included in Blazor Studio?
 
-![](/uploads/illustrations/cuate/responsive.svg)
+![](/uploads/illustrations/cuate/responsive.png)
 
-Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
+Blazor Studio is a highly modular Blazor Server application template built with Clean Architecture, designed to help you create maintainable and scalable enterprise-level applications. It includes:
 
-- 10+ Pre-build pages
-- 99+ Google Pagespeed Score
-- Built with Hugo and CSS variables for easy styling
-- Fully responsive on all devices
-- SEO-optimized for better search engine rankings
+- 🚀 Built-in code generator to boost development productivity  
+- 🐳 CI / Docker / NuGet support for seamless automation workflows  
+- 🎨 Clean and modern UI for a better user experience  
+- 🧱 Powered by .NET 9 for better performance and smoother development  
+- 💡 Full support for Blazor Server + C#, no need to switch to JavaScript  
+- ⚙️ Real-time, high-interactivity business web applications made easy
 
 {{< /brick_image2 >}}
 {{< brick_image >}}

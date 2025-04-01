@@ -3,28 +3,31 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Bouw je Hugo website met stapelbare blokken
+# 用 Blazor Studio 打造你的业务系统
 
-Hugobricks is een gratis thema voor Hugo. Het maakt het bouwen van Hugo-websites kinderspel dankzij de stapelbare, LEGO-achtige, blokken. Wat dacht je van dit introblok met een duidelijke call-to-action? Stapel hem op wat afbeeldingblokken en een prijstabel en bouw in slechts enkele seconden een complete website!
+Blazor Studio 专注于使用 Blazor 开发高质量的业务 Web 应用，从开源项目到企业级解决方案皆有实践。每一个应用都注重架构清晰与性能优异。
+有项目想法？欢迎聊聊！
 
-{{< button "Start nu direct" "/" >}}
+{{< button "联系我" "/contact/" >}}
 
-![](/uploads/illustrations/cuate/assets.svg)
+![](/uploads/illustrations/cuate/assets.png)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}
 
-## Wat zit er in Hugobricks?
+## Blazor Studio 有哪些亮点？
 
-![](/uploads/illustrations/cuate/responsive.svg)
+![](/uploads/illustrations/cuate/responsive.png)
 
-Hugobricks is een uitgebreid startersthema dat alles bevat wat je nodig hebt om te beginnen met je Hugo-project. Zoals alle WordPress-themabouwers zeggen: dit is het laatste thema dat je ooit nodig zult hebben. Inbegrepen zijn:
+BlazorStudio是一个高度模块化的 Blazor Server 应用模板，采用 Clean Architecture 架构，专为构建可维护、可扩展的企业级应用而设计。这个项目已集成：
 
-- 10+ kant-en-klare pagina's
-- 99+ Google Pagespeed Score
-- Gebouwd met CSS-variabelen voor eenvoudige styling
-- Werkt op alle beeldschermformaten
-- SEO-geoptimaliseerd
+
+- 🚀 内置 Code Generator 工具，提高开发效率  
+- 🐳 支持 CI / Docker / NuGet 自动化构建流程  
+- 🎨 提供简洁美观的用户界面，提升用户体验  
+- 🧱 基于 .NET 9 构建，性能更强、开发更顺畅  
+- 💡 全面支持 Blazor Server + C# 开发，无需 JS 切换  
+- ⚙️ 实现了快速响应、高交互性的业务 Web 应用  
 
 {{< /brick_image2 >}}
 {{< brick_image >}}

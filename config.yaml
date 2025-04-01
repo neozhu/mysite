@@ -34,7 +34,7 @@ languages:
         services: /services/
         products: /webshop/
   cn:
-    languageName: Chinese
+    languageName: 中文
     contentDir: content/cn
     weight: 2
     disabled: false
