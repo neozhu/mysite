@@ -33,9 +33,9 @@ languages:
         posts: /blog/
         services: /services/
         products: /webshop/
-  nl:
-    languageName: Nederlands
-    contentDir: content/nl
+  cn:
+    languageName: Chinese
+    contentDir: content/cn
     weight: 2
     disabled: false
     permalinks:
