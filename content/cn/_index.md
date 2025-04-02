@@ -34,74 +34,24 @@ Clean Architecture Blazor Server 是一个高度模块化的 Blazor Server 应�
 {{< /brick_image2 >}}
 {{< brick_image >}}
 
-## Welke bricks zijn beschikbaar?
+## CleanAspire 包含哪些内容？
 
-![](/uploads/illustrations/cuate/blazorclient.png)
+![](/uploads/illustrations/cuate/blazorclient.jpg)
 
-We streven ernaar om de volgende bricks te leveren: intro, titel, afbeelding, cta, contact, team, getuigenissen, over, prijzen, producten, product, usps, statistieken, galerij, citaat, faqs, merken, video, blogs, bericht en gerelateerde items.
+**CleanAspire** 是一个现代化的开源模板，结合了 Blazor WebAssembly、Minimal API、PWA 和 .NET 9 + Aspire，旨在帮助你快速构建轻量、响应迅速且架构清晰的 Web 应用。模板内置离线支持与实时通知功能。
 
-We voegen voortdurend bricks en shortcodes toe aan dit thema. Mist u een brick of shortcode? [Laat het ons weten](/contact/)! We bouwen het voor u!
+主要特性包括：
+
+- ⚡ 支持 Blazor WebAssembly 与 Minimal API（集成 Aspire 和 Scalar）  
+- 🧱 遵循 Clean Architecture，代码极简可维护  
+- 🌐 完整离线支持，使用 IndexedDB 本地缓存  
+- 🔄 使用 Microsoft.Kiota 自动生成 API 客户端  
+- 🚀 预配置 Docker 和 CI/CD（GitHub Actions）  
+- 🔔 集成 Webpushr 浏览器实时通知  
+
+{{< button "前往 GitHub" "https://github.com/neozhu/cleanaspire" >}}
+
 
 {{< /brick_image >}}
-{{< brick_reviews >}}{{< /brick_reviews >}}
-{{< brick_features >}}{{< /brick_features >}}
-{{< brick_prices >}} 
 
-## Onze vriendelijke prijzen 
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot een bepaalde tijd, of het bestaat in een bepaalde tijd.
-
----
-
-**budget**
-### Open-source
-
-Volledig uitgeruste thema-/paginabuilder om supersnelle en geweldige websites te maken
-
-### _$_**0**/maand
-
-- Hugobricks-thema/code
-- Alle beschikbare bricks
-- Regelmatige updates
-- Bugfixes en beveiligingspatches
-
-[Aan de slag](/get-started/)
-
----
-
-**meest populair**
-
-### Gehost
-
-Alles in één toolkit – Wij hosten uw website op onze eersteklas infrastructuur.
-
-### _$_**25**/maand
-
-- Hugobricks-thema/code
-- Alle beschikbare bricks
-- Regelmatige updates
-- Bugfixes en beveiligingspatches
-- Formulierverwerking + meldingen
-- CMS-systeem voor editors
-
-[Ja, kies mij!](/get-started/)
-
----
-
-**alles**
-
-### Enterprise
-
-Krijg uitzonderlijke waarde en kostenbesparingen met onze complete productsuite.
-
-### _$_**75**/maand
-
-- Alle andere functies plus:
-- Ondersteuning met hoge prioriteit
-- Thema-aanpassingen
-- Aangepaste stenen (op aanvraag)
-
-[Neem contact met ons op](/get-started/)
-
-{{< /brick_prices >}}
 {{< brick_cta >}}{{< /brick_cta >}}
