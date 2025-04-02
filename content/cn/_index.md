@@ -15,11 +15,11 @@ Blazor Studio 专注于使用 Blazor 开发高质量的业务 Web 应用，从�
 {{< /brick_intro >}}
 {{< brick_image2 >}}
 
-## Blazor Studio 有哪些亮点？
+## Blazor Server 应用模板有哪些亮点？
 
 ![](/uploads/illustrations/cuate/responsive.png)
 
-BlazorStudio是一个高度模块化的 Blazor Server 应用模板，采用 Clean Architecture 架构，专为构建可维护、可扩展的企业级应用而设计。这个项目已集成：
+Clean Architecture Blazor Server 是一个高度模块化的 Blazor Server 应用模板，采用 Clean Architecture 架构，专为构建可维护、可扩展的企业级应用而设计。这个项目已集成：
 
 
 - 🚀 内置 Code Generator 工具，提高开发效率  
@@ -29,12 +29,14 @@ BlazorStudio是一个高度模块化的 Blazor Server 应用模板，采用 Clea
 - 💡 全面支持 Blazor Server + C# 开发，无需 JS 切换  
 - ⚙️ 实现了快速响应、高交互性的业务 Web 应用  
 
+{{< button "前往 GitHub" "https://github.com/neozhu/CleanArchitectureWithBlazorServer" >}}
+
 {{< /brick_image2 >}}
 {{< brick_image >}}
 
 ## Welke bricks zijn beschikbaar?
 
-![](/uploads/illustrations/cuate/version-control.svg)
+![](/uploads/illustrations/cuate/blazorclient.png)
 
 We streven ernaar om de volgende bricks te leveren: intro, titel, afbeelding, cta, contact, team, getuigenissen, over, prijzen, producten, product, usps, statistieken, galerij, citaat, faqs, merken, video, blogs, bericht en gerelateerde items.
 

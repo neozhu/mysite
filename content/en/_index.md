@@ -15,11 +15,11 @@ Got a project in mind? Let’s chat!
 {{< /brick_intro >}}
 {{< brick_image2 >}}
 
-## What’s included in Blazor Studio?
+## What’s included in Blazor Server Template?
 
 ![](/uploads/illustrations/cuate/responsive.png)
 
-Blazor Studio is a highly modular Blazor Server application template built with Clean Architecture, designed to help you create maintainable and scalable enterprise-level applications. It includes:
+Clean Architecture Blazor Server is a highly modular Blazor Server application template built with Clean Architecture, designed to help you create maintainable and scalable enterprise-level applications. It includes:
 
 - 🚀 Built-in code generator to boost development productivity  
 - 🐳 CI / Docker / NuGet support for seamless automation workflows  
@@ -33,13 +33,22 @@ Blazor Studio is a highly modular Blazor Server application template built with 
 {{< /brick_image2 >}}
 {{< brick_image >}}
 
-## What bricks are available?
+## What’s inside CleanAspire?
 
-![](/uploads/illustrations/cuate/version-control.svg)
+![](/uploads/illustrations/cuate/blazorclient.jpg)
 
-We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related. 
+**CleanAspire** is a modern, open-source Blazor WebAssembly + Minimal API PWA template powered by .NET 9 and Aspire. It’s designed for building fast, lightweight, and cleanly architected web apps with built-in support for offline mode and real-time notifications.
 
-We are constantly adding bricks and shortcodes to this theme. Are you missing a brick or a shortcode? [Let us know](/contact/)! We will build it for you!
+Key features include:
+
+- ⚡ Blazor WebAssembly + Minimal API (with Aspire & Scalar)  
+- 🧱 Clean Architecture & ultra-simple codebase  
+- 🌐 PWA with full offline support using IndexedDB  
+- 🔄 Auto-generated API clients via Microsoft.Kiota  
+- 🚀 Docker-ready & CI/CD (GitHub Actions) built-in  
+- 🔔 Webpushr notifications integration  
+
+{{< button "View on GitHub" "https://github.com/neozhu/cleanaspire" >}}
 
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}

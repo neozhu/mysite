@@ -5,8 +5,8 @@ mobile_view_width: 1100
 menuitems:
   - title: Projects
     link: /projects/
-  - title: Cases
-    link: /cases/
+  - title: Showcases
+    link: /showcases/
   - title: Blog
     link: /blog/
   - title: About
