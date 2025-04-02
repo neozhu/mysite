@@ -28,6 +28,8 @@ Blazor Studio is a highly modular Blazor Server application template built with 
 - 💡 Full support for Blazor Server + C#, no need to switch to JavaScript  
 - ⚙️ Real-time, high-interactivity business web applications made easy
 
+{{< button "View on GitHub" "https://github.com/neozhu/CleanArchitectureWithBlazorServer" >}}
+
 {{< /brick_image2 >}}
 {{< brick_image >}}
 
