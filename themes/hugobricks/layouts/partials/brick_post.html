@@ -1,6 +1,6 @@
 <section class="post">
     <div class="container title">
-        {{ partial "breadcrumbs.html" . }}
+     
         <h1>{{ page.Title | safeHTML }}</h1>
         {{ if or page.Params.date (index page.Params.tags 0) }}
         <div class="meta">

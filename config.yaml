@@ -41,9 +41,13 @@ languages:
     permalinks:
       page:
         posts: /blog/:slug
+        projects: /projects/:slug
         services: /diensten/:slug
         products: /winkel/:slug
       section:
         posts: /blog/
+        projects: /projects/
+        showcases: /showcases/
         services: /diensten/
         products: /winkel/
+     

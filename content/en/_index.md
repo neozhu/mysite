@@ -57,7 +57,7 @@ Key features include:
 
 # Open source projects
 
-This is a demo of the blog. In ultricies vel enim vel pulvinar. Quisque finibus sem velit, sed consequat mi ullamcorper vitae. Proin finibus tristique sollicitudin.
+Discover my GitHub open-source projects powered by Python, JavaScript, and .NET — focused on clean architecture, continuous learning, and meaningful innovation.
 
 {{< /brick_projects >}}
 
