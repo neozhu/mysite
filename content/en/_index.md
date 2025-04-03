@@ -3,9 +3,9 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Build business application with Blazor Studio  
+# Build business app with Blazor Studio  
 
-Blazor Studio focuses on developing high-quality business web applications using Blazor — from open-source projects to enterprise solutions. Every app is built with clean architecture and great performance in mind.
+Blazor Studio focuses on developing high-quality business web applications using Blazor — from open-source projects to enterprise solutions. Every app is built with clean architecture, responsive performance and a beautiful, modern UI.
 Got a project in mind? Let’s chat!
 
 {{< button "Contact me" "/contact/" >}}
@@ -57,7 +57,8 @@ Key features include:
 
 # Showcases
 
-Discover my GitHub open-source projects powered by Python, JavaScript, and .NET — focused on clean architecture, continuous learning, and meaningful innovation.
+A selection of projects I've delivered across Blazor, ASP.NET MVC, blockchain, and IoT.
+Each one built with clean architecture, responsive performance, and a beautiful, modern UI.
 
 {{< /brick_showcases >}}
 

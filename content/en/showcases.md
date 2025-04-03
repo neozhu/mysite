@@ -5,7 +5,8 @@ title: Showcases
 
 # Showcases
 
-This is a demo of the blog. In ultricies vel enim vel pulvinar. Quisque finibus sem velit, sed consequat mi ullamcorper vitae. Proin finibus tristique sollicitudin.
+A selection of projects I've delivered across Blazor, ASP.NET MVC, blockchain, and IoT.
+Each one built with clean architecture, responsive performance, and a beautiful, intuitive UI.
 
 {{< /brick_showcases >}}
 {{< brick_cta >}}{{< /brick_cta >}}

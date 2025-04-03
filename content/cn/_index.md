@@ -55,5 +55,15 @@ Clean Architecture Blazor Server 是一个高度模块化的 Blazor Server 应�
 {{< /brick_image >}}
 
 
+{{< brick_showcases >}}
+
+
+# 项目展示
+
+这里展示的是我交付的一些项目，涵盖 Blazor、ASP.NET MVC、区块链与物联网等技术。
+每个项目都具备清晰的架构设计、优秀的性能表现，以及美观直观的用户界面。
+
+{{< /brick_showcases >}}
+
 
 {{< brick_cta >}}{{< /brick_cta >}}

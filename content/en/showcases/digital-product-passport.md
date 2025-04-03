@@ -1,5 +1,5 @@
 ---
-title: First Case
+title: Digital Product Passport
 image: /uploads/photos/06.jpg
 tags:
   -

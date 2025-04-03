@@ -85,7 +85,7 @@ section {color: var(--textMedium);}
 section, section.image.alt {padding: 4.5rem 0 5rem;}
 section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 5.5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
-section .container.small {max-width: 45rem;}
+section .container.small {max-width: 40rem;}
 section.hasbackgroundcolor {padding: 0; margin-top: 2rem;}
 section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
 section.bgimage.hasbackgroundcolor + section:not(.hasbackgroundcolor) {margin-top: 1.5rem;}
