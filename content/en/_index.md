@@ -52,13 +52,15 @@ Key features include:
 
 {{< /brick_image >}}
 
-{{< brick_projects >}}
+{{< brick_showcases >}}
 
 
-# Open source projects
+# Showcases
 
 Discover my GitHub open-source projects powered by Python, JavaScript, and .NET — focused on clean architecture, continuous learning, and meaningful innovation.
 
-{{< /brick_projects >}}
+{{< /brick_showcases >}}
+
+
 
 {{< brick_cta >}}{{< /brick_cta >}}
