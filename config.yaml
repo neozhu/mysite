@@ -1,4 +1,4 @@
-baseURL: https://www.hugobricks.preview.usecue.com
+baseURL: https://www.blazorserver.com
 theme: hugobricks
 defaultContentLanguage: en
 assetDir: static
@@ -26,13 +26,12 @@ languages:
     disabled: false
     permalinks:
       page:
-        posts: /blog/:slug
-        services: /services/:slug
-        products: /webshop/:slug
+        projects: /projects/:slug
+        showcases: /showcases/:slug
       section:
-        posts: /blog/
-        services: /services/
-        products: /webshop/
+        projects: /projects/
+        showcases: /showcases/
+
   cn:
     languageName: 中文
     contentDir: content/cn
@@ -40,14 +39,9 @@ languages:
     disabled: false
     permalinks:
       page:
-        posts: /blog/:slug
         projects: /projects/:slug
-        services: /diensten/:slug
-        products: /winkel/:slug
+        showcases: /showcases/:slug
       section:
-        posts: /blog/
         projects: /projects/
         showcases: /showcases/
-        services: /diensten/
-        products: /winkel/
      
