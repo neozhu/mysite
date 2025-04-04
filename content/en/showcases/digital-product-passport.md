@@ -28,8 +28,8 @@ The DPP initiative is part of the European Green Deal, aiming to make sustainabl
 
 ## Technologies Used
 
-- `.NET 8 / .NET 9`
-- `Blazor Server & WASM`
+- `.NET 9`
+- `Blazor Server`
 - `IOTA Blockchain`
 - `MudBlazor UI`
 - `SQLite / PostgreSQL`
@@ -41,7 +41,7 @@ The DPP initiative is part of the European Green Deal, aiming to make sustainabl
 
 ## Demo 
 
-- **Live Demo**: [materialpassport.blazorserver.com](hhttps://materialpassport.blazorserver.com/)
+- **Live Demo**: [materialpassport.blazorserver.com](https://materialpassport.blazorserver.com/)
 
 
 
