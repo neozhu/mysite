@@ -3,14 +3,10 @@ logo_subtitle: Blazor 开发专家
 dark_header: false
 mobile_view_width: 1100
 menuitems:
-  - title: 首页
-    link: /cn/
   - title: 开源项目
     link: /cn/projects/
   - title: 案例
     link: /cn/showcases/
-  - title: 博客
-    link: /cn/blog/
   - title: 关于
     link: /cn/about/
     items: 

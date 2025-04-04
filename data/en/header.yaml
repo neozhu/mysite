@@ -3,14 +3,10 @@ logo_subtitle: Professional Blazor development.
 dark_header: false
 mobile_view_width: 1100
 menuitems:
-  - title: Home
-    link: /
   - title: Projects
     link: /projects/
   - title: Showcases
     link: /showcases/
-  - title: Blog
-    link: /blog/
   - title: About
     link: /about/
     items: 

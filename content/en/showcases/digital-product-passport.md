@@ -10,7 +10,7 @@ The Digital Product Passport (DPP) is an EU-driven initiative designed to enable
 
 This project was quickly built based on the open-source project [CleanArchitectureWithBlazorServer](https://github.com/neozhu/CleanArchitectureWithBlazorServer), offering a robust and scalable foundation for enterprise-grade applications using .NET and Blazor.
 
-## 🔍 Key Features
+## Key Features
 
 - ✅ **Product Traceability**: Store and track product information, including material composition, certifications, and lifecycle events.
 - 🔐 **Blockchain Integration**: Secure, immutable record of passport data using IOTA Tangle.

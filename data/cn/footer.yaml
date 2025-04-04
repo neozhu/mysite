@@ -1,9 +1,9 @@
 logo_image:
 menuitems:
   - title: 关于
-    link:  /about/
+    link:  /cn/about/
   - title: 私隐政策
-    link:  /privacy-policy/
+    link:  /cn/privacy-policy/
 socials:
   - title: Github
     link: hhttps://github.com/neozhu
