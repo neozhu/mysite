@@ -1,14 +1,14 @@
 logo_image:
 menuitems:
-  - title: Over ons
-    link:  /nl/
-  - title: Privacyverklaring
-    link:  /nl/
+  - title: 关于
+    link:  /about/
+  - title: 私隐政策
+    link:  /privacy-policy/
 socials:
   - title: Github
-    link: https://facebook.com
+    link: hhttps://github.com/neozhu
     logo_image: /img/github.svg
   - title: Email
-    link: "mailto:?subject:Hugobricks website"
+    link: "mailto:neo.js.cn@gmail.com"
     logo_image: /img/email.svg
-footer_text: Dit thema is open source. Meer info vind je op [Github](https://github.com/jhvanderschee/hugobricks)!
+footer_text: 江苏公网安备 [苏ICP备2021028156号](https://beian.miit.gov.cn/)!

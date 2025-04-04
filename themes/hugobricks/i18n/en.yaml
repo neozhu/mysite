@@ -10,3 +10,9 @@ posts:
   other: Blog
 products:
   other: Shop
+changeLanguage:
+  other: Change language
+cn:
+  other: CN
+en:
+  other: EN

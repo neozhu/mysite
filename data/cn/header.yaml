@@ -3,23 +3,25 @@ logo_subtitle: Blazor 开发专家
 dark_header: false
 mobile_view_width: 1100
 menuitems:
+  - title: 首页
+    link: /cn/
   - title: 开源项目
-    link: /projects/
+    link: /cn/projects/
   - title: 案例
-    link: /cases/
+    link: /cn/showcases/
   - title: 博客
-    link: /blog/
+    link: /cn/blog/
   - title: 关于
-    link: /about/
+    link: /cn/about/
     items: 
       - title: 关于我
-        link: /about/
+        link: /cn/about/
       - title: 联系我
-        link: /contact/
+        link: /cn/contact/
  
   
 cta:
   active: true
   title: 联系我
-  link: /contact/
+  link: /cn/contact/
 preheader: 专注 Blazor 开发，期待与你的项目合作。

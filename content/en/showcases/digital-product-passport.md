@@ -1,39 +1,55 @@
 ---
 title: Digital Product Passport
-image: /uploads/photos/06.jpg
+image: /uploads/photos/adigital-product-passport.webp
 tags:
-  -
+  - DPP
+  - Blockchain
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus egestas arcu, in vestibulum tortor pellentesque vitae. Curabitur dapibus tempor libero id vulputate. Proin sodales, nisi quis laoreet commodo, sapien quam consectetur lorem, ut molestie augue eros in enim. Nam tincidunt lobortis sapien, et molestie urna viverra sollicitudin. In hac habitasse platea dictumst. Donec placerat vestibulum luctus. Sed vel convallis nisi.
+The Digital Product Passport (DPP) is an EU-driven initiative designed to enable transparent and traceable product information throughout the lifecycle of a product. Our DPP solution helps manufacturers, suppliers, and consumers access key product data easily, enhancing circular economy efforts and regulatory compliance.
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla porta faucibus diam, vitae accumsan odio posuere rhoncus. Nunc pellentesque felis id sapien posuere, et commodo nisi pharetra. Cras pulvinar, urna iaculis pretium facilisis, odio dolor dictum leo, et fringilla libero ante eget elit. Vestibulum quis volutpat ligula. Fusce porta et mi luctus convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla id turpis tempor, euismod quam in, sollicitudin nisi. Vivamus a enim bibendum, posuere orci ac, lacinia erat. Morbi varius sapien efficitur, pellentesque elit in, feugiat risus. Vivamus in scelerisque nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+This project was quickly built based on the open-source project [CleanArchitectureWithBlazorServer](https://github.com/neozhu/CleanArchitectureWithBlazorServer), offering a robust and scalable foundation for enterprise-grade applications using .NET and Blazor.
 
-{{< tabs >}}
+## 🔍 Key Features
 
-## These titles
+- ✅ **Product Traceability**: Store and track product information, including material composition, certifications, and lifecycle events.
+- 🔐 **Blockchain Integration**: Secure, immutable record of passport data using IOTA Tangle.
+- 🌐 **Multi-language Support**: Currently supports English and Chinese.
+- ⚡ **Blazor Server**: Modern UI with real-time performance.
+- 🧩 **Modular Architecture**: Built on Clean Architecture principles for flexibility and scalability.
+- 💡 **QR Code Generator**: Generate passport QR codes for product labeling and quick access.
 
-Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. [Maecenas](https://www.google.com) molestie sodales bibendum. Nullam egestas nulla eget justo cursus, vitae convallis nibh fermentum. Phasellus ornare, purus in dapibus gravida, diam odio feugiat lectus, in efficitur dolor ante ut odio.
 
----
+## Project Background
 
-## Are clickable
+The DPP initiative is part of the European Green Deal, aiming to make sustainable products the norm in the EU. Our implementation provides a ready-to-use foundation for businesses to align with these regulations and digitize their product information.
 
-Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. [Maecenas](https://www.google.com) molestie sodales bibendum. Nullam egestas nulla eget justo cursus, vitae convallis nibh fermentum. Phasellus ornare, purus in dapibus gravida, diam odio feugiat lectus, in efficitur dolor ante ut odio.
 
----
 
-## Tabs
+## Technologies Used
 
-Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. [Maecenas](https://www.google.com) molestie sodales bibendum. Nullam egestas nulla eget justo cursus, vitae convallis nibh fermentum. Phasellus ornare, purus in dapibus gravida, diam odio feugiat lectus, in efficitur dolor ante ut odio. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. [Maecenas](https://www.google.com) molestie sodales bibendum. Nullam egestas nulla eget justo cursus, vitae convallis nibh fermentum. Phasellus ornare, purus in dapibus gravida, diam odio feugiat lectus, in efficitur dolor ante ut odio.
+- `.NET 8 / .NET 9`
+- `Blazor Server & WASM`
+- `IOTA Blockchain`
+- `MudBlazor UI`
+- `SQLite / PostgreSQL`
+- `Docker`
+- `Traefik`
+- `CleanArchitectureWithBlazorServer` (open-source starter)
 
-{{< /tabs >}}
 
-[![Unsplash - Ryan Quintal](/uploads/photos/lego.jpg)](/uploads/photos/lego.jpg)
 
-{{< gallery dir="/uploads/gallery/" >}}
+## Demo 
 
-Aliquam erat volutpat. Pellentesque mollis dolor sed pretium tincidunt. Morbi pretium aliquam urna et maximus. Suspendisse potenti. Suspendisse vitae mauris et felis tincidunt vulputate. Quisque nec est leo. Cras ut purus nec metus efficitur ullamcorper id ut orci. Nullam egestas nisi sagittis, placerat nunc sed, bibendum ipsum. Proin fermentum mi nec molestie hendrerit. Nullam a justo tortor. Etiam consequat sapien purus, eu maximus dolor pretium vel. Phasellus egestas arcu sapien. Duis id odio id quam viverra gravida non non diam. Maecenas commodo nulla egestas magna faucibus aliquet.
+- **Live Demo**: [materialpassport.blazorserver.com](hhttps://materialpassport.blazorserver.com/)
+
+
+
+[![View Digital Product Passport Demo](/uploads/photos/dpp/01.png)](/uploads/photos/dpp/01.png)
+
+{{< gallery dir="/uploads/gallery/dpp" >}}
+
+> Empower your product transparency journey with Digital Product Passports – sustainable, traceable, and future-ready.
 
 ---
 

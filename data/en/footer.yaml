@@ -5,10 +5,10 @@ menuitems:
   - title: Privacy policy
     link:  /privacy-policy/
 socials:
-  - title: GitHub
-    link: https://facebook.com
+  - title: Github
+    link: hhttps://github.com/neozhu
     logo_image: /img/github.svg
-  - title: Gmail
-    link: https://instagram.com
+  - title: Email
+    link: "mailto:neo.js.cn@gmail.com"
     logo_image: /img/email.svg
-footer_text: This theme is open source. More info on [Github](https://github.com/jhvanderschee/hugobricks)!
+footer_text: Jiangsu Public Network Security ICP No. [苏ICP备2021028156号](https://beian.miit.gov.cn/)!
