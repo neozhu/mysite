@@ -3,8 +3,6 @@ title: Projects
 ---
 {{< brick_projects >}}
 
-{{< breadcrumbs >}}
-
 # Open source project
 
 Discover my GitHub open-source projects powered by Python, JavaScript, and .NET — focused on clean architecture, continuous learning, and meaningful innovation.

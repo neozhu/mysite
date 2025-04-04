@@ -1,50 +1,80 @@
 ---
-title: 'Clean Architecture With Blazor Server'
-image: /uploads/gallery/03.jpg
-date: 2022-09-30 00:00:00
+title: 'Blazor Server项目模板'
+image: /uploads/illustrations/cuate/blazorserver.png
+date: 2025-04-04 00:00:00
 tags: 
   -
 ---
 
-Yesterday [David Large](https://www.linkedin.com/in/david-large-4875b81b2/?originalSubdomain=nz) invited me to his [Static Feedback](https://www.youtube.com/watch?v=MuAe7aZu0Nw) show. It was a big honor to be featured there. The interview went by in a flash... and I want this post to summarize it and add some points that we may have missed.
+{{< brick_title >}}  
+{{< button "查看 GitHub 项目" "https://github.com/neozhu/CleanArchitectureWithBlazorServer" >}}  
+{{< /brick_title >}}
 
-## What is Clean Architecture With Blazor Server?
 
-Anything CAN be artisanal web development, but what I mean is 'knowing every line of code that goes into your project'. This implies that you are not using frameworks or any other type of third party code. 
+本项目是一个使用 Clean Architecture 架构设计的 Blazor Server 应用，具备现代化的用户界面和高效的代码生成器。该应用基于 .NET 9 构建，带来更出色的性能、更高的开发效率以及更平滑的开发体验。
 
-## How does it work?
+Blazor Server 在 .NET 9 中得到了全面支持，它将 C# 的强大能力与现代 Web 开发体验相结合，让开发者无需频繁切换语言（例如 JavaScript 和 C#），从而简化开发流程，实现响应迅速、交互性强的现代 Web 应用。结合 Blazor 的实时通信能力和 .NET 的强大生态，开发者可以快速构建功能丰富、可扩展、用户体验卓越的系统。
 
-David asked me how I approach artisanal web development, but I do not feel like I answered the question sufficiently. Here is a very down to earth explanation: 
+{{< youtube "hCsHSNAs-70" "/uploads/youtube01.png" >}}
 
-I always start with a blank HTML page, without CSS and without Javascript. Then I write the HTML, starting with the 'doctype' tag. Sure, I might copy that from another project, but I believe there is value in knowing all these components by heart. When I need columns I choose between flexbox and grid and write the CSS code that is needed to make the columns responsive. I define the breakpoints for each situation. For a [carousel](https://codepen.io/joosts/pen/MWJBPgo) I use a div with flexbox items, horizontal overflow and 'scroll snap'. A little bit of Javascript allows it to be fully functional. This way I go through all code/the whole project. I try to stay away from components and ready made solutions and I try to tailor everything to (the needs of) the project I am working on.
 
-A few years ago this all might have been a huge task, especially when you wanted to make sure it looked the same on all browsers, but nowadays this is very simple. CSS is capable of so much and the variety in the browser landscape has vanished. Chrome is the absolute market leader, Edge is based on Chrome and Safari and Firefox are also based on [WebKit](https://en.wikipedia.org/wiki/List_of_web_browsers#WebKit-based)... which means that these browsers all behave very similar. Making things work cross-browser is no longer a challenge. Creating your own components and solutions is actually a lot of fun!
+## 为什么选择 Blazor Server？
 
-## Advantages of artisanal web development
+Blazor Server 是我最喜欢的 Web 开发方式之一。它让开发体验更加专注 —— 整个前后端开发均可使用 C# 编写，避免了在 C# 和 JavaScript 之间来回切换，提升了开发效率，也让项目更易于维护。
 
-Not using frameworks or any other type of third party code has a lot of advantages. First of all it results into smaller websites/projects, which load faster. Secondly, you know exactly how it works, so you are able to adjust the way it works easily. What we did not touch is that artisanal web development also results into more stable projects. When a library, framework or component you use is being discontinued, you need to replace it by an actively maintained one, to prevent security issues. This often influences other components as well, resulting in the [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell). Maintaining software with a lot of dependencies can become a horrible task. What David and I also did not discuss are the privacy implications of using third party code. This code is often not properly vetted and sometimes even externally hosted. This is a huge risk from a privacy point of view. Finally you could argue that the need to understand every line of code can also make you a better programmer and even a better user of frameworks, as you get a better understanding of the problems these frameworks are trying to solve.
+借助 SignalR，Blazor Server 支持实时 UI 更新，非常适用于管理后台、工作流程系统、文档识别（OCR）、组织结构图等企业应用场景。在本模板中，我还集成了 Hangfire 用于计划任务的可视化管理面板，以及多个 OAuth2 第三方登录方式。
 
-## When to avoid this approach
+## 主要特性
 
-When you build software/websites in a large team I would not use this artisanal approach. However, before you fully dismiss it, you should realize that a lot of efficient projects involve very little teamwork at all. A strict separation between front-end and back-end is often made to make sure developers can work as autonomously as possible. Are you the sole owner of your (front-end or back-end) code? Then the artisanal approach could very well be a valid one. If you write the code together with somebody else, I would always try to find some common ground first.
+- Clean Architecture 架构分层：Domain / Application / Infrastructure / UI
+- 内置多种第三方登录（Google、Facebook、Microsoft）
+- 支持 Docker 和 Docker Compose，一键部署至生产环境
+- Visual Studio 2022 扩展：**CleanArchitecture CodeGenerator**
+- 包含多个实际案例（例如 DPP 数字产品护照、HSE 管理系统）
+- 支持 PostgreSQL、MSSQL 和 SQLite 数据库
+- 已发布 NuGet 模板，支持快速创建新项目
 
-## The take-away
+## 演示地址
 
-Try artisanal web development. It may be challenging, but it is really fun! Find a small project to try it on. Davids analogy with a car mechanic having a 'project car' is a perfect one! To me, that powerful feeling of [complete understanding of every bit of code](https://www.usecue.com/blog/code-warriors/) is addictive. It might resonate with you as well and it will make you a better programmer for sure! 
+- [在线演示站点 - architecture.blazorserver.com](https://architecture.blazorserver.com)
 
-I think that Jake Albaugh formulated it perfectly: “If you can justify the effort of writing your own code, you become more familiar with web specifications and learn just how robust they are on their own. You also end up with something that can be easier to maintain long-term because it is closest to the core evolutionary path of the web.”
+## Docker Compose 部署示例
 
-## Related reading
+```yml
+version: '3.8'
+services:
+  blazorserverapp:
+    image: blazordevlab/cleanarchitectureblazorserver:1.2.10
+    environment:
+      - UseInMemoryDatabase=${USE_IN_MEMORY_DATABASE}
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - ASPNETCORE_URLS=${ASPNETCORE_URLS}
+      - ASPNETCORE_HTTP_PORTS=${ASPNETCORE_HTTP_PORTS}
+      - ASPNETCORE_HTTPS_PORTS=${ASPNETCORE_HTTPS_PORTS}
+      - AppConfigurationSettings__ApplicationUrl=${APP_URL}
+      - AppConfigurationSettings__AppName=${APP_NAME}
+      - DatabaseSettings__DBProvider=${DB_PROVIDER}
+      - DatabaseSettings__ConnectionString=${DB_CONNECTION_STRING}
+      - SmtpClientOptions__User=${SMTP_USER}
+      - SmtpClientOptions__Port=${SMTP_PORT}
+      - SmtpClientOptions__Server=${SMTP_SERVER}
+      - SmtpClientOptions__Password=${SMTP_PASSWORD}
+      - SmtpClientOptions__DefaultFromEmail=${SMTP_DEFAULT_FROM}
+      - Authentication__Microsoft__ClientId=${MS_CLIENT_ID}
+      - Authentication__Microsoft__ClientSecret=${MS_CLIENT_SECRET}
+      - Authentication__Google__ClientId=${GOOGLE_CLIENT_ID}
+      - Authentication__Google__ClientSecret=${GOOGLE_CLIENT_SECRET}
+      - Minio__Endpoint=${MINIO_ENDPOINT}
+      - Minio__AccessKey=${MINIO_ACCESS_KEY}
+      - Minio__SecretKey=${MINIO_SECRET_KEY}
+      - Minio__BucketName=${MINIO_BUCKET}
+    ports:
+      - "8014:80"
+      - "8015:443"
+```
 
-I did not come up with this term/approach/philosophy by myself. I was inspired by a lot of people. Here is some valuable related reading.
+提示：请将环境变量（如 `${SMTP_USER}`）替换为你自己的实际配置值。
 
-- [The web is good now](https://css-tricks.com/the-web-is-good-now/), Geoff Graham
-- [Write your own code](https://css-tricks.com/embrace-your-codes-transience/), Jake Albaugh
-- [Frameworks are polyfills](https://adactio.com/journal/17309), Jeremy Keith
-- [We write risky breakable code](https://gomakethings.com/web-tech-is-better.-developer-norms-are-worse./), Chris Ferdinandi
-- [Simplify: you know you want it](https://tobyx.com/2015/jekyll-vs-world), Tobias Horvath
-- [Understand how the web is performing](https://almanac.httparchive.org/en/), Web Almanac
-- [You might not need jQuery](https://youmightnotneedjquery.com/), Hubspot
-- [VanillaJS](http://vanilla-js.com/), Eric Wastl
+## 许可证
 
-PS. I mentioned Kev Quirk in the interview. He pointed me at my missing [RSS feed](https://kevquirk.com/why-having-a-full-post-rss-feed-is-a-good-idea/). I joked about him being aggressive. I should have said 'persuasive'. [Thanks again Kev!](https://www.usecue.com/blog/thanks-to-kev-quirk/)
+本项目基于 MIT 开源许可证发布，您可以自由使用、修改和分发。

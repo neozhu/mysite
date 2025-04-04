@@ -17,7 +17,7 @@ Got a project in mind? Let’s chat!
 
 ## What’s included in Blazor Server Template?
 
-![](/uploads/illustrations/cuate/responsive.png)
+![](/uploads/illustrations/cuate/blazorserver.png)
 
 Clean Architecture Blazor Server is a highly modular Blazor Server application template built with Clean Architecture, designed to help you create maintainable and scalable enterprise-level applications. It includes:
 

@@ -3,7 +3,6 @@ title: Projects
 ---
 {{< brick_projects >}}
 
-{{< breadcrumbs >}}
 
 # 开源项目
 

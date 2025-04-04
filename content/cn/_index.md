@@ -17,7 +17,7 @@ Blazor Studio 专注于使用 Blazor 开发高质量的业务 Web 应用，从�
 
 ## Blazor Server 应用模板有哪些亮点？
 
-![](/uploads/illustrations/cuate/responsive.png)
+![](/uploads/illustrations/cuate/blazorserver.png)
 
 Clean Architecture Blazor Server 是一个高度模块化的 Blazor Server 应用模板，采用 Clean Architecture 架构，专为构建可维护、可扩展的企业级应用而设计。这个项目已集成：
 
