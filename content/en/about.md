@@ -3,11 +3,11 @@ title: About
 ---
 {{< brick_about >}}
 
-{{< colorize_image "This is not me" "/uploads/photos/avatars/2.jpeg" >}}
+![](/uploads/photos/avatars/me.png)
 
-# Hey, my name is Joost
+# Hey, my name is Hualin
 
-Together with my friend 'Fenix' I have built Hugobricks, a theme that allows you to create a website by stacking shortcodes. The guy in the picture is not me, but an avatar from the internet. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. 
+I’m a .NET Developer, Salesforce Developer, BizTalk Solution Engineer, and RPA Engineer with 30 years of development experience. I specialize in .NET and have a strong interest in Python and AI. I’m actively involved in the GitHub open-source community and enjoy building enterprise business solution applications.
 
 {{< socialbuttons >}}
 

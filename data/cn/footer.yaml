@@ -8,6 +8,9 @@ socials:
   - title: Github
     link: hhttps://github.com/neozhu
     logo_image: /img/github.svg
+  - title: X
+    link: https://x.com/new163cn
+    logo_image: /img/twitter.svg
   - title: Email
     link: "mailto:neo.js.cn@gmail.com"
     logo_image: /img/email.svg
