@@ -1,5 +1,5 @@
 # 使用 Hugo 官方构建镜像构建站点
-FROM klakegg/hugo:0.145.0-ext-alpine AS build
+FROM hugomods/hugo:std-ci-0.145.0 AS build
 
 # 设置工作目录
 WORKDIR /src
