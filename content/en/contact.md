@@ -3,23 +3,26 @@ title: Contact us
 ---
 {{< brick_title >}}
 
-{{< breadcrumbs >}}
 
-# Contact us
+# Contact me
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+Feel free to reach out to me for collaboration, project inquiries, or just to say hello. I’m always happy to connect with like-minded developers and professionals.
 
 {{< /brick_title >}}
 {{< brick_contact >}}
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+If you’d like to get in touch, here’s how you can reach me:
 
-Soetendaal 7  
-1081BL Amsterdam  
-The Netherlands
 
-joost@vdschee.nl  
-+31 618 518 928
+
+Scan the QR code below to connect with me on WeChat:  
+<img src="/uploads/photos/avatars/wchat.png" alt="WeChat QR Code" width="200" style="margin: 8px 0;" />
+
+
+Kunshan, Jiangsu Province, China
+
+
+neo.js.cn@gmail.com 
 
 {{< socialbuttons >}}
 

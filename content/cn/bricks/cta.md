@@ -1,10 +1,10 @@
 ---
 title: cta
 ---
-## Start vandaag nog met Hugobricks!
+## 想更深入了解我在做什么？
 
-Ervaar de toekomst van webontwikkeling met Hugo en stapelbare content bricks. Bouw razendsnelle flexibele statische sites met het grootste gemak.
+我的 GitHub 记录了我大部分的项目和想法。欢迎浏览，一起探索更多技术的可能。
 
-{{< button2 "Start nu direct" "/nl/" >}}
+{{< button2 "去 GitHub 看看" "https://github.com/neozhu?tab=repositories" >}}
 
-![](/uploads/illustrations/cuate/server.svg)
+![](/uploads/illustrations/cuate/github.png)

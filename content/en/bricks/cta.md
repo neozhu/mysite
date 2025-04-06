@@ -1,10 +1,10 @@
 ---
 title: cta
 ---
-## Get started with Hugobricks today!
+## Want to know more about what I’m working on?
 
-Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.
+My GitHub showcases most of my projects and ideas. Feel free to take a look and explore more technical possibilities together.
 
-{{< button2 "Get started now" "/get-started/" >}}
+{{< button2 "Check out my GitHub" "https://github.com/neozhu?tab=repositories" >}}
 
-![](/uploads/illustrations/cuate/server.svg)
+![](/uploads/illustrations/cuate/github.png)

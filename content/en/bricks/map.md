@@ -2,15 +2,14 @@
 title: map
 ---
 
-![](/uploads/map.png)
+![](/uploads/map02.png)
 
 [Google Maps](https://www.google.com/maps)
 
-## Contact us
+## Contact me
 
-Usecue BV  
-Soetendaal 7  
-1081BL Amsterdam  
-The Netherlands
+Jiangsu Province  
+Suzhou City  
+China
 
 {{< contactbuttons >}}

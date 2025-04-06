@@ -1,29 +1,23 @@
 ---
-title: Contact us
+title: 联系我
 ---
 {{< brick_title >}}
 
+# 联系我
 
-# Contact me
-
-Feel free to reach out to me for collaboration, project inquiries, or just to say hello. I’m always happy to connect with like-minded developers and professionals.
+欢迎随时与我联系，无论是合作、项目咨询，还是只是打个招呼。我始终乐于与志同道合的开发者和专业人士建立联系。
 
 {{< /brick_title >}}
 {{< brick_contact >}}
 
-If you’d like to get in touch, here’s how you can reach me:
+如果你希望与我取得联系，可以通过以下方式：  
 
+扫描下方二维码添加我的微信：  
+<img src="/uploads/photos/avatars/wchat.png" alt="微信二维码" width="200" style="margin: 8px 0;"/>
 
+中国江苏省昆山市
 
-Scan the QR code below to connect with me on WeChat:  
-<img src="/uploads/photos/avatars/wchat.png" alt="WeChat QR Code" width="200" />
-
-
-Kunshan, Jiangsu Province,  
-China
-
-
-mail-to: neo.js.cn@gmail.com 
+neo.js.cn@gmail.com
 
 {{< socialbuttons >}}
 
