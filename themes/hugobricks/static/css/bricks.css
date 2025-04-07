@@ -29,7 +29,13 @@ section.post .container.wide {max-width: 62rem;}
 section.post .container.post p:first-child,
 section.post .container.post p:first-child a {color: var(--textDark); font-size: 1.52rem; line-height: 1.4;}
 section.post .container .meta {justify-content: center; margin-bottom: 3rem; margin-top: -0.75rem;}
-
+section.post .container.post ol li p,
+section.post .container.post ul li p,
+section.post .container.post ul li p a, 
+section.post .container.post ol li p a {
+    font-size: inherit !important; 
+    line-height: inherit !important;
+  }
 /*------------------------*/
 /* brick cta
 /*------------------------*/
