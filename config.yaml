@@ -5,6 +5,7 @@ assetDir: static
 services:
   googleAnalytics: 
     id: G-2RBX6HT00W
+
 markup:
   goldmark:
     renderer:
