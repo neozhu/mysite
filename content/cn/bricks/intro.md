@@ -2,10 +2,10 @@
 title: intro
 ---
 
-# The Ultimate Theme You Need To Start Your Hugo Website
+# 启动您 Hugo 网站所需的终极主题
 
-Hugobricks is a free website theme built with Hugo and vanilla CSS, providing everything you need to jumpstart your Hugo website and save valuable time.
+Hugobricks 是一款基于 Hugo 和原生 CSS 构建的免费网站主题，它提供您快速启动 Hugo 网站所需的一切，从而节省宝贵时间。
 
-{{< button "Get started for free" "/get-started/" >}}
+{{< button "免费开始" "/get-started/" >}}
 
 ![](/uploads/brick_intro.png)

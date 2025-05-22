@@ -10,34 +10,33 @@ tags:
 {{< button "View on GitHub" "https://github.com/neozhu/CleanArchitectureWithBlazorServer" >}}
 {{< /brick_title >}}
 
-This repository hosts a Blazor Server application designed using Clean Architecture principles, featuring a sophisticated user interface and an efficient code generator. The application is built on .NET 9, which brings enhanced performance, improved developer productivity, and new features that make the development process smoother. Blazor Server, now supported on .NET 9, combines the power of C# with a modern web development experience, eliminating the need to switch between languages like JavaScript and C#. This setup simplifies development and enables fast, responsive, and highly interactive web applications. Leveraging Blazor’s real-time communication capabilities and .NET’s robust ecosystem, developers can rapidly create feature-rich, scalable applications with a seamless user experience.
+This project showcases a Blazor Server application meticulously designed using Clean Architecture principles. It features a sophisticated user interface and an integrated, efficient code generator.
 
-
+Built on .NET 9, the application benefits from enhanced performance, improved developer productivity, and a smoother development workflow. .NET 9's full support for Blazor Server combines the power of C# with a modern web development experience, eliminating the need to constantly switch between JavaScript and C#. This streamlined setup simplifies development, enabling the creation of fast, responsive, and highly interactive web applications. By leveraging Blazor’s real-time communication capabilities and the robust .NET ecosystem, developers can rapidly build feature-rich, scalable applications that offer a seamless user experience.
 
 {{< youtube "hCsHSNAs-70" "/uploads/youtube01.png" >}}
 
 ## Why Blazor Server?
 
-Blazor Server is my preferred approach to building web apps. It enables a focused development experience — writing everything in C# without constantly switching back and forth with JavaScript. This simplifies not just productivity, but also long-term maintainability.
+Blazor Server is my preferred approach to building web applications. It enables a focused development experience—writing everything in C# without constantly switching back and forth with JavaScript. This simplifies not just productivity, but also long-term maintainability.
 
-Thanks to SignalR, Blazor Server supports real-time UI updates, which makes it perfect for admin dashboards, workflow systems, document OCR, and organizational charts. In this template, I’ve also included Hangfire for scheduled task dashboards and built-in OAuth2 login integrations.
+Thanks to SignalR, Blazor Server supports real-time UI updates, which makes it perfect for admin dashboards, workflow systems, document OCR applications, and organizational charts. In this template, I have also included Hangfire for scheduled task dashboards and built-in OAuth2 login integrations.
 
 ## Key Features
 
-- Clean Architecture design: Domain / Application / Infrastructure / UI separation
-- Built-in authentication (Google, Facebook, Microsoft)
-- Docker & Docker Compose support for production-ready deployments
-- Visual Studio 2022 Extension: **CleanArchitecture CodeGenerator**
-- Multiple real-world examples (e.g., DPP, HSE management systems)
-- Support for PostgreSQL, MSSQL, SQLite
-- NuGet package template support
-
+- **Clean Architecture Design:** Adheres to clear separation of concerns with Domain, Application, Infrastructure, and UI layers.
+- **Built-in Authentication:** Includes pre-configured authentication options for Google, Facebook, and Microsoft.
+- **Containerization Support:** Offers Docker and Docker Compose configurations for production-ready deployments.
+- **Visual Studio 2022 Extension:** **CleanArchitecture CodeGenerator** for rapid feature scaffolding.
+- **Real-World Examples:** Includes practical examples such as Digital Product Passport (DPP) and HSE (Health, Safety, and Environment) management systems.
+- **Database Flexibility:** Provides support for PostgreSQL, MSSQL, and SQLite databases.
+- **NuGet Package Template:** Available as a NuGet template for quick project initialization.
 
 ## Demos
 
-- [Live Demo - architecture.blazorserver.com](https://architecture.blazorserver.com)
+- **Live Demo:** [architecture.blazorserver.com](https://architecture.blazorserver.com)
 
-## Docker Compose Demployment
+## Docker Compose Deployment
 ```yml
 version: '3.8'
 services:
@@ -71,7 +70,7 @@ services:
       - "8015:443"
 ```
 
+Tip: Replace environment variables (like `${SMTP_USER}`) with your actual configuration values.
+
 ## License
-This project is licensed under the MIT License, which is a permissive open-source license.
-You are free to use, modify, and distribute the code for both personal and commercial purposes,
-as long as the original license and copyright notice are included.
+This project is licensed under the MIT License, a permissive open-source license. You are free to use, modify, and distribute the code for personal or commercial purposes, provided the original license and copyright notice are included.

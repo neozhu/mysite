@@ -12,17 +12,17 @@ tags:
 
 ## Description
 
-A simple Flask-based API that extracts the highest-confidence face from an image, expands its bounding box by 20%, and returns the cropped image as a downloadable JPEG file without saving it on the server. The API supports two methods of image input: providing an image URL or uploading an image file.
+A simple Flask-based API that extracts the face with the highest confidence score from an image, expands its bounding box by 20%, and returns the cropped face as a downloadable JPEG file, without persisting it on the server. The API supports two methods for image input: providing an image URL or uploading an image file directly.
 
 ## Features
 
-- **Image URL Input**: Downloads an image from a given URL.
-- **File Upload**: Accepts an image file uploaded via a form-data POST request.
-- Detects faces using the DeepFace library with the Yunet detector.
-- Selects the face with the highest confidence.
-- Expands the detected face region by 20%.
-- Returns the cropped image as a downloadable attachment.
-- **Minio Integration**: Two additional endpoints allow uploading the extracted face (or the original image with the cropped face) directly to a Minio storage server.
+- **Image URL Input:** Supports processing images by downloading them from a provided URL.
+- **File Upload:** Accepts image files uploaded directly via a `multipart/form-data` POST request.
+- Utilizes the DeepFace library, specifically the Yunet detector, for face detection.
+- Automatically selects the face detected with the highest confidence score.
+- Enlarges the bounding box of the detected face by 20% to ensure complete capture.
+- Provides the cropped face image as a downloadable JPEG attachment.
+- **Minio Integration:** Features optional endpoints for uploading the extracted face (or the original image with the detected face highlighted) directly to a Minio object storage server.
 
 ## Example
 
@@ -40,32 +40,34 @@ The following demonstrates the original image and the cropped face image side by
 
 ## Installation and Running Locally
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your_username/face-extraction-api.git
-   cd face-extraction-api
-   ```
+1.  Clone this repository to your local machine:
+    ```bash
+    git clone https://github.com/neozhu/face-extraction-api.git 
+    # Replace with your fork if necessary
+    cd face-extraction-api
+    ```
 
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+2.  Install the required Python dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-3. Create a `.env` file in the project root with your Minio configuration. See the example below:
-   ```ini
-   # .env Example File
-   MINIO_ENDPOINT=minio.blazorserver.com
-   MINIO_ACCESS_KEY=your_minio_access_key
-   MINIO_SECRET_KEY=your_minio_secret_key
-   MINIO_BUCKET_NAME=your_bucket_name
-   ```
+3.  Create a `.env` file in the project's root directory and populate it with your Minio server configuration details, similar to the example below:
+    ```ini
+    # Example .env Configuration
+    MINIO_ENDPOINT=minio.example.com
+    MINIO_ACCESS_KEY=YOUR_MINIO_ACCESS_KEY
+    MINIO_SECRET_KEY=YOUR_MINIO_SECRET_KEY
+    MINIO_BUCKET_NAME=your-target-bucket
+    ```
+    Ensure you replace placeholder values with your actual Minio credentials and endpoint.
 
-4. Run the Flask application:
-   ```bash
-   python app.py
-   ```
+4.  Run the Flask application:
+    ```bash
+    python app.py
+    ```
 
-The API will be available at `http://localhost:5000`.
+The API will then be available at `http://localhost:5000`.
 
 ## Running with Docker
 
@@ -74,12 +76,13 @@ The API will be available at `http://localhost:5000`.
    docker build -t face-extraction-api .
    ```
 
-2. Run the Docker container:
-   ```bash
-   docker run -p 5000:5000 face-extraction-api
-   ```
+2.  Run the Docker container, mapping port 5000:
+    ```bash
+    docker run -p 5000:5000 face-extraction-api
+    ```
+    (Ensure your `.env` file is accessible to Docker if not using build arguments for secrets.)
 
-3. Docker compose file:
+3.  Example Docker Compose configuration:
    ```yml
    version: '3.8'
    services:
@@ -111,68 +114,68 @@ The API will be available at `http://localhost:5000`.
 
 - **Endpoint**: `/extract_face`
 - **Method**: POST
-- **Payload**: JSON object containing the `image_url` key.
+- **Request Payload**: JSON object containing the `image_url` key.
   
   **Example JSON Payload**:
   ```json
   {
-    "image_url": "https://example.com/your_image.jpg"
+    "image_url": "https://example.com/path/to/your_image.jpg"
   }
   ```
 
-- **Response**: Returns the cropped face image as a downloadable JPEG file.
+- **Success Response**: Returns the cropped face image as a downloadable JPEG file (`image/jpeg`).
 
 ### 2. Extract Face by File Upload
 
 - **Endpoint**: `/upload_extract_face`
 - **Method**: POST
-- **Payload**: Form-data with an image file in the `file` field.
+- **Request Payload**: `multipart/form-data` with an image file in the `file` field.
   
   **Example using curl**:
   ```bash
   curl -X POST -F "file=@/path/to/your_image.jpg" http://localhost:5000/upload_extract_face --output extracted_face.jpg
   ```
 
-- **Response**: Returns the cropped face image as a downloadable JPEG file.
+- **Success Response**: Returns the cropped face image as a downloadable JPEG file (`image/jpeg`).
 
-### 3. Extract Face and Upload by Image URL to Minio
+### 3. Extract Face from Image URL and Upload to Minio
 
 - **Endpoint**: `/extract_face_to_minio`
 - **Method**: POST
-- **Payload**: JSON object containing the `image_url` key.
+- **Request Payload**: JSON object containing the `image_url` key.
   
   **Example JSON Payload**:
   ```json
   {
-    "image_url": "https://example.com/your_image.jpg"
+    "image_url": "https://example.com/path/to/your_image.jpg"
   }
   ```
 
-- **Response**: Returns a JSON response with:
-  - `status`: Operation status.
-  - `message`: Confirmation that the face has been extracted and uploaded.
-  - `url`: The full URL of the uploaded cropped face image.
-  - `source`: Indicates whether the source URL was from the Minio server or external.
+- **Success Response**: JSON object with:
+  - `status` (string): Operation status (e.g., "success").
+  - `message` (string): Confirmation message indicating successful extraction and upload.
+  - `url` (string): The full URL of the uploaded cropped face image in Minio.
+  - `source_type` (string): Indicates if the source image URL was from the Minio server itself ("minio") or an external location ("external").
 
-### 4. Upload Image and Extract Face to Minio
+### 4. Upload Image, Extract Face, and Upload Both to Minio
 
 - **Endpoint**: `/upload_face_to_minio`
 - **Method**: POST
-- **Payload**: Form-data with:
-  - an image file in the `file` field,
-  - a `path` parameter specifying the target directory in Minio.
+- **Request Payload**: `multipart/form-data` with:
+  - An image file in the `file` field.
+  - A `path` parameter (string, optional) specifying the target directory in Minio for the original image.
   
   **Example using curl**:
   ```bash
-  curl -X POST -F "file=@/path/to/your_image.jpg" -F "path=test_upload" http://localhost:5000/upload_face_to_minio
+  curl -X POST -F "file=@/path/to/your_image.jpg" -F "path=uploads/test_images" http://localhost:5000/upload_face_to_minio
   ```
 
-- **Response**: Returns a JSON response with:
-  - `status`: Operation status.
-  - `message`: Confirmation that the file was uploaded to Minio successfully.
-  - `uploaded_to`: Indicates that the file was uploaded to Minio.
-  - `original_url`: The full URL of the original image.
-  - `face_url`: The full URL of the cropped face image (saved under a `faces/` subdirectory).
+- **Success Response**: JSON object with:
+  - `status` (string): Operation status.
+  - `message` (string): Confirmation of successful upload to Minio.
+  - `storage_destination` (string): Confirms the file was uploaded to Minio.
+  - `original_url` (string): The full URL of the original uploaded image in Minio.
+  - `face_image_url` (string): The full URL of the cropped face image, typically saved under a `faces/` subdirectory relative to the original image path in Minio.
 
 ## License
 

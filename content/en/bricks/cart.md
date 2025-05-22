@@ -2,9 +2,9 @@
 title: Cart
 ---
 
-#  Products in your cart
+# Review Your Shopping Cart
 
-Review the items in your cart below.
+Please review the items in your shopping cart below. You can adjust quantities or remove items before proceeding to checkout.
 
 
 

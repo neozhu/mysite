@@ -3,9 +3,9 @@ title: Projects
 ---
 {{< brick_projects >}}
 
-# Open source project
+# Open Source Projects
 
-Discover my GitHub open-source projects powered by Python, JavaScript, and .NET — focused on clean architecture, continuous learning, and meaningful innovation.
+Explore my open-source projects on GitHub, primarily utilizing Python, JavaScript, and .NET. These projects emphasize Clean Architecture principles, a commitment to continuous learning, and the pursuit of meaningful technological innovation.
 
 {{< /brick_projects >}}
 {{< brick_cta >}}{{< /brick_cta >}}

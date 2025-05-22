@@ -4,18 +4,18 @@ title: Contact us
 {{< brick_title >}}
 
 
-# Contact me
+# Contact Us
 
-Feel free to reach out to me for collaboration, project inquiries, or just to say hello. I’m always happy to connect with like-minded developers and professionals.
+We welcome collaborations, project inquiries, or simply a friendly hello. We are always pleased to connect with like-minded developers and professionals.
 
 {{< /brick_title >}}
 {{< brick_contact >}}
 
-If you’d like to get in touch, here’s how you can reach me:
+If you would like to get in touch, here is how you can reach us:
 
 
 
-Scan the QR code below to connect with me on WeChat:  
+Scan the QR code below to connect with us on WeChat:  
 <img src="/uploads/photos/avatars/wchat.png" alt="WeChat QR Code" width="200" style="margin: 8px 0;" />
 
 

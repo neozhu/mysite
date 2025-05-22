@@ -18,30 +18,28 @@ CleanAspire 是一个基于 .NET 9 的前沿开源项目模板，旨在加速开
 
 ## 使用 Chat GPTs 自动生成代码
 
-CleanAspire 搭配 Clean Code Generator，可以基于该模板自动生成后端应用逻辑与前端 Blazor 组件，显著提升开发效率，简化重复性任务。
+CleanAspire 结合 Clean Code Generator，能够基于此模板自动生成后端应用逻辑及前端 Blazor 组件，从而显著提升开发效率并简化重复性编码任务。
 
 ![Chat GPT 示例图](/uploads/illustrations/cuate/gpts.png)
 
-## Key Features
+## 主要特性
 
-- 内置 Aspire 仪表板支持  
-- 快速、极简的 .NET 9 Minimal APIs 架构  
-- 极简设计，专注性能与可维护性  
-- 集成 Blazor WebAssembly 与 PWA 支持  
-- 简洁的 API 客户端生成机制（支持 Kiota）  
-- 完整的 Clean Architecture 分层结构  
-- 原生支持 Docker 云部署  
-- 实时 Web Push 通知支持  
-- 集成 CI/CD 自动部署流程  
-- 离线使用模式支持  
- 
+- **Aspire 仪表板集成**：内置 .NET Aspire 监控仪表板支持。
+- **Minimal APIs 架构**：基于 .NET 9 Minimal APIs 构建，快速且极简。
+- **性能与可维护性**：设计简洁，高度关注应用的性能表现和代码的可维护性。
+- **Blazor Wasm & PWA**：全面集成 Blazor WebAssembly 与渐进式 Web 应用 (PWA) 支持。
+- **API 客户端生成**：支持 Microsoft Kiota，实现简洁高效的 API 客户端代码自动生成。
+- **Clean Architecture**：遵循完整的 Clean Architecture 分层设计原则。
+- **Docker 支持**：原生支持 Docker 容器化，简化云端部署流程。
+- **实时通知**：集成 Web Push 技术，支持实时向客户端推送通知。
+- **CI/CD 流程**：预置 CI/CD (持续集成/持续部署) 自动化流程。
+- **离线模式**：支持应用在离线状态下使用。
 
+## 在线演示
 
-## 演示
+- **演示站点**：[cleanaspire.blazorserver.com](https://cleanaspire.blazorserver.com/)
 
-- [在线演示 - cleanaspire.blazorserver.com](https://cleanaspire.blazorserver.com/)
-
-## Docker Compose Demployment
+## Docker Compose 部署
 ```yml
 version: '3.8'
 services:
@@ -88,7 +86,7 @@ services:
       - "8032:80"
       - "8031:443"
 ```
-温馨提示：请根据你自己的实际部署环境替换上方的环境变量（例如 `${APISERVICE_Authentication__Google__ClientId}`）。
+温馨提示：请根据您的实际部署环境，替换上述 YAML 配置中的环境变量占位符 (例如 `${APISERVICE_Authentication__Google__ClientId}`)。
 
-## License
-本项目使用 **MIT License** 开源协议。这是一种非常宽松的许可方式，允许你在保留原始版权信息的前提下，自由地使用、修改和分发本项目，无论是用于个人用途还是商业项目。
+## 授权许可
+本项目采用 **MIT License** 开源协议。这是一种非常宽松的许可协议，允许您在保留原始版权信息的前提下，自由地使用、修改和分发此项目代码，无论是个人用途还是商业项目。

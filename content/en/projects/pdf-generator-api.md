@@ -12,21 +12,21 @@ tags:
 
 ## Overview
 
-This lightweight .NET minimal API leverages [Microsoft.Playwright](https://playwright.dev/dotnet/) to generate PDFs from either a provided URL or full HTML content. It supports dynamic watermarking and stamping, allowing users to overlay custom watermark text and a stamp image on the PDF. The API is secured via API Key authentication and comes with integrated Swagger/OpenAPI documentation for easy testing and exploration.
+This lightweight .NET minimal API utilizes [Microsoft.Playwright](https://playwright.dev/dotnet/) for generating PDFs from either a provided URL or complete HTML content. It supports dynamic watermarking and stamping, allowing users to overlay custom watermark text and a stamp image onto the generated PDF. The API is secured via API Key authentication and includes integrated Swagger/OpenAPI documentation for straightforward testing and exploration.
 
 ## Features
 
-- **PDF Generation from URL:** Render any webpage and generate a PDF.
-- **PDF Generation from HTML:** Generate a PDF from complete HTML content.
-- **Custom Watermark:**  
+- **PDF Generation from URL:** Renders any accessible webpage and converts it into a PDF document.
+- **PDF Generation from HTML:** Creates a PDF directly from provided complete HTML content.
+- **Custom Watermark:**
   - Optionally add watermark text with dynamic font sizing based on text length.
   - The watermark text is styled with an adjustable line height, rotated -45° for a diagonal appearance, and rendered with semi-transparency.
-  - Includes logic to wrap long text to prevent overlapping.
-- **Custom Stamp:**  
+  - Incorporates logic to wrap lengthy watermark text, preventing unsightly overlaps.
+- **Custom Stamp:**
   - Optionally add a stamp image to the bottom-right corner.
-  - The stamp is injected to the top layer with a high z-index and padded from the edges.
-- **API Key Authentication:** Secures endpoints by requiring a valid API key provided in the request header.
-- **Swagger/OpenAPI Integration:** Automatically generated API documentation and testing interface.
+  - The stamp image is injected onto the top layer with a high z-index and appropriate padding from the page edges.
+- **API Key Authentication:** Secures all API endpoints by requiring a valid API key to be provided in the request header.
+- **Swagger/OpenAPI Integration:** Features automatically generated API documentation and an interactive testing interface via Swagger UI.
 
 ## Endpoints
 
@@ -34,7 +34,7 @@ This lightweight .NET minimal API leverages [Microsoft.Playwright](https://playw
 
 - **Endpoint:** `/api/pdf/from-url`
 - **Method:** `POST`
-- **Parameters:**
+- **Request Parameters:**
   - `url` (string, required): The URL of the webpage to render.
   - `watermarkText` (string, optional): Watermark text to overlay on the PDF.
   - `stampImageFile` (IFormFile, optional): An image file to use as a stamp.
@@ -43,68 +43,74 @@ This lightweight .NET minimal API leverages [Microsoft.Playwright](https://playw
 
 - **Endpoint:** `/api/pdf/from-html`
 - **Method:** `POST`
-- **Parameters:**
+- **Request Parameters:**
   - `htmlContent` (string, required): The complete HTML content to render.
   - `watermarkText` (string, optional): Watermark text to overlay on the PDF.
   - `stampImageFile` (IFormFile, optional): An image file to use as a stamp.
 
 ## How It Works
 
-1. **Rendering:**  
-   The API uses Playwright to launch a headless Chromium browser. Depending on the endpoint, it either navigates to a given URL or sets the page content using the provided HTML.
+1.  **Page Rendering:**
+    The API employs Playwright to launch a headless Chromium browser instance. Based on the called endpoint, it either navigates to a specified URL or renders content directly from the provided HTML string.
 
-2. **Watermark Injection:**  
-   If watermark text is supplied, the API injects a DOM element via a JavaScript snippet. This element:
-   - Is centered, rotated -45°, and rendered with a semi-transparent style.
-   - Adjusts font size dynamically based on the length of the watermark text.
-   - Uses line-height and text wrapping logic to ensure the text is fully visible without overlapping.
+2.  **Dynamic Watermark Injection:**
+    If watermark text is provided in the request, the API dynamically injects a new DOM element into the page using a JavaScript snippet. This element:
+    - Is centered, rotated -45°, and rendered with a semi-transparent style.
+    - Adjusts font size dynamically based on the length of the watermark text.
+    - Uses line-height and text wrapping logic to ensure the text is fully visible without overlapping.
 
-3. **Stamp Injection:**  
-   If a stamp image is provided, it is converted to a Base64 data URL and injected into the page as a fixed element. The stamp is positioned at the bottom-right corner with appropriate padding and a high z-index to prevent being overlapped by other page elements.
+3.  **Dynamic Stamp Injection:**
+    If a stamp image is uploaded, it is converted into a Base64 data URL and subsequently injected into the page as a fixed-position HTML element. The stamp is positioned at the bottom-right corner with appropriate padding and a high z-index to prevent being overlapped by other page elements.
 
-4. **PDF Generation:**  
-   Once the page is fully rendered with any injected elements, the API uses Playwright's PDF generation capabilities to create an A4 PDF with custom margins and background printing enabled.
+4.  **PDF Document Generation:**
+    After the page content is fully rendered, including any dynamically injected watermark or stamp elements, the API utilizes Playwright's robust PDF generation capabilities. It creates an A4-sized PDF document with custom margins and ensures that background graphics are printed correctly.
 
 ## Setup and Running
 
 ### Prerequisites
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- Docker (if using Docker Compose)
+- Docker (optional, for containerized deployment using Docker Compose)
 
 ### Local Setup
 
-1. **Clone the Repository:**
+1.  **Clone the Repository:**
 
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
-   ```
+    ```bash
+    git clone https://github.com/neozhu/PdfGeneratorApi.git 
+    # Replace with your fork URL if applicable
+    cd PdfGeneratorApi
+    ```
 
-2. **Configure API Key:**
+2.  **Configure API Key:**
 
-   Set your API key in `appsettings.json` (or via environment variables) under the key `ApiKey`.
+    Set your unique API key in the `appsettings.json` file (or through environment variables for production) under the `ApiKey` setting. For example:
+    ```json
+    {
+      "ApiKey": "YOUR_SECRET_API_KEY",
+      // other settings
+    }
+    ```
 
-3. **Install Playwright Browsers:**
+3.  **Install Playwright Browsers:**
 
-   The code automatically calls `Microsoft.Playwright.Program.Main(new string[] { "install" });` to install the required browsers.
+    Upon first run or if not already present, the application code automatically calls `Microsoft.Playwright.Program.Main(new string[] { "install" });` to download and install the necessary browser binaries for Playwright. You can also run this command manually in the project directory if needed.
 
-4. **Run the Application:**
+4.  **Run the Application:**
 
-   ```bash
-   dotnet run
-   ```
+    ```bash
+    dotnet run
+    ```
 
-5. **Access Swagger UI:**
+5.  **Access Swagger UI:**
 
-   In development mode, navigate to `http://localhost:<port>/swagger` to explore and test the API endpoints.
+    While running in development mode, navigate to `http://localhost:<port>/swagger` in your web browser to access the Swagger UI. This interface allows you to explore and test all available API endpoints. (The specific port will be shown in your console output when the application starts).
 
 ### Running with Docker Compose
 
-For a containerized setup, you can use the provided Dockerfile and docker-compose.yml files.
+For a streamlined, containerized setup, you can utilize the provided `Dockerfile` and `docker-compose.yml` configuration files.
 
-#### Dockerfile
-
+#### Example Dockerfile
 Create a file named `Dockerfile` with the following content:
 
 ```dockerfile
@@ -135,8 +141,7 @@ ENTRYPOINT ["dotnet", "YourProject.dll"]
 
 *Note:* Replace `YourProject.dll` with the actual name of your published DLL.
 
-#### docker-compose.yml
-
+#### Example docker-compose.yml
 Create a file named `docker-compose.yml` with the following content:
 
 ```yaml
@@ -153,8 +158,7 @@ services:
 
 *Note:* Replace `YOUR_API_KEY` with your actual API key. This configuration maps port 80 in the container to port 5000 on your host.
 
-#### Running with Docker Compose
-
+#### Running with Docker Compose:
 From the directory containing the `docker-compose.yml` file, run:
 
 ```bash
@@ -163,9 +167,9 @@ docker-compose up --build
 
 The API will be available at [http://localhost:5000](http://localhost:5000).
 
-## Client Test Command
+## Client Test Commands
 
-You can test the API endpoints using curl. Below are example commands:
+You can test the API endpoints using `curl` or a similar HTTP client. Below are example commands:
 
 ### Test PDF Generation from URL
 
@@ -189,28 +193,28 @@ curl -X POST "http://localhost:5000/api/pdf/from-html" \
 
 *Notes:*
 
-- Replace `YOUR_API_KEY` with your actual API key.
-- Adjust the URL, HTML content, watermark text, and stamp image path as needed.
-- The `--output` option saves the PDF file to your local machine.
+- Replace `YOUR_API_KEY` with your actual API key in the `X-API-KEY` header.
+- Modify the URL, HTML content, watermark text, and stamp image file path in the examples to match your specific test cases.
+- The `--output` option in `curl` saves the generated PDF file to your local machine.
 
 ## API Key Authentication
 
-All endpoints are secured using API key authentication. Ensure that your requests include the API key in the header `X-API-KEY`.
+All API endpoints are protected using API key authentication. Ensure that every request to the API includes your valid API key in the `X-API-KEY` header. Requests without a valid API key will be rejected.
 
 ## Additional Notes
 
-- **Watermark Text Wrapping:**  
-  A helper function is provided to insert line breaks into long watermark texts, ensuring proper display without overlapping. Adjustments such as line-height and white-space settings further enhance the text's appearance.
+- **Watermark Text Wrapping:**
+  The API includes a helper function to intelligently insert line breaks into lengthy watermark texts. This ensures proper display within the PDF and prevents text from overlapping. Additional CSS adjustments, such as line-height and white-space settings, further refine the appearance of the watermark.
 
-- **Customization:**  
-  The inline JavaScript and CSS used for injecting watermark and stamp elements can be modified as needed to better match specific design requirements.
+- **Customization:**
+  The inline JavaScript and CSS snippets responsible for injecting the watermark and stamp elements can be readily modified. This allows for customization to better align with specific visual design requirements or branding guidelines.
 
 ## Dependencies
 
 - .NET 9
-- Microsoft.Playwright
-- Microsoft.AspNetCore.Mvc
-- Microsoft.OpenApi
+- Microsoft.Playwright (for browser automation and PDF generation)
+- Microsoft.AspNetCore.Mvc (for API controllers and model binding)
+- Microsoft.OpenApi (for Swagger/OpenAPI documentation)
 
 ## License
 

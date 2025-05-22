@@ -5,27 +5,25 @@ tags:
   - TMS
 ---
 
-The Transport Management System (TMS) is a comprehensive solution designed to enhance logistics efficiency and transparency. With a user-friendly interface, it covers the entire transportation process — from carrier information management, transport planning, order dispatching, document handling, video monitoring to financial settlement.
+The Transport Management System (TMS) is a comprehensive solution designed to enhance logistics efficiency and transparency. With a user-friendly interface, it covers the entire transportation process—from carrier information management, transport planning, and order dispatching, to document handling, video monitoring, through to financial settlement.
 
-This TMS supports multi-modal and multi-leg transportation, making complex logistics easy to manage. It improves route optimization, simplifies dispatch, enhances shipment security, and automates finance workflows — all in one secure and efficient platform.
+This TMS supports multi-modal and multi-leg transportation, simplifying the management of complex logistics. It enhances route optimization, streamlines dispatch operations, improves shipment security, and automates financial workflows—all consolidated within a single, secure, and efficient platform.
 
 ## Key Features
 
-- 🚛 Carrier Management: Keep track of all carriers, including contact details, capacity, and rates. Automatically select the most cost-effective carrier for each shipment based on configured rules.
-- 🧭 Transport Planning: Create optimized transport plans with route and schedule recommendations. Supports multi-leg and multi-modal transportation: truck, rail, air, and sea.
-- 📋 Order Dispatching: Generate and dispatch transport orders directly in the system. Orders are auto-generated based on plans and sent electronically to carriers. Real-time tracking ensures accurate and timely delivery.
-- 📂 Document Management: Manage all transport-related documents in one place. Upload and organize Bills of Lading, invoices, proof of delivery, and securely share with authorized parties.
-- 🎥 Video Monitoring: Enhance cargo security with real-time video monitoring. Get alerts on suspicious activities and ensure full shipment visibility with integrated surveillance.
-- 💰 Financial Settlement: Automate cost and revenue tracking, generate invoices, and process payments to carriers. Integrates with accounting systems to simplify reconciliation and ensure financial accuracy.
-
+- 🚛 **Carrier Management:** Maintain a comprehensive database of all carriers, including contact details, service capacity, and rate structures. The system can automatically select the most cost-effective carrier for each shipment based on pre-configured business rules.
+- 🧭 **Transport Planning & Optimization:** Develop optimized transport plans with intelligent route and schedule recommendations. Supports complex multi-leg and multi-modal transportation scenarios, including truck, rail, air, and sea freight.
+- 📋 **Order Dispatching & Tracking:** Generate and dispatch transport orders directly within the system. Orders can be automatically generated based on established plans and transmitted electronically to carriers. Real-time tracking capabilities ensure accurate and timely delivery information.
+- 📂 **Centralized Document Management:** Manage all transportation-related documents (e.g., Bills of Lading, invoices, proofs of delivery) in a single, centralized location. Facilitates easy uploading, organization, and secure sharing with authorized parties.
+- 🎥 **Video Monitoring & Security:** Enhance cargo security through real-time video monitoring capabilities. Receive automated alerts for suspicious activities and ensure full shipment visibility with integrated surveillance solutions.
+- 💰 **Automated Financial Settlement:** Automate the tracking of transportation costs and revenues, generate accurate invoices, and streamline payment processing to carriers. Integrates with existing accounting systems to simplify reconciliation and ensure financial data integrity.
 
 ## Demo 
 
-- [https://tms.blazorserver.com/](https://tms.blazorserver.com/)
-- **Username**: `demo@email.com`
-- **Password**: `123456`
-
-
+- **Access URL:** [https://tms.blazorserver.com/](https://tms.blazorserver.com/)
+- **Test Account Credentials:**
+    *   Username: `demo@email.com`
+    *   Password: `123456`
 
 [![View Transport Management System](/uploads/photos/tms/01.png)](/uploads/photos/tms/01.png)
 

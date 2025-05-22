@@ -6,44 +6,37 @@ tags:
   - Blockchain
 ---
 
-The Digital Product Passport (DPP) is an EU-driven initiative designed to enable transparent and traceable product information throughout the lifecycle of a product. Our DPP solution helps manufacturers, suppliers, and consumers access key product data easily, enhancing circular economy efforts and regulatory compliance.
+The Digital Product Passport (DPP) is an EU-driven initiative designed to enable transparent and traceable product information throughout a product's lifecycle. Our DPP solution helps manufacturers, suppliers, and consumers easily access key product data, enhancing circular economy efforts and regulatory compliance.
 
-This project was quickly built based on the open-source project [CleanArchitectureWithBlazorServer](https://github.com/neozhu/CleanArchitectureWithBlazorServer), offering a robust and scalable foundation for enterprise-grade applications using .NET and Blazor.
+Rapidly developed leveraging the open-source [CleanArchitectureWithBlazorServer](https://github.com/neozhu/CleanArchitectureWithBlazorServer) project, this solution provides a robust and scalable foundation for building enterprise-grade applications with .NET and Blazor.
 
 ## Key Features
 
-- ✅ **Product Traceability**: Store and track product information, including material composition, certifications, and lifecycle events.
-- 🔐 **Blockchain Integration**: Secure, immutable record of passport data using IOTA Tangle.
-- 🌐 **Multi-language Support**: Currently supports English and Chinese.
-- ⚡ **Blazor Server**: Modern UI with real-time performance.
-- 🧩 **Modular Architecture**: Built on Clean Architecture principles for flexibility and scalability.
-- 💡 **QR Code Generator**: Generate passport QR codes for product labeling and quick access.
-
+- ✅ **Product Traceability:** Enables storing and tracking comprehensive product information, including material composition, certifications, and significant lifecycle events.
+- 🔐 **Blockchain Integration:** Utilizes the IOTA Tangle to ensure a secure and immutable record of all product passport data.
+- 🌐 **Multi-Language Support:** Offers user interface support for both English and Chinese.
+- ⚡ **Blazor Server Technology:** Powers a modern user interface with real-time responsiveness and performance.
+- 🧩 **Modular Architecture:** Adheres to Clean Architecture principles, ensuring inherent flexibility and scalability.
+- 💡 **QR Code Generation:** Includes functionality to generate unique QR codes for product labeling, facilitating quick access to the digital passport.
 
 ## Project Background
 
-The DPP initiative is part of the European Green Deal, aiming to make sustainable products the norm in the EU. Our implementation provides a ready-to-use foundation for businesses to align with these regulations and digitize their product information.
-
-
+The DPP initiative is part of the European Green Deal, aiming to make sustainable products the norm within the EU. Our implementation offers a ready-to-use foundation for businesses to align with these upcoming regulations and to digitize their product information effectively.
 
 ## Technologies Used
 
-- `.NET 9`
-- `Blazor Server`
-- `IOTA Blockchain`
-- `MudBlazor UI`
-- `SQLite / PostgreSQL`
-- `Docker`
-- `Traefik`
-- `CleanArchitectureWithBlazorServer` (open-source starter)
-
-
+- **.NET Stack:** .NET 9
+- **UI Framework:** Blazor Server
+- **Distributed Ledger:** IOTA Tangle (Blockchain)
+- **Component Library:** MudBlazor UI
+- **Databases:** SQLite / PostgreSQL
+- **Containerization:** Docker
+- **Reverse Proxy:** Traefik
+- **Base Template:** CleanArchitectureWithBlazorServer (open-source starter)
 
 ## Demo 
 
-- **Live Demo**: [materialpassport.blazorserver.com](https://materialpassport.blazorserver.com/)
-
-
+- **Live Demo:** [materialpassport.blazorserver.com](https://materialpassport.blazorserver.com/)
 
 [![View Digital Product Passport Demo](/uploads/photos/dpp/01.png)](/uploads/photos/dpp/01.png)
 

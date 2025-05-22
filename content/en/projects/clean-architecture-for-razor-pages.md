@@ -10,39 +10,39 @@ tags:
 {{< button "View on GitHub" "https://github.com/neozhu/RazorPageCleanArchitecture" >}}
 {{< /brick_title >}}
 
-This is a solution template for creating a Razor Page App with ASP.NET Core following the principles of Clean Architecture. Create a new project based on this template by clicking the above Use this template button or by installing and running the associated NuGet package (see Getting Started for full details).
-
-
+This solution template facilitates the creation of ASP.NET Core Razor Pages applications that adhere to Clean Architecture principles. You can initiate a new project using this template by selecting the "Use this template" button on GitHub or by installing and utilizing the associated NuGet package (refer to the "Getting Started" section below for comprehensive instructions).
 
 ## Technologies
 
-* [ASP.NET Core 9](https://devblogs.microsoft.com/aspnet/announcing-asp-net-core-in-net-9/)
-* [Entity Framework Core 9](https://docs.microsoft.com/en-us/ef/core/)
-* [SmartAdmin - Responsive WebApp](https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0/)
-* [Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-5.0&tabs=visual-studio)
-* [Jquery EasyUI](https://www.jeasyui.com/)
-* [MediatR](https://github.com/jbogard/MediatR)
-* [AutoMapper](https://automapper.org/)
-* [FluentValidation](https://fluentvalidation.net/)
-* [NUnit](https://nunit.org/), [FluentAssertions](https://fluentassertions.com/), [Moq](https://github.com/moq) & [Respawn](https://github.com/jbogard/Respawn)
-* [Docker](https://www.docker.com/)
-
+*   **Core Framework**: [ASP.NET Core 9](https://devblogs.microsoft.com/aspnet/announcing-asp-net-core-in-net-9/) and [Entity Framework Core 9](https://docs.microsoft.com/en-us/ef/core/).
+*   **UI**: [Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-5.0&tabs=visual-studio).
+*   **Frontend Styling**: Integration with [SmartAdmin - Responsive WebApp](https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0/) (Commercial Theme) and [jQuery EasyUI](https://www.jeasyui.com/) for UI components.
+*   **Application Design**:
+    *   [MediatR](https://github.com/jbogard/MediatR) for implementing the mediator pattern.
+    *   [AutoMapper](https://automapper.org/) for object-to-object mapping.
+    *   [FluentValidation](https://fluentvalidation.net/) for strongly-typed validation rules.
+*   **Testing**: [NUnit](https://nunit.org/), [FluentAssertions](https://fluentassertions.com/), [Moq](https://github.com/moq), and [Respawn](https://github.com/jbogard/Respawn) for comprehensive testing.
+*   **Deployment**: [Docker](https://www.docker.com/) for containerization support.
 
 ## Getting Started
 
-The easiest way to get started is to install the [NuGet package](https://www.nuget.org/packages/Clean.Architecture.Solution.Template) and run `dotnet new ca-sln`:
+The most straightforward way to begin is by installing the [Clean.Architecture.Solution.Template NuGet package](https://www.nuget.org/packages/Clean.Architecture.Solution.Template) and using the `dotnet new` command:
 
-1. Install the latest [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-2. Run `dotnet new --install Clean.Architecture.Solution.Template` to install the project template
-3. Create a folder for your solution and cd into it (the template will use it as project name)
-4. Run `dotnet new ca-sln` to create a new project
-5. Navigate to `src/WebUI/ClientApp` and run `npm install`
-6. Navigate to `src/WebUI/ClientApp` and run `npm start` to launch the front end (Angular)
-7. Navigate to `src/WebUI` and run `dotnet run` to launch the back end (ASP.NET Core Web API)
-
-
+1.  Ensure you have the latest [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) installed.
+2.  Install the project template by running the command: `dotnet new --install Clean.Architecture.Solution.Template`.
+3.  Create a new directory for your solution and navigate into it using the command line. The template will use this directory's name for your project.
+    ```bash
+    mkdir YourSolutionName
+    cd YourSolutionName
+    ```
+4.  Create the new project by running: `dotnet new ca-sln`.
+5.  Navigate to the main web project directory, typically `src/WebUI`.
+    ```bash
+    cd src/WebUI 
+    ```
+6.  Build the project to restore dependencies and compile the code: `dotnet build`.
+7.  Run the application: `dotnet run`.
+    Your Razor Pages application should now be running. Access it via the URL displayed in the console (usually `https://localhost:XXXX` or `http://localhost:XXXX`).
 
 ## License
-This project is licensed under the MIT License, which is a permissive open-source license.
-You are free to use, modify, and distribute the code for both personal and commercial purposes,
-as long as the original license and copyright notice are included.
+This project is licensed under the MIT License, a permissive open-source license. You are free to use, modify, and distribute the code for personal or commercial purposes, provided the original license and copyright notice are included.

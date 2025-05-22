@@ -3,10 +3,10 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Build business app with Blazor Studio  
+# Build Business Applications with Blazor Studio  
 
-Blazor Studio focuses on developing high-quality business web applications using Blazor — from open-source projects to enterprise solutions. Every app is built with clean architecture, responsive performance and a beautiful, modern UI.
-Got a project in mind? Let’s chat!
+Blazor Studio specializes in developing high-quality business web applications using Blazor, catering to a wide range of needs from open-source projects to enterprise-grade solutions. Every application is meticulously crafted with a clean architecture, ensuring responsive performance and a sleek, modern user interface.
+Have a project in mind? Let's discuss it!
 
 {{< button "Contact me" "/contact/" >}}
 
@@ -15,38 +15,38 @@ Got a project in mind? Let’s chat!
 {{< /brick_intro >}}
 {{< brick_image2 >}}
 
-## What’s included in Blazor Server Template?
+## What’s Included in the Blazor Server Template?
 
 ![](/uploads/illustrations/cuate/blazorserver.png)
 
-Clean Architecture Blazor Server is a highly modular Blazor Server application template built with Clean Architecture, designed to help you create maintainable and scalable enterprise-level applications. It includes:
+The Clean Architecture Blazor Server template is a highly modular Blazor Server application framework. Built with Clean Architecture principles, it's designed to help you create maintainable and scalable enterprise-level applications. Key features include:
 
-- 🚀 Built-in code generator to boost development productivity  
-- 🐳 CI / Docker / NuGet support for seamless automation workflows  
-- 🎨 Clean and modern UI for a better user experience  
-- 🧱 Powered by .NET 9 for better performance and smoother development  
-- 💡 Full support for Blazor Server + C#, no need to switch to JavaScript  
-- ⚙️ Real-time, high-interactivity business web applications made easy
+- 🚀 A built-in code generator to significantly boost development productivity.
+- 🐳 Comprehensive CI/CD, Docker, and NuGet support for seamless automation workflows.
+- 🎨 A clean and modern user interface designed for an enhanced user experience.
+- 🧱 Powered by .NET 9, delivering superior performance and a smoother development process.
+- 💡 Full support for Blazor Server combined with C#, eliminating the need to switch to JavaScript.
+- ⚙️ Simplified development of real-time, highly interactive business web applications.
 
 {{< button "View on GitHub" "https://github.com/neozhu/CleanArchitectureWithBlazorServer" >}}
 
 {{< /brick_image2 >}}
 {{< brick_image >}}
 
-## What’s inside CleanAspire?
+## What’s Inside CleanAspire?
 
 ![](/uploads/illustrations/cuate/blazorclient.jpg)
 
-**CleanAspire** is a modern, open-source Blazor WebAssembly + Minimal API PWA template powered by .NET 9 and Aspire. It’s designed for building fast, lightweight, and cleanly architected web apps with built-in support for offline mode and real-time notifications.
+**CleanAspire** is a contemporary, open-source template for Progressive Web Applications (PWA) utilizing Blazor WebAssembly and Minimal API, powered by .NET 9 and Aspire. It’s engineered for building fast, lightweight, and cleanly architected web applications, featuring built-in support for offline functionality and real-time notifications.
 
 Key features include:
 
-- ⚡ Blazor WebAssembly + Minimal API (with Aspire & Scalar)  
-- 🧱 Clean Architecture & ultra-simple codebase  
-- 🌐 PWA with full offline support using IndexedDB  
-- 🔄 Auto-generated API clients via Microsoft.Kiota  
-- 🚀 Docker-ready & CI/CD (GitHub Actions) built-in  
-- 🔔 Webpushr notifications integration  
+- ⚡ Blazor WebAssembly combined with Minimal API (featuring Aspire & Scalar integration).
+- 🧱 Adherence to Clean Architecture principles with an ultra-simple and maintainable codebase.
+- 🌐 Progressive Web Application (PWA) capabilities with full offline support leveraging IndexedDB.
+- 🔄 Automated API client generation via Microsoft.Kiota.
+- 🚀 Docker-ready configuration and built-in CI/CD pipelines using GitHub Actions.
+- 🔔 Integrated Webpushr for seamless push notification capabilities.
 
 {{< button "View on GitHub" "https://github.com/neozhu/cleanaspire" >}}
 
@@ -55,10 +55,9 @@ Key features include:
 {{< brick_showcases >}}
 
 
-# Showcases
+# Project Showcases
 
-A selection of projects I've delivered across Blazor, ASP.NET MVC, blockchain, and IoT.
-Each one built with clean architecture, responsive performance, and a beautiful, modern UI.
+This section highlights a selection of projects I've successfully delivered, utilizing technologies such as Blazor, ASP.NET MVC, blockchain, and IoT. Each project adheres to clean architecture principles, boasts responsive performance, and features an aesthetically pleasing, modern user interface.
 
 {{< /brick_showcases >}}
 

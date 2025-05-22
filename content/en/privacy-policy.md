@@ -5,32 +5,32 @@ title: Privacy policy
 
 # Privacy Policy
 
-We respect your privacy and are committed to protecting any personal information you provide. This policy explains what we collect and how we use it.
+We highly value your privacy and are dedicated to safeguarding any personal information you entrust to us. This policy outlines the types of information we collect and the manner in which it is utilized.
 
 {{< /brick_title >}}
 {{< brick_wide >}}
 
 ## Data Collection
 
-We may collect basic information such as your name, email, and technical data (e.g., browser type, IP address) to improve your experience and provide our services.
+To enhance your experience and deliver our services effectively, we may collect basic information such as your name, email address, and technical data (e.g., browser type, IP address).
 
 ### Cookies
 
-We use cookies to remember your preferences and enhance functionality. You can disable cookies in your browser settings.
+Our website utilizes cookies to remember your preferences and improve site functionality. You have the option to disable cookies through your browser settings.
 
 ## Use of Information
 
-Your data is used only for:
+Your data is used exclusively for the following purposes:
 
-- Providing and improving our services  
-- Responding to your requests  
-- Security and legal compliance
+- To provide and continually improve our services.
+- To respond effectively to your inquiries and requests.
+- To ensure the security of our platform and comply with legal obligations.
 
-We do **not** sell or rent your personal data.
+We do **not** sell or rent your personal data to third parties.
 
-## Contact
+## Contact Us
 
-If you have any questions about this policy, contact us at:  
+Should you have any questions regarding this Privacy Policy, please contact us at:  
 **Email**: neo.js.cn@gmail.com
 
 {{< /brick_wide >}}

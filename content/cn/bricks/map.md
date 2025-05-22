@@ -6,7 +6,7 @@ title: map
 
 [Google Maps](https://www.google.com/maps)
 
-## Contact us
+## 联系我们
 
 中国江苏省  
 苏州市  

@@ -10,33 +10,28 @@ tags:
 {{< button "View on GitHub" "https://github.com/neozhu/schoolbus" >}}
 {{< /brick_title >}}
 
-Providing better safety and security to the students while they are commuting from school to home or vice-versa is the topmost priority of every school management.
+Ensuring the safety and security of students during their commute to and from school is a paramount priority for all school administrations.
 
-With School Bus Transport Management System the whole transportation tracking process becomes easy. Along with school authorities, parents can also keep track on the movement of buses, its locations, and routing. Using the transport management system to track the vehicles offers guardians a complete peace of mind as they can have a complete overview of their child movements.
+The School Bus Transport Management System simplifies the entire transportation tracking process. It allows school authorities and parents alike to monitor bus movements, locations, and routes in real-time. This comprehensive vehicle tracking capability provides guardians with complete peace of mind, offering a clear overview of their child's commute.
 
-
-## Functionality
-- Route Management
-- Real-time Tracking
-- Student Management
-- Driver Management
-- Parent Communication
-- Vehicle Maintenance
+## Key Functionality
+- **Route Management:** Efficient planning and optimization of bus routes.
+- **Real-Time Tracking:** Live monitoring of bus locations and progress.
+- **Student Information Management:** Secure handling of student details and transport schedules.
+- **Driver Information Management:** Comprehensive records for driver assignments and qualifications.
+- **Parent Communication Tools:** Streamlined channels for updates and notifications to parents.
+- **Vehicle Maintenance Scheduling & Records:** Tracking vehicle upkeep and service history.
 
 ## Development Environment
 
-- Microsoft Visual Studio Community 2022 (64-bit)
-- Docker
-- .NET 7.0
-- Unit Test
+- **IDE:** Microsoft Visual Studio Community 2022 (64-bit)
+- **Containerization:** Docker
+- **Framework:** .NET 7.0
+- **Testing:** Unit Testing Support
 
 ## Demos
 
-- [Live Demo - schoolbus.blazorserver.com](https://schoolbus.blazorserver.com/)
-
-
+- **Live Demo:** [schoolbus.blazorserver.com](https://schoolbus.blazorserver.com/)
 
 ## License
-This project is licensed under the MIT License, which is a permissive open-source license.
-You are free to use, modify, and distribute the code for both personal and commercial purposes,
-as long as the original license and copyright notice are included.
+This project is licensed under the MIT License, a permissive open-source license. You are free to use, modify, and distribute the code for personal or commercial purposes, provided the original license and copyright notice are included.
