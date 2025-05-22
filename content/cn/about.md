@@ -5,9 +5,9 @@ title: 关于我
 
 ![](/uploads/photos/avatars/me.png)
 
-# 嗨，你可以叫我华林
+# 嗨，我是华林
 
-我是一名 .NET 开发人员、Salesforce 开发人员、BizTalk 解决方案工程师和 RPA 工程师，拥有 30 年的软件开发经验。专注于 .NET 技术，同时对 Python 和人工智能充满兴趣。我积极参与 GitHub 开源社区，热衷于构建企业级业务解决方案应用。
+我拥有30年软件开发经验，是 .NET 开发专家，同时涉足 Salesforce 开发、BizTalk 解决方案及 RPA 工程领域。我专注于 .NET 技术栈，并对 Python 和人工智能抱有浓厚兴趣。作为 GitHub 开源社区的积极贡献者，我热衷于构建高质量的企业级业务解决方案。
 
 
 {{< socialbuttons >}}

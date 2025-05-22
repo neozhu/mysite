@@ -13,35 +13,35 @@ tags:
 ## LinguaLens Translation Assistant
 
 
-**LinguaLens** is an intelligent translation assistant that supports bidirectional translation between Chinese and other languages. It adapts to different contexts and scenarios such as email, online meetings, technical support, and more. The tool intelligently selects the tone, formality, and style of the translation based on the chosen scene, ensuring accurate and contextually appropriate translations.
+**LinguaLens** is an intelligent translation assistant that supports bidirectional translation between Chinese and a variety of other languages. It adeptly adapts to diverse contexts and scenarios, including email correspondence, online meetings, and technical support interactions. The tool intelligently adjusts the translation's tone, formality, and style based on the selected scenario, ensuring both accuracy and contextual appropriateness.
 
 ## **Features**
 
-* **Bidirectional Translation**: Automatically translates Chinese to English and any non-Chinese language (e.g., English, French, German) to Chinese.
-* **Scene-based Context**: Tailors translations based on the context of specific work-related scenarios like online meetings, emails, Teams chats, and technical support.
-* **Multilingual Support**: Currently supports translations between Chinese and several other languages, including English, French, German, etc.
-* **Customizable User Interface**: Easily switch between different scenes for translations, ensuring the tone and style fit the specific use case.
-* **User-Friendly Design**: Built with **Next.js** and **ShadCN UI**, making the interface simple and intuitive.
+* **Bidirectional Translation:** Automatically translates from Chinese to English, and from any non-Chinese language (such as English, French, or German) into Chinese.
+* **Scene-Based Contextualization:** Tailors translations to the specific nuances of various professional scenarios, including online meetings, email communications, Microsoft Teams chats, and technical support dialogues.
+* **Multilingual Capabilities:** Currently supports translation between Chinese and several other major languages, including English, French, and German, with ongoing expansion.
+* **Adaptive User Interface:** Allows users to easily switch between predefined scenes, ensuring the translation's tone and style precisely match the specific use case.
+* **Intuitive Design:** Developed using **Next.js** and **Shadcn/UI** for a clean, simple, and intuitive user experience.
 
 ## **Tech Stack**
 
-* **Frontend**: Next.js 15 (App Router)
-* **UI Components**: Shadcn/UI
-* **State Management**: Zustand (for lightweight state management and history tracking)
-* **AI Translation Service**: Powered by **Google Gemini** or any other AI model, providing accurate translations based on the context and input language.
-* **Backend**: API integration with AI services for streaming responses up to 30 seconds.
-* **CSS**: Tailwind CSS for styling
-* **Language Detection**: Automatically detects the language of input text and translates it to the appropriate target language.
+* **Frontend Framework**: Next.js 15 (using App Router).
+* **UI Components**: Leverages Shadcn/UI for a modern and accessible user interface.
+* **State Management**: Zustand for lightweight and efficient global state management and history tracking.
+* **AI Translation Service:** Powered by leading AI models such as **Google Gemini**, providing accurate translations tailored to context and input language, and supporting streaming responses up to 30 seconds.
+* **Backend Services:** Integrates with the AI translation service APIs.
+* **Styling:** Utilizes Tailwind CSS for a modern and responsive design.
+* **Language Detection**: Automatically detects the input text's language and translates it to the appropriate target language.
 
 ## **How It Works**
 
-1. **Language Detection**: The AI detects the language of the input text. If the input is in **Chinese**, it translates it into **English**. If the input is in any other language (e.g., **English**, **French**, **German**), it translates it into **Chinese**.
-2. **Scene Selection**: Users can select the translation scene (e.g., **Email**, **Online Meeting**, **Technical Support**). The AI adjusts the tone and formality of the translation based on the selected scene.
-3. **Real-Time Translation**: The translation process takes place in real-time, providing instant feedback for quick and accurate translations.
+1.  **Language Detection**: The AI automatically detects the language of the input text. If the input is in **Chinese**, it is translated into **English**. If the input is in any other supported language (e.g., **English**, **French**, **German**), it is translated into **Chinese**.
+2.  **Scene Selection**: Users can select a specific translation scene (e.g., **Email**, **Online Meeting**, **Technical Support**). The AI then adjusts the translation's tone and formality to match the chosen scenario.
+3.  **Real-Time Translation**: The translation process occurs in real-time, providing instant feedback and enabling quick, accurate translations.
 
 ## **Scenes**
 
-The translation process adapts based on the following scenes:
+The translation style adapts based on pre-defined scenes, including:
 
 ```
 // lib/scenes.ts
@@ -56,7 +56,7 @@ export interface Scene {
   prompt: string;
 }
 
-export const SCENES: Scene[]  = [
+export const SCENES: Scene[] = [
   {
     name: "日常沟通",
     name_en: "Daily Communication",
@@ -113,16 +113,16 @@ export const SCENES: Scene[]  = [
 
 To run **LinguaLens** locally, follow these steps:
 
-### **1. Clone the repository**
+1.  **Clone the repository**
 
 ```bash
 git clone https://github.com/neozhu/lingualens.git
 cd lingualens
 ```
 
-### **2. Install dependencies**
+2.  **Install dependencies**
 
-Use `pnpm` or `npm` to install the project dependencies.
+    Install the project dependencies using pnpm or npm:
 
 ```bash
 pnpm install
@@ -130,18 +130,18 @@ pnpm install
 npm install
 ```
 
-### **3. Set up environment variables**
+3.  **Set up environment variables**
 
-Create a `.env.local` file in the root directory and add your environment-specific variables, such as API keys for the AI translation service.
+    Create a `.env.local` file in the project's root directory. Add your environment-specific variables, particularly the API key for the AI translation service:
 
 ```bash
 NEXT_PUBLIC_GOOGLE_GENAI_API_KEY=your_google_api_key
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 
-### **4. Run the project**
+4.  **Run the project**
 
-After setting up the environment variables, you can start the development server:
+    After setting up the environment variables, you can start the development server:
 
 ```bash
 pnpm dev
@@ -149,21 +149,23 @@ pnpm dev
 npm run dev
 ```
 
-Visit `http://localhost:3000` in your browser to access the app.
+    Open your browser and navigate to `http://localhost:3000` to access the application.
 
 ## **Usage**
 
-1. **Select a Scene**: Choose the context for the translation (e.g., **Online Meeting**, **Email**).
-2. **Input Text**: Type or paste the text you want to translate in either **Chinese** or another language.
-3. **Receive Translation**: The AI will process the translation and output the result in the target language (English for Chinese input, or Chinese for other language inputs).
+1.  **Select a Scene**: Choose the context for the translation (e.g., **Online Meeting**, **Email**) from the dropdown menu.
+2.  **Input Text**: Type or paste the text you wish to translate into the input area. This can be in **Chinese** or another supported language.
+3.  **Receive Translation**: The AI will process the input and display the translated text in the target language (English for Chinese input, or Chinese for other languages).
 
 ## **Contributing**
 
-We welcome contributions to **LinguaLens**! If you’d like to improve the project, please follow these steps:
+Contributions to **LinguaLens** are welcome! If you would like to help improve the project, please follow these steps:
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Submit a pull request with a clear explanation of the changes.
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix (`git checkout -b feature/YourAmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/YourAmazingFeature`).
+5.  Open a Pull Request with a clear explanation of your changes.
 
 ## **License**
 
@@ -171,6 +173,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## **Acknowledgments**
 
-* Thanks to the **AI SDK** for providing the AI services used in the project.
-* Inspired by **Shadcn/UI** for building responsive and customizable UI components.
-* Special thanks to the **Google Gemini** team for their AI-powered translation capabilities.
+* Powered by the **AI SDK** for core AI service integration.
+* User interface components inspired by the excellent **Shadcn/UI** library.
+* Special acknowledgment to the **Google Gemini** team for their powerful AI translation capabilities.

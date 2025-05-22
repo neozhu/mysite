@@ -2,58 +2,56 @@
 title: prices
 ---
 
-## Our friendly pricing
+## Flexible Pricing Plans
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+We offer a range of pricing plans designed to meet diverse needs and budgets. Explore our options below to find the perfect fit for your project.
 
 ---
 
-**budget**
-### Open-source
+**Budget Friendly**
+### Open-Source
 
-Full-featured theme/page builder to create super fast & amazing website
+A full-featured theme and page builder designed to create blazing-fast and impressive websites. Ideal for developers and hobbyists.
 
-### _$_**0**/month
+### **$0**/month
 
-- Hugobricks theme/code
-- All available bricks
-- Regular updates
-- Bug fixes & security patches
+- Hugobricks Theme & Source Code
+- All Available Bricks
+- Regular Updates
+- Bug Fixes & Security Patches
 
 [Get started](/get-started/)
 
 ---
 
-**most popular**
+**Most Popular**
+### Hosted Solution
 
-### Hosted
+An all-in-one toolkit: We host your website on our state-of-the-art infrastructure, ensuring reliability and performance. Perfect for businesses and professionals.
 
-Everything in one toolkit – We host your website on our top-notch infrastructure.
+### **$25**/month
 
-### _$_**25**/month
-
-- Hugobricks theme/code
-- All available bricks
-- Regular updates
-- Bug fixes & security patches
-- Form handling + notifications
-- CMS system for editors
+- Hugobricks Theme & Source Code
+- All Available Bricks
+- Regular Updates
+- Bug Fixes & Security Patches
+- Form Handling + Notifications
+- CMS Access for Editors
 
 [Yes, pick me!](/get-started/)
 
 ---
 
-**everything**
+**All-Inclusive**
+### Enterprise Package
 
-### Enterprise
+Experience exceptional value and significant cost savings with our comprehensive product suite tailored for enterprise-level requirements.
 
-Get exceptional value and cost savings with our complete products suite.
+### **$75**/month
 
-### _$_**75**/month
-
-- All other features plus:
-- High priority support 
-- Theme adjustments
-- Custom bricks (on request)
+- All features from Hosted Solution, plus:
+- High-Priority Support
+- Custom Theme Adjustments
+- Custom Bricks (On Request)
 
 [Contact us](/get-started/)

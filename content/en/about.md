@@ -5,9 +5,9 @@ title: About
 
 ![](/uploads/photos/avatars/me.png)
 
-# Hey, my name is Hualin
+# Hello, I'm Hualin
 
-I’m a .NET Developer, Salesforce Developer, BizTalk Solution Engineer, and RPA Engineer with 30 years of development experience. I specialize in .NET and have a strong interest in Python and AI. I’m actively involved in the GitHub open-source community and enjoy building enterprise business solution applications.
+With three decades of software development experience, I am a seasoned .NET Developer, Salesforce Developer, BizTalk Solution Engineer, and RPA Engineer. My primary area of expertise is .NET development, complemented by a keen interest in Python and Artificial Intelligence. I am an active contributor to the GitHub open-source community and am passionate about architecting and building robust enterprise-level business solutions.
 
 {{< socialbuttons >}}
 

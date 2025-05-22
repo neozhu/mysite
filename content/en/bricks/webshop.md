@@ -4,4 +4,4 @@ title: Webshop
 
 # Webshop
 
-This is a demo of the webshop. In ultricies vel enim vel pulvinar. Quisque finibus sem velit, sed consequat mi ullamcorper vitae. Proin finibus tristique sollicitudin.
+Welcome to our webshop. Browse our selection of products, add items to your cart, and proceed to a secure checkout. We aim to provide a seamless and enjoyable shopping experience.

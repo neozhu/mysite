@@ -2,9 +2,9 @@
 title: intro
 ---
 
-# The Ultimate Theme You Need To Start Your Hugo Website
+# The Ultimate Theme to Launch Your Hugo Website
 
-Hugobricks is a free website theme built with Hugo and vanilla CSS, providing everything you need to jumpstart your Hugo website and save valuable time.
+Hugobricks is a complimentary website theme, expertly crafted with Hugo and vanilla CSS. It provides all the essential elements to rapidly launch your Hugo website, saving you valuable development time.
 
 {{< button "Get started for free" "/get-started/" >}}
 

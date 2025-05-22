@@ -10,41 +10,36 @@ tags:
 {{< button "View on GitHub" "https://github.com/neozhu/cleanaspire" >}}
 {{< /brick_title >}}
 
-CleanAspire is a cutting-edge, open-source template built on .NET 9, designed to accelerate the development of lightweight, fast, and simple Blazor WebAssembly or Progressive Web Applications (PWA). It seamlessly integrates Minimal APIs, Aspire, and Scalar for modern API documentation.
+CleanAspire is a cutting-edge, open-source template built on .NET 9, designed to accelerate the development of lightweight, high-performance, and streamlined Blazor WebAssembly applications or Progressive Web Applications (PWA). It seamlessly integrates Minimal APIs, .NET Aspire for observability, and Scalar for modern API documentation.
 
-With a focus on Clean Architecture and extreme code simplicity, CleanAspire provides developers with the tools to create responsive and maintainable web applications with minimal effort. The template also supports Microsoft.Kiota to simplify API client generation, ensuring consistency and productivity in every project.
-
-
+Focusing on Clean Architecture principles and utmost code simplicity, CleanAspire equips developers to create responsive and maintainable web applications with minimal effort. The template also leverages Microsoft.Kiota to simplify API client generation, ensuring consistency and boosting productivity across projects.
 
 {{< youtube "STEoTyFvKag" "/uploads/youtube02.png" >}}
 
-## Auto-generate Code Using Chat GPTs
+## AI-Powered Code Generation with Chat GPTs
 
-Clean Code Generator automates the creation of clean, maintainable code based on the CleanAspire repository. It supports generating backend Application features and Blazor front-end components for rapid development.
+Leverage the Clean Code Generator, which automates the creation of clean, maintainable code based on the CleanAspire repository. It supports the generation of backend Application Layer features and Blazor front-end components, significantly accelerating development.
 
 ![Chat GPT](/uploads/illustrations/cuate/gpts.png)
 
-
 ## Key Features
 
-- Built-in Aspire Support  
-- Fast and Minimal .NET 9 Minimal APIs
-- Designed for Simplicity and Speed
-- Blazor WebAssembly and PWA Integration
-- Streamlined API Client Integration
-- Clean Architecture
-- Cloud-Ready with Docker 
-- Real-Time Web Push Notifications
-- Integrated CI/CD Pipelines 
-- Offline Mode Support
- 
-
+- **Built-in .NET Aspire Support:** For enhanced observability and cloud-native orchestration.
+- **.NET 9 Minimal APIs:** Fast, concise, and efficient backend development.
+- **Optimized for Simplicity and Speed:** Core design philosophy emphasizing ease of use and high performance.
+- **Blazor WebAssembly & PWA:** Seamless integration for modern frontend experiences and offline capabilities.
+- **Streamlined API Client Generation:** Utilizes Microsoft Kiota for easy integration.
+- **Clean Architecture Principles:** Ensures a maintainable, scalable, and testable codebase.
+- **Cloud-Ready Deployment:** Includes Docker support for containerization and easy cloud deployment.
+- **Real-Time Notifications:** Integrated Web Push for instant user engagement.
+- **CI/CD Pipelines:** Pre-configured Continuous Integration/Continuous Deployment workflows.
+- **Offline Mode Functionality:** Robust PWA capabilities for offline application access.
 
 ## Demos
 
-- [Live Demo - cleanaspire.blazorserver.com](https://cleanaspire.blazorserver.com/)
+- **Live Demo:** [cleanaspire.blazorserver.com](https://cleanaspire.blazorserver.com/)
 
-## Docker Compose Demployment
+## Docker Compose Deployment
 ```yml
 version: '3.8'
 services:
@@ -92,7 +87,7 @@ services:
       - "8031:443"
 ```
 
+Tip: Please replace the environment variable placeholders in the YAML configuration above (e.g., `${APISERVICE_Authentication__Google__ClientId}`) according to your actual deployment environment.
+
 ## License
-This project is licensed under the MIT License, which is a permissive open-source license.
-You are free to use, modify, and distribute the code for both personal and commercial purposes,
-as long as the original license and copyright notice are included.
+This project is licensed under the MIT License, a permissive open-source license. You are free to use, modify, and distribute the code for personal or commercial purposes, provided the original license and copyright notice are included.

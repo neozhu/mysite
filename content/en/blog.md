@@ -5,9 +5,9 @@ title: Blog
 
 {{< breadcrumbs >}}
 
-# Blog posts
+# Blog Posts
 
-This is a demo of the blog. In ultricies vel enim vel pulvinar. Quisque finibus sem velit, sed consequat mi ullamcorper vitae. Proin finibus tristique sollicitudin.
+Welcome to my blog. Here, I share insights, tutorials, and thoughts on software development, technology trends, and project experiences. I hope you find the content informative and engaging.
 
 {{< /brick_posts >}}
 {{< brick_cta >}}{{< /brick_cta >}}

@@ -5,9 +5,9 @@ title: Get started
 
 {{< breadcrumbs >}}
 
-# Get started
+# 开始使用
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et scelerisque volutpat, elit felis condimentum odio, et bibendum lacus sem sed turpis. 
+欢迎迈出第一步！我们非常乐意协助您启动项目或解答您的任何疑问。请填写下方的联系表单，我们会尽快与您取得联系。
 
 ---
 

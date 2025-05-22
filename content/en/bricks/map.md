@@ -6,7 +6,7 @@ title: map
 
 [Google Maps](https://www.google.com/maps)
 
-## Contact me
+## Contact Us
 
 Jiangsu Province  
 Suzhou City  

@@ -10,31 +10,24 @@ tags:
 {{< button "View on GitHub" "https://github.com/neozhu/BlazorPocketApp" >}}
 {{< /brick_title >}}
 
-BlazorPocket is a streamlined web application template built with the latest .NET 9.0 Blazor WebAssembly and PocketBase for backend data storage. Designed to simplify the development process and reduce repetitive coding, BlazorPocket provides a quick and efficient starting point for building modern web applications. With its WebAssembly mode, the application can be deployed on any server, offering flexible hosting options, whether on free hosting services or cloud platforms. This makes it easy to set up and run your web applications anywhere.
-
-
+BlazorPocket is a streamlined web application template utilizing .NET 9 Blazor WebAssembly and PocketBase for backend services. It's designed to simplify development and reduce repetitive coding, offering an efficient starting point for modern web applications. Its WebAssembly mode allows deployment on any server, providing flexible hosting options from free services to cloud platforms, enabling easy setup and operation anywhere.
 
 {{< youtube "Pm2s6_oAgaw" "/uploads/youtube03.png" >}}
 
-
-
-
 ## Key Features
 
-- Blazor WebAssembly: Utilizes .NET 9.0 Blazor WebAssembly for client-side web development, allowing for a rich, interactive user experience.
-- PocketBase Integration: Seamlessly integrates with PocketBase for backend data storage, providing a robust and scalable data solution.
-- Streamlined Development: Reduces repetitive coding tasks, enabling faster development and deployment of web applications.
-- Cross-Platform Deployment: The WebAssembly mode allows the application to be deployed on any server, offering flexibility to host on free services or cloud platforms.
-- Shared Codebase: Includes a shared code and models project, facilitating code reuse between the client and server parts of the application.
-- Quick Start Template: Provides a ready-to-use template, helping developers get started quickly with a solid foundation for their web applications.
- 
-
+- **Blazor WebAssembly:** Leverages .NET 9 for client-side development, enabling rich and interactive user experiences.
+- **PocketBase Integration:** Offers seamless integration with PocketBase, delivering a robust and scalable backend data solution.
+- **Streamlined Development:** Minimizes repetitive coding tasks, facilitating faster development and deployment cycles for web applications.
+- **Cross-Platform Deployment:** Thanks to WebAssembly, the application can be deployed on any standard server, offering versatile hosting options on both free services and cloud platforms.
+- **Shared Codebase:** Features a shared project for code and models, promoting code reuse between client and server components.
+- **Quick Start Template:** Offers a ready-to-use template, providing developers with a solid foundation to rapidly begin building web applications.
 
 ## Demos
 
-- [Live Demo - blazorpocket.blazorserver.com](https://blazorpocket.blazorserver.com)
+- **Live Demo:** [blazorpocket.blazorserver.com](https://blazorpocket.blazorserver.com)
 
-## Docker Compose Demployment
+## Docker Compose Deployment
 ```yml
 version: '3.8'
 services:
@@ -77,6 +70,4 @@ volumes:
 ```
 
 ## License
-This project is licensed under the MIT License, which is a permissive open-source license.
-You are free to use, modify, and distribute the code for both personal and commercial purposes,
-as long as the original license and copyright notice are included.
+This project is licensed under the MIT License, a permissive open-source license. You are free to use, modify, and distribute the code for personal or commercial purposes, provided the original license and copyright notice are included.
