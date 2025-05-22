@@ -32,10 +32,10 @@ section.docs h3,
 .container.post h3,
 h4 {color: var(--textMedium); line-height: 1.4; font-size: 1.1rem; margin-bottom: 0.2rem; padding-top: 1rem;}
 div + h3 {padding-top: 3rem;}
-p, ul, ol, blockquote, pre, .box.map, figure, details {margin-bottom: 1.7em;}
+p, ul, ol, blockquote, pre, .box.map, figure, details {margin-bottom: 1.2em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
-ol li p { font-size: inherit; line-height: inherit; }
+ol li p { font-size: inherit; line-height: inherit; margin-bottom: auto; }
 hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
 p img, p img:last-child {border-radius: 1rem; overflow: hidden; margin-block: 2.25rem;}
 pre {
@@ -87,6 +87,7 @@ section, section.image.alt {padding: 4.5rem 0 5rem;}
 section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 5.5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
 section .container.small {max-width: 40rem;}
+section .container.medium {max-width: 50rem;}
 section.hasbackgroundcolor {padding: 0; margin-top: 2rem;}
 section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
 section.bgimage.hasbackgroundcolor + section:not(.hasbackgroundcolor) {margin-top: 1.5rem;}
