@@ -13,101 +13,71 @@ tags:
 ## LinguaLens Translation Assistant
 
 
-**LinguaLens** is an intelligent translation assistant that supports bidirectional translation between Chinese and a variety of other languages. It adeptly adapts to diverse contexts and scenarios, including email correspondence, online meetings, and technical support interactions. The tool intelligently adjusts the translation's tone, formality, and style based on the selected scenario, ensuring both accuracy and contextual appropriateness.
+**LinguaLens** is an intelligent translation assistant. It adeptly adapts to diverse contexts and scenarios, including email correspondence, online meetings, and technical support interactions. The tool intelligently adjusts the translation's tone, formality, and style based on the selected scenario, ensuring both accuracy and contextual appropriateness.
 
 ## **Features**
 
-* **Bidirectional Translation:** Automatically translates from Chinese to English, and from any non-Chinese language (such as English, French, or German) into Chinese.
-* **Scene-Based Contextualization:** Tailors translations to the specific nuances of various professional scenarios, including online meetings, email communications, Microsoft Teams chats, and technical support dialogues.
-* **Multilingual Capabilities:** Currently supports translation between Chinese and several other major languages, including English, French, and German, with ongoing expansion.
-* **Adaptive User Interface:** Allows users to easily switch between predefined scenes, ensuring the translation's tone and style precisely match the specific use case.
-* **Intuitive Design:** Developed using **Next.js** and **Shadcn/UI** for a clean, simple, and intuitive user experience.
+*   **Internationalization (i18n)**: Implements full internationalization (i18n) with a language switcher and locale-based routing. Supported interface and translation languages:
+    *   简体中文 (Chinese)
+    *   English
+    *   Deutsch (German)
+    *   Français (French)
+    *   Español (Spanish)
+    *   Nederlands (Dutch)
+    *   Bahasa Indonesia (Indonesian)
+    *   ไทย (Thai)
+    *   Tiếng Việt (Vietnamese)
+    *   မြန်မာ (Burmese)
+    *   Bahasa Melayu (Malay)
+*   **Customizable User Interface**: Easily switch between different scenes for translations, ensuring the tone and style fit the specific use case.
+*   **User-Friendly Design**: Built with **Next.js** and **ShadCN UI**, making the interface simple and intuitive.
+*   **Advanced AI Model Support**: You can choose the **Gemini 2.5 Flash Preview** model, which provides excellent translation quality.
+*   **Custom Scene Management**: A powerful feature allowing users to create, edit, delete, reorder, and reset translation scenes, all saved locally in the browser.
 
 ## **Tech Stack**
 
-* **Frontend Framework**: Next.js 15 (using App Router).
-* **UI Components**: Leverages Shadcn/UI for a modern and accessible user interface.
-* **State Management**: Zustand for lightweight and efficient global state management and history tracking.
-* **AI Translation Service:** Powered by leading AI models such as **Google Gemini**, providing accurate translations tailored to context and input language, and supporting streaming responses up to 30 seconds.
-* **Backend Services:** Integrates with the AI translation service APIs.
-* **Styling:** Utilizes Tailwind CSS for a modern and responsive design.
-* **Language Detection**: Automatically detects the input text's language and translates it to the appropriate target language.
+*   **Frontend Framework**: Next.js 15 (using App Router).
+*   **UI Components**: Leverages Shadcn/UI for a modern and accessible user interface.
+*   **State Management**: Zustand for lightweight and efficient global state management and history tracking.
+*   **AI Translation Service:** Powered by leading AI models from **Google Gemini**, **Groq**, **OpenAI**, or **Mistral**, providing accurate translations tailored to context and input language, and supporting streaming responses up to 30 seconds.
+*   **Backend Services:** Integrates with the AI translation service APIs.
+*   **Styling:** Utilizes Tailwind CSS for a modern and responsive design.
+*   **Language Detection**: Automatically detects the input text's language and translates it to the appropriate target language.
 
 ## **How It Works**
 
-1.  **Language Detection**: The AI automatically detects the language of the input text. If the input is in **Chinese**, it is translated into **English**. If the input is in any other supported language (e.g., **English**, **French**, **German**), it is translated into **Chinese**.
-2.  **Scene Selection**: Users can select a specific translation scene (e.g., **Email**, **Online Meeting**, **Technical Support**). The AI then adjusts the translation's tone and formality to match the chosen scenario.
-3.  **Real-Time Translation**: The translation process occurs in real-time, providing instant feedback and enabling quick, accurate translations.
+1.  **Language Detection**: The AI detects the language of the input text. If the input is in **Chinese**, it translates it into **English**. If the input is in any other language (e.g., **English**, **French**, **German**), it translates it into **Chinese**.
+2.  **Scene Selection**: Users can select the translation scene (e.g., **Email**, **Online Meeting**, **Technical Support**). The AI adjusts the tone and formality of the translation based on the selected scene.
+3.  **Custom Scene Creation**: Users can create their own custom translation scenes by clicking the "自定义场景" (Custom Scene) button and using the scene management interface.
 
 ## **Scenes**
 
-The translation style adapts based on pre-defined scenes, including:
+Below are some of the default translation scenes available:
 
-```
-// lib/scenes.ts
-export interface Scene {
-  /** Scene name in Chinese */
-  name: string;
-  /** Scene name in English */
-  name_en: string;
-  /** Scene description */
-  description: string;
-  /** Generation prompt */
-  prompt: string;
-}
+*   **Daily Communication**: Casual, friendly exchanges between colleagues or friends, using common vocabulary and simple grammar.
+*   **Word Explanation**: Helps users understand, remember, and use unfamiliar words by providing simple explanations and practical example sentences in both English and the user's native language.
+*   **Email**: For professional business email communication.
+*   **News Article**: For translating news reports or informational content, focusing on objectivity and accuracy, and concluding with a summary.
+*   **Proverbs**: Translate proverbs across cultures, preserving their wisdom and poetic essence.
+*   **Technical Documentation**: For translating technical documentation
+*   **Social Media Post (X/Reddit)**: For translating engaging posts for X (Twitter) or Reddit.
+*   **Technical Support**: For translating technical support communication in systems like TOPdesk.
+*   **Requirement Analysis**: For basic requirement understanding: translates, summarizes, and identifies the core business purpose of user-provided requirements (Salesforce, SAP focused).
+*   **Meeting Invitation**: For translating formal meeting invitation messages.
+*   **Meeting Minutes**: For translating meeting minutes with a clear and structured format.
+*   **Presentation Slides**: For content used in presentation slides.
 
-export const SCENES: Scene[] = [
-  {
-    name: "日常沟通",
-    name_en: "Daily Communication",
-    description: "Casual, friendly exchanges between colleagues or friends, using common words and simple grammar.",
-    prompt: "Translate the text in a casual, friendly tone using common words and simple grammar."
-  },
-  {
-    name: "邮件",
-    name_en: "Email",
-    description: "Professional emails with a formal and polite tone, using common email greetings and closings (e.g., Hi …,” and “Best regards, [Your Name]”).",
-    prompt: "Translate the text as a formal, well-structured email. Include a standard greeting at the top (e.g., “Hi …,”) and a closing at the end (e.g., “Best regards, [Your Name]”)."
-  },
-  {
-    name: "Teams对话",
-    name_en: "Teams Chat",
-    description: "Casual chats with colleagues that are friendly, approachable, conversational, and clear without overly formal language.",
-    prompt: "Translate the text in a friendly, approachable tone suitable for colleague chats—keep it clear and natural, not too formal."
-  },
-  {
-    name: "技术支持",
-    name_en: "Technical Support",
-    description: "Technical support for Salesforce and SAP issues, providing clear, concise, and helpful solutions.",
-    prompt: "Translate the text as technical support guidance for Salesforce or SAP—keep it clear, concise, and solution-focused."
-  },
-  {
-    name: "会议邀请",
-    name_en: "Meeting Invitation",
-    description: "Convert input into a polished, formal meeting invitation that clearly presents the greeting, date, time, venue, agenda items, participants, and closing remarks.",
-    prompt: "Rewrite and translate the following text into a formal meeting invitation. Structure it with a salutation, date, time, venue, agenda, list of attendees, and a closing remark—ensure it flows naturally and includes all key details."
-  },
-  {
-    name: "讨论需求",
-    name_en: "Requirement Discussion",
-    description: "This is for discussing user requirements, where you need to gather detailed information.",
-    prompt: "You are discussing user requirements. Your responses should be detailed and thorough. Translate the following text."
-  },
-  {
-    name: "客户沟通",
-    name_en: "Customer Communication",
-    description: "This is for communicating with customers, where you should be polite, responsive, and empathetic.",
-    prompt: "You are communicating with a customer. Your responses should be polite, empathetic, and responsive. Translate the following text."
-  },
-  {
-    name: "会议纪要",
-    name_en: "Meeting Minutes",
-    description: "Convert input into structured, concise meeting minutes that highlight the summary, key decisions, and action items.",
-    prompt: "Rewrite and translate the following text into meeting minutes format. Use clear headings for Summary, Decisions, and Action Items; present points succinctly and in logical order."
-  }
-  ];
-  
-```
+### **Custom Scene Management**
+
+The custom scene management feature allows you to:
+
+1.  **Create Custom Scenes**: Create your own translation scenes with specific prompts, names, and descriptions.
+2.  **Edit Existing Scenes**: Modify any custom scene to fine-tune the translation style and context.
+3.  **Delete Scenes**: Remove any custom scenes you no longer need.
+4.  **Reorder Scenes**: Drag and drop to reorder your scenes according to your preference.
+5.  **Reset to Default**: Return to the default set of scenes at any time.
+
+All custom scenes are automatically saved in your browser's localStorage.
 
 ## **Getting Started**
 
@@ -132,11 +102,13 @@ npm install
 
 3.  **Set up environment variables**
 
-    Create a `.env.local` file in the project's root directory. Add your environment-specific variables, particularly the API key for the AI translation service:
+    Create a `.env.local` file in the project's root directory and add your API keys for the AI translation services.
 
 ```bash
-NEXT_PUBLIC_GOOGLE_GENAI_API_KEY=your_google_api_key
-NEXT_PUBLIC_APP_URL=http://localhost:3000
+GOOGLE_GENERATIVE_AI_API_KEY=your_google_api_key
+GROQ_API_KEY=your_groq_api_key
+OPENAI_API_KEY=<your API key>
+MISTRAL_API_KEY=<your API key>
 ```
 
 4.  **Run the project**
@@ -151,11 +123,59 @@ npm run dev
 
     Open your browser and navigate to `http://localhost:3000` to access the application.
 
+## **Docker Deployment**
+
+You can deploy **LinguaLens** using Docker for easy setup and consistent environments.
+
+1.  **Pull the latest code**
+    ```bash
+    git pull
+    ```
+
+2.  **Build the Docker image**
+    ```bash
+    sudo docker build . -t lingualens:ver
+    ```
+    Replace `ver` with your desired version tag (e.g., `v1.0`).
+
+3.  **(Optional) Use Docker Compose**
+    Below is an example `docker-compose.yml` file:
+    ```yaml
+    version: '3.8'
+
+    services:
+      lingualens:
+        image: lingualens:v1.0
+        ports:
+          - "4010:3000"
+        environment:
+          - NODE_ENV=production
+          - NEXT_PUBLIC_GA_ID=<your tag id>
+          - GROQ_API_KEY=<your api key>
+          - GOOGLE_GENERATIVE_AI_API_KEY=<your api key>
+          - OPENAI_API_KEY=<your API key>
+          - MISTRAL_API_KEY=<your API key>
+        restart: unless-stopped
+    ```
+4.  **Start the service**
+    ```bash
+    sudo docker compose up -d
+    ```
+
 ## **Usage**
 
-1.  **Select a Scene**: Choose the context for the translation (e.g., **Online Meeting**, **Email**) from the dropdown menu.
-2.  **Input Text**: Type or paste the text you wish to translate into the input area. This can be in **Chinese** or another supported language.
-3.  **Receive Translation**: The AI will process the input and display the translated text in the target language (English for Chinese input, or Chinese for other languages).
+1.  **Select a Scene**: Choose a context for the translation (e.g., **Online Meeting**, **Email**) or create your own custom scenes.
+2.  **Input Text**: Type or paste the text you want to translate in either **Chinese** or another language.
+3.  **Receive Translation**: The AI will process the translation and output the result in the target language (English for Chinese input, or Chinese for other language inputs).
+
+## **Extending Supported Languages**
+
+If you want to add support for more languages (for both translation and the interface), follow these steps:
+
+1.  **Add the locale code** to the `locales` array in `middleware.ts` and update the language switcher in `components/language-switcher.tsx`.
+2.  **Create a new translation file** in the `messages/` directory, e.g., `messages/ja.json` for Japanese. Use the structure of `en.json` as a template.
+3.  **(Optional) Add scene prompt logic**: If your new language requires special translation logic, update the prompt generation in `app/api/chat/route.ts`.
+4.  **Restart the development server** to apply the changes.
 
 ## **Contributing**
 
@@ -169,10 +189,10 @@ Contributions to **LinguaLens** are welcome! If you would like to help improve t
 
 ## **License**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## **Acknowledgments**
 
-* Powered by the **AI SDK** for core AI service integration.
-* User interface components inspired by the excellent **Shadcn/UI** library.
-* Special acknowledgment to the **Google Gemini** team for their powerful AI translation capabilities.
+*   Thanks to the **AI SDK** for providing the AI services used in the project.
+*   Inspired by **Shadcn/UI** for building responsive and customizable UI components.
+*   Special thanks to the **Google Gemini** team for their AI-powered translation capabilities.
