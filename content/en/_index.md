@@ -10,7 +10,7 @@ Have a project in mind? Let's discuss it!
 
 {{< button "Contact me" "/contact/" >}}
 
-![](/uploads/illustrations/cuate/assets.png)
+![](/uploads/illustrations/cuate/home.jpeg)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}

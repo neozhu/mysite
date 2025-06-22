@@ -1,6 +1,7 @@
 ---
 title: Visitor Management Workflow System
 image: /uploads/photos/visitor-management.png
+date: 2019-08-04 00:00:00
 tags:
   - Visitor
   - Workflow

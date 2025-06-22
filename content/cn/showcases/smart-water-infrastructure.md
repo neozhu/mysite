@@ -1,6 +1,7 @@
 ---
 title: 智能水务管理平台
 image: /uploads/photos/water/iot.png
+date: 2021-12-4 00:00:00
 tags:
   - IoT
 ---

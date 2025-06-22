@@ -1,6 +1,7 @@
 ---
 title: Attendance Platform
 image: /uploads/photos/attendance-platform.png
+date: 2025-04-12 00:00:00
 tags:
   - Attendance
 ---

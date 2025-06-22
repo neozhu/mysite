@@ -1,6 +1,7 @@
 ---
 title: Digital Product Passport
 image: /uploads/photos/adigital-product-passport.webp
+date: 2023-08-12 00:00:00
 tags:
   - DPP
   - Blockchain

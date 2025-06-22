@@ -1,6 +1,7 @@
 ---
 title: Transport Management System
 image: /uploads/photos/tms-logistics.png
+date: 2019-08-04 00:00:00
 tags:
   - TMS
 ---

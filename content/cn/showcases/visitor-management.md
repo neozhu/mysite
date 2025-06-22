@@ -1,6 +1,7 @@
 ---
 title: 访客管理平台
 image: /uploads/photos/visitor-management.png
+date: 2019-08-04 00:00:00
 tags:
   - Visitor
   - Workflow

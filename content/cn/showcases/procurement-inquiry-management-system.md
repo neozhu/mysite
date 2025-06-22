@@ -1,6 +1,7 @@
 ---
 title: 采购询价管理系统
 image: /uploads/photos/procurement-inquiry.png
+date: 2022-12-4 00:00:00
 tags:
   - MVC
 ---
