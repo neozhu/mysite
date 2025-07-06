@@ -14,6 +14,8 @@ menuitems:
         link: /cn/about/
       - title: 联系我
         link: /cn/contact/
+  - title: 赞助支持
+    link: /cn/sponsor/
  
   
 cta:
