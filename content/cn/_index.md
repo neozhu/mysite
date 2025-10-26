@@ -20,7 +20,7 @@ Blazor Studio 专注于使用 Blazor 开发高质量的业务 Web 应用，涵�
 
 ![](/uploads/illustrations/cuate/blazorserver.png)
 
-Clean Architecture Blazor Server 是一款高度模块化的 Blazor Server 应用模板，基于 Clean Architecture 设计，旨在构建易于维护和扩展的企业级应用。该项目已集成：
+Clean Architecture Blazor Server 模板是一个高度模块化的 Blazor Server 应用框架。基于 Clean Architecture 原则并集成了 AI 驱动的开发支持（规范生成、可审查的增量和任务编排），旨在帮助你构建可维护且可扩展的企业级应用。主要特性包括：
 
 
 - 🚀 内置代码生成器，显著提高开发效率
@@ -29,6 +29,7 @@ Clean Architecture Blazor Server 是一款高度模块化的 Blazor Server 应�
 - 🧱 基于 .NET 9 构建，性能更卓越，开发更流畅
 - 💡 全面支持 Blazor Server 与 C# 开发，无需 JavaScript 切换
 - ⚙️ 实现快速响应、高交互性的业务 Web 应用
+- 📋 OpenSpec 通过带有明确提案、增量和任务的规范驱动可审查更改，支持结构化开发工作流。
 
 {{< button "前往 GitHub" "https://github.com/neozhu/CleanArchitectureWithBlazorServer" >}}
 
@@ -39,7 +40,7 @@ Clean Architecture Blazor Server 是一款高度模块化的 Blazor Server 应�
 
 ![](/uploads/illustrations/cuate/blazorclient.jpg)
 
-**CleanAspire** 是一款现代化的开源模板，它整合了 Blazor WebAssembly、Minimal API、PWA 以及 .NET 9 + Aspire 技术栈，旨在帮助开发者快速构建轻量级、响应迅速且架构清晰的 Web 应用。此模板内置了离线支持和实时通知功能。
+**CleanAspire** 是一款现代化的开源模板，它整合了 Blazor WebAssembly、Minimal API、PWA 以及 .NET 10 + Aspire 技术栈，旨在帮助开发者快速构建轻量级、响应迅速且架构清晰的 Web 应用。此模板内置了离线支持和实时通知功能。
 
 主要特性包括：
 

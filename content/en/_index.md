@@ -19,7 +19,7 @@ Have a project in mind? Let's discuss it!
 
 ![](/uploads/illustrations/cuate/blazorserver.png)
 
-The Clean Architecture Blazor Server template is a highly modular Blazor Server application framework. Built with Clean Architecture principles, it's designed to help you create maintainable and scalable enterprise-level applications. Key features include:
+The Clean Architecture Blazor Server template is a highly modular Blazor Server application framework. Built with Clean Architecture principles and integrated AI-driven development support (spec generation, reviewable deltas, and task orchestration), it's designed to help you create maintainable and scalable enterprise-level applications. Key features include:
 
 - 🚀 A built-in code generator to significantly boost development productivity.
 - 🐳 Comprehensive CI/CD, Docker, and NuGet support for seamless automation workflows.
@@ -27,6 +27,7 @@ The Clean Architecture Blazor Server template is a highly modular Blazor Server 
 - 🧱 Powered by .NET 9, delivering superior performance and a smoother development process.
 - 💡 Full support for Blazor Server combined with C#, eliminating the need to switch to JavaScript.
 - ⚙️ Simplified development of real-time, highly interactive business web applications.
+- 📋 OpenSpec enables spec-driven, reviewable changes with clear proposals, deltas, and tasks for structured development workflows.
 
 {{< button "View on GitHub" "https://github.com/neozhu/CleanArchitectureWithBlazorServer" >}}
 
@@ -37,7 +38,7 @@ The Clean Architecture Blazor Server template is a highly modular Blazor Server 
 
 ![](/uploads/illustrations/cuate/blazorclient.jpg)
 
-**CleanAspire** is a contemporary, open-source template for Progressive Web Applications (PWA) utilizing Blazor WebAssembly and Minimal API, powered by .NET 9 and Aspire. It’s engineered for building fast, lightweight, and cleanly architected web applications, featuring built-in support for offline functionality and real-time notifications.
+**CleanAspire** is a contemporary, open-source template for Progressive Web Applications (PWA) utilizing Blazor WebAssembly and Minimal API, powered by .NET 10 and Aspire. It’s engineered for building fast, lightweight, and cleanly architected web applications, featuring built-in support for offline functionality and real-time notifications.
 
 Key features include:
 
