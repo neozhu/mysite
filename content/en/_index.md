@@ -3,10 +3,9 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Build Business Applications with Blazor Studio  
+# Build Enterprise-Grade Web Applications with Blazor
 
-Blazor Studio specializes in developing high-quality business web applications using Blazor, catering to a wide range of needs from open-source projects to enterprise-grade solutions. Every application is meticulously crafted with a clean architecture, ensuring responsive performance and a sleek, modern user interface.
-Have a project in mind? Let's discuss it!
+Focused on Blazor, dedicated to building practical, elegant, and sustainable web applications. From MVP prototypes to full-scale business systems, helping your projects launch quickly, iterate efficiently, and grow continuously.
 
 {{< button "Contact me" "/contact/" >}}
 

@@ -1,5 +1,5 @@
 logo_image:
-logo_subtitle: Professional Blazor development.
+logo_subtitle: Focused on Blazor development.
 dark_header: false
 mobile_view_width: 1100
 menuitems:
@@ -22,4 +22,4 @@ cta:
   active: true
   title: Contact me
   link: /contact/
-preheader: Expert in Blazor development. Available for project collaborations!
+preheader: Working with Blazor to build modern web apps — open to collaboration!

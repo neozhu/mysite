@@ -3,11 +3,9 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# 用 Blazor Studio 打造你的业务系统
+# 用 Blazor 构建你的业务 Web 应用
 
-Blazor Studio 专注于使用 Blazor 开发高质量的业务 Web 应用，涵盖从开源项目到企业级解决方案的各类实践。每个应用都强调架构的清晰性与卓越的性能。
-
-有项目想法？欢迎随时与我交流！
+专注 Blazor，全力打造实用、漂亮、能长期发展的 Web 应用。从 MVP 原型到成熟业务系统，助力项目快速上线、高效迭代、持续成长。
 
 {{< button "联系我" "/contact/" >}}
 
