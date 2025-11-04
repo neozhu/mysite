@@ -1,5 +1,5 @@
 logo_image:
-logo_subtitle: Blazor 开发专家
+logo_subtitle: 专注Blazor开发
 dark_header: false
 mobile_view_width: 1100
 menuitems:
@@ -22,4 +22,4 @@ cta:
   active: true
   title: 联系我
   link: /cn/contact/
-preheader: 专注 Blazor 开发，期待与你的项目合作。
+preheader: Blazor开发 · 快速交付和专业服务
