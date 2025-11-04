@@ -20,6 +20,10 @@ MenuMuse 是一款基于先进人工智能技术的菜单生成器，能够将�
 
 {{< gallery dir="/uploads/gallery/menumus" >}}
 
+## 在线演示
+
+- 🔗 **在线演示站点**：[menumuse.blazorserver.com](https://menumuse.blazorserver.com/)
+
 ### 🎯 核心价值
 - **🧠 智能识别**：先进的 AI 视觉技术，精准识别菜单中的每一道美食
 - **🎨 诗意文案**：为每道菜品创作独特的文艺描述，让美食拥有文学的温度

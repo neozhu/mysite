@@ -20,6 +20,10 @@ MenuMuse is an advanced AI-powered menu generator that transforms ordinary menu 
 
 {{< gallery dir="/uploads/gallery/menumus" >}}
 
+## Demo
+
+- 🔗 **Live Demo**：[menumuse.blazorserver.com](https://menumuse.blazorserver.com/)
+
 ### 🎯 Core Values
 - **🧠 Smart Recognition**: Advanced AI vision technology for precise identification of every dish on the menu
 - **🎨 Poetic Copy**: Create unique literary descriptions for each dish, giving food the warmth of literature
