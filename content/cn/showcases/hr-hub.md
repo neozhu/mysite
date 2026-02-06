@@ -3,7 +3,7 @@ title: "HR HUB - 人力集成云"
 description: "一站式劳务外包人力服务平台"
 date: 2025-11-18 00:00:00
 tags: ["Blazor", "NET10", "Docker", "人力资源", "考勤管理"]
-image: /uploads/photos/hrhub/1.png
+image: /uploads/photos/hrhub/home_cn.png
 ---
 
 

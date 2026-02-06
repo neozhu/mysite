@@ -3,7 +3,7 @@ title: "HR HUB - Integrated HR Cloud Platform"
 description: "One-Stop Labor Outsourcing HR Service Platform"
 date: 2025-11-18 00:00:00
 tags: ["Blazor", "NET10", "Docker", "Human Resources", "Attendance Management"]
-image: /uploads/photos/hrhub/1.png
+image: /uploads/photos/hrhub/home_en.png
 ---
 
 

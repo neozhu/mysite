@@ -9,7 +9,7 @@ Focused on Blazor, dedicated to building practical, elegant, and sustainable web
 
 {{< button "Contact me" "/contact/" >}}
 
-![](/uploads/illustrations/cuate/home.jpeg)
+![](/uploads/illustrations/cuate/blazor.png)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}

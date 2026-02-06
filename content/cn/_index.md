@@ -9,7 +9,7 @@ title: Home
 
 {{< button "联系我" "/contact/" >}}
 
-![](/uploads/illustrations/cuate/assets.png)
+![](/uploads/illustrations/cuate/blazor.png)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}
