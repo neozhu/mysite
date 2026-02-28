@@ -31,6 +31,13 @@ This website is built using [Hugo](https://gohugo.io/), a fast and modern static
 - `static/` – Static assets like images and downloads  
 - `config.toml` – Hugo site configuration  
 
+## 🚀 Publish Commands
+
+```bash
+hugo --minify --baseURL https://blazorserver.com/
+docker build . -t blazorstudiodev:v15
+```
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
