@@ -11,22 +11,11 @@ I'm an experienced .NET developer focused on building scalable enterprise applic
 
 {{< socialbuttons >}}
 
-<div style="text-align: center; margin: 2rem 0;">
-    <div style="display: inline-flex; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap;">
-        <div style="display: flex; align-items: center; gap: 0.5rem; color: #666;">
-            <span>⭐</span>
-            <span>3k+ GitHub Stars</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem; color: #666;">
-            <span>🚀</span>
-            <span>99+ Projects</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem; color: #666;">
-            <span>👥</span>
-            <span>1,000+ Developers Served</span>
-        </div>
-    </div>
-</div>
+{{< stats
+  stat1="⭐|3k+ GitHub Stars"
+  stat2="🚀|99+ Projects"
+  stat3="🧩|20+ Contributed"
+>}}
 
 {{< /brick_about >}}
 {{< brick_cta >}}{{< /brick_cta >}}

@@ -1,0 +1,14 @@
+<div style="text-align: center; margin: 2rem 0;">
+<div style="display: inline-flex; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap;">
+{{- range $i := slice "stat1" "stat2" "stat3" "stat4" "stat5" "stat6" -}}
+  {{- $val := index $.Params $i -}}
+  {{- if $val -}}
+    {{- $parts := split $val "|" -}}
+<div style="display: flex; align-items: center; gap: 0.5rem; color: #666;">
+<span>{{ index $parts 0 | htmlUnescape | safeHTML }}</span>
+<span>{{ index $parts 1 | htmlUnescape | safeHTML }}</span>
+</div>
+  {{- end -}}
+{{- end -}}
+</div>
+</div>

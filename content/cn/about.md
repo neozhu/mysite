@@ -12,22 +12,11 @@ title: 关于我
 
 {{< socialbuttons >}}
 
-<div style="text-align: center; margin: 2rem 0;">
-    <div style="display: inline-flex; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap;">
-        <div style="display: flex; align-items: center; gap: 0.5rem; color: #666;">
-            <span>⭐</span>
-            <span>3k+ GitHub Stars</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem; color: #666;">
-            <span>🚀</span>
-            <span>99+ 开源项目</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem; color: #666;">
-            <span>👥</span>
-            <span>1000+ 开发者使用</span>
-        </div>
-    </div>
-</div>
+{{< stats
+  stat1="⭐|3k+ GitHub Stars"
+  stat2="🚀|99+ 开源项目"
+  stat3="🧩|20+ 贡献"
+>}}
 
 {{< /brick_about >}}
 {{< brick_cta >}}{{< /brick_cta >}}
