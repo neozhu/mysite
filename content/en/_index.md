@@ -3,9 +3,9 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Build Enterprise-Grade Web Applications with Blazor
+# PCrafting Next-Gen Business Apps.
 
-Focused on Blazor, dedicated to building practical, elegant, and sustainable web applications. From MVP prototypes to full-scale business systems, helping your projects launch quickly, iterate efficiently, and grow continuously.
+Built on AI × Blazor, delivering scalable, future-ready business systems.
 
 {{< button "Contact me" "/contact/" >}}
 

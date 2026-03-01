@@ -14,8 +14,6 @@ menuitems:
         link: /about/
       - title: Contact me
         link: /contact/
-  - title: Sponsor
-    link: /sponsor/
  
   
 cta:
