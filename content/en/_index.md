@@ -9,7 +9,7 @@ Built on AI × Blazor, delivering scalable, future-ready business systems.
 
 {{< button "Contact me" "/contact/" >}}
 
-![](/uploads/illustrations/cuate/blazor.png)
+![](/uploads/illustrations/cuate/ai-blazor.png)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}
