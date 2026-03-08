@@ -3,9 +3,9 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# PCrafting Next-Gen Business Apps.
+# Building Next-Generation Business Applications.
 
-Built on AI × Blazor, delivering scalable, future-ready business systems.
+Powered by AI and Blazor for scalable, production-ready systems.
 
 {{< button "Contact me" "/contact/" >}}
 
