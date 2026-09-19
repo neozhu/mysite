@@ -16,7 +16,7 @@ Powered by AI and Blazor for scalable, production-ready systems.
 
 ## What’s Included in the Blazor Server Template?
 
-![](/uploads/illustrations/cuate/blazorserver.png)
+![](/uploads/illustrations/cuate/blazor-studio-showcase.png)
 
 The Clean Architecture Blazor Server template is a highly modular Blazor Server application framework. Built with Clean Architecture principles and integrated AI-driven development support (spec generation, reviewable deltas, and task orchestration), it's designed to help you create maintainable and scalable enterprise-level applications. Key features include:
 
