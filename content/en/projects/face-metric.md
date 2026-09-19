@@ -4,8 +4,6 @@ image: /uploads/illustrations/cuate/face-metric-showcase.png
 date: 2026-09-19 00:00:00
 tags:
   - GitHub
-  - AI
-  - Computer Vision
 ---
 
 {{< brick_title >}}

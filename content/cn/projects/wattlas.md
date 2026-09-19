@@ -4,8 +4,6 @@ image: /uploads/illustrations/cuate/wattlas-showcase.png
 date: 2026-09-19 00:00:00
 tags:
   - GitHub
-  - 数据可视化
-  - 能源
 ---
 
 {{< brick_title >}}

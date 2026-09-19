@@ -4,8 +4,6 @@ image: /uploads/illustrations/cuate/botchat-showcase.png
 date: 2026-09-19 00:00:00
 tags:
   - GitHub
-  - AI
-  - Next.js
 ---
 
 {{< brick_title >}}
