@@ -2,8 +2,10 @@
 title: "Delivery Print - Delivery Note and Material Label System"
 description: "A standardized supplier workflow for shipment import, PDF generation, label printing, and warehouse receiving"
 date: 2026-09-19 00:00:00
-tags: ["Blazor", "NET10", "Clean Architecture", "Logistics", "PDF", "Barcode"]
 image: /uploads/illustrations/cuate/delivery-print-showcase.png
+tags:
+  - Logistics
+  - PDF
 ---
 
 **From supplier shipment data to printed documents and receiving confirmation**

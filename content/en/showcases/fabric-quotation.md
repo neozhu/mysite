@@ -2,8 +2,10 @@
 title: "Fabric Quotation - Structured Quotation and Design Workflow"
 description: "A flexible quotation platform for industrial fabric products, engineering recommendations, pricing, and approvals"
 date: 2026-09-19 00:00:00
-tags: ["Blazor", "NET10", "Clean Architecture", "Quotation", "Workflow"]
 image: /uploads/illustrations/cuate/fabric-quotation-showcase.png
+tags:
+  - Quotation
+  - Workflow
 ---
 
 **A structured quotation workspace for industrial fabric products**
