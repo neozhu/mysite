@@ -9,14 +9,14 @@ title: Home
 
 {{< button "联系我" "/contact/" >}}
 
-![](/uploads/illustrations/cuate/ai-blazor.png)
+![](/uploads/illustrations/cuate/ai-blazor.webp)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}
 
 ## Blazor Server 应用模板有哪些亮点？
 
-![](/uploads/illustrations/cuate/blazor-studio-showcase.png)
+![](/uploads/illustrations/cuate/blazor-studio-showcase.webp)
 
 Clean Architecture Blazor Server 模板是一个高度模块化的 Blazor Server 应用框架。基于 Clean Architecture 原则并集成了 AI 驱动的开发支持（规范生成、可审查的增量和任务编排），旨在帮助你构建可维护且可扩展的企业级应用。主要特性包括：
 
