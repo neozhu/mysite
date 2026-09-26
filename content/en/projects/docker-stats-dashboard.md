@@ -10,7 +10,7 @@ tags:
 {{< button "View on GitHub" "https://github.com/neozhu/docker-stats-dashboard" >}}
 {{< /brick_title >}}
 
-> NOTE: Full coding for this project was completed entirely by **AI CODEX** under **OpenSpec** guidance.
+> Developed with AI-assisted engineering and an OpenSpec workflow that connects requirements, change proposals, and implementation tasks—so evolving needs can move quickly from specification to delivery.
 
 ![Dashboard preview placeholder](/uploads/photos/docker-stats-dashboard-preview.png)
 
@@ -162,7 +162,7 @@ docker-compose:
 
 ---
 
-This repository—and every line of code within—was implemented by AI CODEX following the OpenSpec workflow. Contributions are welcome via pull requests.
+Contributions are welcome via pull requests.
 
 ---
 

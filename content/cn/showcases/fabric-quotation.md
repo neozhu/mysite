@@ -1,12 +1,12 @@
 ---
-title: "Fabric Quotation - 面料报价与设计工作流"
-description: "面向工业面料产品、应用设计、定价及审批的灵活报价平台"
+title: "纸机毛布 CPQ（Paper Machine Fabric）- Fabric Quotation 报价系统"
+description: "面向纸机毛布（Paper Machine Fabric，造纸毛布）的 CPQ（配置、定价与报价）系统，支持毛布选型、工程建议、定价和报价审批"
 date: 2026-09-19 00:00:00
-tags: ["Blazor", "NET10", "Clean Architecture", "报价管理", "工作流"]
+tags: ["CPQ", "Paper Machine Fabric", "纸机毛布", "造纸毛布", "Blazor", "NET10", "Clean Architecture", "报价管理", "工作流"]
 image: /uploads/illustrations/cuate/fabric-quotation-showcase.png
 ---
 
-**面向工业面料产品的结构化报价工作台**
+**面向纸机毛布的 CPQ 配置、定价与报价系统**
 
 > 将客户与纸机主数据、产品选择、应用设计建议、定价、折扣和报价版本追踪连接到统一流程中。
 
@@ -14,7 +14,7 @@ image: /uploads/illustrations/cuate/fabric-quotation-showcase.png
 
 ## 项目概述
 
-Fabric Quotation 是一套用于管理面料产品和编制客户报价的 Web 业务系统。它将销售与应用工程师的协作纳入同一工作流，同时保持产品结构和领域模型清晰、易维护。
+Fabric Quotation 是一套面向纸机毛布（Paper Machine Fabric，造纸毛布）的 CPQ（Configure, Price, Quote，即配置、定价与报价）系统，用于管理毛布选型、产品配置和客户报价。它将定价、销售与应用工程师的协作纳入同一工作流，同时保持产品结构和领域模型清晰、易维护。
 
 当前系统基础聚焦于报价单、报价明细、产品选择、版本历史以及可配置业务字段。相同的架构还可继续承载协议、条款和合同相关流程，而无需为每种业务对象重复建设元数据体系。
 
@@ -49,7 +49,7 @@ Fabric Quotation 是一套用于管理面料产品和编制客户报价的 Web �
 
 ## 动态业务字段
 
-不同面料产品和应用场景所需的技术参数并不相同。Fabric Quotation 使用可复用的动态字段框架，避免为每个产品系列建立独立数据表。
+不同规格的纸机毛布和应用场景所需的技术参数并不相同。Fabric Quotation 使用可复用的动态字段框架，避免为每个产品系列建立独立数据表。
 
 管理员可以配置字段模板、分区、可复用字段定义、校验规则和选项集。运行时数据与对应业务实体关联；字段停用后，历史报价值仍会完整保留。
 
@@ -58,6 +58,12 @@ Fabric Quotation 是一套用于管理面料产品和编制客户报价的 Web �
 系统基于 **.NET 10**、**Blazor Server**、**MudBlazor** 和 **Clean Architecture** 构建。Domain、Application、Infrastructure 与 UI 职责分离，并使用 Mediator 用例、FluentValidation、Mapster、Entity Framework Core，以及 SQL Server 和 PostgreSQL 多数据库支持。
 
 Docker 部署和自动化测试提升了开发与交付的一致性。清晰的领域模型和动态字段框架也为后续定价、审批、文档生成及合同流程扩展提供了基础。
+
+项目采用 AI 协同开发，将业务需求拆解为清晰、可迭代的任务，使报价规则、产品参数与审批流程的变化能够更快进入实现和交付，缩短需求调整到功能交付的周期。
+
+## 在线演示
+
+[fabric-quotation.blazorserver.com](https://fabric-quotation.blazorserver.com/)
 
 ## 项目源码
 

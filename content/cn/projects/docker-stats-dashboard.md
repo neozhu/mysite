@@ -12,7 +12,7 @@ tags:
 {{< button "GitHub 仓库" "https://github.com/neozhu/docker-stats-dashboard" >}}
 {{< /brick_title >}}
 
-> 说明：本项目的全部代码由 **AI CODEX** 在 **OpenSpec** 流程指导下自动完成。
+> 本项目采用 AI 协同开发，并通过 OpenSpec 串联需求规格、变更提案与实现任务，让需求调整能够快速进入实现与交付，缩短功能迭代周期。
 
 ![仪表盘预览占位图](/uploads/photos/docker-stats-dashboard-preview.png)
 
@@ -164,7 +164,7 @@ docker-compose:
 
 ---
 
-该仓库——包括其中的每一行代码——均由 AI CODEX 依照 OpenSpec 工作流实现。欢迎通过 Pull Request 贡献。
+欢迎通过 Pull Request 参与贡献。
 
 ---
 
