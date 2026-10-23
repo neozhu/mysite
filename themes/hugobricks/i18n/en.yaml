@@ -16,3 +16,19 @@ cn:
   other: CN
 en:
   other: EN
+shareArticle:
+  other: Share this article
+shareOn:
+  other: Share on {{ .Platform }}
+wechat:
+  other: WeChat
+shareWeChatTitle:
+  other: Share on WeChat
+shareWeChatHelp:
+  other: Scan with WeChat, then use the top-right menu to share with friends or Moments. On your phone, save or long-press the QR code to recognize it in WeChat.
+shareQrAlt:
+  other: QR code for this article
+shareLink:
+  other: Article link (select to copy)
+closeShare:
+  other: Close sharing panel

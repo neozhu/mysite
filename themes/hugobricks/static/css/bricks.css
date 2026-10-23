@@ -132,6 +132,30 @@ section.post .container.post hr {margin: 2.5rem 0; background: var(--articleLine
     section.post .container.post blockquote, section.post .container.post pre {padding: 1rem;}
 }
 /*------------------------*/
+/* article sharing
+/*------------------------*/
+
+.article-share {margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--articleLine);}
+.article-share-heading {margin: 0 0 .75rem; color: var(--textDark); font-weight: 600;}
+.article-share-actions {display: flex; flex-wrap: wrap; gap: .75rem;}
+.article-share-button {display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 44px; padding: .6rem 1rem; border: 1px solid var(--articleLine); border-radius: .4rem; background: white; color: var(--textDark); font: inherit; font-size: 14px; font-weight: 600; letter-spacing: 0; line-height: 1.5; text-decoration: none; cursor: pointer; transition: background 160ms ease, border-color 160ms ease;}
+.article-share-button:hover {border-color: var(--articleLink); background: var(--light); transform: none;}
+.article-share-button svg, .article-share-close svg {width: 1.25rem; height: 1.25rem; flex-shrink: 0; fill: currentColor;}
+.article-share-button:focus-visible, .article-share-close:focus-visible, .article-share-dialog input:focus-visible {outline: 2px solid var(--articleLink); outline-offset: 4px;}
+section.post .article-share-dialog {position: fixed; inset: 0; width: min(22rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); margin: auto; padding: 1.5rem; overflow: auto; border: 1px solid var(--articleLine); border-radius: .75rem; background: white; color: var(--textDark); box-shadow: 0 1rem 3rem rgba(0, 0, 0, .15); font-size: 14px; line-height: 1.7;}
+.article-share-dialog::backdrop {background: rgba(0, 0, 0, .35);}
+.article-share-dialog h2 {margin: 0 2.5rem 1rem 0; font-family: var(--fontBody); font-size: 1.25rem; line-height: 1.5;}
+.article-share-close {position: absolute; top: .5rem; right: .5rem; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--textDark);}
+.article-share-close:hover {background: var(--light); transform: none;}
+.article-share-dialog .article-share-qr {width: auto; max-width: 100%; height: auto; margin: 0 auto 1rem; border-radius: 0; filter: none;}
+.article-share-dialog p {margin: 0 0 1rem;}
+.article-share-dialog label {display: block; margin-bottom: .4rem; font-weight: 600;}
+.article-share-dialog input {width: 100%; min-height: 44px; padding: .5rem .75rem; border: 1px solid var(--articleLine); border-radius: .4rem; background: var(--light); color: var(--textDark); font: inherit; font-size: 16px;}
+@media (prefers-reduced-motion: reduce) {
+    .article-share-button {transition: none;}
+}
+
+/*------------------------*/
 /* brick cta
 /*------------------------*/
 

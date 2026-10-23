@@ -16,3 +16,19 @@ cn:
   other: 中文
 en:
   other: 英文
+shareArticle:
+  other: 分享这篇文章
+shareOn:
+  other: 分享到{{ .Platform }}
+wechat:
+  other: 微信
+shareWeChatTitle:
+  other: 分享到微信
+shareWeChatHelp:
+  other: 使用微信扫一扫打开文章，再点击右上角菜单分享给朋友或朋友圈。手机上可保存二维码或在微信中长按识别。
+shareQrAlt:
+  other: 当前文章的二维码
+shareLink:
+  other: 文章链接（选中即可复制）
+closeShare:
+  other: 关闭分享面板
