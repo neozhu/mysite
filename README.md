@@ -37,6 +37,8 @@ Requires Hugo **v0.141.0 or newer** for locally generated WeChat sharing QR code
 
 Share text uses the article's authored `summary`, falling back to `description`, `seo.description`, or introductory body text. Preview cards use `seo.description` or `description`. X adds up to three hashtags from the article's `tags`, removing spaces and punctuation, and shortens the text to leave room for the hashtags and article link. Reddit includes the summary in the post body.
 
+Facebook reads the preview summary from `og:description`; it cannot prefill the post body with that summary. Its share link includes the first valid article hashtag, while all article `tags` are included as Open Graph `article:tag` metadata. Facebook supports a single prefilled hashtag and has deprecated the `quote` parameter.
+
 ```bash
 hugo --minify --baseURL https://blazorserver.com/
 docker build . -t blazorstudiodev:v15

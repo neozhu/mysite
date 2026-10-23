@@ -5,6 +5,9 @@
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $summary }}">
 <meta property="og:url" content="{{ .Permalink }}">
+{{- range .Params.tags }}
+<meta property="article:tag" content="{{ . }}">
+{{- end }}
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $summary }}">
 {{- with $image }}

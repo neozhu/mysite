@@ -7,6 +7,10 @@
         {{- $hashtags = $hashtags | append $tag -}}
     {{- end -}}
 {{- end -}}
+{{- $facebookQuery := querify "u" .Permalink -}}
+{{- with $hashtags -}}
+    {{- $facebookQuery = querify "u" $.Permalink "hashtag" (printf "#%s" (index . 0)) -}}
+{{- end -}}
 {{- $tagText := delimit $hashtags " #" -}}
 {{- if $tagText -}}{{- $tagText = printf "#%s" $tagText -}}{{- end -}}
 {{/* Reserve space for hashtags, separators and X's shortened URL. */}}
@@ -23,7 +27,7 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.4l8.2-9.4L.8 2h6.5l4.5 6.7L18.9 2Zm-1.1 18h1.7L6.4 3.9H4.6L17.8 20Z"/></svg>
                 <span>X</span>
             </a>
-            <a class="article-share-button" href="{{ printf "https://www.facebook.com/sharer/sharer.php?%s" (querify "u" .Permalink) | safeURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ i18n "shareOn" (dict "Platform" "Facebook") }}">
+            <a class="article-share-button" href="{{ printf "https://www.facebook.com/sharer/sharer.php?%s" $facebookQuery | safeURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ i18n "shareOn" (dict "Platform" "Facebook") }}">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12.1a10 10 0 1 0-11.6 9.8V15H7.9v-2.9h2.5V9.9c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.7-1.6 1.5v1.9h2.7l-.4 2.9h-2.3v6.9A10 10 0 0 0 22 12.1Z"/></svg>
                 <span>Facebook</span>
             </a>
