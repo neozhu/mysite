@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Language.Locale | default .Language.Lang }}">
+<html lang="{{ .Language.LanguageCode | default .Language.Lang }}">
   <head>
     <title>{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ (index .Site.Data .Language.Lang).general.title }} {{ (index .Site.Data .Language.Lang).header.logo_subtitle }}{{ end }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
