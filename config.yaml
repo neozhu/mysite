@@ -7,6 +7,8 @@ services:
     id: G-2RBX6HT00W
 
 markup:
+  highlight:
+    style: github-dark
   goldmark:
     renderer:
       unsafe: true
@@ -49,4 +51,3 @@ languages:
       section:
         projects: /projects/
         showcases: /showcases/
-     

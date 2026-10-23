@@ -28,6 +28,8 @@ Bring your business requirements to life with AI, Blazor and proven .NET enginee
 {{< /brick_intro >}}
 {{< brick_image2 >}}
 
+<p class="section-eyebrow">OPEN-SOURCE FLAGSHIP · .NET 9 & AI WORKFLOW</p>
+
 ## What’s Included in the Blazor Server Template?
 
 ![Modular administration interface built with the Blazor Server application template](/uploads/illustrations/cuate/blazor-studio-showcase.webp)
@@ -46,6 +48,8 @@ The Clean Architecture Blazor Server template is a highly modular Blazor Server 
 
 {{< /brick_image2 >}}
 {{< brick_image >}}
+
+<p class="section-eyebrow">CLOUD-NATIVE PWA · .NET 10 & ASPIRE</p>
 
 ## What’s Inside CleanAspire?
 

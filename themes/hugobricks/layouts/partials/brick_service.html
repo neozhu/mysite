@@ -1,8 +1,27 @@
 <section class="post">
     <div class="container title">
-
+        <div class="post-eyebrow">
+            <a href="{{ relLangURL `showcases/` }}" class="post-backlink">← {{ if eq page.Language.Lang "cn" }}交付案例{{ else }}Project Showcases{{ end }}</a>
+        </div>
         <h1>{{ page.Title | safeHTML }}</h1>
-  
+        {{ if or page.Params.date (index page.Params.tags 0) }}
+        <div class="meta">
+            {{ if page.Params.date }}<div class="meta-date">
+                <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg" class="black_2_textDark" alt="" />
+                <time datetime="{{ page.Date.Format `2006-01-02` }}">{{ page.Date | time.Format ":date_medium" }}</time>
+            </div>
+            {{ end }}
+            {{ if index page.Params.tags 0 }}
+            <div class="meta-tags">
+                <ul>
+                    {{ range page.Params.tags }}
+                    <li><span class="post-tag">{{ . }}</span></li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
     </div>
     <div class="container wide">
         {{- $postimage := `/uploads/gallery/01.jpg` -}}
@@ -10,7 +29,7 @@
             {{- $postimage = page.Params.image -}}
         {{- end -}}
         {{- if (resources.GetMatch $postimage) -}}
-            {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 jpg Smart q50`).RelPermalink -}}
+            {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 webp Smart q85`).RelPermalink -}}
         {{- end -}}
         <img src="{{ $postimage }}" alt="{{ page.Title }}" class="featuredimage" />
     </div>

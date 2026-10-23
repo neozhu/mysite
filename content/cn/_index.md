@@ -28,6 +28,8 @@ seo:
 {{< /brick_intro >}}
 {{< brick_image2 >}}
 
+<p class="section-eyebrow">开源旗舰模板 · .NET 9 与 AI 规范驱动</p>
+
 ## Blazor Server 应用模板有哪些亮点？
 
 ![Blazor Server 应用模板的模块化管理后台界面](/uploads/illustrations/cuate/blazor-studio-showcase.webp)
@@ -47,6 +49,8 @@ Clean Architecture Blazor Server 模板是一个高度模块化的 Blazor Server
 
 {{< /brick_image2 >}}
 {{< brick_image >}}
+
+<p class="section-eyebrow">云原生 PWA 模板 · .NET 10 与 ASPIRE</p>
 
 ## CleanAspire 包含哪些内容？
 

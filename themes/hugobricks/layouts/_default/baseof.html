@@ -29,6 +29,13 @@
       window.addEventListener("resize", updateSize);
     </script>
     <div class="innerbody">
+    {{- $currentLang := .Site.Language.Lang -}}
+    {{- $enUrl := "/" -}}
+    {{- $cnUrl := "/cn/" -}}
+    {{- range .AllTranslations -}}
+      {{- if eq .Language.Lang "en" -}}{{- $enUrl = .RelPermalink -}}{{- end -}}
+      {{- if eq .Language.Lang "cn" -}}{{- $cnUrl = .RelPermalink -}}{{- end -}}
+    {{- end -}}
     {{- if .Site.Data.settings.preheader.active -}}
     <div class="preheader {{ if .Params.preheader_is_light }}light{{ else }}{{ if and (ne .Params.preheader_is_light false) .Site.Data.settings.preheader.is_light }}light{{ end }}{{ end }}">
       <div class="container">
@@ -40,8 +47,8 @@
             <a href="mailto:{{ (index .Site.Data .Language.Lang).general.contact.email }}" class="icon"><img src="/img/email.svg" alt="Email icon" class="black_2_textMedium" /> {{ (index .Site.Data .Language.Lang).general.contact.email }}</a>
           {{- end -}}
         </div>
-        <div>
-          {{- if (index .Site.Data .Language.Lang).header.preheader -}}{{ (index .Site.Data .Language.Lang).header.preheader }}{{- end -}}
+        <div class="preheader-status">
+          {{- if (index .Site.Data .Language.Lang).header.preheader -}}<span class="status-dot" aria-hidden="true"></span>{{ (index .Site.Data .Language.Lang).header.preheader }}{{- end -}}
         </div>
       </div>  
     </div>
@@ -69,7 +76,7 @@
           </nav>
         </div>
         <div>
-		      {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
+          {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
           <a href="{{ (index .Site.Data .Language.Lang).webshop.cart_link }}">
             <img src="/img/shopping-cart.svg" alt="Shopping cart icon" class="black_2_textDark" />
             <span class="itemcount">0</span>
@@ -77,22 +84,14 @@
           {{- end -}}
 
           {{- if gt (len .Site.Languages) 1 -}}
-          <div class="navnav languages">
-            <ul>
-              <li class="haschildren">
-                <a href="/{{ .Site.Language.Lang }}/">{{i18n .Site.Language.Lang | upper }}</a>
-                <ul>
-					{{ range .Site.Languages }}
-					{{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">{{ .LanguageName }}</a></li>{{ end }}
-					{{ end }}
-                </ul>
-              </li>
-            </ul>
+          <div class="lang-pill" role="group" aria-label="{{ i18n "changeLanguage" | default "Language" }}">
+            <a href="{{ $enUrl }}" class="lang-pill-option{{ if eq $currentLang "en" }} is-active{{ end }}" lang="en" {{ if eq $currentLang "en" }}aria-current="true"{{ end }}>EN</a>
+            <a href="{{ $cnUrl }}" class="lang-pill-option{{ if eq $currentLang "cn" }} is-active{{ end }}" lang="zh-CN" {{ if eq $currentLang "cn" }}aria-current="true"{{ end }}>中文</a>
           </div>
           {{- end -}}
           {{ if (index .Site.Data .Language.Lang).header.cta.active }}
           <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
-		      {{ end }}
+          {{ end }}
         </div>
         <button id="togglemenu" onclick="event.stopPropagation(); document.body.classList.add('menushown');"><span class="black_2_textDark">Toggle menu</span></button>
         <script>
@@ -142,22 +141,25 @@
       </div>
       <div>
         <div class="container">
-		      <div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
+          <div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
           {{- if gt (len .Site.Languages) 1 -}}
           <div>
-            <select aria-label="{{ i18n "changeLanguage" }}" onchange="if(this.value) document.location.href = '/'+this.value+'/';"><option>{{ i18n "changeLanguage" }}</option>{{ range .Site.Languages }}<option value="{{ .Lang }}" {{ if eq page.Language.Lang .Lang }}disabled{{ end }}>{{ .LanguageName }}</option>{{ end }}</select></div>
+            <div class="lang-pill lang-pill-footer" role="group" aria-label="{{ i18n "changeLanguage" | default "Language" }}">
+              <a href="{{ $enUrl }}" class="lang-pill-option{{ if eq $currentLang "en" }} is-active{{ end }}" lang="en" {{ if eq $currentLang "en" }}aria-current="true"{{ end }}>EN</a>
+              <a href="{{ $cnUrl }}" class="lang-pill-option{{ if eq $currentLang "cn" }} is-active{{ end }}" lang="zh-CN" {{ if eq $currentLang "cn" }}aria-current="true"{{ end }}>中文</a>
+            </div>
           </div>
           {{- end -}}
-		    </div>
-  		</div>
-		</footer>
+        </div>
+      </div>
+    </footer>
 
-		{{ if .Site.Data.settings.sticky_header }}
+    {{ if .Site.Data.settings.sticky_header }}
       <script type="text/javascript" src="/js/stickyheader.js"></script>
     {{ end }}
     <script type="text/javascript" src="/js/faq.js"></script>
     <script type="text/javascript" src="/js/lightbox.js"></script>
-		<link rel="stylesheet" href="/css/lightbox.css">
+    <link rel="stylesheet" href="/css/lightbox.css">
     {{ if .Site.Data.settings.customcursor }}
       <script type="text/javascript" src="/js/customcursor.js"></script>
       <link rel="stylesheet" href="/css/customcursor.css">

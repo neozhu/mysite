@@ -1,9 +1,3 @@
-<!-- 
-{{/* 
-
-Usage:
-{{< ctaform >}}
-    
-*/}}
--->
+{{- if not (in (slice "showcases" "projects" "posts") .Page.Section) -}}
 {{- partial "form.html" (index page.Site.Data page.Site.Language.Lang).ctaform -}}
+{{- end -}}

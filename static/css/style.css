@@ -8,14 +8,14 @@
 /*------------------------*/
 
 :root {
-    --textDarker: #1e282d;
-    --textDark: rgba(38, 50, 56, 1);
-    --textMedium: rgba(38, 50, 56, 0.7);
-    --borderMedium: rgba(38, 50, 56, 0.2); 
-    --borderLight: rgba(38, 50, 56, 0.075);
-    --accent: #00adef;
-    --accentDarker: #009ad5;
-    --light: rgba(38, 50, 56, 0.035);
+    --textDarker: #0f172a;
+    --textDark: #1e293b;
+    --textMedium: #475569;
+    --borderMedium: #cbd5e1;
+    --borderLight: #e2e8f0;
+    --accent: #0878ad;
+    --accentDarker: #06648f;
+    --light: #f8fafc;
 }
 /*------------------------*/
 /* turn grayscale off
@@ -33,7 +33,7 @@ img {filter: grayscale(0);}
 /* black_2_textDark
 /*------------------------*/
 
-.map::after, .black_2_textDark {filter: contrast(0.7) sepia(1) hue-rotate(160deg)!important;}
+.map::after, :not(footer.dark a.logo img).black_2_textDark {filter: contrast(0.7) sepia(1) hue-rotate(160deg)!important;}
 
 /*------------------------*/
 /* black_2_textMedium

@@ -1,20 +1,18 @@
 <section class="post">
     <div class="container title">
-     
         <h1>{{ page.Title | safeHTML }}</h1>
         {{ if or page.Params.date (index page.Params.tags 0) }}
         <div class="meta">
-            {{ if page.Params.date }}<div>
-                <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
-                {{ page.Date | time.Format ":date_medium"}}
+            {{ if page.Params.date }}<div class="meta-date">
+                <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg" class="black_2_textDark" alt="" />
+                <time datetime="{{ page.Date.Format `2006-01-02` }}">{{ page.Date | time.Format ":date_medium" }}</time>
             </div>
             {{ end }}
             {{ if index page.Params.tags 0 }}
-            <div>
-                <img src="/img/icons/material-symbols/200/rounded/label-fill.svg"class="black_2_textDark" alt="" />
+            <div class="meta-tags">
                 <ul>
                     {{ range page.Params.tags }}
-                    <li><a href='{{ relLangURL "" }}blog/?tag={{ . }}'>{{ . }}</a>
+                    <li><a href='{{ relLangURL "" }}blog/?tag={{ . }}' class="post-tag">{{ . }}</a></li>
                     {{ end }}
                 </ul>
             </div>
@@ -28,7 +26,7 @@
             {{- $postimage = page.Params.image -}}
         {{- end -}}
         {{- if (resources.GetMatch $postimage) -}}
-            {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 jpg Smart q50`).RelPermalink -}}
+            {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 webp Smart q85`).RelPermalink -}}
         {{- end -}}
         <img src="{{ $postimage }}" alt="{{ page.Title }}" class="featuredimage" />
     </div>
