@@ -3,13 +3,21 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# 构建下一代业务应用
+<p class="intro-eyebrow">AI × BLAZOR · 企业级应用开发</p>
 
-由 AI 与 Blazor 驱动，打造可扩展、可投入生产的业务系统。
+# 构建下一代<br>**企业级业务应用**
 
-{{< button "联系我" "/contact/" >}}
+打通业务、数据与智能，让复杂流程成为持续增长的动力。
 
-![](/uploads/illustrations/cuate/ai-blazor.webp)
+以 AI 与 Blazor 为核心，融合 .NET 工程实践与清晰的架构设计。从业务系统定制、企业平台集成到智能工作流，将真实业务需求转化为可投入生产、易于维护、持续演进的数字化产品。
+
+<div class="intro-actions">{{< button "开启项目合作" "/contact/" >}} {{< button "探索交付案例" "/showcases/" "secondary ghost" >}}</div>
+
+- **业务系统定制**<br>围绕真实场景，提升运营效率
+- **企业平台集成**<br>连接系统与数据，打通业务链路
+- **AI 智能工作流**<br>让智能融入流程，让效率落地
+
+![企业级业务工作台与 AI 智能工作流的产品视觉](/uploads/illustrations/ai-blazor-enterprise-hero.webp)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}

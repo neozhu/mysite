@@ -12,5 +12,5 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-<a href="{{ $link | safeURL }}" class="button" title="{{ .Get 0 }}"{{ if $isRemote }} target="_blank" rel="noopener"{{ end }}>{{ .Get 0 }}</a>
+<a href="{{ $link | safeURL }}" class="button{{ with .Get 2 }} {{ . }}{{ end }}" title="{{ .Get 0 }}"{{ if $isRemote }} target="_blank" rel="noopener"{{ end }}>{{ .Get 0 }}</a>
 

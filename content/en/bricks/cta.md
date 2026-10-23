@@ -1,10 +1,12 @@
 ---
 title: cta
 ---
-## Want to know more about what I am working on?
+<p class="cta-eyebrow">FROM BUSINESS GOALS TO WORKING SOFTWARE</p>
 
-My GitHub showcases most of my projects and ideas. Feel free to take a look and explore more technical possibilities together.
+## Build what’s next.<br>**Let’s start a conversation.**
 
-{{< button2 "Check out my GitHub" "https://github.com/neozhu?tab=repositories" >}}
+Bring your next application, enterprise integration or AI workflow into focus. Start with your business goals and shape a clear technical direction and a practical path to delivery.
 
-![](/uploads/illustrations/cuate/github.png)
+<div class="cta-actions">{{< button "Discuss your project" "/contact/" >}} {{< button "Explore GitHub" "https://github.com/neozhu?tab=repositories" "secondary ghost" >}}</div>
+
+<p class="cta-note">Share your business context, current technology stack or an early idea.</p>

@@ -6,8 +6,29 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-<section class="intro">
-    <div class="container medium">
-        {{- markdownify $inner -}}
-    </div>
-</section>
+{{- if page.IsHome -}}
+    {{- $content := markdownify $inner -}}
+    {{- $images := findRE `(?s)<p>\s*<img\b.*?</p>` $content 1 -}}
+    <section class="intro intro-home">
+        <div class="container intro-layout">
+            <div class="intro-copy">
+                {{- if $images -}}
+                    {{- replace $content (index $images 0) "" 1 | safeHTML -}}
+                {{- else -}}
+                    {{- $content | safeHTML -}}
+                {{- end -}}
+            </div>
+            {{- with $images -}}
+                <div class="intro-visual">
+                    {{- replace (index . 0) "<img " `<img fetchpriority="high" decoding="async" ` 1 | safeHTML -}}
+                </div>
+            {{- end -}}
+        </div>
+    </section>
+{{- else -}}
+    <section class="intro">
+        <div class="container medium">
+            {{- markdownify $inner -}}
+        </div>
+    </section>
+{{- end -}}

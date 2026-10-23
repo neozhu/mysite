@@ -3,13 +3,21 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Building Next-Generation Business Applications.
+<p class="intro-eyebrow">AI × BLAZOR · BUILT FOR BUSINESS</p>
 
-Powered by AI and Blazor for scalable, production-ready systems.
+# Next-generation<br>**business applications.**
 
-{{< button "Contact me" "/contact/" >}}
+Connect your business, data and intelligence. Turn complex workflows into a foundation for growth.
 
-![](/uploads/illustrations/cuate/ai-blazor.webp)
+Bring your business requirements to life with AI, Blazor and proven .NET engineering. From custom applications and enterprise integration to intelligent workflows, build production-ready software designed to scale, stay maintainable and evolve with your business.
+
+<div class="intro-actions">{{< button "Start a conversation" "/contact/" >}} {{< button "Explore delivered work" "/showcases/" "secondary ghost" >}}</div>
+
+- **Custom applications**<br>Built around the way you work
+- **Enterprise integration**<br>Connect systems, data and teams
+- **AI-powered workflows**<br>Put intelligence into everyday work
+
+![Enterprise business workspace connected to intelligent AI workflows](/uploads/illustrations/ai-blazor-enterprise-hero.webp)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}

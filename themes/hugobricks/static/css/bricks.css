@@ -17,6 +17,63 @@ section.intro img {margin: 3rem auto 0; width: 38rem;}
 section.intro img.is_svg {max-width: 85%;}
 section.intro h1 + p {padding-top: 0;}
 
+/* Homepage hero */
+section.intro-home {
+    --intro-accent: #0878ad;
+    text-align: left;
+    padding-bottom: clamp(3rem, 6vw, 5.5rem);
+    background: linear-gradient(180deg, white 80%, #f7fafc);
+}
+section.intro-home .intro-layout {display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(2rem, 4vw, 4rem);}
+section.intro-home .intro-copy, section.intro-home .intro-visual {min-width: 0;}
+section.intro-home .intro-eyebrow {display: flex; align-items: center; gap: 0.75rem; margin: 0 0 1.5rem; color: var(--intro-accent); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; line-height: 1.6;}
+section.intro-home .intro-eyebrow::before {content: ""; width: 1.5rem; height: 2px; background: currentColor; flex-shrink: 0;}
+section.intro-home h1 {margin: 0 0 1.5rem; font-family: var(--fontBody); font-size: clamp(2.75rem, 4.2vw, 3.5rem); font-weight: 600; line-height: 1.12; letter-spacing: -0.045em; text-wrap: balance;}
+section.intro-home h1 strong {color: var(--intro-accent); font-weight: inherit;}
+html[lang="cn"] section.intro-home h1 {font-size: clamp(2.5rem, 4.5vw, 4rem); line-height: 1.22; letter-spacing: -0.035em;}
+section.intro-home .intro-copy > p {max-width: 38rem; line-height: 1.85;}
+section.intro-home h1 + p {color: var(--textDark); font-size: 1.2rem; line-height: 1.7; margin-bottom: 1rem;}
+section.intro-home .intro-actions {display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.75rem 0 2rem;}
+section.intro-home .intro-actions p {margin: 0;}
+section.intro-home .button {display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; margin: 0; padding: 0.75rem 1.25rem; background: var(--intro-accent); border: 1px solid var(--intro-accent); border-radius: 0.4rem; font-weight: 600; letter-spacing: 0; transition: background 160ms ease, border-color 160ms ease;}
+section.intro-home .button:hover {background: #06648f; border-color: #06648f; transform: none;}
+section.intro-home .button.secondary {background: white; color: var(--textDark); border-color: var(--borderMedium); box-shadow: none;}
+section.intro-home .button.secondary:hover {background: #f1f7fb; border-color: var(--intro-accent);}
+section.intro-home .button.secondary::after {content: "↗"; margin-left: 0.75rem; font-size: 1.1em;}
+section.intro-home .button:focus-visible {outline: 3px solid var(--intro-accent); outline-offset: 4px;}
+section.intro-home ul {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0; padding-top: 1.5rem; border-top: 1px solid var(--borderLight); list-style: none; font-size: 0.875rem; line-height: 1.7;}
+section.intro-home li strong {display: inline-block; margin-bottom: 0.35rem; color: var(--textDark); font-size: 0.9rem; font-weight: 600;}
+section.intro-home .intro-visual {position: relative; isolation: isolate;}
+section.intro-home .intro-visual::before {content: ""; position: absolute; inset: -15% -5%; z-index: -1; background: radial-gradient(ellipse, #eaf4fb, transparent 68%);}
+section.intro-home .intro-visual p {margin: 0;}
+section.intro-home .intro-visual img {width: 100%; max-width: none; height: auto; aspect-ratio: 3 / 2; margin: 0; border-radius: 0; mix-blend-mode: multiply;}
+section.intro-home + section.image.alt {margin-top: 0;}
+@media (max-width: 1000px) {
+    section.intro-home .intro-layout {grid-template-columns: 1.1fr 0.9fr; gap: 1.5rem;}
+    section.intro-home h1 {font-size: 2.75rem;}
+    section.intro-home ul {grid-template-columns: 1fr; gap: 0.65rem;}
+    section.intro-home li br {display: none;}
+    section.intro-home li strong {margin: 0 0.75rem 0 0;}
+}
+@media (max-width: 760px) {
+    section.intro-home .intro-layout {grid-template-columns: minmax(0, 1fr); gap: 2.25rem;}
+    section.intro-home .intro-copy {font-size: 16px;}
+    section.intro-home .intro-copy > p {max-width: 42rem;}
+    section.intro-home h1 {font-size: clamp(2.4rem, 7vw, 3.5rem);}
+    html[lang="cn"] section.intro-home h1 {font-size: clamp(2.4rem, 7.5vw, 3.5rem);}
+    section.intro-home .intro-eyebrow {font-size: 12px; letter-spacing: 0.05em; margin-bottom: 1.25rem;}
+    section.intro-home .intro-visual {width: 100%; max-width: 38rem; justify-self: center;}
+    section.intro-home ul {font-size: 14px;}
+    section.intro-home li strong {font-size: inherit;}
+}
+@media (max-width: 380px) {
+    section.intro-home .intro-actions {gap: 0.65rem;}
+    section.intro-home .button {padding-inline: 1rem;}
+}
+@media (prefers-reduced-motion: reduce) {
+    section.intro-home .button {transition: none;}
+}
+
 /*------------------------*/
 /* brick post
 /*------------------------*/
@@ -49,6 +106,43 @@ section.cta .twocols .image img.is_svg {margin: 0!important;}
     section.cta .twocols {flex-direction: column;}
     section.cta .twocols .text {text-align: center;}
     section.cta .twocols .image {text-align: left; display: none;}
+}
+
+/* Shared project contact CTA */
+section.cta-contact.hasbackgroundcolor {padding-bottom: 5rem;}
+section.cta-contact .cta-panel {position: relative; overflow: hidden; padding: clamp(1.75rem, 5vw, 4.5rem); border: 1px solid #24455e; border-radius: 1.25rem; background: #112c42; color: #d4e2ec;}
+section.cta-contact .cta-panel::before {content: ""; position: absolute; width: 24rem; height: 24rem; top: -17rem; right: -5rem; border: 1px solid #36556c; border-radius: 50%; pointer-events: none;}
+section.cta-contact .cta-content {position: relative; display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(14rem, 0.85fr); column-gap: clamp(2rem, 5vw, 4.5rem);}
+section.cta-contact .cta-content > * {grid-column: 1;}
+section.cta-contact .cta-eyebrow {margin-bottom: 1.25rem; color: #9dc6df; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; line-height: 1.7;}
+section.cta-contact h2 {margin: 0 0 1.25rem; color: white; font-family: var(--fontBody); font-size: clamp(2rem, 3.1vw, 2.6rem); font-weight: 600; line-height: 1.25; letter-spacing: -0.025em; text-wrap: balance;}
+section.cta-contact h2 strong {color: #8ed4fa; font-weight: inherit;}
+section.cta-contact .cta-content > p:not([class]) {margin-bottom: 1.25rem; line-height: 1.85;}
+section.cta-contact .cta-content > .cta-actions {grid-column: 2; grid-row: 2 / span 3; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 0.85rem; padding-left: clamp(1.5rem, 3vw, 3rem); border-left: 1px solid #36556c;}
+section.cta-contact .cta-actions p {margin: 0;}
+section.cta-contact .button {display: flex; align-items: center; justify-content: center; width: 100%; min-height: 3.25rem; margin: 0; padding: 0.75rem 1rem; background: white; border: 1px solid white; color: #112c42; font-weight: 600; letter-spacing: 0; transition: background 160ms ease, border-color 160ms ease;}
+section.cta-contact .button:hover {background: #dff2ff; border-color: #dff2ff; transform: none;}
+section.cta-contact .button.secondary {background: transparent; border-color: #718da2; color: white; box-shadow: none;}
+section.cta-contact .button.secondary:hover {background: #24455e; border-color: #a5cbe5;}
+section.cta-contact .button.secondary::after {content: "↗"; margin-left: 0.75rem;}
+section.cta-contact .button:focus-visible {outline: 3px solid #8ed4fa; outline-offset: 4px;}
+section.cta-contact .cta-note {margin: 0; color: #b4c7d5; font-size: 0.875rem; line-height: 1.8;}
+section.cta-contact.hasbackgroundcolor + footer {margin-top: 0;}
+@media (max-width: 900px) {
+    section.cta-contact .cta-content {grid-template-columns: minmax(0, 1fr);}
+    section.cta-contact .cta-content > .cta-actions {grid-column: 1; grid-row: auto; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: center; margin: 0.5rem 0 1.25rem; padding: 0; border: 0;}
+    section.cta-contact .cta-actions > * {flex: 0 1 auto;}
+    section.cta-contact .cta-actions .button {width: auto; padding-inline: 1.5rem;}
+    section.cta-contact .cta-content {font-size: 16px;}
+    section.cta-contact .cta-eyebrow {font-size: 12px;}
+    section.cta-contact .cta-note {font-size: 14px;}
+}
+@media (max-width: 480px) {
+    section.cta-contact.hasbackgroundcolor {padding-bottom: 3rem;}
+    section.cta-contact .cta-actions > *, section.cta-contact .cta-actions .button {width: 100%;}
+}
+@media (prefers-reduced-motion: reduce) {
+    section.cta-contact .button {transition: none;}
 }
 
 /*------------------------*/
