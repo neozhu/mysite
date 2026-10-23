@@ -1,3 +1,8 @@
 {{ define "content" }}
     {{ replace (replace .Content "<p><section" "<section") "</section></p>" "</section>" | safeHTML }}
+    {{ if in (slice "posts" "projects" "showcases") .Section }}
+    <section class="post article-share-section">
+        {{ partial "article_share.html" . }}
+    </section>
+    {{ end }}
 {{ end }}

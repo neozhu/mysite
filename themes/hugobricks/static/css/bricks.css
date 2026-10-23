@@ -136,6 +136,7 @@ section.post .container.post hr {margin: 2.5rem 0; background: var(--articleLine
 /*------------------------*/
 
 .article-share {margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--articleLine);}
+section.article-share-section {padding-top: 0;}
 .article-share-heading {margin: 0 0 .75rem; color: var(--textDark); font-weight: 600;}
 .article-share-actions {display: flex; flex-wrap: wrap; gap: .75rem;}
 .article-share-button {display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 44px; padding: .6rem 1rem; border: 1px solid var(--articleLine); border-radius: .4rem; background: white; color: var(--textDark); font: inherit; font-size: 14px; font-weight: 600; letter-spacing: 0; line-height: 1.5; text-decoration: none; cursor: pointer; transition: background 160ms ease, border-color 160ms ease;}
