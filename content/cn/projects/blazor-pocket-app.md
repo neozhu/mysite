@@ -2,8 +2,13 @@
 title: 'BlazorPocket App'
 image: /uploads/illustrations/cuate/blazorpocket.jpg
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Blazor WebAssembly", "PocketBase", ".NET"]
+description: "BlazorPocket 是基于 .NET 9 Blazor WebAssembly 与 PocketBase 的开源应用模板，通过客户端与后端数据存储的组合及共享模型，减少重复编码，提供灵活的托管与容器化部署方式。"
+summary: "以纯客户端 Blazor WebAssembly 搭配 PocketBase 后端，快速开始现代 Web 项目。文章介绍代码共享、在线演示和 Docker Compose 部署配置。"
+seo:
+  title: "BlazorPocket WebAssembly 应用模板 | BlazorStudio"
+  description: "查看 BlazorPocket 开源模板如何结合 .NET 9、Blazor WebAssembly 与 PocketBase，了解共享模型、灵活托管、在线演示和 Docker Compose 部署示例。"
+slug: "blazorpocket-app"
 ---
 
 {{< brick_title >}}

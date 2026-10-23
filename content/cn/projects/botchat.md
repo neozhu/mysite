@@ -2,8 +2,13 @@
 title: 'Botchat - AI 对话工作台'
 image: /uploads/illustrations/cuate/botchat-showcase.png
 date: 2026-09-19 00:00:00
-tags:
-  - GitHub
+tags: ["GitHub", "AI", "Next.js", "Supabase"]
+description: "Botchat 是基于 Next.js、Vercel AI SDK 与 Supabase 的开源 AI 对话工作台，提供专家角色、独立用户空间、流式回复、文件附件和多会话管理，并通过访问控制隔离会话数据。"
+summary: "为不同任务配置独立的专家提示词，同时让登录用户保有自己的会话与消息。共享专家配置、Markdown 展示和滚动摘要为日常及团队对话提供可扩展的基础。"
+seo:
+  title: "Botchat AI 对话工作台 | BlazorStudio"
+  description: "了解 Botchat 的专家角色、个人会话、文件附件与上下文压缩功能，查看 Next.js、Vercel AI SDK、Supabase 数据隔离架构及 Docker 部署支持。"
+slug: "botchat-ai-对话工作台"
 ---
 
 {{< brick_title >}}

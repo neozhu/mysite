@@ -2,8 +2,13 @@
 title: 'Wattlas - Global Energy Opportunity Radar'
 image: /uploads/illustrations/cuate/wattlas-showcase.png
 date: 2026-09-19 00:00:00
-tags:
-  - GitHub
+tags: ["GitHub", "Energy", "MapLibre", "Python", "Data Visualization"]
+description: "Wattlas maps infrastructure growth and electricity-system signals through an interactive globe, explainable regional scores, asset exploration and source evidence."
+summary: "Explore where data centres, water, hydrogen, steel and cement projects may affect electricity demand. A Python pipeline publishes validated snapshots that power MapLibre maps, regional comparisons and evidence dossiers."
+seo:
+  title: "Wattlas Energy Opportunity Radar | BlazorStudio"
+  description: "Explore Wattlas for global infrastructure and electricity-demand signals, with MapLibre maps, regional comparisons, asset evidence and a governed Python data pipeline."
+slug: "wattlas-global-energy-opportunity-radar"
 ---
 
 {{< brick_title >}}

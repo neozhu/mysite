@@ -2,8 +2,13 @@
 title: 'School Bus Transport Management System'
 image: /uploads/illustrations/cuate/transport.jpg
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Transportation", "School Bus", ".NET"]
+description: "A school bus transport system for route planning, live vehicle tracking, student and driver records, parent updates and vehicle maintenance scheduling."
+summary: "School authorities and parents can follow bus locations and routes while administrators manage assignments, student schedules and maintenance records. The article introduces the .NET project and live demo."
+seo:
+  title: "School Bus Transport Management | BlazorStudio"
+  description: "Explore a school bus management system covering real-time tracking, route planning, student and driver information, parent communication and maintenance records."
+slug: "school-bus-transport-management-system"
 ---
 
 {{< brick_title >}}

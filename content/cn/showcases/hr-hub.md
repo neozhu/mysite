@@ -5,6 +5,7 @@ description: "面向劳务外包与多组织用工的协同平台，连接用人
 summary: "HR HUB 将用人单位、劳务供应商和人事团队连接到同一条业务链路，让用工安排有记录、工时确认有依据、月度对账可追溯。"
 seo:
   description: "了解 HR HUB 的劳务外包协同场景、考勤到月度结算流程、.NET 10 分层架构，以及 Traefik、CrowdSec、MinIO 与识别服务组成的 Docker 部署方案。"
+  title: "HR HUB 劳务派遣、考勤与结算平台 | BlazorStudio"
 date: 2025-11-18 00:00:00
 lastmod: 2026-10-05 00:00:00
 tags: ["Blazor", "NET10", "Docker", "人力资源", "劳务外包", "考勤管理"]

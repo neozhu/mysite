@@ -2,8 +2,13 @@
 title: 'CleanAspire Template'
 image: /uploads/illustrations/cuate/blazorclient.jpg
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Blazor WebAssembly", ".NET Aspire", "PWA", "Clean Architecture"]
+description: "CleanAspire is a .NET 9 template combining Blazor WebAssembly, PWA support, Minimal APIs and .NET Aspire observability with Clean Architecture and Docker deployment."
+summary: "Build a lightweight Blazor frontend and Minimal API backend with a shared architectural starting point. Kiota client generation, Scalar documentation, Web Push and offline support round out the template."
+seo:
+  title: "CleanAspire Blazor PWA Template | BlazorStudio"
+  description: "Discover CleanAspire for .NET 9 Blazor WebAssembly and PWA development, with Minimal APIs, Aspire observability, Kiota clients and Docker deployment examples."
+slug: "cleanaspire-template"
 ---
 
 {{< brick_title >}}

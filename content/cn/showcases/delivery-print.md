@@ -4,6 +4,11 @@ description: "覆盖发货明细导入、PDF 生成、标签打印和仓库收�
 date: 2026-09-19 00:00:00
 tags: ["Blazor", "NET10", "Clean Architecture", "物流", "PDF", "条码"]
 image: /uploads/illustrations/cuate/delivery-print-showcase.png
+summary: "供应商导入发货明细后，交货单与外箱标签基于同一份数据生成，司机交接与仓库扫码收货接续使用。校验、重印和状态追踪帮助团队处理单据与标签异常。"
+seo:
+  title: "Delivery Print 交货单与物料标签系统 | BlazorStudio"
+  description: "了解 Delivery Print 从发货明细导入、数据校验到交货单 PDF、条码标签打印和仓库扫码收货的流程，查看 .NET 10、Blazor Server、QuestPDF 与多数据库架构。"
+slug: "delivery-print-交货单与物料标签系统"
 ---
 
 **从供应商发货数据到纸质单据和扫码收货的完整流程**

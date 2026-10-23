@@ -2,8 +2,13 @@
 title: 'Docker Stats Dashboard'
 image: /uploads/photos/docker-stats-dashboard-preview.png
 date: 2025-10-26 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Docker", "Go", "SvelteKit", "Monitoring"]
+description: "A lightweight Docker monitoring stack that streams container metrics from Go agents through a SvelteKit dashboard using WebSockets and Server-Sent Events."
+summary: "Run an agent on each Docker host and connect their feeds to one browser dashboard. The article covers the stateless architecture, host configuration, deployment and development checks without an external database."
+seo:
+  title: "Docker Stats Dashboard | BlazorStudio"
+  description: "Monitor Docker container CPU and memory across hosts with Go agents, WebSocket transport and a SvelteKit dashboard that streams live metrics over SSE."
+slug: "docker-stats-dashboard"
 ---
 
 {{< brick_title >}}

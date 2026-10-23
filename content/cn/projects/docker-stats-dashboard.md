@@ -2,10 +2,13 @@
 title: 'Docker 监控仪表盘'
 image: /uploads/photos/docker-stats-dashboard-preview.png
 date: 2025-10-26 00:00:00
-tags: 
-  - GitHub
-  - Docker
-  - SvelteKit
+tags: ["GitHub", "Docker", "SvelteKit", "Go", "实时监控", "SSE"]
+description: "轻量级 Docker 实时监控方案，由 Go Agent 采集各主机容器指标，再由 SvelteKit 通过 WebSocket 聚合并以 SSE 推送到浏览器，集中展示 CPU、内存与连接状态，无需额外数据库或消息队列。"
+summary: "每台 Docker 主机运行一个无状态 Go Agent，仪表盘将多主机连接汇总为单一浏览器数据流。文章说明通信架构、Agent 配置、部署步骤与生产代理要求。"
+seo:
+  title: "Docker 实时监控仪表盘 | BlazorStudio"
+  description: "了解 Go Agent 与 SvelteKit 组成的 Docker 容器监控架构，查看 WebSocket 到 SSE 的指标聚合流程、多主机配置、容器部署和反向代理注意事项。"
+slug: "docker-监控仪表盘"
 ---
 
 {{< brick_title >}}

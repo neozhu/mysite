@@ -2,8 +2,13 @@
 title: 'BlazorPocket App'
 image: /uploads/illustrations/cuate/blazorpocket.jpg
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Blazor WebAssembly", "PocketBase", ".NET"]
+description: "BlazorPocket combines .NET 9 Blazor WebAssembly with PocketBase backend services in a reusable application template with flexible hosting and Docker deployment."
+summary: "Start a client-side Blazor application with PocketBase integration and shared code and models. The article introduces the template, live demo and Docker Compose setup for hosting both services."
+seo:
+  title: "BlazorPocket WebAssembly Template | BlazorStudio"
+  description: "Explore BlazorPocket, a .NET 9 Blazor WebAssembly template with PocketBase services, shared models and Docker Compose examples for flexible application hosting."
+slug: "blazorpocket-app"
 ---
 
 {{< brick_title >}}

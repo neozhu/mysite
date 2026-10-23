@@ -1,0 +1,15 @@
+{{- $summary := "" -}}
+{{- if .Params.summary -}}
+    {{- $summary = .Summary -}}
+{{- end -}}
+{{- $summary = or $summary .Description .Params.seo.description "" -}}
+{{- if not $summary -}}
+    {{- $body := .Content | replaceRE `(?is)<blockquote\b[^>]*>.*?</blockquote>` "" -}}
+    {{- range findRE `(?is)<p(?:\s[^>]*)?>.*?</p>` $body -}}
+        {{- $paragraph := . | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace -}}
+        {{- if and (not $summary) (ge (strings.RuneCount $paragraph) 40) (not (in . `class="button`)) -}}
+            {{- $summary = $paragraph -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- return ($summary | default .Summary | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 180) -}}

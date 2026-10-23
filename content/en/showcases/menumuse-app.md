@@ -7,6 +7,12 @@ tags:
   - Menu Generation
   - Image Recognition
   - Next.js
+description: "MenuMuse transforms menu photos into bilingual dish stories, AI food photography and pairing suggestions through image recognition and natural language generation."
+summary: "Upload a menu photo, let AI identify the dishes, and explore generated descriptions, translations and food images. The showcase presents the product flow, culinary features and Next.js implementation."
+seo:
+  title: "MenuMuse AI Smart Menu Generator | BlazorStudio"
+  description: "See MenuMuse turn menu photos into Chinese-English dish names, culinary stories and AI food images, with a responsive Next.js interface and pairing suggestions."
+slug: "menumuse-ai-smart-menu-generator"
 ---
 
 # 🍜 MenuMuse - AI Smart Menu Generator

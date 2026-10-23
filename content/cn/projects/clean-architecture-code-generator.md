@@ -2,8 +2,13 @@
 title: 'Code Generator for Clean Architecture'
 image: /uploads/illustrations/cuate/code-generator.png
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Clean Architecture", "Visual Studio", "代码生成"]
+description: "面向 CleanArchitectureWithBlazorServer 模板的 Visual Studio 扩展，可按实体名称生成 CRUD 命令、验证器、DTO、查询及领域事件处理器，并保持一致的文件夹和命名空间结构。"
+summary: "在 Visual Studio 中右键选择新增功能或按 Shift+F2，输入实体名称即可生成对应应用层文件。工具将重复的 CRUD 编码整理为符合模板约定的结构。"
+seo:
+  title: "Clean Architecture 代码生成器 | BlazorStudio"
+  description: "查看 Clean Architecture 代码生成器如何在 Visual Studio 中生成 CRUD 命令、验证器、DTO、查询和领域事件处理器，了解适用的 Blazor Server 模板与使用步骤。"
+slug: "code-generator-for-clean-architecture"
 ---
 
 {{< brick_title >}}

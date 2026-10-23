@@ -2,8 +2,13 @@
 title: 'LinguaLens 智能翻译助手'
 image: /uploads/illustrations/cuate/lingualens-translation-assistant.png
 date: 2025-05-05 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "AI 翻译", "Next.js", "国际化"]
+description: "LinguaLens 是基于 Next.js 的场景化 AI 翻译助手，按邮件、会议、技术支持等用途调整语气与正式程度，集成多家模型服务，支持多语言界面及保存在浏览器本地的自定义场景。"
+summary: "先选择沟通场景，再让 AI 根据输入语言完成翻译。用户可以创建、编辑和排序场景，将常用的邮件、会议纪要或技术文档风格保存在本地。"
+seo:
+  title: "LinguaLens 场景化 AI 翻译助手 | BlazorStudio"
+  description: "查看 LinguaLens 的语境翻译、多语言界面与自定义场景管理，了解 Next.js、Zustand 和多模型 API 集成，以及本地配置、语言扩展和 Docker 部署方法。"
+slug: "lingualens-智能翻译助手"
 ---
 
 {{< brick_title >}}

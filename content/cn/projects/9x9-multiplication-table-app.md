@@ -2,8 +2,13 @@
 title: '九九乘法表学习应用'
 image: /uploads/illustrations/cuate/9x9app.png
 date: 2025-07-02 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "数学教育", "Next.js", "Web Speech API"]
+description: "基于 Next.js 的九九乘法表学习应用，通过可点击网格、面积可视化、相同结果高亮和中文语音朗读，将传统乘法口诀与互动练习结合，支持手机与桌面浏览器。"
+summary: "点击乘法表即可同时查看中文口诀、数学等式和对应矩形面积，并通过语音反复练习。相同结果高亮帮助学生发现乘法组合之间的规律。"
+seo:
+  title: "九九乘法表互动学习应用 | BlazorStudio"
+  description: "了解九九乘法表学习应用的交互网格、中文语音、面积演示与同结果高亮功能，查看 Next.js、TypeScript 和 Web Speech API 技术实现及 Docker 部署方法。"
+slug: "九九乘法表学习应用"
 ---
 
 {{< brick_title >}}

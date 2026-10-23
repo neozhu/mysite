@@ -2,8 +2,13 @@
 title: Smart Water Infrastructure System
 image: /uploads/photos/water/iot.png
 date: 2021-12-04 00:00:00
-tags:
-  - IoT
+tags: ["IoT", "Water Management", "Monitoring", "Multi-Tenant"]
+description: "An IoT water monitoring and control platform combining live pressure, flow and water-quality data, smart-device management, alerts and multi-tenant access."
+summary: "Connect meters, hydrants, valves and environmental sensors to shared operational dashboards. The platform combines device records, historical analysis, configurable alerts and repair dispatch across web and mobile access."
+seo:
+  title: "Smart Water Infrastructure System | BlazorStudio"
+  description: "Explore IoT water monitoring for meters, hydrants and valves, with live dashboards, configurable alerts, remote control and multi-tenant operational management."
+slug: "smart-water-infrastructure-system"
 ---
 
 The Smart Water Infrastructure System is a modern water supply monitoring and control system built on IoT and modern web technologies. It enables real-time data collection, intelligent analysis, and remote control of water systems using various smart devices, such as NB-IoT water meters, smart hydrants, smart valves, RTUs/PLCs, and environmental sensors.

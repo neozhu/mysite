@@ -2,8 +2,13 @@
 title: 'CodePrompt 优化器'
 image: /uploads/illustrations/cuate/codeprompts-optimizer.png
 date: 2025-05-05 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "提示词优化", "AI", "Next.js"]
+description: "CodePrompt 优化器基于 Next.js 与 React，支持改写代码提示词、分别测试原始与优化提示，并排查看生成代码与差异摘要，帮助开发者比较多种编程语言下的提示效果。"
+summary: "从选择语言和输入初始提示开始，依次完成优化、生成示例与输出比较。工具用并排结果和执行进度反馈，帮助开发者判断提示修改带来的变化。"
+seo:
+  title: "CodePrompt AI 代码提示词优化器 | BlazorStudio"
+  description: "查看 CodePrompt 优化器的提示改写、示例测试和代码输出比较流程，了解 Next.js App Router 项目结构、多语言支持、环境配置与本地运行方法。"
+slug: "codeprompt-优化器"
 ---
 
 {{< brick_title >}}

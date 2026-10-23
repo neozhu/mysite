@@ -6,6 +6,12 @@ tags:
   - Parking
   - Blazor
   - MultiTenant
+description: "Ace Parking is a multi-tenant Blazor Server platform for car parks, gates, memberships, vehicles and charging rules, with live updates, auditing and background jobs."
+summary: "Coordinate parking operations through a .NET 9 application built around Clean Architecture and CQRS. The showcase covers its tenant model, membership workflows, reporting tools and operational observability."
+seo:
+  title: "Ace Parking Management Platform | BlazorStudio"
+  description: "Discover Ace Parking, a multi-tenant .NET 9 Blazor Server platform for parking operations, memberships and charging, with SignalR updates and audit support."
+slug: "ace-parking-platform"
 ---
 
 # Ace Parking — Blazor Server

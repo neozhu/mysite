@@ -2,8 +2,13 @@
 title: 'LinguaLens Translation Assistant'
 image: /uploads/illustrations/cuate/lingualens-translation-assistant.png
 date: 2025-05-05 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "AI", "Translation", "Next.js", "Internationalization"]
+description: "LinguaLens adapts AI translations to email, meetings, technical support and custom scenes, with language detection, multiple model providers and a localized interface."
+summary: "Select a communication scene to guide translation tone and formality, or save custom scenes in the browser. The Next.js app combines automatic language detection, streaming responses and multiple AI providers."
+seo:
+  title: "LinguaLens Translation Assistant | BlazorStudio"
+  description: "Translate with context using LinguaLens: choose email, meeting or technical support scenes, customize prompts and use multiple AI providers in a Next.js app."
+slug: "lingualens-translation-assistant"
 ---
 
 {{< brick_title >}}

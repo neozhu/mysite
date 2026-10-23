@@ -2,8 +2,13 @@
 title: 'Clean Architecture Solution For Razor Pages'
 image: /uploads/illustrations/cuate/razorpage.png
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Razor Pages", "Clean Architecture", ".NET"]
+description: "基于 .NET 9 与 Clean Architecture 的 ASP.NET Core Razor Pages 解决方案模板，集成 EF Core、MediatR、验证和测试工具，提供 NuGet 安装、项目创建与 Docker 部署支持。"
+summary: "通过安装 NuGet 模板并运行 dotnet new ca-sln 创建分层 Razor Pages 项目。文章列出数据访问、对象映射、验证、界面组件和测试技术，便于选择与启动项目。"
+seo:
+  title: "Razor Pages Clean Architecture 模板 | BlazorStudio"
+  description: "了解 ASP.NET Core Razor Pages 的 Clean Architecture 解决方案模板，查看 .NET 9、EF Core、MediatR 等技术组合，以及 NuGet 安装与本地启动步骤。"
+slug: "clean-architecture-solution-for-razor-pages"
 ---
 
 {{< brick_title >}}

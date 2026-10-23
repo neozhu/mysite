@@ -2,8 +2,13 @@
 title: 'PDF Generation API with Watermark and Stamp'
 image: /uploads/illustrations/cuate/pdf-generator-api.png
 date: 2025-04-03 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "PDF", "ASP.NET Core", "Playwright", "API"]
+description: "A .NET Minimal API that renders URLs or HTML to PDF with Playwright, optional watermarks and stamps, API key authentication and Swagger documentation."
+summary: "Send a webpage URL or complete HTML to generate an A4 PDF through headless Chromium. The API injects optional watermark text and stamp images before rendering and exposes documented, authenticated endpoints."
+seo:
+  title: "PDF Generation API with Playwright | BlazorStudio"
+  description: "Generate PDFs from URLs or HTML with a .NET Playwright API. Add watermark text and stamp images, authenticate requests and test endpoints through Swagger."
+slug: "pdf-generation-api-with-watermark-and-stamp"
 ---
 
 {{< brick_title >}}

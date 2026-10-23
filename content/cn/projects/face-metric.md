@@ -2,8 +2,13 @@
 title: 'Face Metric - 人性化人脸相似度分析'
 image: /uploads/illustrations/cuate/face-metric-showcase.png
 date: 2026-09-19 00:00:00
-tags:
-  - GitHub
+tags: ["GitHub", "人脸相似度", "计算机视觉", "FastAPI", "Next.js"]
+description: "Face Metric 是比较两张人脸外貌相似性的开源应用，融合 ArcFace 与 Facenet512 特征并进行感知校准，以共同特征和文字摘要解释评分，支持照片上传与手机拍摄。"
+summary: "通过 RetinaFace 对齐和多模型融合，探索亲属或伴侣之间的外貌相似性。图片仅在当前请求的内存中处理，评分具有概率性，不能作为身份认证依据。"
+seo:
+  title: "Face Metric 人脸相似度分析 | BlazorStudio"
+  description: "了解 Face Metric 如何结合 RetinaFace、ArcFace 与 Facenet512 比较人脸外貌，查看特征解释、内存图片处理、Next.js 与 FastAPI 架构及 Docker 部署支持。"
+slug: "face-metric-人性化人脸相似度分析"
 ---
 
 {{< brick_title >}}

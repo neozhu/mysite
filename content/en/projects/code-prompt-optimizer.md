@@ -2,8 +2,13 @@
 title: 'CodePrompt Optimizer'
 image: /uploads/illustrations/cuate/codeprompts-optimizer.png
 date: 2025-05-05 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "AI", "Prompt Engineering", "Next.js"]
+description: "CodePrompt Optimizer refines AI coding prompts, tests original and optimized versions, and compares generated code side by side across common programming languages."
+summary: "Choose a language, optimize a coding request and inspect both generated outputs before reviewing their differences. This Next.js and React project provides a practical workflow for iterating on prompts."
+seo:
+  title: "CodePrompt Optimizer | BlazorStudio"
+  description: "Refine coding prompts and compare original versus optimized AI outputs with CodePrompt Optimizer, a Next.js app supporting side-by-side code review."
+slug: "codeprompt-optimizer"
 ---
 
 {{< brick_title >}}

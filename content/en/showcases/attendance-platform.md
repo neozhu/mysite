@@ -2,8 +2,13 @@
 title: Attendance Platform
 image: /uploads/photos/attendance-platform.png
 date: 2025-04-12 00:00:00
-tags:
-  - Attendance
+tags: ["Attendance", "Blazor Server", "Workforce Management", "Facial Recognition"]
+description: "A Blazor attendance platform for labor outsourcing, connecting facial-recognition devices, work-hour calculation, multi-site records and transparent labor-fee settlement."
+summary: "Bring agencies, employers and dispatched workers into a shared attendance process. Device punches feed paired work-hour records, overtime calculations and reconciliation reports in a .NET 9 Blazor Server system."
+seo:
+  title: "Smart Attendance Platform | BlazorStudio"
+  description: "Connect attendance devices, calculated work hours and labor-fee reconciliation with a .NET 9 Blazor platform designed for agencies, employers and outsourced workers."
+slug: "attendance-platform"
 ---
 
 The Smart Attendance Platform is a modern solution designed to address the complex challenges of attendance tracking and labor settlement in the labor dispatch outsourcing sector. The platform bridges the information gap between labor agencies, host companies, employees, and platform administrators by enabling precise, real-time data collection and intelligent labor hour calculations through seamless integration with advanced attendance devices and facial recognition technology.

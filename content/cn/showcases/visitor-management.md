@@ -2,9 +2,13 @@
 title: 访客管理平台
 image: /uploads/photos/visitor-management.png
 date: 2019-08-04 00:00:00
-tags:
-  - Visitor
-  - Workflow
+tags: ["Visitor", "Workflow", "Blazor Server", "现场安全", "审批流程"]
+description: "基于 Blazor Server 的访客管理工作流平台，将来访申请、承包商作业许可、物品出门、固定资产通行和门禁权限变更纳入企业内部审批，结合角色权限与分层架构支持现场管理。"
+summary: "围绕厂区人员、物品和资产通行建立电子申请与审批流程，涵盖作业许可、钥匙领还及监控访问等事项。平台复用 Clean Architecture 模板，支持按业务继续扩展表单。"
+seo:
+  title: "访客与厂区安全审批工作流平台 | BlazorStudio"
+  description: "了解访客管理平台的来访预约、PTW 作业许可、电子出门条、固定资产通行和门禁审批，查看 .NET 9、Blazor Server、SQL Server 与 RBAC 组成的技术架构。"
+slug: "访客管理平台"
 ---
 
 访客管理工作流系统是一款基于 Blazor Server 技术构建的企业内部审批平台。它旨在简化并规范访客接待、出入许可审批、物品出门授权、固定资产通行以及施工安全许可等关键流程的管理，从而显著提高企业在现场管理方面的效率与合规性水平。

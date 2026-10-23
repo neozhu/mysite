@@ -35,6 +35,8 @@ This website is built using [Hugo](https://gohugo.io/), a fast and modern static
 
 Requires Hugo **v0.141.0 or newer** for locally generated WeChat sharing QR codes ([`images.QR`](https://gohugo.io/functions/images/qr/)). Article, project, and showcase pages include X, Facebook, WeChat, and Reddit sharing buttons with English and Chinese labels. WeChat opens a native browser popover with the article QR code and a selectable link; no API keys or third-party sharing scripts are required.
 
+Share text uses the article's authored `summary`, falling back to `description`, `seo.description`, or introductory body text. Preview cards use `seo.description` or `description`. X adds up to three hashtags from the article's `tags`, removing spaces and punctuation, and shortens the text to leave room for the hashtags and article link. Reddit includes the summary in the post body.
+
 ```bash
 hugo --minify --baseURL https://blazorserver.com/
 docker build . -t blazorstudiodev:v15

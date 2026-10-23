@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ .Language.LanguageCode | default .Language.Lang }}">
   <head>
+    {{- $isArticle := and .IsPage (in (slice "posts" "projects" "showcases") .Section) -}}
     <title>{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ (index .Site.Data .Language.Lang).general.title }} {{ (index .Site.Data .Language.Lang).header.logo_subtitle }}{{ end }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ if .Params.seo.description }}{{ .Params.seo.description }}{{ else }}{{ .Summary }}{{ end }}">
+    <meta name="description" content="{{ if .Params.seo.description }}{{ .Params.seo.description }}{{ else if $isArticle }}{{ partial "article_summary.html" . }}{{ else }}{{ .Summary }}{{ end }}">
 
     <link rel="canonical" href="{{ .Permalink }}" />
+    {{ if $isArticle }}{{ partial "article_share_meta.html" . }}{{ end }}
     <link rel="shortcut icon" href="{{ .Site.Data.settings.favicon_image }}">
     {{ if .IsHome }}{{ partial "seo_home.html" . }}{{ end }}
     

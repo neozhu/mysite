@@ -2,9 +2,13 @@
 title: 数字产品护照（Digital Product Passport）
 image: /uploads/photos/adigital-product-passport.webp
 date: 2023-08-12 00:00:00
-tags:
-  - DPP
-  - Blockchain
+tags: ["DPP", "Blockchain", "产品追溯", "Blazor", "IOTA"]
+description: "数字产品护照方案基于 Blazor 与 Clean Architecture，集中记录材料构成、认证状态和生命周期事件，结合 IOTA Tangle 与产品二维码，让制造商、供应商和消费者查询可追溯的产品信息。"
+summary: "为每件产品关联材料、认证和生命周期记录，并通过二维码提供访问入口。方案集成 IOTA Tangle 分布式账本，支持中英文界面和模块化扩展。"
+seo:
+  title: "数字产品护照 DPP 与产品追溯 | BlazorStudio"
+  description: "了解数字产品护照方案的材料记录、生命周期追踪与产品二维码，查看 IOTA Tangle 集成、Blazor 架构、中英文界面、多数据库支持和 Docker 部署技术。"
+slug: "数字产品护照digital-product-passport"
 ---
 
 数字产品护照 (Digital Product Passport, DPP) 是欧盟推行的一项重要倡议，其目标是在产品整个生命周期内实现产品信息的透明化与可追溯性。我们的 DPP 解决方案旨在帮助制造商、供应商及消费者轻松访问关键产品数据，从而有力支持循环经济目标的实现，并确保满足相关合规性要求。

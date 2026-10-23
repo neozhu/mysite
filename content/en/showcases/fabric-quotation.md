@@ -4,6 +4,7 @@ description: "Connect PMC sales, application engineering and pricing in one work
 summary: "Connect PMC sales, application engineering and pricing in one workflow, from paper machine position and fabric selection to design, discount approval and traceable quotations."
 seo:
   description: "Connect PMC sales, application engineering and pricing in one workflow, from paper machine position and fabric selection to design, discount approval and traceable quotations."
+  title: "Fabric Quotation CPQ for PMC Manufacturers | BlazorStudio"
 slug: fabric-quotation-cpq-for-paper-machine-fabric
 type: page
 date: 2026-09-19 00:00:00

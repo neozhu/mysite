@@ -2,8 +2,13 @@
 title: 'Wattlas - 全球能源机会雷达'
 image: /uploads/illustrations/cuate/wattlas-showcase.png
 date: 2026-09-19 00:00:00
-tags:
-  - GitHub
+tags: ["GitHub", "能源分析", "MapLibre", "Python", "数据管道"]
+description: "Wattlas 是开源全球能源机会雷达，将基础设施项目、发电资产与区域电力数据整合到交互地图，通过可解释评分和证据档案，分析 2026 至 2031 年用电需求增长及系统约束。"
+summary: "Python 管道验证公开数据并发布不可变快照，MapLibre 前端展示区域机会、资产与来源证据。缺失数据明确留空，单个连接器失败时保留最近一次成功地图。"
+seo:
+  title: "Wattlas 全球能源机会雷达 | BlazorStudio"
+  description: "了解 Wattlas 如何用 MapLibre 地图、Python 数据管道和可解释评分连接基础设施需求与电力平衡，查看区域洞察、资产证据、数据血缘及可复现快照机制。"
+slug: "wattlas-全球能源机会雷达"
 ---
 
 {{< brick_title >}}

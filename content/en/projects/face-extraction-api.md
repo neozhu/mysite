@@ -2,8 +2,13 @@
 title: 'Face Extraction API with Flask and DeepFace'
 image: /uploads/illustrations/cuate/face-extraction-api.png
 date: 2025-04-03 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Flask", "DeepFace", "Computer Vision", "API"]
+description: "A Flask and DeepFace API that detects and crops faces from image URLs or uploads, returns JPEG files, and optionally stores extracted images in Minio."
+summary: "The service selects the highest-confidence detected face and expands its crop to retain surrounding detail. Endpoint examples cover URL input, file uploads, JPEG downloads and optional Minio storage."
+seo:
+  title: "Face Extraction API with Flask | BlazorStudio"
+  description: "Extract a cropped face from an uploaded image or URL with Flask, DeepFace and Yunet. Review API endpoints, JPEG responses and optional Minio integration."
+slug: "face-extraction-api-with-flask-and-deepface"
 ---
 
 {{< brick_title >}}

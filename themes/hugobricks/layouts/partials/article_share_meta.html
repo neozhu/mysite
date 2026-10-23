@@ -1,0 +1,18 @@
+{{- $title := .Title | plainify | htmlUnescape -}}
+{{- $summary := or .Params.seo.description .Description (partial "article_summary.html" .) | plainify | htmlUnescape -}}
+{{- $image := .Params.seo.image | default .Params.image -}}
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $summary }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $summary }}">
+{{- with $image }}
+<meta property="og:image" content="{{ . | absURL }}">
+<meta property="og:image:alt" content="{{ $title }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ . | absURL }}">
+<meta name="twitter:image:alt" content="{{ $title }}">
+{{- else }}
+<meta name="twitter:card" content="summary">
+{{- end }}

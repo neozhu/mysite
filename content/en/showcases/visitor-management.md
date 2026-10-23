@@ -2,9 +2,13 @@
 title: Visitor Management Workflow System
 image: /uploads/photos/visitor-management.png
 date: 2019-08-04 00:00:00
-tags:
-  - Visitor
-  - Workflow
+tags: ["Visitor", "Workflow", "Blazor Server", "Access Control", "Safety Management"]
+description: "A Blazor Server approval platform for visitor requests, permits to work, gate passes, door access, key issuance and employee leave passes using role-based workflows."
+summary: "Route access and safety requests through structured forms for employees, contractors and visitors. This .NET 9 showcase brings permit, property, surveillance and leave approvals onto a Clean Architecture foundation."
+seo:
+  title: "Visitor and Safety Approval Workflows | BlazorStudio"
+  description: "Explore Blazor Server workflows for visitor access, permits to work, gate passes, keys and employee leave, built with .NET 9 and role-based access control."
+slug: "visitor-management-workflow-system"
 ---
 
 The Visitor Management Workflow System is an internal approval platform built with Blazor Server. It is designed to streamline processes such as visitor access requests, exit permissions, gate pass management, and construction safety permit workflows.

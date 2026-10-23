@@ -2,8 +2,13 @@
 title: 'Clean Architecture With Blazor Server'
 image: /uploads/illustrations/cuate/blazorserver.png
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Blazor Server", "Clean Architecture", ".NET"]
+description: "A .NET 9 Blazor Server template with Clean Architecture, OAuth login, CRUD code generation, database options and Docker support for interactive business apps."
+summary: "Separate domain, application, infrastructure and UI concerns while building in C#. The template combines SignalR updates, Hangfire jobs, authentication and a Visual Studio extension for feature scaffolding."
+seo:
+  title: "Clean Architecture with Blazor Server | BlazorStudio"
+  description: "Explore a .NET 9 Blazor Server template with Clean Architecture, OAuth integrations, code generation and PostgreSQL, SQL Server or SQLite deployment options."
+slug: "clean-architecture-with-blazor-server"
 ---
 
 {{< brick_title >}}

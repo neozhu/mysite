@@ -2,9 +2,13 @@
 title: Digital Product Passport
 image: /uploads/photos/adigital-product-passport.webp
 date: 2023-08-12 00:00:00
-tags:
-  - DPP
-  - Blockchain
+tags: ["DPP", "Blockchain", "Blazor Server", "Product Traceability"]
+description: "A Blazor Digital Product Passport solution for product materials, certifications and lifecycle records, with IOTA Tangle integration and QR-code access."
+summary: "Keep product information available across manufacturers, suppliers and consumers through a traceable digital passport. The showcase explains its bilingual Blazor interface, QR labels and distributed-ledger integration."
+seo:
+  title: "Digital Product Passport Solution | BlazorStudio"
+  description: "Explore a Digital Product Passport built with Blazor Server, IOTA Tangle and QR codes to share product materials, certifications and lifecycle information."
+slug: "digital-product-passport"
 ---
 
 The Digital Product Passport (DPP) is an EU-driven initiative designed to enable transparent and traceable product information throughout a product's lifecycle. Our DPP solution helps manufacturers, suppliers, and consumers easily access key product data, enhancing circular economy efforts and regulatory compliance.

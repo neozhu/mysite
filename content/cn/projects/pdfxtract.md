@@ -2,10 +2,13 @@
 title: 'PDFxtract'
 image: /uploads/illustrations/cuate/pdfxtract.png
 date: 2025-05-06 00:00:00
-tags:
-  - GitHub
-  - Next.js
-  - React
+tags: ["GitHub", "Next.js", "React", "OCR", "PDF", "Markdown"]
+description: "PDFxtract 是基于 Next.js 的扫描 PDF 处理应用，将页面转换为可预览的 JPEG 图片，结合 AI OCR 提取文字并输出 Markdown，同时支持将所有页面图片打包下载为 ZIP。"
+summary: "上传扫描 PDF 后，可逐页预览转换图片并批量下载，提取的文字可用于后续编辑。文章介绍项目结构、Next.js 技术栈及 Docker 构建与运行方式。"
+seo:
+  title: "PDFxtract 扫描 PDF 提取工具 | BlazorStudio"
+  description: "了解 PDFxtract 的扫描 PDF 转图片、AI OCR 文字提取与 Markdown 输出，查看在线页面预览、ZIP 下载功能，以及 Next.js 项目的启动和 Docker 部署示例。"
+slug: "pdfxtract"
 ---
 
 ## PDFxtract

@@ -4,6 +4,7 @@ description: "Fabric Quotation 将造纸织物企业的销售、应用工程和�
 summary: "Fabric Quotation 将造纸织物企业的销售、应用工程和定价连接到统一流程，覆盖纸机位置、织物选型、设计建议、折扣审批和可追溯报价。"
 seo:
   description: "Fabric Quotation 将造纸织物企业的销售、应用工程和定价连接到统一流程，覆盖纸机位置、织物选型、设计建议、折扣审批和可追溯报价。"
+  title: "Fabric Quotation 造纸织物 CPQ 与应用工程 | BlazorStudio"
 slug: 纸机毛布-cpqpaper-machine-fabric-fabric-quotation-报价系统
 type: page
 date: 2026-09-19 00:00:00

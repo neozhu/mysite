@@ -2,8 +2,13 @@
 title: MenuMuse Project Overview
 image: /uploads/illustrations/cuate/menumuse.png
 date: 2025-07-02 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "AI", "Next.js", "Image Recognition", "Menu Generation"]
+description: "MenuMuse turns menu photos into bilingual dish names, literary descriptions and AI food images, combining vision recognition with culinary stories and pairing suggestions."
+summary: "This project overview introduces the Next.js and React stack behind MenuMuse, its AI recognition and image-generation services, and the local setup needed to turn menu photos into richer dish presentations."
+seo:
+  title: "MenuMuse Project Overview | BlazorStudio"
+  description: "Explore the MenuMuse project: AI menu recognition, Chinese-English dish names, culinary storytelling and generated food images, with Next.js setup instructions."
+slug: "menumuse-project-overview"
 ---
 
 ## Project Overview

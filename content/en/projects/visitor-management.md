@@ -2,8 +2,13 @@
 title: 'Visitor Management System'
 image: /uploads/illustrations/cuate/visitor-management-system.jpg
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Visitor Management", "Access Control", ".NET"]
+description: "A digital visitor management system with pre-registration, check-in and checkout logs, host notifications, badge printing, photo capture and role-based administration."
+summary: "Replace paper visitor logs with scheduled visits, reusable visitor details and searchable entry and exit records. Administrative tools cover users, bookings, attendance, notification settings and visitor identification."
+seo:
+  title: "Visitor Management System | BlazorStudio"
+  description: "Explore digital visitor registration, appointment scheduling, badges, host notifications and entry logs in a .NET visitor management system with a live demo."
+slug: "visitor-management-system"
 ---
 
 {{< brick_title >}}

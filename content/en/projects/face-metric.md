@@ -2,8 +2,13 @@
 title: 'Face Metric - Human-Centred Facial Resemblance'
 image: /uploads/illustrations/cuate/face-metric-showcase.png
 date: 2026-09-19 00:00:00
-tags:
-  - GitHub
+tags: ["GitHub", "Computer Vision", "Next.js", "FastAPI", "DeepFace"]
+description: "Face Metric compares two face images with combined embeddings, an intuitive resemblance score, trait explanations and in-memory processing for exploratory comparisons."
+summary: "Compare likeness using ArcFace and Facenet512 embeddings with RetinaFace alignment. A Next.js interface presents qualitative traits and technical details, while FastAPI processes photos without saving them to disk."
+seo:
+  title: "Face Metric Facial Resemblance | BlazorStudio"
+  description: "Explore Face Metric, an open-source resemblance comparison app combining face embeddings, explanatory traits and in-memory image processing with Next.js and FastAPI."
+slug: "face-metric-human-centred-facial-resemblance"
 ---
 
 {{< brick_title >}}

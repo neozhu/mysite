@@ -7,6 +7,12 @@ tags:
   - Blazor
   - 多租户
   - CleanArchitecture
+description: "Ace Parking 是基于 .NET 9 与 Blazor Server 的多租户停车管理平台，集中管理车场、车位、会员、车辆及计费规则，结合 SignalR 实时更新、后台任务和审计日志支持日常运营。"
+summary: "从车场和车位分组到会员租赁及车辆绑定，平台以分层架构组织停车业务。CQRS、查询缓存、多数据库与文档导出能力为运营管理和后续扩展提供基础。"
+seo:
+  title: "Ace Parking 多租户停车管理平台 | BlazorStudio"
+  description: "查看 Ace Parking 的停车场、会员租赁、车辆与计费管理功能，了解 .NET 9、Blazor Server、Clean Architecture、SignalR 和 Hangfire 组成的多租户架构。"
+slug: "ace-parking-停车管理平台"
 ---
 
 # Ace Parking — Blazor Server 停车管理系统

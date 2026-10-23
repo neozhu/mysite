@@ -2,8 +2,13 @@
 title: 'Botchat - AI Chat Workspace'
 image: /uploads/illustrations/cuate/botchat-showcase.png
 date: 2026-09-19 00:00:00
-tags:
-  - GitHub
+tags: ["GitHub", "AI", "Next.js", "Supabase"]
+description: "Botchat is an open-source AI chat workspace with expert personas, streaming responses, file attachments, persistent sessions and authenticated personal histories."
+summary: "Switch between specialized experts while keeping conversations in a personal workspace. Next.js, the Vercel AI SDK and Supabase connect streaming chat, stored sessions, attachments and optional context summaries."
+seo:
+  title: "Botchat AI Chat Workspace | BlazorStudio"
+  description: "Explore Botchat for expert-persona conversations, streaming AI answers and personal chat history, built with Next.js, the Vercel AI SDK and Supabase."
+slug: "botchat-ai-chat-workspace"
 ---
 
 {{< brick_title >}}

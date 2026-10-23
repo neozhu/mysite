@@ -6,6 +6,12 @@ tags:
   - GitHub
   - Next.js
   - React
+description: "PDFxtract processes scanned PDFs in a Next.js interface, converts pages to JPEG previews, extracts text with AI OCR, and supports Markdown output and image ZIP downloads."
+summary: "Upload a scanned document to turn its pages into viewable images and extract text for editing in Markdown. The article covers the Next.js app structure, image downloads and local or Docker deployment."
+seo:
+  title: "PDFxtract Scanned PDF Processing | BlazorStudio"
+  description: "Process scanned PDFs with PDFxtract: convert pages to JPEG, preview and download images, and extract text with AI OCR in a Next.js and React application."
+slug: "pdfxtract"
 ---
 
 ## PDFxtract

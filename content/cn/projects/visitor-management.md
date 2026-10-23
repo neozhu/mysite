@@ -2,8 +2,13 @@
 title: '访客管理系统'
 image: /uploads/illustrations/cuate/visitor-management-system.jpg
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "访客管理", ".NET", "RBAC"]
+description: "基于 .NET 7 的开源访客管理系统，连接预登记、预约、现场签入、照片采集、胸卡打印和离场日志，并结合角色权限、通知与电子签名，帮助机构维护可检索的来访记录。"
+summary: "用数字预约和云端日志替代纸质登记，集中管理访客、接待员工与出入记录。系统还提供重复访客识别、电子签名及按角色发送通知等接待配套能力。"
+seo:
+  title: "开源访客管理系统 VMS | BlazorStudio"
+  description: "了解 .NET 访客管理系统的预登记、预约排程、照片采集、胸卡打印与电子签名，查看角色权限、通知配置、来访日志及开源项目和在线演示入口。"
+slug: "访客管理系统"
 ---
 
 {{< brick_title >}}

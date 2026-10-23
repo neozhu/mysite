@@ -2,8 +2,13 @@
 title: Procurement Inquiry Management System
 image: /uploads/photos/procurement-inquiry.png
 date: 2022-12-04 00:00:00
-tags:
-  - MVC
+tags: ["MVC", "Procurement", "RFQ", "Inventory Management"]
+description: "A procurement system connecting RFQs, supplier bids, award decisions, QR-labelled deliveries, warehouse movements and invoice matching in one end-to-end workflow."
+summary: "Follow procurement from the initial inquiry through supplier evaluation, shipment receipt and financial reconciliation. QR delivery labels, inventory records and workflow alerts help participants coordinate each handoff."
+seo:
+  title: "Procurement Inquiry Management System | BlazorStudio"
+  description: "Explore an end-to-end procurement workflow for supplier RFQs, bidding, QR delivery tracking, inventory control and invoice reconciliation, with live demos."
+slug: "procurement-inquiry-management-system"
 ---
 
 The Procurement Inquiry Management System is a comprehensive, end-to-end solution designed to streamline every stage of the procurement lifecycle—from initial inquiry and supplier bidding through to delivery, inventory control, and final financial reconciliation.

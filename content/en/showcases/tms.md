@@ -2,8 +2,13 @@
 title: Transport Management System
 image: /uploads/photos/tms-logistics.png
 date: 2019-08-04 00:00:00
-tags:
-  - TMS
+tags: ["TMS", "Logistics", "Transportation", "Dispatch Management"]
+description: "A transport management system covering carriers, route planning, multi-leg dispatch, shipment tracking, documents, video monitoring and financial settlement."
+summary: "Manage transport from planning through payment with carrier records, multi-modal orders and centralized shipment documents. Tracking, security monitoring and financial workflows keep operations connected."
+seo:
+  title: "Transport Management System | BlazorStudio"
+  description: "Explore a transport management platform for carrier selection, multi-modal planning, order dispatch, shipment documents, tracking and financial settlement."
+slug: "transport-management-system"
 ---
 
 The Transport Management System (TMS) is a comprehensive solution designed to enhance logistics efficiency and transparency. With a user-friendly interface, it covers the entire transportation process—from carrier information management, transport planning, and order dispatching, to document handling, video monitoring, through to financial settlement.

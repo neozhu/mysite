@@ -2,8 +2,13 @@
 title: '9x9 Multiplication Table Learning App'
 image: /uploads/illustrations/cuate/9x9app.png
 date: 2025-07-02 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Education", "Next.js", "Web Speech API"]
+description: "An interactive multiplication learning app with a visual 9x9 grid, Chinese spoken formulas, area highlights, and bilingual equations for desktop and mobile."
+summary: "Students explore multiplication through clickable cells, area visualization and matching results. Chinese audio and traditional mnemonics reinforce the patterns shown in a responsive Next.js app."
+seo:
+  title: "9x9 Multiplication Learning App | BlazorStudio"
+  description: "Learn how the 9x9 app combines Chinese multiplication mnemonics, speech playback and area visualization in an interactive Next.js learning experience."
+slug: "9x9-multiplication-table-learning-app"
 ---
 
 {{< brick_title >}}

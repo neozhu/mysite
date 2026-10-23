@@ -5,6 +5,7 @@ description: "A workforce collaboration platform for employers, staffing provide
 summary: "HR HUB connects employers, staffing providers and HR teams in one workflow, giving assignments a clear record, approved hours a reliable basis and monthly reconciliation a traceable history."
 seo:
   description: "Explore HR HUB for outsourced workforce operations: staffing, attendance and monthly billing, with a .NET 10 layered architecture and Docker deployment using Traefik, CrowdSec and MinIO."
+  title: "HR HUB Staffing, Attendance and Billing | BlazorStudio"
 date: 2025-11-18 00:00:00
 lastmod: 2026-10-05 00:00:00
 tags: ["Blazor", "NET10", "Docker", "Human Resources", "Staffing", "Attendance Management"]

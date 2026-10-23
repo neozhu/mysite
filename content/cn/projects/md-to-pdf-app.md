@@ -9,6 +9,12 @@ tags:
   - Markdown
   - PDF
   - AI
+description: "基于 Next.js 16 的 Markdown 转 PDF 应用，提供可调分栏编辑、实时预览、GFM 支持和 Chrome PDF 渲染，并通过先评审再润色的双 Agent 流程辅助技术文稿编辑。"
+summary: "在同一工作台中编辑、预览和导出 Markdown 文档，保留表格、任务列表与代码高亮。AI 先给出结构与表达改进计划，再在保持原意的前提下执行润色。"
+seo:
+  title: "Markdown 转 PDF 与 AI 润色工具 | BlazorStudio"
+  description: "了解 Markdown 转 PDF 应用的实时预览、GFM 支持、Puppeteer 渲染和双 Agent 审阅流程，查看 Next.js 16 技术栈、本地启动及 Docker 部署配置。"
+slug: "markdown-转-pdf-转换器"
 ---
 
 {{< brick_title >}}

@@ -2,8 +2,13 @@
 title: 'Clean Architecture Solution For Razor Pages'
 image: /uploads/illustrations/cuate/razorpage.png
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Razor Pages", "Clean Architecture", "ASP.NET Core"]
+description: "An ASP.NET Core 9 Razor Pages solution template using Clean Architecture, Entity Framework Core, MediatR and validation, with testing and Docker support."
+summary: "Create a Razor Pages solution from GitHub or a NuGet template, then build and run it with the .NET CLI. The article outlines its UI tools, application patterns, testing libraries and deployment support."
+seo:
+  title: "Clean Architecture for Razor Pages | BlazorStudio"
+  description: "Start an ASP.NET Core Razor Pages project with a Clean Architecture template, EF Core, MediatR and FluentValidation, plus .NET CLI setup instructions."
+slug: "clean-architecture-solution-for-razor-pages"
 ---
 
 {{< brick_title >}}

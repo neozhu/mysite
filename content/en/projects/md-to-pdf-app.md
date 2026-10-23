@@ -9,6 +9,12 @@ tags:
   - Markdown
   - PDF
   - AI
+description: "A Next.js Markdown-to-PDF app with a live split preview, syntax highlighting, customizable exports, conversion history and a two-stage AI review and polish workflow."
+summary: "Edit GitHub-flavored Markdown beside a live preview, review writing with an AI planning pass and apply controlled revisions before export. Puppeteer renders the resulting PDF through headless Chrome."
+seo:
+  title: "Markdown to PDF Converter | BlazorStudio"
+  description: "Convert Markdown to PDF with live preview, code highlighting and a two-stage AI review workflow, using a Next.js editor and Puppeteer-powered export."
+slug: "markdown-to-pdf-converter"
 ---
 
 {{< brick_title >}}

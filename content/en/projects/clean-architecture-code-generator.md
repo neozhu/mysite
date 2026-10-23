@@ -2,8 +2,13 @@
 title: 'Code Generator for Clean Architecture'
 image: /uploads/illustrations/cuate/code-generator.png
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "Clean Architecture", "Visual Studio", "Code Generation"]
+description: "A Visual Studio extension that scaffolds CRUD commands, queries, validators, DTOs and domain event handlers for the CleanArchitectureWithBlazorServer template."
+summary: "Add an entity feature from Visual Studio to generate application-layer files in a consistent folder and namespace structure. The extension supports the Blazor Server template with commands, queries and validation."
+seo:
+  title: "Clean Architecture Code Generator | BlazorStudio"
+  description: "Scaffold Clean Architecture features in Visual Studio with generated CRUD commands, queries, validators, DTOs and domain event handlers for Blazor Server projects."
+slug: "code-generator-for-clean-architecture"
 ---
 
 {{< brick_title >}}

@@ -2,8 +2,13 @@
 title: MenuMuse 项目概述
 image: /uploads/illustrations/cuate/menumuse.png
 date: 2025-07-02 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "AI", "菜单生成", "Next.js"]
+description: "MenuMuse 将菜单照片识别为菜品信息，结合中英文菜名、诗意描述、文化解析与 AI 美食图片生成，基于 Next.js、React 和多模型服务构建，提供开源代码及本地运行指南。"
+summary: "围绕菜单识别、文案创作和图片生成，介绍 MenuMuse 的前端与 AI 技术组合。开发者可参考环境变量配置和启动步骤，运行并扩展自己的菜单应用。"
+seo:
+  title: "MenuMuse AI 菜单生成项目概述 | BlazorStudio"
+  description: "查看 MenuMuse 从菜单照片生成双语菜名、诗意文案和美食图片的实现思路，了解 Next.js、Vercel AI SDK、OpenAI 与 Google AI 服务配置及本地开发步骤。"
+slug: "menumuse-项目概述"
 ---
 
 ## 项目概述

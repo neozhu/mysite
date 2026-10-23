@@ -7,6 +7,12 @@ tags:
   - 菜单生成
   - 图像识别
   - Next.js
+description: "MenuMuse 将上传的菜单照片转化为双语菜名、诗意菜品介绍与 AI 美食图片，结合菜品文化、烹饪说明和搭配建议，让用户通过上传、分析和生成三个步骤浏览更丰富的菜单内容。"
+summary: "以菜单照片为起点，把识别、翻译、文化说明与美食图像连接为完整体验。产品展示介绍三步操作、移动端适配、多模型接口与 Next.js 应用架构。"
+seo:
+  title: "MenuMuse AI 智能菜单生成器 | BlazorStudio"
+  description: "体验 MenuMuse 从菜单照片生成双语菜名、诗意描述及美食图片的流程，查看菜品文化与搭配建议、真实产品展示，以及 Next.js 和多模型 AI 服务的技术组合。"
+slug: "menumuse-ai-智能菜单生成器"
 ---
 
 # 🍜 MenuMuse - AI 智能菜单生成器

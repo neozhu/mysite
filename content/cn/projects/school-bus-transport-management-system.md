@@ -2,8 +2,13 @@
 title: '校车运输管理系统'
 image: /uploads/illustrations/cuate/transport.jpg
 date: 2025-04-04 00:00:00
-tags: 
-  - GitHub
+tags: ["GitHub", "校车管理", "GPS", ".NET"]
+description: "校车运输管理系统通过 GPS 实时追踪、路线规划、学生与司机档案及车辆维护记录，帮助学校管理校车运营，并让家长了解车辆动态与孩子在途情况，基于 .NET 7 构建。"
+summary: "把校车路线、乘车记录、司机排班和车辆维护纳入同一管理流程。实时位置与家校沟通功能为学校及家长提供了解上下学运输情况的入口。"
+seo:
+  title: "校车运输管理系统 | BlazorStudio"
+  description: "查看校车运输管理系统的 GPS 实时追踪、路线管理、学生乘车记录和司机排班功能，了解 .NET 7 开发环境、Docker 支持、开源协议与在线演示入口。"
+slug: "校车运输管理系统"
 ---
 
 {{< brick_title >}}
