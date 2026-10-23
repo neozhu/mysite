@@ -1,5 +1,11 @@
 ---
 title: Home
+seo:
+  title: Blazor & .NET Enterprise Development | BlazorStudio
+  description: Build scalable business applications with Blazor, .NET and AI. Explore custom development, enterprise integration, intelligent workflows and delivered projects.
+  image: /uploads/illustrations/ai-blazor-enterprise-hero.webp
+  image_alt: BlazorStudio enterprise workspace, system integration and intelligent AI workflows
+  locale: en_US
 ---
 {{< brick_intro >}}
 
@@ -24,7 +30,7 @@ Bring your business requirements to life with AI, Blazor and proven .NET enginee
 
 ## What’s Included in the Blazor Server Template?
 
-![](/uploads/illustrations/cuate/blazor-studio-showcase.webp)
+![Modular administration interface built with the Blazor Server application template](/uploads/illustrations/cuate/blazor-studio-showcase.webp)
 
 The Clean Architecture Blazor Server template is a highly modular Blazor Server application framework. Built with Clean Architecture principles and integrated AI-driven development support (spec generation, reviewable deltas, and task orchestration), it's designed to help you create maintainable and scalable enterprise-level applications. Key features include:
 
@@ -43,7 +49,7 @@ The Clean Architecture Blazor Server template is a highly modular Blazor Server 
 
 ## What’s Inside CleanAspire?
 
-![](/uploads/illustrations/cuate/blazorclient.jpg)
+![CleanAspire Blazor WebAssembly application interface](/uploads/illustrations/cuate/blazorclient.jpg)
 
 **CleanAspire** is a contemporary, open-source template for Progressive Web Applications (PWA) utilizing Blazor WebAssembly and Minimal API, powered by .NET 10 and Aspire. It’s engineered for building fast, lightweight, and cleanly architected web applications, featuring built-in support for offline functionality and real-time notifications.
 
@@ -63,7 +69,7 @@ Key features include:
 {{< brick_showcases >}}
 
 
-# Project Showcases
+## Project Showcases
 
 This section highlights a selection of projects I've successfully delivered, utilizing technologies such as Blazor, ASP.NET MVC, blockchain, and IoT. Each project adheres to clean architecture principles, boasts responsive performance, and features an aesthetically pleasing, modern user interface.
 

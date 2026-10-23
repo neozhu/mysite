@@ -30,7 +30,7 @@ section.intro-home .intro-eyebrow {display: flex; align-items: center; gap: 0.75
 section.intro-home .intro-eyebrow::before {content: ""; width: 1.5rem; height: 2px; background: currentColor; flex-shrink: 0;}
 section.intro-home h1 {margin: 0 0 1.5rem; font-family: var(--fontBody); font-size: clamp(2.75rem, 4.2vw, 3.5rem); font-weight: 600; line-height: 1.12; letter-spacing: -0.045em; text-wrap: balance;}
 section.intro-home h1 strong {color: var(--intro-accent); font-weight: inherit;}
-html[lang="cn"] section.intro-home h1 {font-size: clamp(2.5rem, 4.5vw, 4rem); line-height: 1.22; letter-spacing: -0.035em;}
+html[lang="cn"] section.intro-home h1, html[lang="zh-CN"] section.intro-home h1 {font-size: clamp(2.5rem, 4.5vw, 4rem); line-height: 1.22; letter-spacing: -0.035em;}
 section.intro-home .intro-copy > p {max-width: 38rem; line-height: 1.85;}
 section.intro-home h1 + p {color: var(--textDark); font-size: 1.2rem; line-height: 1.7; margin-bottom: 1rem;}
 section.intro-home .intro-actions {display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.75rem 0 2rem;}
@@ -60,7 +60,7 @@ section.intro-home + section.image.alt {margin-top: 0;}
     section.intro-home .intro-copy {font-size: 16px;}
     section.intro-home .intro-copy > p {max-width: 42rem;}
     section.intro-home h1 {font-size: clamp(2.4rem, 7vw, 3.5rem);}
-    html[lang="cn"] section.intro-home h1 {font-size: clamp(2.4rem, 7.5vw, 3.5rem);}
+    html[lang="cn"] section.intro-home h1, html[lang="zh-CN"] section.intro-home h1 {font-size: clamp(2.4rem, 7.5vw, 3.5rem);}
     section.intro-home .intro-eyebrow {font-size: 12px; letter-spacing: 0.05em; margin-bottom: 1.25rem;}
     section.intro-home .intro-visual {width: 100%; max-width: 38rem; justify-self: center;}
     section.intro-home ul {font-size: 14px;}

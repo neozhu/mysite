@@ -20,7 +20,11 @@
             </div>
             {{- with $images -}}
                 <div class="intro-visual">
-                    {{- replace (index . 0) "<img " `<img fetchpriority="high" decoding="async" ` 1 | safeHTML -}}
+                    {{- $attributes := `fetchpriority="high" decoding="async"` -}}
+                    {{- with resources.Get (strings.TrimPrefix "/" page.Params.seo.image) -}}
+                        {{- $attributes = printf `%s width="%d" height="%d"` $attributes .Width .Height -}}
+                    {{- end -}}
+                    {{- replace (index . 0) "<img " (printf "<img %s " $attributes) 1 | safeHTML -}}
                 </div>
             {{- end -}}
         </div>

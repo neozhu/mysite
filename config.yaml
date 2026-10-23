@@ -24,6 +24,7 @@ markup:
 languages:
   en:
     languageName: English
+    locale: en
     contentDir: content/en
     weight: 1
     disabled: false
@@ -37,6 +38,7 @@ languages:
 
   cn:
     languageName: 中文
+    locale: zh-CN
     contentDir: content/cn
     weight: 2
     disabled: false

@@ -1,5 +1,11 @@
 ---
 title: Home
+seo:
+  title: Blazor 与 .NET 企业级应用开发、AI 工作流 | BlazorStudio
+  description: 专注 Blazor 与 .NET 企业级应用开发，提供业务系统定制、企业平台集成与 AI 智能工作流。查看真实交付案例与开源项目，探索可扩展、易维护的业务系统解决方案。
+  image: /uploads/illustrations/ai-blazor-enterprise-hero.webp
+  image_alt: BlazorStudio 企业级业务工作台、系统集成与 AI 智能工作流
+  locale: zh_CN
 ---
 {{< brick_intro >}}
 
@@ -24,7 +30,7 @@ title: Home
 
 ## Blazor Server 应用模板有哪些亮点？
 
-![](/uploads/illustrations/cuate/blazor-studio-showcase.webp)
+![Blazor Server 应用模板的模块化管理后台界面](/uploads/illustrations/cuate/blazor-studio-showcase.webp)
 
 Clean Architecture Blazor Server 模板是一个高度模块化的 Blazor Server 应用框架。基于 Clean Architecture 原则并集成了 AI 驱动的开发支持（规范生成、可审查的增量和任务编排），旨在帮助你构建可维护且可扩展的企业级应用。主要特性包括：
 
@@ -44,7 +50,7 @@ Clean Architecture Blazor Server 模板是一个高度模块化的 Blazor Server
 
 ## CleanAspire 包含哪些内容？
 
-![](/uploads/illustrations/cuate/blazorclient.jpg)
+![CleanAspire Blazor WebAssembly 应用界面](/uploads/illustrations/cuate/blazorclient.jpg)
 
 **CleanAspire** 是一款现代化的开源模板，它整合了 Blazor WebAssembly、Minimal API、PWA 以及 .NET 10 + Aspire 技术栈，旨在帮助开发者快速构建轻量级、响应迅速且架构清晰的 Web 应用。此模板内置了离线支持和实时通知功能。
 
@@ -66,7 +72,7 @@ Clean Architecture Blazor Server 模板是一个高度模块化的 Blazor Server
 {{< brick_showcases >}}
 
 
-# 项目展示
+## 项目展示
 
 此处展示了我已交付的部分项目，技术栈涵盖 Blazor、ASP.NET MVC、区块链及物联网等领域。
 每个项目均以清晰的架构设计、卓越的性能表现和美观直观的用户界面为标准。
