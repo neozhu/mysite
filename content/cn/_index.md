@@ -20,7 +20,7 @@ seo:
 <div class="intro-actions">{{< button "开启项目合作" "/contact/" >}} {{< button "探索交付案例" "/showcases/" "secondary ghost" >}}</div>
 
 - **业务系统定制**<br>围绕真实场景，提升运营效率
-- **企业平台集成**<br>连接系统与数据，打通业务链路
+- **企业平台集成**<br>打通系统数据，连接业务流程
 - **AI 智能工作流**<br>让智能融入流程，让效率落地
 
 ![企业级业务工作台与 AI 智能工作流的产品视觉](/uploads/illustrations/ai-blazor-enterprise-hero.webp)

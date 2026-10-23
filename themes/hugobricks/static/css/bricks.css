@@ -78,21 +78,59 @@ section.intro-home + section.image.alt {margin-top: 0;}
 /* brick post
 /*------------------------*/
 
+section.post {--articleText: #3e4c59; --articleMuted: #627586; --articleLine: #dfe7ed; --articleLink: #0875a5; padding-bottom: 5rem;}
 section.post .container {max-width: 50rem;}
-section.post .container h1 {text-align: center;}
-section.post .container h1:last-child {margin-bottom: 3rem;}
-section.post .container .featuredimage {border-radius: 1rem; margin-bottom: 3rem;}
-section.post .container.wide {max-width: 62rem;}
-section.post .container.post p:first-child,
-section.post .container.post p:first-child a {color: var(--textDark); font-size: 1.52rem; line-height: 1.4;}
-section.post .container .meta {justify-content: center; margin-bottom: 3rem; margin-top: -0.75rem;}
-section.post .container.post ol li p,
-section.post .container.post ul li p,
-section.post .container.post ul li p a, 
-section.post .container.post ol li p a {
-    font-size: inherit !important; 
-    line-height: inherit !important;
-  }
+section.post .container.title {max-width: 70rem; margin-bottom: 2.25rem;}
+section.post .container.title h1 {margin: 0; color: var(--textDarker); font-family: var(--fontBody); font-size: clamp(30px, 3.5vw, 48px); font-weight: 600; line-height: 1.25; letter-spacing: -0.03em; text-align: left; text-wrap: balance;}
+section.post .container.title .meta {justify-content: flex-start; flex-wrap: wrap; gap: .75rem 1.5rem; margin: 1.25rem 0 0; color: var(--articleMuted); font-size: 14px;}
+section.post .container.wide {max-width: 70rem; margin-bottom: 3rem;}
+section.post .featuredimage {width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; margin: 0; border: 1px solid var(--borderLight); border-radius: 1rem;}
+section.post .container.post {color: var(--articleText); font-size: clamp(16px, 1.2vw, 18px); line-height: 1.85; overflow-wrap: anywhere;}
+section.post .container.post > p:first-child {margin-bottom: 1.5rem; color: var(--textDark); font-size: 1.2em; line-height: 1.7;}
+section.post .container.post p {margin: 0 0 1.3em;}
+section.post .container.post strong {color: var(--textDark); font-weight: 600;}
+section.post .container.post h2 {margin: 3rem 0 1.25rem; padding: 1.75rem 0 0; border-top: 1px solid var(--articleLine); color: var(--textDarker); font-size: clamp(23px, 2.1vw, 29px); font-weight: 600; line-height: 1.4; letter-spacing: -0.02em; text-wrap: balance;}
+section.post .container.post h3 {margin: 2rem 0 .75rem; padding: 0; color: var(--textDark); font-size: 1.15em; font-weight: 600; line-height: 1.5;}
+section.post .container.post h4 {margin: 1.5rem 0 .6rem; padding: 0; color: var(--textDark); font-size: 1em; line-height: 1.5;}
+section.post .container.post h2 + h3 {margin-top: 1.25rem;}
+section.post .container.post a:not(.button) {color: var(--articleLink); text-decoration-thickness: 1px; text-underline-offset: .2em;}
+section.post .container.post a:not(.button):hover {text-decoration-thickness: 2px;}
+section.post .container.post a:focus-visible {outline: 2px solid var(--articleLink); outline-offset: 4px; border-radius: .15rem;}
+section.post .container.post ul:not([class]), section.post .container.post ol:not([class]) {margin: .75rem 0 1.5rem; padding-left: 1.5rem;}
+section.post .container.post :is(ul, ol):not([class]) > li {margin: .55rem 0; padding-left: .2rem;}
+section.post .container.post :is(ul, ol):not([class]) > li::marker {color: var(--articleLink);}
+section.post .container.post li p {margin-bottom: .5rem; font-size: inherit; line-height: inherit;}
+section.post .container.post li > ul, section.post .container.post li > ol {margin-block: .5rem;}
+section.post .container.post blockquote {margin: 2rem 0; padding: 1.15rem 1.5rem; border-left: 3px solid var(--articleLink); border-radius: 0 .75rem .75rem 0; background: #f3f8fb; font-style: normal;}
+section.post .container.post blockquote > :last-child {margin-bottom: 0;}
+section.post .container.post :not(pre) > code {padding: .15em .4em; border: 0; border-radius: .25rem; background: #edf3f6; font-size: .9em;}
+section.post .container.post pre {max-width: 100%; margin: 1.75rem 0; padding: 1.25rem 1.5rem; overflow-x: auto; border: 1px solid var(--articleLine); border-radius: .75rem; background: #f4f7fa; font-size: .875em; line-height: 1.7; white-space: pre; overflow-wrap: normal;}
+section.post .container.post pre code {padding: 0; border: 0; background: transparent; font-size: inherit;}
+section.post .container.post table {display: block; width: 100%; max-width: 100%; margin: 1.75rem 0 2rem; overflow-x: auto; border: 1px solid var(--articleLine); border-collapse: collapse; border-spacing: 0; border-radius: .75rem; font-size: .92em; line-height: 1.75; scrollbar-width: thin;}
+section.post .container.post th, section.post .container.post td {min-width: 10rem; padding: .9rem 1.1rem; border-bottom: 1px solid var(--articleLine); text-align: left; vertical-align: top;}
+section.post .container.post th {background: #eef4f8; color: var(--textDark); font-weight: 600;}
+section.post .container.post tbody tr:nth-child(even) {background: #f8fafc;}
+section.post .container.post tbody tr:last-child td {border-bottom: 0;}
+section.post .container.post figure {border-radius: 0;}
+section.post .container.post > figure {margin: 2rem 0;}
+section.post .container.post img {height: auto; border-radius: .75rem;}
+section.post .container.post p > img {margin: 2rem auto;}
+section.post .container.post figcaption {margin-top: .75rem; color: var(--articleMuted); font-size: 14px; line-height: 1.75;}
+section.post .container.post .image-gallery {grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0; padding: 0;}
+section.post .container.post .image-gallery li {margin: 0; padding: 0;}
+section.post .container.post details {margin: 2rem 0; padding: .25rem 1.1rem; border: 1px solid var(--articleLine); border-radius: .75rem; background: #fbfcfd;}
+section.post .container.post summary {padding: .8rem 2rem .8rem 0; color: var(--textDark); font-weight: 600; line-height: 1.6;}
+section.post .container.post hr {margin: 2.5rem 0; background: var(--articleLine);}
+@media (max-width: 600px) {
+    section.post .container.title {margin-bottom: 1.5rem;}
+    section.post .container.wide {margin-bottom: 2rem;}
+    section.post .featuredimage {border-radius: .75rem;}
+    section.post .container.post {line-height: 1.9;}
+    section.post .container.post h2 {margin-top: 2.5rem; padding-top: 1.4rem;}
+    section.post .container.post .image-gallery {grid-template-columns: repeat(2, minmax(0, 1fr));}
+    section.post .container.post th, section.post .container.post td {padding: .75rem .9rem;}
+    section.post .container.post blockquote, section.post .container.post pre {padding: 1rem;}
+}
 /*------------------------*/
 /* brick cta
 /*------------------------*/

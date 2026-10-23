@@ -12,7 +12,7 @@
         {{- if (resources.GetMatch $postimage) -}}
             {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 jpg Smart q50`).RelPermalink -}}
         {{- end -}}
-        <img src="{{ $postimage }}" alt="{{ .Title }}" class="featuredimage" />
+        <img src="{{ $postimage }}" alt="{{ page.Title }}" class="featuredimage" />
     </div>
     <div class="container post">
         {{ page.Content }}
