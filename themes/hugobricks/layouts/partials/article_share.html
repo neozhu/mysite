@@ -11,9 +11,9 @@
 {{- if $tagText -}}{{- $tagText = printf "#%s" $tagText -}}{{- end -}}
 {{/* Reserve space for hashtags, separators and X's shortened URL. */}}
 {{- $budget := sub 254 ($tagText | replaceRE `[^\x00-\x7F]` "aa" | strings.RuneCount) -}}
-{{- $text := printf "%s\n\n%s" $title $summary | truncate $budget -}}
+{{- $text := printf "%s\n\n%s" $title $summary | truncate $budget | htmlUnescape -}}
 {{- if gt ($text | replaceRE `[^\x00-\x7F]` "aa" | strings.RuneCount) $budget -}}
-    {{- $text = $text | truncate (div $budget 2) -}}
+    {{- $text = $text | truncate (div $budget 2) | htmlUnescape -}}
 {{- end -}}
 <div class="container">
     <div class="article-share" role="group" aria-label="{{ i18n "shareArticle" }}">
