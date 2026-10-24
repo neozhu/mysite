@@ -13,7 +13,7 @@ function findGetParameter(parameterName) {
 function itemsLeft(tag) {
     if(document.getElementById('filter')) {
         var filter = document.getElementById('filter');
-        var activetags = ".contentitems > li";
+        var activetags = ".contentitems > li.item";
         for (var i=0; i<filter.options.length;i++) {
             if(filter.options[i].selected) {
                 activetags += '.tag_'+filter.options[i].value;
@@ -31,7 +31,7 @@ var multiselecttags_update = function(selectelement, selectEl, pillsEl) {
     for (var i=0; i<selectelement.options.length;i++) {
         const j = i;
         var tag = selectelement.options[i].value;
-        var numberofitems = document.querySelectorAll('.contentitems > li.tag_'+tag).length;
+        var numberofitems = document.querySelectorAll('.contentitems > li.item.tag_'+tag).length;
         if(numberofitems) {
             var option = document.createElement("option");
             option.setAttribute('value',tag);
@@ -70,7 +70,7 @@ var multiselecttags_update = function(selectelement, selectEl, pillsEl) {
     if(pillsEl.children.length == 0) {
         pillsEl.classList.add('nofilter');
         var itemlist = document.querySelector('.contentitems');
-        var items = itemlist.querySelectorAll('li');
+        var items = itemlist.querySelectorAll('li.item');
         var li = document.createElement("li");
         li.innerHTML = "All items";
         pillsEl.append(li);
@@ -112,7 +112,7 @@ function updatePostFilter() {
     if(document.getElementById('filter')) {
         var filter = document.getElementById('filter');
         var itemlist = document.querySelector('.contentitems');
-        var items = itemlist.querySelectorAll('li');
+        var items = itemlist.querySelectorAll('li.item');
         if(filter.querySelector('option[selected]')) {
             items.forEach(function(item) {
                 item.classList.add('hidden');
@@ -140,20 +140,23 @@ function updatePostFilter() {
 
 function hideAllPosts() {
     var itemlist = document.querySelector('.contentitems');
-    var items = itemlist.querySelectorAll('li');
+    var items = itemlist.querySelectorAll('li.item');
     items.forEach(function(item) {
         item.style.display = 'none';
     });
 }
 function loadMorePosts() {
     var itemlist = document.querySelector('.contentitems');
-    var validitems = itemlist.querySelectorAll('li:not(.hidden)');
+    var validitems = itemlist.querySelectorAll('li.item:not(.hidden)');
     var i = 0;
     validitems.forEach(function(item) {
         var style = window.getComputedStyle(item);
         if(style.display == 'none') {
             if(i<pagesize) {
-                item.querySelector('img').src = item.querySelector('img').dataset.src;
+                var img = item.querySelector('img');
+                if(img && img.dataset.src) {
+                    img.src = img.dataset.src;
+                }
                 item.style.display = 'block';
             }
             i++;

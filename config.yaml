@@ -2,6 +2,7 @@ baseURL: https://blazorserver.com/
 theme: hugobricks
 defaultContentLanguage: en
 assetDir: static
+enableGitInfo: true
 disableKinds:
   - taxonomy
   - term

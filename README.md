@@ -40,12 +40,10 @@ Share text uses the article's authored `summary`, falling back to `description`,
 Facebook reads the preview summary from `og:description`; it cannot prefill the post body with that summary. Its share link includes the first valid article hashtag, while all article `tags` are included as Open Graph `article:tag` metadata. Facebook supports a single prefilled hashtag and has deprecated the `quote` parameter.
 
 ```bash
-hugo --minify --baseURL https://blazorserver.com/
+hugo --cleanDestinationDir --minify --baseURL https://blazorserver.com/
 docker build . -t blazorstudiodev:v15
 ```
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
-

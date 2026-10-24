@@ -1,15 +1,9 @@
 # BlazorStudio (https://blazorserver.com/) robots.txt
+# Retired taxonomy, template, and demo paths (/tags/, /categories/, /bricks/, /blog/, /elements/, /get-started/)
+# intentionally remain crawlable so search engines can observe their 410 Gone / 404 HTTP status and drop them from the index.
 User-agent: *
 Content-Signal: search=yes, ai-input=yes
 Allow: /
-Disallow: /bricks/
-Disallow: /cn/bricks/
-Disallow: /elements/
-Disallow: /cn/elements/
-Disallow: /get-started/
-Disallow: /cn/get-started/
-Disallow: /404/
-Disallow: /cn/404/
 
 # AI Search & Citation Crawlers (explicitly allowed for AI Overviews, ChatGPT Search, Claude Search, Perplexity)
 User-agent: Googlebot
@@ -34,5 +28,3 @@ User-agent: Applebot
 Allow: /
 
 Sitemap: https://blazorserver.com/sitemap.xml
-Sitemap: https://blazorserver.com/en/sitemap.xml
-Sitemap: https://blazorserver.com/cn/sitemap.xml
