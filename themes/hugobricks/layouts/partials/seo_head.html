@@ -1,0 +1,259 @@
+{{- $isArticle := and .IsPage (in (slice "posts" "projects" "showcases") .Section) -}}
+{{- $lang := .Language.Lang -}}
+{{- $locale := .Language.Locale | default $lang -}}
+{{- $ogLocale := cond (eq $lang "cn") "zh_CN" "en_US" -}}
+{{- $siteData := index hugo.Data $lang -}}
+{{- $siteTitle := $siteData.general.title | default "BlazorStudio" -}}
+{{- $siteSubtitle := $siteData.header.logo_subtitle | default "" -}}
+{{- $rootURL := "/" | absURL -}}
+
+{{- /* 1. Page Title */ -}}
+{{- $metaTitle := "" -}}
+{{- if .Params.seo.title -}}
+  {{- $metaTitle = .Params.seo.title -}}
+{{- else if .IsHome -}}
+  {{- $metaTitle = printf "%s | %s" $siteTitle $siteSubtitle -}}
+{{- else -}}
+  {{- $metaTitle = printf "%s | %s" (.Title | plainify | htmlUnescape) $siteTitle -}}
+{{- end -}}
+
+{{- /* 2. Meta Description (always single-line, clean) */ -}}
+{{- $metaDesc := "" -}}
+{{- if .Params.seo.description -}}
+  {{- $metaDesc = .Params.seo.description -}}
+{{- else if .Description -}}
+  {{- $metaDesc = .Description -}}
+{{- else if $isArticle -}}
+  {{- $metaDesc = partial "article_summary.html" . -}}
+{{- else -}}
+  {{- $metaDesc = partial "article_summary.html" . -}}
+{{- end -}}
+{{- $metaDesc = $metaDesc | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 165 -}}
+{{- if not $metaDesc -}}
+  {{- if eq $lang "cn" -}}
+    {{- $metaDesc = "BlazorStudio 专注 Blazor 与 .NET 企业级应用开发，提供业务系统定制、企业平台集成与 AI 智能工作流解决方案。" -}}
+  {{- else -}}
+    {{- $metaDesc = "BlazorStudio builds scalable enterprise applications, B2B system integrations, and AI-powered workflows with Blazor and .NET." -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 3. Social / Featured Image */ -}}
+{{- $rawImage := or .Params.seo.image .Params.image "/uploads/illustrations/ai-blazor-enterprise-hero.webp" -}}
+{{- $imageURL := $rawImage | absURL -}}
+{{- $imageAlt := or .Params.seo.image_alt (.Title | plainify | htmlUnescape) $siteTitle -}}
+{{- $imageRes := resources.Get (strings.TrimPrefix "/" $rawImage) -}}
+
+<title>{{ $metaTitle }}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ $metaDesc }}">
+{{- if or .Params.noindex (eq .Kind "404") (eq .Kind "taxonomy") (eq .Kind "term") }}
+<meta name="robots" content="noindex, nofollow">
+{{- else }}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{- /* 4. Full-Mesh Hreflang + x-default */ -}}
+{{- $xDefaultURL := .Permalink -}}
+{{- range .AllTranslations }}
+  {{- $tLang := .Language.Locale | default .Language.Lang -}}
+  {{- if eq .Language.Lang "en" }}{{- $xDefaultURL = .Permalink -}}{{ end -}}
+<link rel="alternate" hreflang="{{ $tLang }}" href="{{ .Permalink }}" />
+{{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ $xDefaultURL }}" />
+{{- end }}
+
+{{- /* 5. Open Graph & Twitter Cards */ -}}
+<meta property="og:type" content="{{ if $isArticle }}article{{ else if eq .RelPermalink (relLangURL `about/`) }}profile{{ else }}website{{ end }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
+<meta property="og:title" content="{{ $metaTitle }}">
+<meta property="og:description" content="{{ $metaDesc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="{{ $ogLocale }}">
+{{- range .Translations }}
+<meta property="og:locale:alternate" content="{{ if eq .Language.Lang `cn` }}zh_CN{{ else }}en_US{{ end }}">
+{{- end }}
+<meta property="og:image" content="{{ $imageURL }}">
+<meta property="og:image:alt" content="{{ $imageAlt }}">
+{{- with $imageRes }}
+<meta property="og:image:type" content="{{ .MediaType.Type }}">
+<meta property="og:image:width" content="{{ .Width }}">
+<meta property="og:image:height" content="{{ .Height }}">
+{{- end }}
+{{- if $isArticle }}
+  {{- if not .Date.IsZero }}
+<meta property="article:published_time" content="{{ .Date.Format `2006-01-02T15:04:05Z07:00` }}">
+  {{- end }}
+  {{- if not .Lastmod.IsZero }}
+<meta property="article:modified_time" content="{{ .Lastmod.Format `2006-01-02T15:04:05Z07:00` }}">
+  {{- end }}
+<meta property="article:author" content="https://github.com/neozhu">
+  {{- range .Params.tags }}
+<meta property="article:tag" content="{{ . }}">
+  {{- end }}
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@new163cn">
+<meta name="twitter:creator" content="@new163cn">
+<meta name="twitter:title" content="{{ $metaTitle }}">
+<meta name="twitter:description" content="{{ $metaDesc }}">
+<meta name="twitter:image" content="{{ $imageURL }}">
+<meta name="twitter:image:alt" content="{{ $imageAlt }}">
+
+{{- /* 6. Schema.org JSON-LD @graph */ -}}
+{{- if not (or .Params.noindex (eq .Kind "404") (eq .Kind "taxonomy") (eq .Kind "term")) -}}
+  {{- $orgID := printf "%s#organization" $rootURL -}}
+  {{- $personID := printf "%s#person" $rootURL -}}
+  {{- $websiteID := printf "%s#website" $rootURL -}}
+  {{- $webpageID := printf "%s#webpage" .Permalink -}}
+  {{- $logoURL := "/uploads/branding/brick_icon2_bw.svg" | absURL -}}
+  {{- $avatarURL := "/uploads/photos/avatars/me.png" | absURL -}}
+
+  {{- $organization := dict
+    "@type" "Organization"
+    "@id" $orgID
+    "name" "BlazorStudio"
+    "url" $rootURL
+    "logo" (dict "@type" "ImageObject" "url" $logoURL)
+    "email" "neo.js.cn@gmail.com"
+    "founder" (dict "@id" $personID)
+    "sameAs" (slice "https://github.com/neozhu" "https://x.com/new163cn")
+  -}}
+
+  {{- $person := dict
+    "@type" "Person"
+    "@id" $personID
+    "name" (cond (eq $lang "cn") "华林 (Hualin)" "Hualin")
+    "alternateName" "neozhu"
+    "jobTitle" (cond (eq $lang "cn") ".NET 与 Blazor 企业级应用架构师" "Senior .NET & Blazor Enterprise Architect")
+    "url" ("about/" | absLangURL)
+    "image" $avatarURL
+    "worksFor" (dict "@id" $orgID)
+    "knowsAbout" (slice "Blazor" ".NET" "C#" "Clean Architecture" "Enterprise B2B Integration" "AI Agent Workflows" "CQRS")
+    "sameAs" (slice "https://github.com/neozhu" "https://x.com/new163cn")
+  -}}
+
+  {{- $website := dict
+    "@type" "WebSite"
+    "@id" $websiteID
+    "url" $rootURL
+    "name" $siteTitle
+    "publisher" (dict "@id" $orgID)
+    "inLanguage" (slice "en" "zh-CN")
+  -}}
+
+  {{- $pageSchemaType := "WebPage" -}}
+  {{- if in .RelPermalink "/about/" -}}
+    {{- $pageSchemaType = "ProfilePage" -}}
+  {{- else if in .RelPermalink "/contact/" -}}
+    {{- $pageSchemaType = "ContactPage" -}}
+  {{- else if and .IsSection (in (slice "projects" "showcases") .Section) -}}
+    {{- $pageSchemaType = "CollectionPage" -}}
+  {{- end -}}
+
+  {{- $webpage := dict
+    "@type" $pageSchemaType
+    "@id" $webpageID
+    "url" .Permalink
+    "name" $metaTitle
+    "description" $metaDesc
+    "inLanguage" $locale
+    "isPartOf" (dict "@id" $websiteID)
+    "about" (dict "@id" $orgID)
+    "primaryImageOfPage" (dict "@type" "ImageObject" "url" $imageURL "caption" $imageAlt)
+  -}}
+  {{- if eq $pageSchemaType "ProfilePage" -}}
+    {{- $webpage = merge $webpage (dict "mainEntity" (dict "@id" $personID)) -}}
+  {{- end -}}
+
+  {{- $graph := slice $organization $person $website $webpage -}}
+
+  {{- /* BreadcrumbList for non-home pages */ -}}
+  {{- if not .IsHome -}}
+    {{- $homeName := cond (eq $lang "cn") "首页" "Home" -}}
+    {{- $crumbItems := slice (dict "@type" "ListItem" "position" 1 "name" $homeName "item" ("" | absLangURL)) -}}
+    {{- if $isArticle -}}
+      {{- $secName := "" -}}
+      {{- $secURL := "" -}}
+      {{- if eq .Section "projects" -}}
+        {{- $secName = cond (eq $lang "cn") "开源项目" "Projects" -}}
+        {{- $secURL = "projects/" | absLangURL -}}
+      {{- else if eq .Section "showcases" -}}
+        {{- $secName = cond (eq $lang "cn") "交付案例" "Showcases" -}}
+        {{- $secURL = "showcases/" | absLangURL -}}
+      {{- else -}}
+        {{- $secName = .Section | title -}}
+        {{- $secURL = (printf "%s/" .Section) | absLangURL -}}
+      {{- end -}}
+      {{- $crumbItems = $crumbItems | append (dict "@type" "ListItem" "position" 2 "name" $secName "item" $secURL) -}}
+      {{- $crumbItems = $crumbItems | append (dict "@type" "ListItem" "position" 3 "name" (.Title | plainify | htmlUnescape) "item" .Permalink) -}}
+    {{- else -}}
+      {{- $crumbItems = $crumbItems | append (dict "@type" "ListItem" "position" 2 "name" (.Title | plainify | htmlUnescape) "item" .Permalink) -}}
+    {{- end -}}
+    {{- $breadcrumb := dict
+      "@type" "BreadcrumbList"
+      "@id" (printf "%s#breadcrumb" .Permalink)
+      "itemListElement" $crumbItems
+    -}}
+    {{- $graph = $graph | append $breadcrumb -}}
+  {{- end -}}
+
+  {{- /* Article + Software Schema for Project & Showcase Detail Pages */ -}}
+  {{- if $isArticle -}}
+    {{- $articleType := cond (eq .Section "projects") "TechArticle" "Article" -}}
+    {{- $articleDict := dict
+      "@type" $articleType
+      "@id" (printf "%s#article" .Permalink)
+      "isPartOf" (dict "@id" $webpageID)
+      "mainEntityOfPage" (dict "@id" $webpageID)
+      "headline" (.Title | plainify | htmlUnescape)
+      "description" $metaDesc
+      "image" (slice $imageURL)
+      "inLanguage" $locale
+      "author" (dict "@id" $personID)
+      "publisher" (dict "@id" $orgID)
+    -}}
+    {{- if not .Date.IsZero -}}
+      {{- $articleDict = merge $articleDict (dict "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")) -}}
+    {{- end -}}
+    {{- if not .Lastmod.IsZero -}}
+      {{- $articleDict = merge $articleDict (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
+    {{- else if not .Date.IsZero -}}
+      {{- $articleDict = merge $articleDict (dict "dateModified" (.Date.Format "2006-01-02T15:04:05Z07:00")) -}}
+    {{- end -}}
+    {{- with .Params.tags -}}
+      {{- $articleDict = merge $articleDict (dict "keywords" (delimit . ", ")) -}}
+    {{- end -}}
+    {{- $graph = $graph | append $articleDict -}}
+
+    {{- if eq .Section "projects" -}}
+      {{- $swSource := dict
+        "@type" "SoftwareSourceCode"
+        "@id" (printf "%s#software" .Permalink)
+        "name" (.Title | plainify | htmlUnescape)
+        "description" $metaDesc
+        "author" (dict "@id" $personID)
+        "programmingLanguage" (.Params.tags | default (slice ".NET" "C#" "Blazor"))
+      -}}
+      {{- $repoMatches := findRE `https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+` .RawContent 1 -}}
+      {{- with $repoMatches -}}
+        {{- $swSource = merge $swSource (dict "codeRepository" (index . 0)) -}}
+      {{- end -}}
+      {{- $graph = $graph | append $swSource -}}
+    {{- else if eq .Section "showcases" -}}
+      {{- $swApp := dict
+        "@type" "SoftwareApplication"
+        "@id" (printf "%s#software" .Permalink)
+        "name" (.Title | plainify | htmlUnescape)
+        "description" $metaDesc
+        "applicationCategory" "BusinessApplication"
+        "operatingSystem" "Web"
+        "image" $imageURL
+        "creator" (dict "@id" $orgID)
+      -}}
+      {{- $graph = $graph | append $swApp -}}
+    {{- end -}}
+  {{- end -}}
+
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
+{{- end -}}

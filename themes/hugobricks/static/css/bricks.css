@@ -614,7 +614,8 @@ section.cta-contact .button.secondary:hover {background: #24455e; border-color: 
 section.cta-contact .button.secondary::after {content: "↗"; margin-left: 0.75rem;}
 section.cta-contact .button:focus-visible {outline: 3px solid #8ed4fa; outline-offset: 4px;}
 section.cta-contact .cta-note {margin: 0; color: #b4c7d5; font-size: 0.875rem; line-height: 1.8;}
-section.cta-contact.hasbackgroundcolor + footer {margin-top: 0;}
+section.cta-contact.hasbackgroundcolor + footer,
+main:has(> section.cta-contact.hasbackgroundcolor:last-child) + footer {margin-top: 0;}
 @media (max-width: 900px) {
     section.cta-contact .cta-content {grid-template-columns: minmax(0, 1fr);}
     section.cta-contact .cta-content > .cta-actions {grid-column: 1; grid-row: auto; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: center; margin: 0.5rem 0 1.25rem; padding: 0; border: 0;}

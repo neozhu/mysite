@@ -10,12 +10,12 @@
         {{- markdownify $inner -}}
     </div>{{ end }}
     <div class="container">
-        <ul class="contentitems grid posts" data-pagesize="{{ if page.Site.Data.settings.show_all_services }}99{{ else }}{{ page.Site.Data.settings.page_size }}{{ end }}">
+        <ul class="contentitems grid posts" data-pagesize="{{ if hugo.Data.settings.show_all_services }}99{{ else }}{{ hugo.Data.settings.page_size }}{{ end }}">
             {{ range $index, $service := $services }}                
                 <li class="item{{ range .Params.tags }} tag_{{ . | urlize }}{{ end }}">
                     {{- if (resources.GetMatch .Params.image) -}}
                         {{- $serviceimage := ((resources.GetMatch .Params.image).Fill `1200x630 webp Smart q82`).RelPermalink -}}
-                        {{- if $serviceimage -}}<a href="{{ .RelPermalink }}" class="card-media"><div class="img"><img data-src="{{ $serviceimage }}" alt="{{ .Title }}" /></div></a>{{- end -}}
+                        {{- if $serviceimage -}}<a href="{{ .RelPermalink }}" class="card-media"><div class="img"><img src="{{ $serviceimage }}" data-src="{{ $serviceimage }}" alt="{{ .Title }}" width="1200" height="630" loading="lazy" decoding="async" /></div></a>{{- end -}}
                     {{- end -}}
                     <div class="card-body">
                         {{- if index .Params.tags 0 -}}

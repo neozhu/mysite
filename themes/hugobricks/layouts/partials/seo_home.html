@@ -2,15 +2,15 @@
 {{- $root := "/" | absURL -}}
 {{- $imageURL := $seo.image | absURL -}}
 {{- $image := resources.Get (strings.TrimPrefix "/" $seo.image) -}}
-{{- $language := .Language.LanguageCode | default .Language.Lang -}}
+{{- $language := .Language.Locale | default .Language.Lang -}}
 
 {{- range .AllTranslations }}
-<link rel="alternate" hreflang="{{ .Language.LanguageCode | default .Language.Lang }}" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="{{ .Language.Locale | default .Language.Lang }}" href="{{ .Permalink }}">
 {{- end }}
 <link rel="alternate" hreflang="x-default" href="{{ $root }}">
 
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="{{ (index .Site.Data .Language.Lang).general.title }}">
+<meta property="og:site_name" content="{{ (index hugo.Data .Language.Lang).general.title }}">
 <meta property="og:title" content="{{ $seo.title }}">
 <meta property="og:description" content="{{ $seo.description }}">
 <meta property="og:url" content="{{ .Permalink }}">
@@ -32,6 +32,6 @@
 <meta name="twitter:image:alt" content="{{ $seo.image_alt }}">
 
 {{- $websiteID := printf "%s#website" $root -}}
-{{- $website := dict "@type" "WebSite" "@id" $websiteID "url" $root "name" (index .Site.Data .Language.Lang).general.title "inLanguage" (slice "en" "zh-CN") -}}
+{{- $website := dict "@type" "WebSite" "@id" $websiteID "url" $root "name" (index hugo.Data .Language.Lang).general.title "inLanguage" (slice "en" "zh-CN") -}}
 {{- $webpage := dict "@type" "WebPage" "@id" (printf "%s#webpage" .Permalink) "url" .Permalink "name" $seo.title "description" $seo.description "inLanguage" $language "isPartOf" (dict "@id" $websiteID) "primaryImageOfPage" (dict "@type" "ImageObject" "url" $imageURL "caption" $seo.image_alt) -}}
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice $website $webpage) | jsonify | safeJS }}</script>

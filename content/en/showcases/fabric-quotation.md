@@ -76,6 +76,11 @@ Fabric Quotation brings that information and those decisions into a shared proce
 
 Generic CPQ follows **Configure → Price → Quote**. Fabric Quotation is a vertical CPQ and application engineering platform built around the complete PMC sales process.
 
+<figure>
+  <a href="/uploads/gallery/fabric-quotation/fabric-quotation-business-overview-en.png"><img src="/uploads/gallery/fabric-quotation/fabric-quotation-business-overview-en.png" alt="Fabric Quotation eight-stage CPQ workflow: customer inquiry, application context, fabric selection, engineering review, design recommendation, standard pricing, discount approval and customer quotation" width="941" height="1672" loading="lazy"></a>
+  <figcaption>From customer inquiry to traceable quotation: connect sales, application engineering, standard pricing and discount approvals in one workflow.</figcaption>
+</figure>
+
 <ol class="fq-workflow" aria-label="PMC quotation workflow">
   <li><strong>1. Customer RFQ</strong>Start from the customer's requirements.</li>
   <li><strong>2. Mill / Machine / Position</strong>Establish the operating context.</li>

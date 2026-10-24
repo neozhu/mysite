@@ -15,8 +15,6 @@ seo:
 slug: "ace-parking-停车管理平台"
 ---
 
-# Ace Parking — Blazor Server 停车管理系统
-
 基于 .NET 9 与 Blazor Server 构建的 Clean Architecture、CQRS 驱动智能停车管理平台。
 
 ## 概述

@@ -1,9 +1,13 @@
 ---
 title: 关于我
+description: "了解华林 (neozhu)：资深 .NET 与 Blazor 企业级应用开发者，专注于企业 B2B 系统整合、Clean Architecture 架构设计与 AI Agent 智能工作流编排。"
+seo:
+  title: "关于华林 | .NET 与 Blazor 企业级应用架构师 | BlazorStudio"
+  description: "了解华林 (neozhu)：资深 .NET 与 Blazor 企业级应用开发者，专注于企业 B2B 系统整合、Clean Architecture 架构设计与 AI Agent 智能工作流编排。"
 ---
 {{< brick_about >}}
 
-![](/uploads/photos/avatars/me.png)
+![华林 - .NET 与 Blazor 企业级应用开发者](/uploads/photos/avatars/me.png)
 
 # 嗨，我是华林
 
@@ -20,4 +24,3 @@ title: 关于我
 
 {{< /brick_about >}}
 {{< brick_cta >}}{{< /brick_cta >}}
-

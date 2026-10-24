@@ -18,8 +18,8 @@ HR HUB 面向用人单位、劳务供应商和人事团队，贯通从用工需�
 
 多家供应商同时供人、员工分布在不同现场时，月底的一个总数往往很难解释清楚。员工名单、打卡记录、班次规则和小时单价都会影响结果。HR HUB 将这些记录关联起来，让团队直接查看账单依据，减少在表格和聊天记录中反复查找、拼凑与核对。
 
-{{< button "查看在线演示" "https://hrcloud.blazorserver.com//" >}}
-{{< button2 "讨论您的用工场景" "/contact/" >}}
+{{< button "查看在线演示" "https://hrcloud.blazorserver.com/" >}}
+{{< button2 "讨论您的用工场景" "/cn/contact/" >}}
 
 以下截图于 2026 年 10 月 24 日采集自在线系统，点击图片可查看原图。
 
@@ -135,5 +135,5 @@ HR HUB 使用 **.NET 10、Blazor Server、MudBlazor 和 Entity Framework Core** 
 
 沿着这条流程，可以了解 HR HUB 如何回答三个日常问题：**谁在哪里工作？哪些工时已经确认？账单上的费用是怎样算出来的？**
 
-{{< button "查看在线演示" "https://hrcloud.blazorserver.com//" >}}
+{{< button "查看在线演示" "https://hrcloud.blazorserver.com/" >}}
 {{< button2 "讨论试点与部署方案" "/contact/" >}}

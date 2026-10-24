@@ -1,5 +1,11 @@
 ---
 title: Get started
+noindex: true
+sitemap:
+  disable: true
+build:
+  list: never
+  render: never
 ---
 {{< brick_small >}}
 

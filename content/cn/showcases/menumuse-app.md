@@ -15,8 +15,6 @@ seo:
 slug: "menumuse-ai-智能菜单生成器"
 ---
 
-# 🍜 MenuMuse - AI 智能菜单生成器
-
 
 
 ## ✨ 产品简介

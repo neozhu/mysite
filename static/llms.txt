@@ -1,0 +1,38 @@
+# BlazorStudio (blazorserver.com)
+
+> BlazorStudio is the enterprise software engineering studio and open-source portfolio of Hualin (neozhu), specializing in .NET 9/10, Blazor Server & WebAssembly, Clean Architecture, enterprise B2B integration (BizTalk, Salesforce, SAP), and AI Agent workflow orchestration.
+
+## Core Pages (English & Chinese)
+
+- [Home (EN)](https://blazorserver.com/): Custom Blazor & .NET enterprise application development, B2B system integration, and AI-powered business workflows.
+- [首页 (中文)](https://blazorserver.com/cn/): 专注 Blazor 与 .NET 企业级应用开发、企业平台集成与 AI 智能工作流。
+- [Project Showcases (EN)](https://blazorserver.com/showcases/): Delivered enterprise systems across HR, visitor safety, CPQ quotation, logistics, smart water IoT, and digital product passports.
+- [项目交付案例 (中文)](https://blazorserver.com/cn/showcases/): 面向制造、园区、人力资源、物流与物联网场景的企业级真实交付案例。
+- [Open Source Projects (EN)](https://blazorserver.com/projects/): Open-source .NET, Blazor, Python, and Next.js templates and developer tools on GitHub (3k+ stars).
+- [开源项目 (中文)](https://blazorserver.com/cn/projects/): GitHub 开源项目与 Clean Architecture 架构模板合集。
+- [About Hualin](https://blazorserver.com/about/): Background, technical architecture expertise, and open-source contributions of Hualin (neozhu).
+- [Contact](https://blazorserver.com/contact/): Start a conversation about custom .NET/Blazor development, enterprise integration, or AI workflow projects.
+
+## Flagship Open-Source Templates
+
+- [Clean Architecture with Blazor Server](https://blazorserver.com/projects/clean-architecture-with-blazor-server/): Modular .NET 9 Blazor Server enterprise application template with CQRS, MudBlazor, Docker, and OpenSpec AI workflow support.
+- [CleanAspire (.NET 10 & Aspire PWA Template)](https://blazorserver.com/projects/cleanaspire-template/): Cloud-native Blazor WebAssembly Progressive Web App (PWA) with Minimal API, .NET 10, .NET Aspire, Scalar, and Microsoft Kiota.
+- [Botchat AI Chat Workspace](https://blazorserver.com/projects/botchat-ai-chat-workspace/): Multi-persona AI chat workspace built with Next.js, Vercel AI SDK, and Supabase Row Level Security.
+- [Wattlas Global Energy Opportunity Radar](https://blazorserver.com/projects/wattlas-global-energy-opportunity-radar/): Geospatial energy intelligence and opportunity analytics platform.
+
+## Featured Enterprise Showcases
+
+- [VisitSafe: Connected Visitor Management & Safety Training](https://blazorserver.com/showcases/visitsafe-visitor-safety-training/): End-to-end factory visitor registration, host/area approval, mobile safety training, exam verification, and gate check-in/out platform (React + Blazor + .NET).
+- [HR HUB: Integrated Staffing, Attendance & Billing Cloud](https://blazorserver.com/showcases/hr-hub-integrated-hr-cloud-platform/): Multi-party workforce outsourcing, shift attendance verification, and dual-rate monthly billing reconciliation platform built on .NET 10 and Blazor.
+- [Fabric Quotation CPQ for Paper Machine Clothing](https://blazorserver.com/showcases/fabric-quotation-cpq-for-paper-machine-fabric/): Configure-Price-Quote (CPQ) and application engineering platform for paper machine clothing (PMC) manufacturers.
+- [Delivery Print: Delivery Note & Material Label System](https://blazorserver.com/showcases/delivery-print-delivery-note-and-material-label-system/): Supplier shipment validation, delivery note PDF generation, and barcode/QR carton labeling workflow.
+- [Ace Parking Platform](https://blazorserver.com/showcases/ace-parking-platform/): Multi-tenant car park, gate, membership, and charging management platform built with .NET 9, Blazor Server, SignalR, and Hangfire.
+- [Smart Attendance Platform](https://blazorserver.com/showcases/attendance-platform/): Enterprise attendance platform connecting facial recognition terminals, shift scheduling, and agency workforce management.
+- [Digital Product Passport (DPP)](https://blazorserver.com/showcases/digital-product-passport/): Blockchain-backed product lifecycle traceability and EU Digital Product Passport compliance system.
+
+## Author & Contact
+
+- Author: Hualin (华林 / neozhu)
+- GitHub: https://github.com/neozhu
+- X (Twitter): https://x.com/new163cn
+- Email: mailto:neo.js.cn@gmail.com

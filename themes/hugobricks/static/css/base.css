@@ -114,8 +114,10 @@ section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
 section.bgimage.hasbackgroundcolor + section:not(.hasbackgroundcolor) {margin-top: 1.5rem;}
 section :last-child {margin-bottom: 0;}
 section:not(.hasbackgroundcolor) + section:not(.hasbackgroundcolor) {padding-top: 2rem;}
-section.hasbackgroundcolor + footer {margin-top: 7.5rem;}
-section.stickstofooter + footer {margin-top: 0; border-top: 0;}
+section.hasbackgroundcolor + footer,
+main:has(> section.hasbackgroundcolor:last-child) + footer {margin-top: 7.5rem;}
+section.stickstofooter + footer,
+main:has(> section.stickstofooter:last-child) + footer {margin-top: 0; border-top: 0;}
 
 /*------------------------*/
 /* box

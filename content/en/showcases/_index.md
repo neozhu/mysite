@@ -1,5 +1,9 @@
 ---
 title: Showcases
+description: "Enterprise software showcases delivered with Blazor, .NET, React, IoT, and AI workflows across manufacturing, visitor safety, HR staffing, CPQ, and logistics."
+seo:
+  title: "Enterprise Blazor & .NET Project Showcases | BlazorStudio"
+  description: "Enterprise software showcases delivered with Blazor, .NET, React, IoT, and AI workflows across manufacturing, visitor safety, HR staffing, CPQ, and logistics."
 ---
 {{< brick_showcases >}}
 

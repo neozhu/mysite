@@ -1,6 +1,38 @@
-# 允许所有爬虫抓取所有页面
+# BlazorStudio (https://blazorserver.com/) robots.txt
 User-agent: *
-Disallow:
+Content-Signal: search=yes, ai-input=yes
+Allow: /
+Disallow: /bricks/
+Disallow: /cn/bricks/
+Disallow: /elements/
+Disallow: /cn/elements/
+Disallow: /get-started/
+Disallow: /cn/get-started/
+Disallow: /404/
+Disallow: /cn/404/
 
-# 告诉搜索引擎你的网站地图位置
+# AI Search & Citation Crawlers (explicitly allowed for AI Overviews, ChatGPT Search, Claude Search, Perplexity)
+User-agent: Googlebot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
 Sitemap: https://blazorserver.com/sitemap.xml
+Sitemap: https://blazorserver.com/en/sitemap.xml
+Sitemap: https://blazorserver.com/cn/sitemap.xml

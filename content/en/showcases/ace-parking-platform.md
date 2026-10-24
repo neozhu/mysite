@@ -14,8 +14,6 @@ seo:
 slug: "ace-parking-platform"
 ---
 
-# Ace Parking — Blazor Server
-
 Clean Architecture, CQRS-driven parking management platform built with .NET 9 and Blazor Server.
 
 ## Overview

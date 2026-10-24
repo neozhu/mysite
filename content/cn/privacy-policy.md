@@ -1,5 +1,9 @@
 ---
 title: 隐私政策
+description: "BlazorStudio (blazorserver.com) 隐私政策，说明我们如何收集、使用并保护您的个人信息与访问数据。"
+seo:
+  title: "隐私政策 | BlazorStudio"
+  description: "BlazorStudio (blazorserver.com) 隐私政策，说明我们如何收集、使用并保护您的个人信息与访问数据。"
 ---
 {{< brick_title >}}
 

@@ -1,5 +1,9 @@
 ---
 title: 联系我
+description: "联系 BlazorStudio（中国江苏省昆山市），探讨 Blazor 与 .NET 企业级系统定制、B2B 平台集成或 AI 智能工作流项目合作。"
+seo:
+  title: "联系我 | Blazor 与 .NET 企业级项目定制与咨询 | BlazorStudio"
+  description: "联系 BlazorStudio（中国江苏省昆山市），探讨 Blazor 与 .NET 企业级系统定制、B2B 平台集成或 AI 智能工作流项目合作。"
 ---
 {{< brick_title >}}
 
@@ -13,7 +17,7 @@ title: 联系我
 如果你希望与我们取得联系，可以通过以下方式：  
 
 扫描下方二维码，通过微信联系我们：  
-<img src="/uploads/photos/avatars/wchat.png" alt="微信二维码" width="200" style="margin: 8px 0;"/>
+<img src="/uploads/photos/avatars/wchat.png" alt="BlazorStudio 微信联系二维码" width="200" height="200" loading="lazy" decoding="async" style="margin: 8px 0;"/>
 
 中国江苏省昆山市
 

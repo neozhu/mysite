@@ -1,5 +1,11 @@
 ---
 title: Blog
+noindex: true
+sitemap:
+  disable: true
+build:
+  list: never
+  render: never
 ---
 {{< brick_posts >}}
 

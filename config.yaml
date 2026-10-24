@@ -2,6 +2,9 @@ baseURL: https://blazorserver.com/
 theme: hugobricks
 defaultContentLanguage: en
 assetDir: static
+disableKinds:
+  - taxonomy
+  - term
 services:
   googleAnalytics: 
     id: G-2RBX6HT00W
@@ -25,7 +28,7 @@ markup:
 
 languages:
   en:
-    languageName: English
+    label: English
     locale: en
     contentDir: content/en
     weight: 1
@@ -39,7 +42,7 @@ languages:
         showcases: /showcases/
 
   cn:
-    languageName: 中文
+    label: 中文
     locale: zh-CN
     contentDir: content/cn
     weight: 2

@@ -15,8 +15,6 @@ seo:
 slug: "menumuse-ai-smart-menu-generator"
 ---
 
-# 🍜 MenuMuse - AI Smart Menu Generator
-
 
 
 ## ✨ Product Overview

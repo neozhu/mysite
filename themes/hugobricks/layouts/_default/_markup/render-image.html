@@ -1,9 +1,11 @@
-{{- if or (in (lower .Destination) ".svg") (in (lower .Destination) ".png") -}}
-    <img src="{{ .Destination }}" alt="{{ .Text }}" class="is_svg" />
+{{- if in (lower .Destination) ".svg" -}}
+    <img src="{{ .Destination }}" alt="{{ .Text }}" class="is_svg" loading="lazy" decoding="async" />
 {{- else -}}
-    {{- if (resources.GetMatch .Destination) -}}
-        <img src="{{ ((resources.GetMatch .Destination).Fit `1000x1500 webp Smart q50`).RelPermalink }}" alt="{{ .Text }}" />
+    {{- $res := or (resources.GetMatch .Destination) (resources.Get (strings.TrimPrefix "/" .Destination)) -}}
+    {{- if $res -}}
+        {{- $fitted := $res.Fit `1200x1600 webp Smart q82` -}}
+        <img src="{{ $fitted.RelPermalink }}" alt="{{ .Text }}" width="{{ $fitted.Width }}" height="{{ $fitted.Height }}" loading="lazy" decoding="async" />
     {{- else -}}
-        <img src="{{ .Destination }}" alt="{{ .Text }}" />
-    {{- end -}}        
+        <img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" decoding="async" />
+    {{- end -}}
 {{- end -}}

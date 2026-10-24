@@ -1,8 +1,11 @@
 ---
-title: Projects
+title: 开源项目
+description: "探索华林 (neozhu) 在 GitHub 分享的 .NET、Blazor、Python 与 Next.js 开源项目，涵盖 Clean Architecture 架构模板、AI 对话工作台与开发者工具。"
+seo:
+  title: "Blazor、.NET 与 AI 开源项目 | BlazorStudio"
+  description: "探索华林 (neozhu) 在 GitHub 分享的 .NET、Blazor、Python 与 Next.js 开源项目，涵盖 Clean Architecture 架构模板、AI 对话工作台与开发者工具。"
 ---
 {{< brick_projects >}}
-
 
 # 开源项目
 

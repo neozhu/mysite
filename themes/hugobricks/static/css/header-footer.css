@@ -204,11 +204,16 @@ header > .container.has_cta > div:nth-child(3) > a span.itemcount {
     display: none;
 }
 header > .container.has_cta ul {justify-content: center;}
-header + section.hasbackgroundcolor {margin-top: 0;}
-header + section:not(.bgimage) {padding-top: 9.5rem!important;}
-body.transparent_header header + section.bgimage .container {padding-top: 13.5rem!important;}
-body:not(.transparent_header) header + section.bgimage .container {padding-top: 11.5rem!important;}
-body:not(.transparent_header) header + section.bgimage .container h1:first-child {padding-top: 1.5rem;}
+header + section.hasbackgroundcolor,
+header + main > section.hasbackgroundcolor:first-child {margin-top: 0;}
+header + section:not(.bgimage),
+header + main > section:not(.bgimage):first-child {padding-top: 9.5rem!important;}
+body.transparent_header header + section.bgimage .container,
+body.transparent_header header + main > section.bgimage:first-child .container {padding-top: 13.5rem!important;}
+body:not(.transparent_header) header + section.bgimage .container,
+body:not(.transparent_header) header + main > section.bgimage:first-child .container {padding-top: 11.5rem!important;}
+body:not(.transparent_header) header + section.bgimage .container h1:first-child,
+body:not(.transparent_header) header + main > section.bgimage:first-child .container h1:first-child {padding-top: 1.5rem;}
 body.mobilemenu header .navnav {display: flex; flex-direction: column; justify-content: space-between;}
 
 header.dark {background: var(--textDarker);}

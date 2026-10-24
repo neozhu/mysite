@@ -77,6 +77,11 @@ Fabric Quotation 将这些资料和决策纳入销售、应用工程师与商务
 
 通用 CPQ 围绕**配置 → 定价 → 报价**展开。Fabric Quotation 是面向 PMC 企业的垂直 CPQ 与应用工程平台，覆盖造纸织物销售所需的完整业务链路。
 
+<figure>
+  <a href="/uploads/gallery/fabric-quotation/fabric-quotation-business-overview-zh-CN-v3.png"><img src="/uploads/gallery/fabric-quotation/fabric-quotation-business-overview-zh-CN-v3.png" alt="Fabric Quotation 造纸织物 CPQ 八步业务流程：客户询价、场景定位、织物选型、应用工程评审、设计建议、标准定价、折扣审批与客户报价" width="941" height="1672" loading="lazy"></a>
+  <figcaption>从客户询价到可追溯报价：将销售、应用工程、标准定价与折扣审批连接在同一条业务流程中。</figcaption>
+</figure>
+
 <ol class="fq-workflow" aria-label="PMC 报价流程">
   <li><strong>1. 客户询价</strong>从客户需求出发。</li>
   <li><strong>2. 工厂 / 纸机 / 位置</strong>明确实际使用场景。</li>

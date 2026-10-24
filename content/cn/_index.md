@@ -17,7 +17,7 @@ seo:
 
 以 AI 与 Blazor 为核心，融合 .NET 工程实践与清晰的架构设计。从业务系统定制、企业平台集成到智能工作流，将真实业务需求转化为可投入生产、易于维护、持续演进的数字化产品。
 
-<div class="intro-actions">{{< button "开启项目合作" "/contact/" >}} {{< button "探索交付案例" "/showcases/" "secondary ghost" >}}</div>
+<div class="intro-actions">{{< button "开启项目合作" "/cn/contact/" >}} {{< button "探索交付案例" "/cn/showcases/" "secondary ghost" >}}</div>
 
 - **业务系统定制**<br>围绕真实场景，提升运营效率
 - **企业平台集成**<br>打通系统数据，连接业务流程

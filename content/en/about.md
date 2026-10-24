@@ -1,9 +1,13 @@
 ---
 title: About
+description: "Meet Hualin (neozhu), an experienced .NET & Blazor enterprise architect specializing in B2B system integration, Clean Architecture, and AI Agent workflow orchestration."
+seo:
+  title: "About Hualin | .NET & Blazor Enterprise Architect | BlazorStudio"
+  description: "Meet Hualin (neozhu), an experienced .NET & Blazor enterprise architect specializing in B2B system integration, Clean Architecture, and AI Agent workflow orchestration."
 ---
 {{< brick_about >}}
 
-![](/uploads/photos/avatars/me.png)
+![Hualin - .NET and Blazor Enterprise Architect](/uploads/photos/avatars/me.png)
 
 # Hello, I'm Hualin
 
@@ -19,4 +23,3 @@ I'm an experienced .NET developer focused on building scalable enterprise applic
 
 {{< /brick_about >}}
 {{< brick_cta >}}{{< /brick_cta >}}
-

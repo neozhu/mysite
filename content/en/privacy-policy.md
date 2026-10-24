@@ -1,5 +1,9 @@
 ---
 title: Privacy policy
+description: "Privacy policy for BlazorStudio (blazorserver.com), outlining how visitor information, cookies, and contact inquiries are handled and protected."
+seo:
+  title: "Privacy Policy | BlazorStudio"
+  description: "Privacy policy for BlazorStudio (blazorserver.com), outlining how visitor information, cookies, and contact inquiries are handled and protected."
 ---
 {{< brick_title >}}
 
