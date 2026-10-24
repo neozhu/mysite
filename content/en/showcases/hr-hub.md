@@ -1,143 +1,139 @@
 ---
-title: "HR HUB: Connect Staffing, Attendance and Billing"
+title: "HR HUB: Connect People, Hours and Monthly Billing"
 slug: hr-hub-integrated-hr-cloud-platform
-description: "A workforce collaboration platform for employers, staffing providers and HR teams, connecting requests, assignments, attendance, approved hours and monthly billing with Docker deployment."
-summary: "HR HUB connects employers, staffing providers and HR teams in one workflow, giving assignments a clear record, approved hours a reliable basis and monthly reconciliation a traceable history."
+description: "HR HUB connects employers, staffing agencies and HR teams, linking workforce requests, employee assignments, confirmed work hours and monthly billing statements."
+summary: "Know who is working where, which hours are confirmed and how each monthly bill is built. HR HUB connects staffing, attendance and reconciliation with daily cost detail and separate agency and employer rates."
 seo:
-  description: "Explore HR HUB for outsourced workforce operations: staffing, attendance and monthly billing, with a .NET 10 layered architecture and Docker deployment using Traefik, CrowdSec and MinIO."
-  title: "HR HUB Staffing, Attendance and Billing | BlazorStudio"
-date: 2025-11-18 00:00:00
-lastmod: 2026-10-05 00:00:00
+  description: "Manage outsourced labor with HR HUB: workforce planning, employee assignments, attendance, confirmed hours and traceable monthly billing in a self-hosted .NET 10 application."
+  title: "HR HUB Workforce, Attendance and Billing | BlazorStudio"
+date: 2026-10-24T00:00:00+08:00
+lastmod: 2026-10-24T00:00:00+08:00
 tags: ["Blazor", "NET10", "Docker", "Human Resources", "Staffing", "Attendance Management"]
 image: /uploads/photos/hrhub/hrhub-marketing.png
 ---
 
-Bring employers, staffing providers and HR teams into one platform, connecting workforce requests, employee assignments, attendance records and monthly billing.
+**Clear assignments. Confirmed hours. Traceable billing.**
 
-Outsourced workforce operations depend on clear handoffs: who requested workers, who assigned them, who approved their hours and how charges were calculated. HR HUB gives these handoffs a recorded workflow, helping teams reduce duplicate entry and repeated checks at month end.
+HR HUB brings employers, staffing agencies and HR teams together to manage outsourced labor, from the first staffing request to the monthly billing statement. It connects who is working where, which hours have been confirmed and how the associated costs add up.
 
-{{< button "Explore the live demo" "https://hrcloud.blazorserver.com/" >}}
+When several agencies supply workers across different worksites, a month-end total can be difficult to explain. Employee lists, punch logs, shift rules and hourly rates all contribute to the answer. HR HUB keeps those records connected so teams can review the basis of a bill without piecing it together from spreadsheets and messages.
+
+{{< button "Explore the live demo" "https://hrcloud.blazorserver.com//" >}}
 {{< button2 "Discuss your workforce needs" "/contact/" >}}
 
-## Give every handoff a shared record
+The screenshots below were captured from the live application on October 24, 2026. Select an image to view it at full size.
 
-When employee lists, clock-in records and settlement spreadsheets live in separate systems, teams spend time establishing whether they describe the same assignment. HR HUB organizes work around connected organization, employee, assignment and attendance records, so each participant can continue from information already captured.
+## A shared workflow for employers, agencies and HR
 
-- **Employers: manage demand and actual staffing.** Submit workforce requests, confirm assignments, review attendance corrections and approve the hours used for billing.
-- **Staffing providers: coordinate workers and service delivery.** Maintain employee records, respond to requests, arrange assignments and submit corrections for missed punches.
-- **HR teams: maintain rules and oversee operations.** Manage organizations, job types, shifts, devices and demand approvals, using billing and audit records to review the process.
+Each team needs a different view of the same operation. Employers need to know whether a demand has been filled; agencies need to follow their workers' assignments; HR and finance need to reconcile the work performed with the costs recorded.
 
-The platform serves labor outsourcing, staffing and operations involving multiple organizations that need to agree on work performed. It connects three practical questions: who was assigned, how long they worked and which rates apply.
+| Team | Questions HR HUB helps answer |
+| --- | --- |
+| **Employers and worksite managers** | What labor is needed, who has been assigned and which hours and costs need review? |
+| **Staffing agencies and labor suppliers** | Where are our workers assigned, how are employment changes progressing and which attendance records support reconciliation? |
+| **HR operations and finance** | Which records need attention, which hours are confirmed and how do daily costs contribute to the monthly statement? |
 
-## Six steps from workforce demand to monthly billing
+The connection between these records matters throughout the month. A change in an employee's assignment needs its employment context; an attendance exception needs review; a billing figure needs supporting daily detail.
 
-1. **Request workers.** The employer specifies roles, headcount and dates; HR reviews the request.
-2. **Arrange assignments.** The provider selects employees, and the employer confirms staffing arrangements and shifts.
-3. **Connect devices.** Device interfaces exchange personnel commands and receive punch photos and recognition records.
-4. **Calculate hours.** The application matches confirmed assignments and shift rules to compile daily hours and surface exceptions.
-5. **Review and confirm.** Providers submit attendance corrections; employers review them and confirm daily attendance for billing.
-6. **Create billing statements.** Confirmed daily attendance creates or updates monthly statements using recorded hours and rates, giving all parties a basis for reconciliation.
-
-**Attendance confirmation connects operational records to billing.** Later device punches do not overwrite confirmed daily attendance, so reconciliation can proceed from the agreed records.
-
-## Product walkthrough: workforce, hours and devices
-
-The screenshots below show the application's Chinese-language interface. Select an image to view it at full size.
-
-### Operational overview
-
-The home page summarizes staffing providers, employers, confirmed attendance personnel and registered devices, alongside device availability. Administrators can review organization and device status in one place.
+The operations overview brings together active assignments, confirmed hours for the current billing period, pending tasks, monthly trends and device availability.
 
 <figure>
-  <a href="/uploads/photos/hrhub/1.png"><img src="/uploads/photos/hrhub/1.png" alt="HR HUB dashboard showing organization counts, confirmed attendance personnel and device availability" width="3837" height="1033" loading="lazy" style="width:100%;height:auto"></a>
-  <figcaption>Operational overview: organization information and device status in one view.</figcaption>
+  <a href="/uploads/photos/hrhub/dashboard-en-20261024.jpg"><img src="/uploads/photos/hrhub/dashboard-en-20261024.jpg" alt="HR HUB English operations overview with assigned workers, confirmed hours, pending tasks, monthly billing trends and device status" width="2765" height="2109" loading="lazy" style="width:100%;height:auto"></a>
+  <figcaption>Operations overview: follow workforce activity, attendance tasks and confirmed hours in one view.</figcaption>
 </figure>
 
-### Daily attendance and calculated hours
-
-Review the employee, employer, shift, role, punch times, work hours and rates in the same record. Filtering and Excel export support routine checks.
+## Five stages from staffing demand to monthly statement
 
 <figure>
-  <a href="/uploads/photos/hrhub/2.png"><img src="/uploads/photos/hrhub/2.png" alt="Daily attendance list with employees, shifts, punch times, calculated work hours and rates" width="3835" height="1261" loading="lazy" style="width:100%;height:auto"></a>
-  <figcaption>Daily attendance: keep the business context behind calculated hours.</figcaption>
+  <a href="/uploads/photos/hrhub/hrhub-business-overview-en.png"><img src="/uploads/photos/hrhub/hrhub-business-overview-en.png" alt="HR HUB workflow: workforce request, staff allocation, attendance collection, working hours confirmation and monthly billing" width="941" height="1672" loading="lazy" style="width:100%;height:auto"></a>
+  <figcaption>Workflow overview: connect workforce requests, staff allocation, attendance, confirmed hours and monthly billing.</figcaption>
 </figure>
 
-### Hours confirmation and billing
+### 1. Plan the workforce
 
-Employers review daily attendance before confirming it for monthly billing. Providers and HR teams can use these confirmed records for reconciliation, reducing the work of rebuilding totals from raw punches.
+Create a staffing demand with the worksite, department, job type and required headcount. Record the agency-side and employer-side hourly rates so both sides of the arrangement have a defined basis for costing.
+
+Organization records and approval workflows keep the request connected to the teams responsible for filling and reviewing it.
+
+### 2. Assign people with a clear employment record
+
+Manage employee profiles, applications, approvals and employment history alongside the demand. Employment changes have their own requests and records, helping teams follow how an assignment develops over time.
+
+Attachments, job types and apartment records support the administration around each worker. Where configured, ID-card OCR and face-processing services assist employee intake.
+
+### 3. Turn device punches into daily work hours
+
+Integrated attendance devices supply punch records. HR HUB calculates daily work hours against shifts and surfaces attendance exceptions for review.
+
+The daily attendance view brings the employee, employer, shift, job type, punch times, calculated hours and exception information into one record. Date-range and exception filters help teams focus their review, with Excel export available for further checks.
 
 <figure>
-  <a href="/uploads/photos/hrhub/5.png"><img src="/uploads/photos/hrhub/5.png" alt="Hours confirmation page explaining that confirmed attendance is locked and included in monthly billing" width="3835" height="1146" loading="lazy" style="width:100%;height:auto"></a>
-  <figcaption>Hours confirmation: confirmed daily attendance becomes the basis for monthly statements.</figcaption>
+  <a href="/uploads/photos/hrhub/attendance-en-20261024.jpg"><img src="/uploads/photos/hrhub/attendance-en-20261024.jpg" alt="HR HUB English daily attendance view filtered by date, showing employee assignments, shifts, punch times and highlighted exceptions" width="1843" height="1062" loading="lazy" style="width:100%;height:auto"></a>
+  <figcaption>Daily attendance: review assignments, shift rules, punch times and flagged records.</figcaption>
 </figure>
 
-### Attendance device management
+### 4. Review exceptions and confirm the hours
 
-Device records capture the employer, serial number, department, installation location and availability. Interface logs and raw attendance records help administrators investigate personnel synchronization and punch ingestion issues.
+Attendance correction requests and exception checks help teams resolve records that need attention before confirming the daily hours used for billing. Confirmation records who confirmed the attendance and when.
+
+This gives reconciliation a specific starting point: the daily attendance that has been reviewed and confirmed.
 
 <figure>
-  <a href="/uploads/photos/hrhub/11.png"><img src="/uploads/photos/hrhub/11.png" alt="Attendance device management listing serial numbers, installation locations and online status" width="3835" height="1135" loading="lazy" style="width:100%;height:auto"></a>
-  <figcaption>Device management: an entry point for field maintenance and integration troubleshooting.</figcaption>
+  <a href="/uploads/photos/hrhub/hours-confirmation-en-20261024.jpg"><img src="/uploads/photos/hrhub/hours-confirmation-en-20261024.jpg" alt="HR HUB English timesheet confirmation page with the record-locking notice, employee assignments, shifts and punch times" width="1843" height="1122" loading="lazy" style="width:100%;height:auto"></a>
+  <figcaption>Hours confirmation connects reviewed daily attendance to monthly billing.</figcaption>
 </figure>
 
-Employee forms can also call ID-card OCR and face-extraction services to assist data entry. Organization, shift, job type, accommodation, document and employment-change modules support related HR operations.
+### 5. Prepare the monthly statement
 
-## System architecture: a layered monolith organized around use cases
+Confirming daily attendance creates or updates the corresponding employee-level monthly statement. Confirmed hours and their associated costs accumulate into a monthly record that teams can review and export.
 
-HR HUB uses **.NET 10, ASP.NET Core, Blazor Server and MudBlazor**. One ASP.NET Core host runs the interactive UI, attendance-device HTTP endpoints, SignalR hubs and Hangfire worker. The projects separate responsibilities using Clean Architecture.
+**Every monthly total has a daily explanation:** the employee, worksite, agency, confirmed hours and related costs.
+
+## What supports a monthly billing total?
+
+A statement retains the detail needed to understand how the total was built:
+
+- Daily work hours, overtime hours and job type.
+- Separate agency-side and employer-side hourly rates and costs.
+- Attendance confirmation records identifying the confirmer and confirmation time.
+- Monthly totals for work hours and costs on both sides.
+
+The current billing cycle runs from the **26th of the previous month through the 25th of the statement month**. For example, an October statement covers September 26 through October 25.
+
+Statements provide the records for reconciliation, with actual payment handled separately by the business. Keeping daily detail, confirmation records and audit history makes it easier to investigate a disputed figure or explain a change.
 
 <figure>
-  <a href="/uploads/photos/hrhub/architecture.png"><img src="/uploads/photos/hrhub/architecture.png" alt="HR HUB architecture: browsers and devices connect to Server.UI, with Application and Infrastructure linking domain models, a database, object storage and email" width="2048" height="1320" loading="lazy" style="width:100%;height:auto"></a>
-  <figcaption>System architecture, reproduced from the project README. Open the full image to inspect responsibilities and connections.</figcaption>
+  <a href="/uploads/photos/hrhub/billing-en-20261024.jpg"><img src="/uploads/photos/hrhub/billing-en-20261024.jpg" alt="HR HUB English monthly statement excerpt showing daily hours, total work hours, agency rates and costs, and employer rates and costs" width="2063" height="1143" loading="lazy" style="width:100%;height:auto"></a>
+  <figcaption>Monthly statement excerpt: compare total hours and the rates and costs on both sides.</figcaption>
 </figure>
 
-- **Server.UI: interaction and ingestion.** Hosts Blazor pages, account flows and device endpoints, with SignalR supporting browser interactions.
-- **Application: business use cases.** MediatR commands and queries organize features. FluentValidation and pipeline behaviors provide shared validation, performance measurement, query caching and command-driven cache invalidation.
-- **Domain: business models.** Defines employees, organizations, assignments, shifts, attendance, billing and related domain events.
-- **Infrastructure: persistence and integrations.** Implements EF Core data access, Identity, auditing, soft deletion, MinIO uploads, SMTP email and Excel/PDF generation.
-- **Migrators: database migrations.** Supports SQLite, SQL Server and PostgreSQL. SQLite is the current checked-in default.
+## Support the daily work around each assignment
 
-This structure gives attendance ingestion, hours confirmation and billing a consistent application workflow, while storage and email integrations sit behind explicit service interfaces.
+The main workflow sits alongside the records and controls needed to run it consistently.
 
-### Access, data and background processing
+| Business area | Included capabilities |
+| --- | --- |
+| **Workforce coordination** | Organizations, staffing demands, employee applications, approval workflows, employment history and change requests. |
+| **Employee administration** | Employee profiles, attachments, job types, apartment records and configurable intake integrations. |
+| **Attendance operations** | Device integration, punch logs, shifts, daily attendance, exception checks and correction requests. |
+| **Billing and reconciliation** | Hours confirmation, monthly statements, daily cost detail, separate agency and employer costs and Excel exports. |
+| **Operational oversight** | Business dashboards, role-based permissions, tenant-aware accounts, audit trails, login audits and integration logs. |
 
-ASP.NET Core Identity provides cookie authentication, roles and permission claims. Tenant-aware identity and implemented organization filters use a shared database, with business queries applying role and organization scope where implemented.
+## A self-hosted .NET application
 
-Devices upload photos and punches through `/record/picture` and `/record/notice`, then poll and acknowledge personnel commands through `/person/cmd` and `/person/result`. The application matches a known device and a confirmed employee assignment before calculating daily hours against the applicable shift.
+HR HUB is built with **.NET 10, Blazor Server, MudBlazor and Entity Framework Core**. It supports **SQLite, SQL Server and PostgreSQL**, with SQLite as the checked-in default.
 
-FusionCache provides in-process caching for eligible queries, while Hangfire runs attendance checks. Both currently use memory storage. Serilog logs, the `/health` endpoint and the authorized `/jobs` dashboard support operational monitoring.
+The application uses a layered monolith: **Domain** defines business records, **Application** organizes use cases, **Infrastructure** provides persistence and external integrations, and **Server.UI** hosts the interactive application and attendance-device endpoints. MediatR, FluentValidation, FusionCache and Hangfire support request handling, validation, caching and background attendance checks.
 
-## Docker deployment: connect the public entry point to field operations
+Deployment can use the project's Dockerfile and deployment Compose configuration. Database settings and the required external services, including MinIO storage, SMTP email, ID-card OCR and face processing, need configuration for the target environment. The [system architecture](/uploads/photos/hrhub/architecture.png) and [deployment topology](/uploads/photos/hrhub/deployment.png) illustrate the application structure and service connections.
 
-HR HUB can be delivered with Docker on an organization's own server or cloud host. The README topology illustrates how the application, recognition services, object storage and public entry point work together; service placement can follow the target network and operational requirements.
+The [source repository](https://github.com/neozhu/hrhub) includes local setup instructions and deployment references. The project is licensed under **GPL-3.0**.
 
-<figure>
-  <a href="/uploads/photos/hrhub/deployment.png"><img src="/uploads/photos/hrhub/deployment.png" alt="Docker topology: browsers and attendance terminals reach HR HUB through Traefik and CrowdSec, with face processing, ID-card OCR, MinIO, database, SMTP and MaxMind integrations" width="2048" height="1320" loading="lazy" style="width:100%;height:auto"></a>
-  <figcaption>Deployment topology: an illustrative single Docker host with at least eight attendance terminals. The device count represents the example deployment.</figcaption>
-</figure>
+## Try one complete operating cycle
 
-### Public access and entry-point protection
+Start with one employer, one staffing agency, a small set of shifts and job types, and integrated attendance devices. Follow a demand through employee applications and assignments, inspect the daily attendance, resolve exceptions, confirm hours and review the resulting monthly statement.
 
-Browsers and attendance terminals reach the application through **Traefik**, which terminates HTTPS and forwards HTTP requests and Blazor SignalR/WebSocket connections. **CrowdSec** analyzes access logs and supplies remediation decisions through its private LAPI; Traefik's bouncer middleware enforces those decisions at the entry point.
+That journey shows how HR HUB connects the records behind three everyday questions: **Who worked where? Which hours were confirmed? How was the bill calculated?**
 
-The application and MinIO file access can use separate hostnames. Deployment includes DNS records pointing to the server, Traefik host routing and ACME certificate renewal. HTTP-01 validation requires correct DNS resolution and reachable ports 80 and 443.
-
-### Service connections and persistence
-
-- **The HR HUB container** hosts the UI, device endpoints and background worker, and connects to the selected relational database.
-- **Face-processing and PaddleOCR containers** provide face extraction, image compression and ID-card field extraction over the Docker service network.
-- **MinIO** stores employee images and attachments, with a separate HTTPS hostname for S3/media access. Verify returned image URLs and the face service's storage configuration during integration.
-- **External SMTP and MaxMind services** provide email delivery and geographic lookup of login IP addresses respectively.
-
-Production deployment needs persistent storage for the application database, MinIO objects, Traefik certificate state and CrowdSec state, together with a backup and restore procedure. If background jobs must survive container restarts, configure persistent Hangfire storage as well.
-
-**The repository's Compose files configure HR HUB and its integration settings; the proxy, security, recognition and storage services in the full topology require accompanying deployment.** GitHub Actions automates Docker image builds and pushes. Server rollout follows the chosen environment's release process.
-
-## Validate one workforce scenario first
-
-A pilot can start with one employer, one staffing provider, a small set of roles and shifts, and a few attendance devices. Run the workflow through demand approval, assignment, punch ingestion, corrections, hours confirmation and monthly reconciliation.
-
-Business teams verify shifts, rates and approval responsibilities. IT teams confirm device protocols, domains, networking, database selection, file storage and backups. Use a representative operating cycle to check that records connect correctly before expanding the rollout.
-
-{{< button "Explore the live demo" "https://hrcloud.blazorserver.com/" >}}
+{{< button "Explore the live demo" "https://hrcloud.blazorserver.com//" >}}
 {{< button2 "Discuss a pilot and deployment" "/contact/" >}}
