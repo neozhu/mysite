@@ -1,6 +1,6 @@
 {{- $isArticle := and .IsPage (in (slice "posts" "projects" "showcases") .Section) -}}
 {{- $lang := .Language.Lang -}}
-{{- $locale := .Language.Locale | default $lang -}}
+{{- $locale := cond (eq $lang "cn") "zh-CN" $lang -}}
 {{- $ogLocale := cond (eq $lang "cn") "zh_CN" "en_US" -}}
 {{- $siteData := index hugo.Data $lang -}}
 {{- $siteTitle := $siteData.general.title | default "BlazorStudio" -}}
@@ -56,7 +56,7 @@
 {{- /* 4. Full-Mesh Hreflang + x-default */ -}}
 {{- $xDefaultURL := .Permalink -}}
 {{- range .AllTranslations }}
-  {{- $tLang := .Language.Locale | default .Language.Lang -}}
+  {{- $tLang := cond (eq .Language.Lang "cn") "zh-CN" .Language.Lang -}}
   {{- if eq .Language.Lang "en" }}{{- $xDefaultURL = .Permalink -}}{{ end -}}
 <link rel="alternate" hreflang="{{ $tLang }}" href="{{ .Permalink }}" />
 {{- end }}

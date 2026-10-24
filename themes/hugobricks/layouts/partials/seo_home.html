@@ -2,10 +2,10 @@
 {{- $root := "/" | absURL -}}
 {{- $imageURL := $seo.image | absURL -}}
 {{- $image := resources.Get (strings.TrimPrefix "/" $seo.image) -}}
-{{- $language := .Language.Locale | default .Language.Lang -}}
+{{- $language := cond (eq .Language.Lang "cn") "zh-CN" .Language.Lang -}}
 
 {{- range .AllTranslations }}
-<link rel="alternate" hreflang="{{ .Language.Locale | default .Language.Lang }}" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="{{ if eq .Language.Lang `cn` }}zh-CN{{ else }}{{ .Language.Lang }}{{ end }}" href="{{ .Permalink }}">
 {{- end }}
 <link rel="alternate" hreflang="x-default" href="{{ $root }}">
 

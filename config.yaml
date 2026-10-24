@@ -28,8 +28,6 @@ markup:
 
 languages:
   en:
-    label: English
-    locale: en
     contentDir: content/en
     weight: 1
     disabled: false
@@ -42,8 +40,6 @@ languages:
         showcases: /showcases/
 
   cn:
-    label: 中文
-    locale: zh-CN
     contentDir: content/cn
     weight: 2
     disabled: false

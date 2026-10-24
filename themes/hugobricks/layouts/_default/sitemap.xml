@@ -13,7 +13,7 @@
         {{- if eq .Language.Lang "en" }}{{- $xDefault = .Permalink -}}{{ end }}
     <xhtml:link
                 rel="alternate"
-                hreflang="{{ .Language.Locale | default .Language.Lang }}"
+                hreflang="{{ if eq .Language.Lang `cn` }}zh-CN{{ else }}{{ .Language.Lang }}{{ end }}"
                 href="{{ .Permalink }}"
                 />
       {{- end }}
