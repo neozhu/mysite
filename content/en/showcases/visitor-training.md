@@ -5,7 +5,7 @@ summary: "From registration and compliance training to entry checks and departur
 seo:
   title: "VisitorTraining Enterprise Visitor Compliance | BlazorStudio"
   description: "Explore VisitorTraining for enterprise visitor compliance: registration, approvals, required training, qualification validity, entry checks and traceable visit records."
-slug: visitortraining-enterprise-visitor-compliance
+slug: visitor-training-enterprise-visitor-compliance
 aliases: ["/showcases/visitsafe-visitor-safety-training/"]
 date: 2026-10-23T00:00:00+08:00
 image: /uploads/showcases/visitsafe/cover.webp
@@ -71,7 +71,7 @@ Participant departures, the departure of vehicles that entered, and application 
 
 ## Live product screens
 
-These screenshots were captured from the online demos. The mobile screens show the visitor entry points and personal training lookup. Both the registered name and phone number must match when finding assigned tasks; the lookup itself does not verify identity.
+The mobile screenshots were captured from the local VisitorTraining client; the management dashboard was captured from the online demo. The mobile screens show the visitor entry points and personal training lookup. Both the registered name and phone number must match when finding assigned tasks; the lookup itself does not verify identity.
 
 <style>
 .vs-mobile-screens {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; max-width: 46rem; margin: 2rem auto;}
