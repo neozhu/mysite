@@ -22,10 +22,10 @@ VisitorTraining brings **visitor appointments, business and area approvals, comp
 
 | Entry point | Address and scope |
 | --- | --- |
-| Visitor and learning frontend | [visit-training-client.blazorserver.com](https://visit-training-client.blazorserver.com/): explore mobile entry points, personal training lookup, and Chinese and English interfaces |
-| Backend management platform | [visit-training.blazorserver.com](https://visit-training.blazorserver.com/): explore the operations dashboard and workspaces for applications, approvals, courses and training records |
-| Frontend source repository | [neozhu/visit-traning-client](https://github.com/neozhu/visit-traning-client) |
-| Backend source repository | [neozhu/visit-training-management](https://github.com/neozhu/visit-training-management) |
+| Visitor and learning frontend | [visitor-training-client.blazorserver.com](https://visitor-training-client.blazorserver.com/): explore mobile entry points, personal training lookup, and Chinese and English interfaces |
+| Backend management platform | [visitor-training.blazorserver.com](https://visitor-training.blazorserver.com/): explore the operations dashboard and workspaces for applications, approvals, courses and training records |
+| Frontend source repository | [neozhu/visitor-traning-client](https://github.com/neozhu/visitor-traning-client) |
+| Backend source repository | [neozhu/visitor-training-management](https://github.com/neozhu/visitor-training-management) |
 
 ## Make enterprise visitor requirements traceable
 
@@ -148,4 +148,4 @@ Factory reception, contractor onboarding, logistics arrivals and industrial-site
 
 VisitorTraining connects those answers to the same visit. Participants can see their obligations, approvers can record their decisions, gate staff can verify each person's eligibility, and enterprise teams can review the supporting records afterwards. The result is a repeatable visitor compliance process with clear ownership and traceable evidence.
 
-**[Explore the visitor and learning portal](https://visit-training-client.blazorserver.com/) · [View the management platform](https://visit-training.blazorserver.com/) · [Frontend source](https://github.com/neozhu/visit-traning-client) · [Backend source](https://github.com/neozhu/visit-training-management)**
+**[Explore the visitor and learning portal](https://visitor-training-client.blazorserver.com/) · [View the management platform](https://visitor-training.blazorserver.com/) · [Frontend source](https://github.com/neozhu/visitor-traning-client) · [Backend source](https://github.com/neozhu/visitor-training-management)**

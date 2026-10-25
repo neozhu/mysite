@@ -22,10 +22,10 @@ VisitorTraining 围绕企业访客合规管理，将**访客预约、业务与�
 
 | 入口 | 地址与内容 |
 | --- | --- |
-| 访客客户端网页演示 | [visit-training-client.blazorserver.com](https://visit-training-client.blazorserver.com/)：通过网页体验访客登记入口、合规培训任务查询与中英文界面 |
-| 后端管理平台 | [visit-training.blazorserver.com](https://visit-training.blazorserver.com/)：查看运营看板，以及访客申请、审批、课程和培训记录等工作区 |
-| 网页演示前端源码 | [neozhu/visit-traning-client](https://github.com/neozhu/visit-traning-client) |
-| 后端源码仓库 | [neozhu/visit-training-management](https://github.com/neozhu/visit-training-management) |
+| 访客客户端网页演示 | [visitor-training-client.blazorserver.com](https://visitor-training-client.blazorserver.com/)：通过网页体验访客登记入口、合规培训任务查询与中英文界面 |
+| 后端管理平台 | [visitor-training.blazorserver.com](https://visitor-training.blazorserver.com/)：查看运营看板，以及访客申请、审批、课程和培训记录等工作区 |
+| 网页演示前端源码 | [neozhu/visitor-traning-client](https://github.com/neozhu/visitor-traning-client) |
+| 后端源码仓库 | [neozhu/visitor-training-management](https://github.com/neozhu/visitor-training-management) |
 
 ## 让企业访客管理要求有据可查
 
@@ -149,4 +149,4 @@ VisitorTraining 将面向访客的微信小程序与面向企业内部人员的�
 
 VisitorTraining 将这些要求关联到同一次来访：访客清楚需要履行的事项，审批人按职责记录授权决定，门岗逐人核验入场资格，企业管理人员能够回看完整依据。由此形成职责明确、执行一致、记录可追溯的访客合规管理流程。
 
-**[查看访客客户端网页演示](https://visit-training-client.blazorserver.com/) · [查看管理平台](https://visit-training.blazorserver.com/) · [网页演示前端源码](https://github.com/neozhu/visit-traning-client) · [后端源码](https://github.com/neozhu/visit-training-management)**
+**[查看访客客户端网页演示](https://visitor-training-client.blazorserver.com/) · [查看管理平台](https://visitor-training.blazorserver.com/) · [网页演示前端源码](https://github.com/neozhu/visitor-traning-client) · [后端源码](https://github.com/neozhu/visitor-training-management)**
