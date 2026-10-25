@@ -1,42 +1,43 @@
 ---
-title: "VisitSafe: Connected Visitor Management and Safety Training"
-description: "VisitSafe connects mobile visitor registration, business and area approvals, safety training, and individual site entry and exit records for factories and industrial sites."
-summary: "From mobile registration and safety learning to individual site entry and departure, VisitSafe connects visitors, reception, approvers, safety teams and gate staff through React and Blazor."
+title: "VisitorTraining: Enterprise Visitor Compliance Management"
+description: "VisitorTraining connects enterprise visitor registration, business and area approvals, compliance training, and individual entry and exit records in one traceable workflow."
+summary: "From registration and compliance training to entry checks and departure records, VisitorTraining helps enterprises coordinate visitor requirements, responsibilities and evidence through React and Blazor."
 seo:
-  title: "VisitSafe Visitor Management & Safety Training | BlazorStudio"
-  description: "Explore VisitSafe visitor registration, approvals, safety training and site entry. See the React portal, Blazor dashboard, live screenshots, workflow guides and source repositories."
-slug: visitsafe-visitor-safety-training
+  title: "VisitorTraining Enterprise Visitor Compliance | BlazorStudio"
+  description: "Explore VisitorTraining for enterprise visitor compliance: registration, approvals, required training, qualification validity, entry checks and traceable visit records."
+slug: visitortraining-enterprise-visitor-compliance
+aliases: ["/showcases/visitsafe-visitor-safety-training/"]
 date: 2026-10-23T00:00:00+08:00
 image: /uploads/showcases/visitsafe/cover.webp
-tags: ["Visitor Management", "Safety Training", "React", "Blazor", "Workflow"]
+tags: ["Visitor Management", "Compliance Training", "React", "Blazor", "Workflow"]
 ---
 
-**A safer visit starts before the gate.**
+**Visitor compliance starts before arrival.**
 
-A factory visit involves more than a name at reception. A host needs to confirm the purpose, area owners need to review access, safety teams need to assign the right learning, and gate staff need to determine whether each person is ready to enter.
+An enterprise visit involves more than a name at reception. A host needs to confirm the purpose, area owners need to authorize access, compliance and training teams need to assign the required learning, and gate staff need to verify that each person meets the conditions for entry.
 
-VisitSafe brings **visitor appointments, business and area approvals, safety training, exam results, and entry and exit records** into one connected workflow. Visitors prepare on their phones while internal teams continue the same journey through a management workspace, with clear responsibilities and next steps.
+VisitorTraining brings **visitor appointments, business and area approvals, compliance training, assessment results, and entry and exit records** into one connected workflow. Enterprises can apply configured visitor requirements consistently and retain the records needed for internal compliance reviews. Visitors prepare on their phones while internal teams manage approvals, qualifications and access through a shared workspace.
 
 ## Explore the demos and source repositories
 
 | Entry point | Address and scope |
 | --- | --- |
-| Visitor and learning frontend | [visit-safe.blazorserver.com](https://visit-safe.blazorserver.com/): explore mobile entry points, personal training lookup, and Chinese and English interfaces |
+| Visitor and learning frontend | [visit-training-client.blazorserver.com](https://visit-training-client.blazorserver.com/): explore mobile entry points, personal training lookup, and Chinese and English interfaces |
 | Backend management platform | [visit-training.blazorserver.com](https://visit-training.blazorserver.com/): explore the operations dashboard and workspaces for applications, approvals, courses and training records |
 | Frontend source repository | [neozhu/visit-traning-client](https://github.com/neozhu/visit-traning-client) |
 | Backend source repository | [neozhu/visit-training-management](https://github.com/neozhu/visit-training-management) |
 
-## Connect the work surrounding every visit
+## Make enterprise visitor requirements traceable
 
-When visit details, approval decisions and training records live in separate spreadsheets, messages and paper files, reception and gate staff have to reconstruct the same context repeatedly. Who approved the visit? Which courses did this person pass? Are those results still valid? Is every accompanying person ready to enter?
+When visit details, approval decisions and training records live in separate spreadsheets, messages and paper files, enterprises struggle to verify whether their visitor procedures were followed. Who authorized the visit and each destination? Which required courses did this person pass? Are those results still valid? Does every accompanying person meet the entry conditions? Can the team retrieve that evidence after the visit?
 
-VisitSafe is designed around these operational questions:
+VisitorTraining supports enterprise visitor compliance through five connected responsibilities:
 
 - **Keep the visit together.** Connect appointments, destinations, participants, vehicles and business information in one application.
 - **Make approval ownership visible.** Record business decisions and the decisions for each selected area separately.
-- **Match learning to the visit.** Use both registration type and destination areas to determine required courses, with progress and validity tracked by person.
-- **Check readiness individually.** A participant who meets every requirement can be checked in while another participant continues their learning.
-- **Preserve the departure record.** Keep entry and exit times, operators and the information used for the visit together for later review.
+- **Match compliance training to the visit.** Use both registration type and destination areas to determine required courses, with progress and qualification validity tracked by person.
+- **Verify entry conditions individually.** Check each participant against the visit approvals and their own current training requirements. One eligible participant can enter while another continues their learning.
+- **Preserve evidence for review.** Keep approval decisions, training results, entry and exit times, operators and visit information together for later compliance checks.
 
 ## From mobile registration to a traceable departure
 
@@ -46,27 +47,27 @@ Visitors, logistics drivers and contractors start with an entry point suited to 
 
 The product workflow also supports registration by an authorized employee on someone else's behalf. Reusable participant and vehicle profiles reduce repeated entry, while each application retains the information used for that particular visit.
 
-### 2. Run approvals and training in parallel
+### 2. Coordinate authorization and compliance training
 
-After submission, business and area reviews go to their respective owners while participants receive the courses required for their visit.
+After submission, business and area reviews go to their respective owners while participants receive the compliance courses required for their registration type and destinations. Separate approval decisions make responsibility for the visit purpose and requested access visible.
 
 **Time spent waiting for approval can also be time spent preparing.** These activities proceed in parallel. Training can also be assigned in advance, without first creating a visit application.
 
 ### 3. Complete the relevant learning and preserve its validity
 
-Courses can combine safety videos, supporting PDF materials, and single-choice or multiple-choice assessments. Progress, exam attempts, scores and expiry dates are associated with the person and course.
+Courses can combine compliance training videos, supporting PDF materials, and single-choice or multiple-choice assessments. Progress, exam attempts, scores and expiry dates are associated with the person and course, giving teams a record of completed learning and current qualifications.
 
 On a later visit, a valid passing result for the same person and course can satisfy that requirement again. Reuse preserves the original expiry date. Expired qualifications and newly required courses still need to be completed.
 
 ### 4. Verify entry readiness for each person
 
-The gate workflow considers application approvals, notice acknowledgement, the appointment date, and the participant's own current training requirements.
+The gate workflow checks application approvals, notice acknowledgement, the appointment date, and the participant's own current training requirements. This connects the enterprise's configured entry conditions to the person arriving at the gate.
 
 First entry must take place on the appointment date, evaluated in China Standard Time. The selected time slot is recorded for scheduling and display. Each participant is checked in and out separately, retaining the actual time and authorized operator.
 
 ### 5. Close the visit with its history intact
 
-Participant departures, the departure of vehicles that entered, and application closure follow their applicable business conditions. Visit snapshots, approval decisions, exam attempts and entry and exit actions retain the context needed to review an earlier visit.
+Participant departures, the departure of vehicles that entered, and application closure follow their applicable business conditions. Visit snapshots, approval decisions, exam attempts and entry and exit actions retain the context needed for an internal compliance review: what was requested, who approved it, which learning was completed, and when each person entered and left.
 
 ## Live product screens
 
@@ -83,11 +84,11 @@ These screenshots were captured from the online demos. The mobile screens show t
 
 <div class="vs-mobile-screens">
   <figure>
-    <a href="/uploads/showcases/visitsafe/visitor-portal-en.jpg" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/visitor-portal-en.jpg" width="390" height="844" loading="lazy" alt="VisitSafe English mobile homepage with training, visitor, logistics and contractor entry points"></a>
+    <a href="/uploads/showcases/visitsafe/visitor-portal-en.jpg" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/visitor-portal-en.jpg" width="390" height="844" loading="lazy" alt="VisitorTraining English mobile homepage with training, visitor, logistics and contractor entry points"></a>
     <figcaption>Mobile entry points organized around the visitor's task, with language switching and a route back to unfinished learning.</figcaption>
   </figure>
   <figure>
-    <a href="/uploads/showcases/visitsafe/training-lookup-en.jpg" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/training-lookup-en.jpg" width="390" height="844" loading="lazy" alt="VisitSafe English safety-training lookup using the registered name and phone number"></a>
+    <a href="/uploads/showcases/visitsafe/training-lookup-en.jpg" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/training-lookup-en.jpg" width="390" height="844" loading="lazy" alt="VisitorTraining English compliance-training lookup using the registered name and phone number"></a>
     <figcaption>Participants find their assigned training using the name and phone number entered at registration.</figcaption>
   </figure>
 </div>
@@ -95,7 +96,7 @@ These screenshots were captured from the online demos. The mobile screens show t
 The management dashboard brings appointments, people on site, pending approvals, vehicles and training validity into one operational view. Area and time-period filters help teams understand upcoming demand and current readiness.
 
 <figure class="vs-figure">
-  <a href="/uploads/showcases/visitsafe/management-dashboard.jpg" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/management-dashboard.jpg" width="1430" height="993" loading="lazy" alt="VisitSafe operations dashboard showing scheduled visits, people on site, approval status, visit trends and training validity"></a>
+  <a href="/uploads/showcases/visitsafe/management-dashboard.jpg" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/management-dashboard.jpg" width="1430" height="993" loading="lazy" alt="VisitorTraining operations dashboard showing scheduled visits, people on site, approval status, visit trends and training validity"></a>
   <figcaption>Captured from the management demo. People, approvals, scores and operational figures shown are fictional demonstration data.</figcaption>
 </figure>
 
@@ -104,7 +105,7 @@ The management dashboard brings appointments, people on site, pending approvals,
 The English overview connects registration, task creation, parallel approvals and learning, individual entry eligibility, departure and historical records. Question counts, passing scores and specific approval roles shown in the illustration are examples; the actual rules depend on the configured registration types, areas and courses.
 
 <figure class="vs-figure">
-  <a href="/uploads/showcases/visitsafe/workflow-en.png" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/workflow-en.png" width="1536" height="1024" loading="lazy" alt="VisitSafe visitor journey infographic showing registration, parallel approvals and training, individual entry checks, departures and visit records"></a>
+  <a href="/uploads/showcases/visitsafe/workflow-en.png" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/workflow-en.png" width="1536" height="1024" loading="lazy" alt="VisitorTraining visitor journey infographic showing registration, parallel approvals and training, individual entry checks, departures and visit records"></a>
   <figcaption>English workflow overview. Open the image to view it at full resolution.</figcaption>
 </figure>
 
@@ -112,7 +113,7 @@ The English overview connects registration, task creation, parallel approvals an
   <summary>View the Chinese workflow guide: registration, training, approvals and site access</summary>
   <div><div>
     <figure class="vs-figure">
-      <a href="/uploads/showcases/visitsafe/workflow-cn.png" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/workflow-cn.png" width="724" height="2172" loading="lazy" alt="VisitSafe Chinese workflow guide showing visit types, registration, training tasks, exams and individual site entry and exit"></a>
+      <a href="/uploads/showcases/visitsafe/workflow-cn.png" target="_blank" rel="noopener"><img src="/uploads/showcases/visitsafe/workflow-cn.png" width="724" height="2172" loading="lazy" alt="VisitorTraining Chinese workflow guide showing visit types, registration, training tasks, exams and individual site entry and exit"></a>
       <figcaption>Chinese workflow illustration. Assessment settings and approval roles are illustrative and depend on the actual system configuration.</figcaption>
     </figure>
   </div></div>
@@ -125,12 +126,12 @@ The English overview connects registration, task creation, parallel approvals an
 | Visitors, contractors and drivers | How do I register, what must I learn, and what is complete? | Mobile registration, task lookup, videos, exams and personal results |
 | Reception and operations | Who is arriving, where are they going, and who or what accompanies them? | Applications, delegated registration, appointments, participant and vehicle profiles |
 | Business and area approvers | Is the purpose and requested access appropriate? | Review assigned tasks and retain separate decisions for each responsibility |
-| Safety teams | Which courses apply, and which qualifications remain valid? | Courses, question banks, validity periods, assignments and training records |
+| Compliance and training teams | Which learning requirements apply, and which qualifications remain valid? | Courses, question banks, validity periods, assignments and training records |
 | Gate staff | Is this person ready to enter, and when did they leave? | Individual readiness checks and recorded entry and exit operations |
 
 ## Architecture and deployment
 
-VisitSafe separates the visitor's mobile experience from the internal management workspace. APIs connect both experiences to shared business rules and data.
+VisitorTraining separates the visitor's mobile experience from the internal management workspace. APIs connect both experiences to shared business rules and data.
 
 | Layer | Technology and purpose |
 | --- | --- |
@@ -141,10 +142,10 @@ VisitSafe separates the visitor's mobile experience from the internal management
 
 The product continues to evolve. This case study combines the project documentation with the current online demos; available features and integration scope depend on the deployed version and project documentation. The cover is a conceptual illustration, while the product screens are authentic browser captures.
 
-## Start with a clear visit scenario
+## Build a consistent enterprise visitor compliance process
 
-Factory reception, contractor onboarding, logistics arrivals and industrial-site safety learning share a useful starting point: who is coming, where they need to go, who is responsible, and what preparation is required.
+Factory reception, contractor onboarding, logistics arrivals and industrial-site visits share the same compliance questions: who is coming, which areas they may access, who must authorize the visit, what training is required, and which records must be retained.
 
-VisitSafe connects those answers to the same visit. Participants can see their next step, responsible teams can identify their work, gate staff can check readiness, and operations can review the record afterwards.
+VisitorTraining connects those answers to the same visit. Participants can see their obligations, approvers can record their decisions, gate staff can verify each person's eligibility, and enterprise teams can review the supporting records afterwards. The result is a repeatable visitor compliance process with clear ownership and traceable evidence.
 
-**[Explore the visitor and learning portal](https://visit-safe.blazorserver.com/) · [View the management platform](https://visit-training.blazorserver.com/) · [Frontend source](https://github.com/neozhu/visit-traning-client) · [Backend source](https://github.com/neozhu/visit-training-management)**
+**[Explore the visitor and learning portal](https://visit-training-client.blazorserver.com/) · [View the management platform](https://visit-training.blazorserver.com/) · [Frontend source](https://github.com/neozhu/visit-traning-client) · [Backend source](https://github.com/neozhu/visit-training-management)**
