@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bgFlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="arrG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#f87171"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="760" rx="16" fill="url(#bgFlow)"/>
+
+  <!-- Title -->
+  <text x="600" y="42" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">端到端消息处理流水线与状态机流转</text>
+  <text x="600" y="66" text-anchor="middle" fill="#94a3b8" font-size="13">阶段一：入站 SSE 订阅、实时校验与原子去重  |  阶段二：出站幂等发送、回执轮询与失败熔断</text>
+
+  <!-- ==================== PHASE 1: INBOUND ==================== -->
+  <rect x="30" y="88" width="1140" height="270" rx="12" fill="#1e293b" fill-opacity="0.45" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="46" y="102" width="250" height="28" rx="6" fill="#065f46"/>
+  <text x="171" y="121" text-anchor="middle" fill="#ecfdf5" font-size="13" font-weight="700">阶段一：入站消息接收与原子去重</text>
+
+  <!-- Step 1 -->
+  <rect x="48" y="148" width="195" height="115" rx="10" fill="#0f172a" stroke="#059669" stroke-width="1.5"/>
+  <circle cx="72" cy="172" r="12" fill="#10b981"/>
+  <text x="72" y="177" text-anchor="middle" fill="#0b1120" font-size="12" font-weight="800">1</text>
+  <text x="92" y="177" fill="#f8fafc" font-size="13" font-weight="700">SSE 事件流到达</text>
+  <text x="62" y="202" fill="#cbd5e1" font-size="11">• 订阅 /v1/events/stream</text>
+  <text x="62" y="220" fill="#cbd5e1" font-size="11">• 校验 /v1/status.serverId</text>
+  <text x="62" y="238" fill="#34d399" font-size="11">• 收到 message.committed</text>
+
+  <path d="M 243 205 L 275 205" stroke="#10b981" stroke-width="2" marker-end="url(#arrG)"/>
+
+  <!-- Step 2 -->
+  <rect x="278" y="148" width="205" height="115" rx="10" fill="#0f172a" stroke="#059669" stroke-width="1.5"/>
+  <circle cx="302" cy="172" r="12" fill="#10b981"/>
+  <text x="302" y="177" text-anchor="middle" fill="#0b1120" font-size="12" font-weight="800">2</text>
+  <text x="322" y="177" fill="#f8fafc" font-size="13" font-weight="700">消息核实与实时过滤</text>
+  <text x="292" y="202" fill="#cbd5e1" font-size="11">• GET /messages/{messageId}</text>
+  <text x="292" y="220" fill="#cbd5e1" font-size="11">• 要求 origin == "live" 纯文本</text>
+  <text x="292" y="238" fill="#cbd5e1" font-size="11">• 5 分钟时间窗（±60s 容差）</text>
+
+  <path d="M 483 205 L 515 205" stroke="#10b981" stroke-width="2" marker-end="url(#arrG)"/>
+
+  <!-- Step 3 -->
+  <rect x="518" y="148" width="205" height="115" rx="10" fill="#0f172a" stroke="#059669" stroke-width="1.5"/>
+  <circle cx="542" cy="172" r="12" fill="#10b981"/>
+  <text x="542" y="177" text-anchor="middle" fill="#0b1120" font-size="12" font-weight="800">3</text>
+  <text x="562" y="177" fill="#f8fafc" font-size="13" font-weight="700">权限与触发规则判定</text>
+  <text x="532" y="202" fill="#cbd5e1" font-size="11">• 私聊开关与 allowed_users</text>
+  <text x="532" y="220" fill="#cbd5e1" font-size="11">• 群白名单 allowed_groups</text>
+  <text x="532" y="238" fill="#34d399" font-size="11">• 群触发：真 @机器人 / all</text>
+
+  <path d="M 723 205 L 755 205" stroke="#10b981" stroke-width="2" marker-end="url(#arrG)"/>
+
+  <!-- Step 4 -->
+  <rect x="758" y="148" width="200" height="115" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+  <circle cx="782" cy="172" r="12" fill="#38bdf8"/>
+  <text x="782" y="177" text-anchor="middle" fill="#0b1120" font-size="12" font-weight="800">4</text>
+  <text x="802" y="177" fill="#f8fafc" font-size="13" font-weight="700">SQLite 原子事务</text>
+  <text x="772" y="202" fill="#cbd5e1" font-size="11">• 校验 messageId 未重复</text>
+  <text x="772" y="220" fill="#38bdf8" font-size="11">• 写入状态：status = "queued"</text>
+  <text x="772" y="238" fill="#38bdf8" font-size="11">• 同事务推进 SSE 游标 cursor</text>
+
+  <path d="M 958 205 L 988 205" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrB)"/>
+
+  <!-- Step 5 -->
+  <rect x="990" y="148" width="160" height="115" rx="10" fill="#0f172a" stroke="#818cf8" stroke-width="1.5"/>
+  <circle cx="1014" cy="172" r="12" fill="#818cf8"/>
+  <text x="1014" y="177" text-anchor="middle" fill="#0b1120" font-size="12" font-weight="800">5</text>
+  <text x="1034" y="177" fill="#f8fafc" font-size="13" font-weight="700">AstrBot 推理</text>
+  <text x="1004" y="202" fill="#cbd5e1" font-size="11">• 分配独立/共享会话</text>
+  <text x="1004" y="220" fill="#cbd5e1" font-size="11">• 调用 LLM 模型生成</text>
+  <text x="1004" y="238" fill="#a5b4fc" font-size="11">• 准备回复文本片段</text>
+
+  <!-- Filtered / Recalled Note in Phase 1 -->
+  <rect x="278" y="282" width="680" height="56" rx="8" fill="#0f172a" stroke="#475569" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="618" y="305" text-anchor="middle" fill="#94a3b8" font-size="12">
+    <tspan fill="#fbbf24" font-weight="600">非目标或撤回消息分支：</tspan>历史导入、超 5 分钟旧消息、非白名单或未 @ 群消息 → 记为 <tspan fill="#e2e8f0" font-weight="600">ignored</tspan> 并推进游标；
+  </text>
+  <text x="618" y="325" text-anchor="middle" fill="#94a3b8" font-size="12">
+    若收到撤回事件 → 立即停止仍持有的 AstrBot 事件，记为 <tspan fill="#fbbf24" font-weight="600">recalled</tspan>，不再触发后续回复。
+  </text>
+
+  <!-- ==================== PHASE 2: OUTBOUND ==================== -->
+  <rect x="30" y="382" width="1140" height="350" rx="12" fill="#1e293b" fill-opacity="0.45" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="46" y="396" width="290" height="28" rx="6" fill="#0369a1"/>
+  <text x="191" y="415" text-anchor="middle" fill="#e0f2fe" font-size="13" font-weight="700">阶段二：出站幂等发送与回执确认状态机</text>
+
+  <!-- Connector from Step 5 to Step 6 -->
+  <path d="M 1070 263 L 1070 368 L 145 368 L 145 438" stroke="#818cf8" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrB)"/>
+
+  <!-- Step 6 -->
+  <rect x="48" y="442" width="195" height="120" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+  <circle cx="72" cy="466" r="12" fill="#38bdf8"/>
+  <text x="72" y="471" text-anchor="middle" fill="#0b1120" font-size="12" font-weight="800">6</text>
+  <text x="92" y="471" fill="#f8fafc" font-size="13" font-weight="700">发送前二次核查</text>
+  <text x="62" y="496" fill="#cbd5e1" font-size="11">• 重读原消息确认未撤回</text>
+  <text x="62" y="514" fill="#cbd5e1" font-size="11">• 空输出记为 no_reply</text>
+  <text x="62" y="532" fill="#38bdf8" font-size="11">• 群分段仅首段 @原发送者</text>
+
+  <path d="M 243 502 L 275 502" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrB)"/>
+
+  <!-- Step 7 -->
+  <rect x="278" y="442" width="210" height="120" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+  <circle cx="302" cy="466" r="12" fill="#38bdf8"/>
+  <text x="302" y="471" text-anchor="middle" fill="#0b1120" font-size="12" font-weight="800">7</text>
+  <text x="322" y="471" fill="#f8fafc" font-size="13" font-weight="700">持久化幂等键与单次 POST</text>
+  <text x="292" y="496" fill="#cbd5e1" font-size="11">• 生成唯一 Idempotency-Key</text>
+  <text x="292" y="514" fill="#cbd5e1" font-size="11">• 先写入 SQLite sends 表</text>
+  <text x="292" y="532" fill="#34d399" font-size="11" font-weight="600">• 仅发起一次 POST /sends</text>
+
+  <path d="M 488 502 L 520 502" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrB)"/>
+
+  <!-- Step 8 -->
+  <rect x="523" y="442" width="225" height="120" rx="10" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5"/>
+  <circle cx="547" cy="466" r="12" fill="#fbbf24"/>
+  <text x="547" y="471" text-anchor="middle" fill="#0b1120" font-size="12" font-weight="800">8</text>
+  <text x="567" y="471" fill="#f8fafc" font-size="13" font-weight="700">回执轮询与异常恢复</text>
+  <text x="537" y="496" fill="#cbd5e1" font-size="11">• queued / submitting：有限轮询</text>
+  <text x="537" y="514" fill="#fbbf24" font-size="11">• 超时 / 408 / 429 / 5xx：绝不重发 POST</text>
+  <text x="537" y="532" fill="#cbd5e1" font-size="11">• 按 send_id 或原 key 查询 GET 回执</text>
+
+  <!-- Branches to Final States -->
+  <path d="M 748 470 L 800 450" stroke="#10b981" stroke-width="2" marker-end="url(#arrG)"/>
+  <path d="M 748 502 L 800 525" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrA)"/>
+  <path d="M 748 535 L 800 600" stroke="#f87171" stroke-width="2" marker-end="url(#arrR)"/>
+
+  <!-- State Outcome 1: Replied -->
+  <rect x="805" y="418" width="340" height="62" rx="8" fill="#064e3b" fill-opacity="0.55" stroke="#10b981" stroke-width="1.5"/>
+  <text x="822" y="442" fill="#34d399" font-size="13" font-weight="700">✓ 回执 accepted → 状态：replied</text>
+  <text x="822" y="464" fill="#d1fae5" font-size="11">微信服务端已接受该段消息；若有多段则继续发送下一片段</text>
+
+  <!-- State Outcome 2: Partial / Failed -->
+  <rect x="805" y="494" width="340" height="62" rx="8" fill="#78350f" fill-opacity="0.5" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="822" y="518" fill="#fbbf24" font-size="13" font-weight="700">! 后续片段失败 → 状态：partial / failed</text>
+  <text x="822" y="540" fill="#fef3c7" font-size="11">保留每段原始回执，立即熔断后续分段，防止重复刷屏</text>
+
+  <!-- State Outcome 3: Needs Review -->
+  <rect x="805" y="570" width="340" height="68" rx="8" fill="#7f1d1d" fill-opacity="0.5" stroke="#f87171" stroke-width="1.5"/>
+  <text x="822" y="594" fill="#fca5a5" font-size="13" font-weight="700">⚠ 结果不确定 / 重启遗留 → 状态：needs_review</text>
+  <text x="822" y="614" fill="#fee2e2" font-size="11">回执未知、标识冲突或进程崩溃重启时未完成，绝不自动重发</text>
+  <text x="822" y="630" fill="#fecaca" font-size="10">管理员通过 sqlite3 -readonly 与 Native GET 回执只读核查</text>
+
+  <!-- Bottom Guarantee Banner -->
+  <rect x="48" y="654" width="1097" height="58" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+  <text x="596" y="678" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">
+    核心安全边界：宁可暂停待核查（needs_review），也绝不在网络抖动或重启后向真实微信会话盲目重发消息
+  </text>
+  <text x="596" y="699" text-anchor="middle" fill="#94a3b8" font-size="11">
+    SQLite 状态库仅记录 messageId / threadId / serverId / cursor / Idempotency-Key / state，全程零聊天正文落盘
+  </text>
+</svg>

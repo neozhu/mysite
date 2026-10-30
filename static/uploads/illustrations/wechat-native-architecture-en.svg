@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGradEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="greenGradEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="cyanGradEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="indigoGradEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="amberGradEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.1"/>
+    </linearGradient>
+    <marker id="arrowGreenEn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowCyanEn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowAmberEn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowPurpleEn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" rx="16" fill="url(#bgGradEn)"/>
+
+  <!-- Header -->
+  <text x="600" y="42" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">WeChat Native Plugin Architecture &amp; Working Principle</text>
+  <text x="600" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">Direct agent-wechat-native /v1 API Integration Inside AstrBot · No External Bridge · Atomic SQLite Deduplication</text>
+
+  <!-- Host Network Boundary -->
+  <rect x="250" y="88" width="920" height="560" rx="14" fill="#1e293b" fill-opacity="0.35" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,6"/>
+  <text x="270" y="112" fill="#94a3b8" font-size="12" font-weight="600">Linux Host (Docker Host Network Mode · Loopback 127.0.0.1 Communication)</text>
+
+  <!-- Left Column: Personal WeChat Ecosystem -->
+  <rect x="30" y="130" width="185" height="430" rx="12" fill="url(#greenGradEn)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="122" y="162" text-anchor="middle" fill="#34d399" font-size="16" font-weight="700">Personal WeChat</text>
+  <text x="122" y="182" text-anchor="middle" fill="#a7f3d0" font-size="12">Private &amp; Group Chats</text>
+
+  <rect x="46" y="206" width="153" height="76" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="122" y="232" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Private Text Chat</text>
+  <text x="122" y="252" text-anchor="middle" fill="#94a3b8" font-size="11">Direct 1-on-1 messages</text>
+  <text x="122" y="269" text-anchor="middle" fill="#34d399" font-size="11">senderId whitelist support</text>
+
+  <rect x="46" y="302" width="153" height="86" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="122" y="328" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Group Chat (@chatroom)</text>
+  <text x="122" y="348" text-anchor="middle" fill="#94a3b8" font-size="11">True @mention / all mode</text>
+  <text x="122" y="365" text-anchor="middle" fill="#34d399" font-size="11">Ignores typed plain @text</text>
+  <text x="122" y="380" text-anchor="middle" fill="#34d399" font-size="11">First chunk @mentions sender</text>
+
+  <rect x="46" y="408" width="153" height="72" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="122" y="434" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Message Recalls</text>
+  <text x="122" y="454" text-anchor="middle" fill="#94a3b8" font-size="11">Real-time recall events</text>
+  <text x="122" y="470" text-anchor="middle" fill="#fbbf24" font-size="11">Cancels pending replies</text>
+
+  <rect x="46" y="496" width="153" height="46" rx="8" fill="#064e3b" fill-opacity="0.5" stroke="#10b981" stroke-width="1"/>
+  <text x="122" y="523" text-anchor="middle" fill="#ecfdf5" font-size="12" font-weight="600">Authorized Account Only</text>
+
+  <!-- Middle Column: agent-wechat-native Container -->
+  <rect x="275" y="130" width="250" height="430" rx="12" fill="url(#cyanGradEn)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="400" y="160" text-anchor="middle" fill="#38bdf8" font-size="16" font-weight="700">agent-wechat-native</text>
+  <text x="400" y="180" text-anchor="middle" fill="#bae6fd" font-size="11">v1.2.0 Container · 127.0.0.1:6174</text>
+  <text x="400" y="196" text-anchor="middle" fill="#7dd3fc" font-size="11">UID 10001 · read_only · cap_drop: ALL</text>
+
+  <rect x="293" y="214" width="214" height="68" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="400" y="238" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600">GET /v1/events/stream (SSE)</text>
+  <text x="400" y="256" text-anchor="middle" fill="#94a3b8" font-size="11">Streams message.committed &amp; recalls</text>
+  <text x="400" y="272" text-anchor="middle" fill="#38bdf8" font-size="11">Resumes via after &amp; Last-Event-ID</text>
+
+  <rect x="293" y="296" width="214" height="64" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="400" y="320" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600">GET /v1/messages/{id}</text>
+  <text x="400" y="338" text-anchor="middle" fill="#94a3b8" font-size="11">Verifies account, thread &amp; message IDs</text>
+  <text x="400" y="353" text-anchor="middle" fill="#38bdf8" font-size="11">GET /v1/status checks serverId &amp; state</text>
+
+  <rect x="293" y="374" width="214" height="78" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="400" y="398" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600">POST /v1/accounts/{id}/sends</text>
+  <text x="400" y="416" text-anchor="middle" fill="#94a3b8" font-size="11">Idempotent send with Idempotency-Key</text>
+  <text x="400" y="432" text-anchor="middle" fill="#38bdf8" font-size="11">GET /sends/{sendId} or by-idempotency-key</text>
+  <text x="400" y="446" text-anchor="middle" fill="#34d399" font-size="11">Receipts: queued → submitting → accepted</text>
+
+  <rect x="293" y="468" width="214" height="72" rx="8" fill="#0c4a6e" fill-opacity="0.45" stroke="#0284c7" stroke-width="1"/>
+  <text x="400" y="492" text-anchor="middle" fill="#e0f2fe" font-size="12" font-weight="600">Persistent Volumes</text>
+  <text x="400" y="510" text-anchor="middle" fill="#bae6fd" font-size="11">/var/lib/agent-wechat (Accounts &amp; Auth)</text>
+  <text x="400" y="527" text-anchor="middle" fill="#bae6fd" font-size="11">/var/cache/agent-wechat (Scratch Cache)</text>
+
+  <!-- Right Column: AstrBot Container + WeChat Native Plugin -->
+  <rect x="645" y="130" width="500" height="430" rx="12" fill="url(#indigoGradEn)" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="895" y="160" text-anchor="middle" fill="#a5b4fc" font-size="16" font-weight="700">AstrBot Container (v4.29.3) · WeChat Native Plugin</text>
+  <text x="895" y="180" text-anchor="middle" fill="#c7d2fe" font-size="12">In-Process Python 3.12+ Plugin · Zero External Bridge Services</text>
+
+  <!-- Sub-box 1: SSE Receiver & Filter -->
+  <rect x="668" y="198" width="215" height="118" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1.2"/>
+  <text x="775" y="220" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="700">1. SSE Stream &amp; Live Filter</text>
+  <text x="680" y="242" fill="#cbd5e1" font-size="11">• Validates serverId across reconnects</text>
+  <text x="680" y="260" fill="#cbd5e1" font-size="11">• Accepts only origin == "live" text</text>
+  <text x="680" y="278" fill="#cbd5e1" font-size="11">• 5-min freshness window (±60s skew)</text>
+  <text x="680" y="296" fill="#cbd5e1" font-size="11">• Whitelist, @mode &amp; recall checks</text>
+
+  <!-- Sub-box 2: AstrBot Core LLM Pipeline -->
+  <rect x="908" y="198" width="215" height="118" rx="8" fill="#0f172a" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="1015" y="220" text-anchor="middle" fill="#e9d5ff" font-size="13" font-weight="700">2. AstrBot Core Pipeline</text>
+  <text x="920" y="242" fill="#cbd5e1" font-size="11">• unique_session per group member</text>
+  <text x="920" y="260" fill="#cbd5e1" font-size="11">• Routes to configured LLM &amp; persona</text>
+  <text x="920" y="278" fill="#cbd5e1" font-size="11">• Invokes AstrBot plugin tools</text>
+  <text x="920" y="296" fill="#cbd5e1" font-size="11">• Produces single or multi-part text</text>
+
+  <!-- Sub-box 3: SQLite State DB -->
+  <rect x="668" y="338" width="215" height="135" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="775" y="360" text-anchor="middle" fill="#34d399" font-size="13" font-weight="700">3. SQLite State (state.sqlite3)</text>
+  <text x="680" y="382" fill="#cbd5e1" font-size="11">• Isolated per server, account &amp; bot</text>
+  <text x="680" y="400" fill="#cbd5e1" font-size="11">• Atomic commit: dedup + SSE cursor</text>
+  <text x="680" y="418" fill="#cbd5e1" font-size="11">• Tracks messages &amp; sends receipts</text>
+  <text x="680" y="436" fill="#fbbf24" font-size="11" font-weight="600">• Never stores chat text or tokens</text>
+  <text x="680" y="454" fill="#94a3b8" font-size="10">/AstrBot/data/plugin_data/...</text>
+
+  <!-- Sub-box 4: Outbound Idempotent Sender -->
+  <rect x="908" y="338" width="215" height="135" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="1015" y="360" text-anchor="middle" fill="#38bdf8" font-size="13" font-weight="700">4. Idempotent Outbound Sender</text>
+  <text x="920" y="382" fill="#cbd5e1" font-size="11">• Re-verifies message not recalled</text>
+  <text x="920" y="400" fill="#cbd5e1" font-size="11">• Persists Idempotency-Key before POST</text>
+  <text x="920" y="418" fill="#cbd5e1" font-size="11">• Polls receipt on timeout/5xx (no retry)</text>
+  <text x="920" y="436" fill="#f87171" font-size="11">• Halts remaining chunks on error</text>
+  <text x="920" y="454" fill="#34d399" font-size="11">• Auto-@mentions sender on 1st chunk</text>
+
+  <!-- Sub-box 5: WebUI Connection Test -->
+  <rect x="668" y="490" width="455" height="50" rx="8" fill="#1e1b4b" fill-opacity="0.7" stroke="#6366f1" stroke-width="1"/>
+  <text x="895" y="513" text-anchor="middle" fill="#e0e7ff" font-size="12" font-weight="600">WebUI Visual Connection Test (Port 6185)</text>
+  <text x="895" y="531" text-anchor="middle" fill="#a5b4fc" font-size="11">Read-only check for Native API auth (Connected) and WeChat account state (Online / Offline)</text>
+
+  <!-- Shared Secret Token Bar at Bottom -->
+  <rect x="275" y="580" width="870" height="52" rx="10" fill="url(#amberGradEn)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="710" y="603" text-anchor="middle" fill="#fde68a" font-size="13" font-weight="700">Shared Read-Only Secret: /run/secrets/wechat-api-token (Host /opt/agent-wechat-native/api-token · Mode 0600)</text>
+  <text x="710" y="622" text-anchor="middle" fill="#fcd34d" font-size="11">Mounted read-only (:ro) into both containers · Bearer Token Auth with target account read + send scopes</text>
+
+  <!-- Arrows between WeChat and Native -->
+  <path d="M 215 280 L 273 280" stroke="#10b981" stroke-width="2.2" marker-end="url(#arrowGreenEn)"/>
+  <text x="244" y="272" text-anchor="middle" fill="#34d399" font-size="10">Inbound</text>
+  <path d="M 273 410 L 215 410" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrowCyanEn)"/>
+  <text x="244" y="402" text-anchor="middle" fill="#38bdf8" font-size="10">Outbound</text>
+
+  <!-- Arrows between Native and AstrBot Plugin -->
+  <path d="M 525 245 L 664 245" stroke="#10b981" stroke-width="2.2" marker-end="url(#arrowGreenEn)"/>
+  <text x="585" y="236" text-anchor="middle" fill="#34d399" font-size="11" font-weight="600">SSE Event Stream</text>
+
+  <path d="M 664 325 L 525 325" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrowPurpleEn)" marker-start="url(#arrowPurpleEn)"/>
+  <text x="585" y="316" text-anchor="middle" fill="#c4b5fd" font-size="11">Verify Msg &amp; Status</text>
+
+  <path d="M 908 412 L 525 412" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrowCyanEn)"/>
+  <text x="585" y="403" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="600">Idempotent POST &amp; Receipt</text>
+
+  <!-- Internal Plugin Arrows -->
+  <path d="M 883 255 L 905 255" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrowPurpleEn)"/>
+  <path d="M 775 316 L 775 335" stroke="#10b981" stroke-width="2" marker-end="url(#arrowGreenEn)"/>
+  <path d="M 1015 316 L 1015 335" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyanEn)"/>
+  <path d="M 908 395 L 886 395" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrowGreenEn)" marker-start="url(#arrowGreenEn)"/>
+
+  <!-- Token Mount Arrows -->
+  <path d="M 400 580 L 400 562" stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="4,4" marker-end="url(#arrowAmberEn)"/>
+  <path d="M 895 580 L 895 562" stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="4,4" marker-end="url(#arrowAmberEn)"/>
+</svg>

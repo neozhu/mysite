@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.1"/>
+    </linearGradient>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Header -->
+  <text x="600" y="42" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">WeChat Native 插件工作原理与系统架构</text>
+  <text x="600" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">AstrBot 内置插件直连 agent-wechat-native /v1 API · 无需额外中间 Bridge 服务 · SQLite 原子去重与幂等回执</text>
+
+  <!-- Host Network Boundary -->
+  <rect x="250" y="88" width="920" height="560" rx="14" fill="#1e293b" fill-opacity="0.35" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,6"/>
+  <text x="270" y="112" fill="#94a3b8" font-size="12" font-weight="600">Linux 宿主机（Docker Host 网络模式 · 本机回环 127.0.0.1 安全通信）</text>
+
+  <!-- Left Column: Personal WeChat Ecosystem -->
+  <rect x="30" y="130" width="185" height="430" rx="12" fill="url(#greenGrad)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="122" y="162" text-anchor="middle" fill="#34d399" font-size="16" font-weight="700">个人微信生态</text>
+  <text x="122" y="182" text-anchor="middle" fill="#a7f3d0" font-size="12">用户私聊与群聊交互</text>
+
+  <rect x="46" y="206" width="153" height="76" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="122" y="232" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">私聊文本消息</text>
+  <text x="122" y="252" text-anchor="middle" fill="#94a3b8" font-size="11">1v1 实时对话提问</text>
+  <text x="122" y="269" text-anchor="middle" fill="#34d399" font-size="11">支持 senderId 白名单</text>
+
+  <rect x="46" y="302" width="153" height="86" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="122" y="328" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">微信群聊 (@chatroom)</text>
+  <text x="122" y="348" text-anchor="middle" fill="#94a3b8" font-size="11">真 @机器人 / 全部文本</text>
+  <text x="122" y="365" text-anchor="middle" fill="#34d399" font-size="11">手打纯文本 @ 不误触</text>
+  <text x="122" y="380" text-anchor="middle" fill="#34d399" font-size="11">首段自动 @原发送者</text>
+
+  <rect x="46" y="408" width="153" height="72" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="122" y="434" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">消息撤回事件</text>
+  <text x="122" y="454" text-anchor="middle" fill="#94a3b8" font-size="11">实时同步撤回状态</text>
+  <text x="122" y="470" text-anchor="middle" fill="#fbbf24" font-size="11">触发拦截与取消回复</text>
+
+  <rect x="46" y="496" width="153" height="46" rx="8" fill="#064e3b" fill-opacity="0.5" stroke="#10b981" stroke-width="1"/>
+  <text x="122" y="523" text-anchor="middle" fill="#ecfdf5" font-size="12" font-weight="600">仅接入授权个人账号</text>
+
+  <!-- Middle Column: agent-wechat-native Container -->
+  <rect x="275" y="130" width="250" height="430" rx="12" fill="url(#cyanGrad)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="400" y="160" text-anchor="middle" fill="#38bdf8" font-size="16" font-weight="700">agent-wechat-native</text>
+  <text x="400" y="180" text-anchor="middle" fill="#bae6fd" font-size="11">v1.2.0 容器 · 监听 127.0.0.1:6174</text>
+  <text x="400" y="196" text-anchor="middle" fill="#7dd3fc" font-size="11">UID 10001 · read_only · cap_drop: ALL</text>
+
+  <rect x="293" y="214" width="214" height="68" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="400" y="238" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600">GET /v1/events/stream (SSE)</text>
+  <text x="400" y="256" text-anchor="middle" fill="#94a3b8" font-size="11">实时推送 message.committed / 撤回</text>
+  <text x="400" y="272" text-anchor="middle" fill="#38bdf8" font-size="11">支持 after 与 Last-Event-ID 游标续传</text>
+
+  <rect x="293" y="296" width="214" height="64" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="400" y="320" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600">GET /v1/messages/{id}</text>
+  <text x="400" y="338" text-anchor="middle" fill="#94a3b8" font-size="11">核实账号、聊天与消息完整标识</text>
+  <text x="400" y="353" text-anchor="middle" fill="#38bdf8" font-size="11">GET /v1/status 校验 serverId 与在线状态</text>
+
+  <rect x="293" y="374" width="214" height="78" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="400" y="398" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600">POST /v1/accounts/{id}/sends</text>
+  <text x="400" y="416" text-anchor="middle" fill="#94a3b8" font-size="11">接收 Idempotency-Key 幂等发送请求</text>
+  <text x="400" y="432" text-anchor="middle" fill="#38bdf8" font-size="11">GET /sends/{sendId} 或 by-idempotency-key</text>
+  <text x="400" y="446" text-anchor="middle" fill="#34d399" font-size="11">回执状态：queued → submitting → accepted</text>
+
+  <rect x="293" y="468" width="214" height="72" rx="8" fill="#0c4a6e" fill-opacity="0.45" stroke="#0284c7" stroke-width="1"/>
+  <text x="400" y="492" text-anchor="middle" fill="#e0f2fe" font-size="12" font-weight="600">持久化数据卷</text>
+  <text x="400" y="510" text-anchor="middle" fill="#bae6fd" font-size="11">/var/lib/agent-wechat (账号与登录状态)</text>
+  <text x="400" y="527" text-anchor="middle" fill="#bae6fd" font-size="11">/var/cache/agent-wechat (临时快照空间)</text>
+
+  <!-- Right Column: AstrBot Container + WeChat Native Plugin -->
+  <rect x="645" y="130" width="500" height="430" rx="12" fill="url(#indigoGrad)" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="895" y="160" text-anchor="middle" fill="#a5b4fc" font-size="16" font-weight="700">AstrBot 容器 (v4.29.3) · WeChat Native 插件</text>
+  <text x="895" y="180" text-anchor="middle" fill="#c7d2fe" font-size="12">插件运行在 AstrBot 进程内 · Python 3.12+ · 无外部 Bridge 依赖</text>
+
+  <!-- Sub-box 1: SSE Receiver & Filter -->
+  <rect x="668" y="198" width="215" height="118" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1.2"/>
+  <text x="775" y="220" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="700">1. 事件流订阅与实时过滤</text>
+  <text x="680" y="242" fill="#cbd5e1" font-size="11">• 核对 serverId 防止跨库静默续用</text>
+  <text x="680" y="260" fill="#cbd5e1" font-size="11">• 仅接受 origin == "live" 实时文本</text>
+  <text x="680" y="278" fill="#cbd5e1" font-size="11">• 5 分钟时间窗过滤（容忍 60s 误差）</text>
+  <text x="680" y="296" fill="#cbd5e1" font-size="11">• 白名单、群 @ 模式与撤回事件拦截</text>
+
+  <!-- Sub-box 2: AstrBot Core LLM Pipeline -->
+  <rect x="908" y="198" width="215" height="118" rx="8" fill="#0f172a" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="1015" y="220" text-anchor="middle" fill="#e9d5ff" font-size="13" font-weight="700">2. AstrBot 核心对话流水线</text>
+  <text x="920" y="242" fill="#cbd5e1" font-size="11">• unique_session 同群成员独立会话</text>
+  <text x="920" y="260" fill="#cbd5e1" font-size="11">• 路由至配置的 LLM 模型与人格</text>
+  <text x="920" y="278" fill="#cbd5e1" font-size="11">• 调用 AstrBot 插件生态工具</text>
+  <text x="920" y="296" fill="#cbd5e1" font-size="11">• 生成单段或多段纯文本响应</text>
+
+  <!-- Sub-box 3: SQLite State DB -->
+  <rect x="668" y="338" width="215" height="135" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="775" y="360" text-anchor="middle" fill="#34d399" font-size="13" font-weight="700">3. SQLite 状态库 (state.sqlite3)</text>
+  <text x="680" y="382" fill="#cbd5e1" font-size="11">• 按服务地址 + 账号 + 实例 ID 隔离</text>
+  <text x="680" y="400" fill="#cbd5e1" font-size="11">• 同一事务提交：消息去重 + 游标推进</text>
+  <text x="680" y="418" fill="#cbd5e1" font-size="11">• 记录 messages 与 sends 幂等状态</text>
+  <text x="680" y="436" fill="#fbbf24" font-size="11" font-weight="600">• 绝不存储聊天正文与 API Token</text>
+  <text x="680" y="454" fill="#94a3b8" font-size="10">/AstrBot/data/plugin_data/...</text>
+
+  <!-- Sub-box 4: Outbound Idempotent Sender -->
+  <rect x="908" y="338" width="215" height="135" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="1015" y="360" text-anchor="middle" fill="#38bdf8" font-size="13" font-weight="700">4. 幂等发送与回执校验器</text>
+  <text x="920" y="382" fill="#cbd5e1" font-size="11">• 发送前复查原消息未撤回</text>
+  <text x="920" y="400" fill="#cbd5e1" font-size="11">• 先持久化 Idempotency-Key 再单次 POST</text>
+  <text x="920" y="418" fill="#cbd5e1" font-size="11">• 超时/5xx 仅按原键查询回执不重发</text>
+  <text x="920" y="436" fill="#f87171" font-size="11">• 分段失败/partial 立即熔断后续发送</text>
+  <text x="920" y="454" fill="#34d399" font-size="11">• 首段自动 @原发送者</text>
+
+  <!-- Sub-box 5: WebUI Connection Test -->
+  <rect x="668" y="490" width="455" height="50" rx="8" fill="#1e1b4b" fill-opacity="0.7" stroke="#6366f1" stroke-width="1"/>
+  <text x="895" y="513" text-anchor="middle" fill="#e0e7ff" font-size="12" font-weight="600">WebUI 可视化连接测试（端口 6185）</text>
+  <text x="895" y="531" text-anchor="middle" fill="#a5b4fc" font-size="11">只读校验 Native API 鉴权状态（已连接）与微信账号状态（在线 / 离线），不发送测试消息</text>
+
+  <!-- Shared Secret Token Bar at Bottom -->
+  <rect x="275" y="580" width="870" height="52" rx="10" fill="url(#amberGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="710" y="603" text-anchor="middle" fill="#fde68a" font-size="13" font-weight="700">共享只读密钥文件：/run/secrets/wechat-api-token（宿主机 /opt/agent-wechat-native/api-token · 权限 600）</text>
+  <text x="710" y="622" text-anchor="middle" fill="#fcd34d" font-size="11">双容器只读挂载 (:ro) · Bearer Token 鉴权（具备目标账号 read + send 权限）</text>
+
+  <!-- Arrows between WeChat and Native -->
+  <path d="M 215 280 L 273 280" stroke="#10b981" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+  <text x="244" y="272" text-anchor="middle" fill="#34d399" font-size="10">入站消息</text>
+  <path d="M 273 410 L 215 410" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrowCyan)"/>
+  <text x="244" y="402" text-anchor="middle" fill="#38bdf8" font-size="10">回复下发</text>
+
+  <!-- Arrows between Native and AstrBot Plugin -->
+  <path d="M 525 245 L 664 245" stroke="#10b981" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+  <text x="585" y="236" text-anchor="middle" fill="#34d399" font-size="11" font-weight="600">SSE 事件流推送</text>
+
+  <path d="M 664 325 L 525 325" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrowPurple)" marker-start="url(#arrowPurple)"/>
+  <text x="585" y="316" text-anchor="middle" fill="#c4b5fd" font-size="11">核实消息与状态</text>
+
+  <path d="M 908 412 L 525 412" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrowCyan)"/>
+  <text x="585" y="403" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="600">幂等 POST 与回执查询</text>
+
+  <!-- Internal Plugin Arrows -->
+  <path d="M 883 255 L 905 255" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <path d="M 775 316 L 775 335" stroke="#10b981" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <path d="M 1015 316 L 1015 335" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <path d="M 908 395 L 886 395" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrowGreen)" marker-start="url(#arrowGreen)"/>
+
+  <!-- Token Mount Arrows -->
+  <path d="M 400 580 L 400 562" stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="4,4" marker-end="url(#arrowAmber)"/>
+  <path d="M 895 580 L 895 562" stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="4,4" marker-end="url(#arrowAmber)"/>
+</svg>
