@@ -39,6 +39,10 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12.2a2.5 2.5 0 0 0-4.2-1.8 11.5 11.5 0 0 0-5-1.6l1-4.5 3.1.7a1.8 1.8 0 1 0 .3-1.1l-3.7-.8a.6.6 0 0 0-.7.4l-1.2 5.3c-2 .1-3.8.6-5.3 1.6a2.5 2.5 0 0 0-3.5 3.5 4.4 4.4 0 0 0-.1.9c0 3.4 4.2 6.2 9.3 6.2s9.3-2.8 9.3-6.2c0-.3 0-.6-.1-.9.5-.4.8-1 .8-1.7ZM7 13.7a1.4 1.4 0 1 1 2.8 0 1.4 1.4 0 0 1-2.8 0Zm9.1 3.4c-1.1 1.1-3.2 1.2-4.1 1.2s-3-.1-4.1-1.2a.5.5 0 1 1 .7-.7c.7.7 2.2.9 3.4.9s2.7-.2 3.4-.9a.5.5 0 1 1 .7.7Zm-.3-2a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Z"/></svg>
                 <span>Reddit</span>
             </a>
+            <button class="article-share-button" type="button" data-copy-share-url="{{ .Permalink }}" data-copy-label="{{ i18n "copyLink" }}" data-copied-label="{{ i18n "linkCopied" }}" aria-label="{{ i18n "copyLink" }}">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l2.8-2.8a1 1 0 1 1 1.4 1.4l-2.8 2.8a1 1 0 0 1-1.4 0Zm-3.5.7 1.4 1.4a3 3 0 0 0 4.2 0l2.1-2.1a1 1 0 0 1 1.4 1.4l-2.1 2.1a5 5 0 0 1-7.1 0l-1.4-1.4a5 5 0 0 1 0-7.1l2.1-2.1a1 1 0 0 1 1.4 1.4L7.1 9.9a3 3 0 0 0 0 4.2Zm9.8-4.2-1.4-1.4a3 3 0 0 0-4.2 0L9.2 10.6a1 1 0 0 1-1.4-1.4l2.1-2.1a5 5 0 0 1 7.1 0l1.4 1.4a5 5 0 0 1 0 7.1l-2.1 2.1a1 1 0 1 1-1.4-1.4l2.1-2.1a3 3 0 0 0 0-4.2Z"/></svg>
+                <span data-copy-text>{{ i18n "copyLink" }}</span>
+            </button>
         </div>
     </div>
     <div id="article-share-wechat" class="article-share-dialog" popover role="dialog" aria-labelledby="article-share-wechat-title" aria-describedby="article-share-wechat-help">
@@ -46,11 +50,116 @@
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M6 18 18 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </button>
         <h2 id="article-share-wechat-title">{{ i18n "shareWeChatTitle" }}</h2>
+        <p class="article-share-inapp-hint" data-wechat-inapp-hint hidden>{{ i18n "shareWeChatInAppHint" }}</p>
         {{- with images.QR .Permalink (dict "scale" 6 "targetDir" "images/share-qr") }}
         <img class="article-share-qr" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ i18n "shareQrAlt" }}" loading="lazy">
         {{- end }}
         <p id="article-share-wechat-help">{{ i18n "shareWeChatHelp" }}</p>
+        <button class="article-share-button article-share-native-btn" type="button" data-native-share data-share-title="{{ $title }}" data-share-text="{{ $summary }}" data-share-url="{{ .Permalink }}" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a1 1 0 0 1 .7.3l4 4a1 1 0 1 1-1.4 1.4L13 6.4V15a1 1 0 1 1-2 0V6.4L8.7 8.7a1 1 0 0 1-1.4-1.4l4-4A1 1 0 0 1 12 3ZM5 14a1 1 0 0 1 1 1v4h12v-4a1 1 0 1 1 2 0v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-4a1 1 0 0 1 1-1Z"/></svg>
+            <span>{{ i18n "nativeShareWeChat" }}</span>
+        </button>
         <label for="article-share-url">{{ i18n "shareLink" }}</label>
-        <input id="article-share-url" type="url" value="{{ .Permalink }}" readonly>
+        <div class="article-share-url-row">
+            <input id="article-share-url" type="url" value="{{ .Permalink }}" readonly>
+            <button class="article-share-button article-share-copy-btn" type="button" data-copy-share-url="{{ .Permalink }}" data-copy-label="{{ i18n "copyLink" }}" data-copied-label="{{ i18n "linkCopied" }}">
+                <span data-copy-text>{{ i18n "copyLink" }}</span>
+            </button>
+        </div>
+        <p class="article-share-copy-status" data-copy-status role="status" aria-live="polite" hidden>{{ i18n "copyLinkHint" }}</p>
     </div>
 </div>
+<script>
+(() => {
+    const ua = navigator.userAgent || '';
+    const isWeChat = /MicroMessenger/i.test(ua);
+    const inAppHint = document.querySelector('[data-wechat-inapp-hint]');
+    if (isWeChat && inAppHint) {
+        inAppHint.hidden = false;
+    }
+
+    const nativeShareBtn = document.querySelector('[data-native-share]');
+    if (nativeShareBtn && !isWeChat && typeof navigator.share === 'function') {
+        nativeShareBtn.hidden = false;
+        nativeShareBtn.addEventListener('click', async () => {
+            try {
+                await navigator.share({
+                    title: nativeShareBtn.dataset.shareTitle || document.title,
+                    text: nativeShareBtn.dataset.shareText || '',
+                    url: nativeShareBtn.dataset.shareUrl || window.location.href
+                });
+            } catch (err) {
+                if (!err || err.name !== 'AbortError') {
+                    const copyBtn = document.querySelector('#article-share-wechat [data-copy-share-url]');
+                    if (copyBtn) copyBtn.click();
+                }
+            }
+        });
+    }
+
+    const urlInput = document.getElementById('article-share-url');
+    if (urlInput) {
+        urlInput.addEventListener('click', () => urlInput.select());
+    }
+
+    const copyText = async (text) => {
+        if (navigator.clipboard && window.isSecureContext) {
+            try {
+                await navigator.clipboard.writeText(text);
+                return true;
+            } catch (_) {}
+        }
+        const temp = document.createElement('textarea');
+        temp.value = text;
+        temp.setAttribute('readonly', '');
+        temp.style.position = 'fixed';
+        temp.style.opacity = '0';
+        document.body.appendChild(temp);
+        temp.select();
+        temp.setSelectionRange(0, temp.value.length);
+        let ok = false;
+        try {
+            ok = document.execCommand('copy');
+        } catch (_) {}
+        document.body.removeChild(temp);
+        if (!ok && urlInput) {
+            urlInput.focus();
+            urlInput.select();
+        }
+        return ok;
+    };
+
+    const statusEl = document.querySelector('[data-copy-status]');
+    let resetTimer = null;
+
+    document.querySelectorAll('[data-copy-share-url]').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+            const url = btn.dataset.copyShareUrl || window.location.href;
+            await copyText(url);
+
+            document.querySelectorAll('[data-copy-share-url]').forEach((b) => {
+                const labelEl = b.querySelector('[data-copy-text]');
+                if (labelEl && b.dataset.copiedLabel) {
+                    labelEl.textContent = b.dataset.copiedLabel;
+                }
+                b.classList.add('is-copied');
+            });
+
+            if (statusEl) {
+                statusEl.hidden = false;
+            }
+
+            if (resetTimer) clearTimeout(resetTimer);
+            resetTimer = setTimeout(() => {
+                document.querySelectorAll('[data-copy-share-url]').forEach((b) => {
+                    const labelEl = b.querySelector('[data-copy-text]');
+                    if (labelEl && b.dataset.copyLabel) {
+                        labelEl.textContent = b.dataset.copyLabel;
+                    }
+                    b.classList.remove('is-copied');
+                });
+            }, 2500);
+        });
+    });
+})();
+</script>

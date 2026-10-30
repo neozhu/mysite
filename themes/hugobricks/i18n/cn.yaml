@@ -29,6 +29,16 @@ shareWeChatHelp:
 shareQrAlt:
   other: 当前文章的二维码
 shareLink:
-  other: 文章链接（选中即可复制）
+  other: 文章链接
 closeShare:
   other: 关闭分享面板
+copyLink:
+  other: 复制链接
+linkCopied:
+  other: 已复制链接
+copyLinkHint:
+  other: 链接已复制，可直接去微信群或聊天窗口粘贴发送。
+nativeShareWeChat:
+  other: 调用系统分享到微信
+shareWeChatInAppHint:
+  other: "当前在微信内打开：请点击右上角“···”选择“发送给朋友”直接转发到群聊，或点击下方“复制链接”手动粘贴。"

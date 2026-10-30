@@ -576,6 +576,14 @@ section.post .article-share-dialog {position: fixed; inset: 0; width: min(22rem,
 .article-share-dialog p {margin: 0 0 1rem;}
 .article-share-dialog label {display: block; margin-bottom: 0.4rem; font-weight: 600;}
 .article-share-dialog input {width: 100%; min-height: 42px; padding: 0.5rem 0.75rem; border: 1px solid var(--articleLine); border-radius: 0.4rem; background: var(--light); color: var(--articleHeading); font: inherit; font-size: 15px;}
+.article-share-url-row {display: flex; gap: 0.5rem; align-items: stretch;}
+.article-share-url-row input {flex: 1; min-width: 0;}
+.article-share-copy-btn {flex-shrink: 0; white-space: nowrap; padding: 0.5rem 0.9rem;}
+.article-share-button.is-copied {border-color: #16a34a; background: #f0fdf4; color: #15803d;}
+.article-share-native-btn {width: 100%; margin-bottom: 1rem; border-color: var(--articleLink); background: #f1f7fb; color: var(--articleLink);}
+.article-share-inapp-hint {padding: 0.65rem 0.85rem; border-radius: 0.5rem; background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; font-size: 13px; line-height: 1.5;}
+.article-share-copy-status {margin: 0.5rem 0 0 !important; color: #15803d; font-size: 13px; font-weight: 500;}
+.article-share-dialog [hidden] {display: none !important;}
 @media (prefers-reduced-motion: reduce) {
     .article-share-button {transition: none;}
 }

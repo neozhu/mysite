@@ -29,6 +29,16 @@ shareWeChatHelp:
 shareQrAlt:
   other: QR code for this article
 shareLink:
-  other: Article link (select to copy)
+  other: Article link
 closeShare:
   other: Close sharing panel
+copyLink:
+  other: Copy link
+linkCopied:
+  other: Copied!
+copyLinkHint:
+  other: Link copied! You can now paste it into a WeChat group or chat.
+nativeShareWeChat:
+  other: Share via system sheet
+shareWeChatInAppHint:
+  other: 'In WeChat: tap the top-right "···" menu and choose "Send to Chat", or tap "Copy link" below to paste into a group.'
