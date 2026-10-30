@@ -32,6 +32,34 @@ Personal messaging integrations often struggle with duplicate replies, replay st
 - **Live message filtering & recall handling:** Accepts only `origin == "live"` text messages created within the last 5 minutes (with a 60-second clock skew tolerance), ignores historical imports or stale backlogs, cancels queued events on message recall, and re-verifies the source message before sending.
 - **Atomic deduplication & idempotent delivery:** Automatically maintains an isolated SQLite state database under `/AstrBot/data/plugin_data/astrbot_plugin_wechat_native/`, committing message ID deduplication and SSE cursors in a single transaction. Each outbound message records a unique `Idempotency-Key` before issuing a single `POST` and polls receipts on timeout or `5xx` without blind retries. **Neither the SQLite state database nor plugin logs store chat message bodies or API tokens.**
 
+## Architecture & Message Flow Diagrams
+
+### 1. System Architecture & Working Principle
+
+Running directly inside the AstrBot process, the plugin communicates with `agent-wechat-native` over localhost (`127.0.0.1:6174` in single-host mode) using a shared, read-only mounted `/run/secrets/wechat-api-token`—eliminating any external intermediate bridge service:
+
+![WeChat Native Plugin Architecture & Working Principle](/uploads/illustrations/wechat-native-architecture-en.svg)
+
+1. **Connection & Server Identity Verification**: On every connection, the plugin checks `/v1/status.serverId`. If the Native data directory is rebuilt or replaced at the same URL, the plugin halts and preserves existing state rather than silently reusing a stale cursor.
+2. **SSE Cursor Recovery**: The plugin subscribes to `/v1/events/stream` and resumes seamlessly across network drops using persisted decimal string cursors via `after` and `Last-Event-ID`.
+3. **Isolated Zero-Text SQLite State**: Under `/AstrBot/data/plugin_data/astrbot_plugin_wechat_native/`, the plugin maintains an isolated `state.sqlite3` per server URL, account, and bot instance. It stores only identifiers, cursors, idempotency keys, and receipt states—**never chat message text or API tokens**.
+
+### 2. End-to-End Message Flow & Idempotent State Machine
+
+From receiving an inbound WeChat event to delivering an AI reply, the plugin enforces a two-phase pipeline—**Inbound Atomic Deduplication** followed by **Outbound Idempotent Receipt Verification**:
+
+![WeChat Native End-to-End Message Flow & Idempotent State Machine](/uploads/illustrations/wechat-native-message-flow-en.svg)
+
+- **Phase 1 (Inbound Reception & Atomic Deduplication)**:
+  - When `message.committed` arrives over SSE, the plugin calls `GET /v1/messages/{messageId}` to verify account, thread, and message identifiers.
+  - Only live text messages (`origin == "live"`) within a **5-minute freshness window** (±60s clock skew tolerance) are accepted. Historical imports, stale backlogs, non-whitelisted senders/groups, or unmentioned group messages are marked `ignored` while still advancing the cursor.
+  - Verified messages commit their deduplication record (`status = "queued"`) and advance the SSE cursor in a **single atomic SQLite transaction** before entering the AstrBot LLM pipeline. If a recall event arrives while queued, the pending AstrBot event is immediately cancelled and marked `recalled`.
+- **Phase 2 (Outbound Idempotent Delivery & Receipt Polling)**:
+  - Before sending, the plugin re-fetches the source message to ensure it was not recalled; for multi-segment group replies, only the first segment automatically `@mentions` the original sender.
+  - Before making the network call for each segment, the plugin persists a unique `Idempotency-Key` in the SQLite `sends` table and submits **exactly one** `POST /v1/accounts/{accountId}/sends`.
+  - On network timeouts, `408`/`429`, or `5xx` responses, the plugin **never re-POSTs**; instead, it polls `GET /sends/{sendId}` or `by-idempotency-key` until `accepted` is confirmed (`status = "replied"`).
+  - If any segment fails or remains uncertain, the state transitions to `partial`, `failed`, or `needs_review` and **immediately halts subsequent segments** in the same response, preventing duplicate spam in real conversations.
+
 ## Installation & Configuration
 
 1. Start the Native service and log in to WeChat (follow the Docker deployment guide below for a fresh setup).

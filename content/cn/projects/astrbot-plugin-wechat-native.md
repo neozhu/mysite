@@ -32,6 +32,34 @@ WeChat Native（`astrbot-plugin-wechat-native`）是一个运行在 AstrBot 内�
 - **实时性过滤与撤回感知：** 仅处理 `origin == "live"` 且在最近 5 分钟内（允许 60 秒时钟误差）产生的实时文本消息，忽略历史同步或过期积压；收到撤回事件时立即停止待处理事件，并在发送前二次核查原消息状态。
 - **原子化去重与幂等发送：** 在 `/AstrBot/data/plugin_data/astrbot_plugin_wechat_native/` 下按实例自动维护 SQLite 状态库，将消息 ID 去重与事件游标在同一事务提交；每条输出先持久化唯一 `Idempotency-Key` 再单次 `POST`，超时或 `5xx` 时仅按原键查询回执而不盲目重发，且**状态库与插件日志均不存储聊天正文和 Token**。
 
+## 工作原理与消息流图解
+
+### 1. 系统架构与工作原理
+
+插件直接运行在 AstrBot 进程内，在同机部署模式下通过宿主机回环网络（`127.0.0.1:6174`）和双容器只读挂载的 `/run/secrets/wechat-api-token` 与 `agent-wechat-native` 通信，无需额外部署中间 Bridge 服务：
+
+![WeChat Native 插件工作原理与系统架构图](/uploads/illustrations/wechat-native-architecture-cn.svg)
+
+1. **连接与服务端身份核验**：每次建立连接时，插件先请求 `/v1/status` 核对 `serverId`。若 Native 数据目录被重建或同地址替换了新服务，插件会主动停止并保留本地状态库，绝不静默沿用旧游标。
+2. **SSE 游标续传**：插件订阅 `/v1/events/stream`，并以持久化的十进制字符串游标通过 `after` 参数和 `Last-Event-ID` 请求头恢复中断期间的事件。
+3. **本地 SQLite 状态隔离**：在 `/AstrBot/data/plugin_data/astrbot_plugin_wechat_native/` 下按服务地址、账号及机器人实例 ID 自动维护独立的 `state.sqlite3`，且全程只保存标识、游标、幂等键与回执状态，**不落盘任何聊天正文或 Token**。
+
+### 2. 端到端消息流与幂等状态机
+
+从微信收到一条消息到完成 AI 回复，插件在内部严格划分为**入站原子去重**与**出站幂等确认**两个阶段：
+
+![WeChat Native 端到端消息处理流水线与状态机流转图](/uploads/illustrations/wechat-native-message-flow-cn.svg)
+
+- **阶段一（入站接收与原子去重）**：
+  - 收到 `message.committed` 事件后，调用 `GET /v1/messages/{messageId}` 核实账号、聊天与消息标识。
+  - 仅接受 `origin == "live"` 且消息时间在当前时间前 **5 分钟内**（允许 60 秒时钟误差）的纯文本；历史导入、超时积压、非白名单或未满足群 `@` 条件的消息记为 `ignored` 并同样推进游标。
+  - 通过校验后，在**同一个 SQLite 事务**中写入消息去重记录（`status = "queued"`）并推进 SSE 游标，随后交给 AstrBot 核心流水线进行 LLM 推理。若推理期间收到撤回事件，立即停止待处理事件并标记为 `recalled`。
+- **阶段二（出站幂等发送与回执轮询）**：
+  - 发送前重新读取原消息确认未被撤回；若群聊产生分段输出，仅首段自动 `@原发送者`。
+  - 每个输出片段在调用网络接口前，先在 SQLite `sends` 表持久化唯一 `Idempotency-Key`，随后仅发起**一次** `POST /v1/accounts/{accountId}/sends`。
+  - 若遇到网络超时、`408`/`429` 或 `5xx`，插件**绝不重复 POST**，而是按原 `send_id` 或 `by-idempotency-key` 轮询回执，直至状态变为 `accepted` 才将消息记为 `replied`。
+  - 若多段回复中有任一片段失败或处于结果不确定状态，状态转为 `partial` / `failed` / `needs_review` 并**立即熔断后续分段发送**，防止向真实聊天重复刷屏。
+
 ## 安装与参数配置
 
 1. 启动 Native 服务并完成微信登录（全新 Docker 环境部署见下一节）。
