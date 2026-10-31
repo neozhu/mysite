@@ -1,8 +1,6 @@
 <section class="post">
     <div class="container title">
-        <div class="post-eyebrow">
-            <a href="{{ relLangURL `showcases/` }}" class="post-backlink">← {{ if eq page.Language.Lang "cn" }}交付案例{{ else }}Project Showcases{{ end }}</a>
-        </div>
+     
         <h1>{{ page.Title | safeHTML }}</h1>
         {{ if or page.Params.date (index page.Params.tags 0) }}
         <div class="meta">
