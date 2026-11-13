@@ -3,11 +3,11 @@ title: 'CleanAspire 项目模板'
 image: /uploads/illustrations/cuate/blazorclient.jpg
 date: 2025-04-04 00:00:00
 tags: ["GitHub", "Blazor WebAssembly", ".NET Aspire", "PWA"]
-description: "CleanAspire 是基于 .NET 9 的 Blazor WebAssembly 与 PWA 开源模板，结合 Minimal APIs、Aspire 监控、Scalar 文档及 Kiota 客户端生成，支持离线使用、Web Push 和 Docker 部署。"
+description: "CleanAspire 是基于 .NET 11 的 Blazor WebAssembly 与 PWA 开源模板，结合 Minimal APIs、Aspire 监控、Scalar 文档及 Kiota 客户端生成，支持离线使用、Web Push 和 Docker 部署。"
 summary: "用 Clean Architecture 组织前后端，通过 Kiota 与代码生成工具减少接口和组件的重复工作。模板同时提供 Aspire 仪表板、离线模式及持续集成配置。"
 seo:
   title: "CleanAspire Blazor 与 PWA 项目模板 | BlazorStudio"
-  description: "了解 CleanAspire 如何组合 .NET 9 Minimal APIs、Blazor WebAssembly、PWA 和 Aspire，查看 Kiota 客户端生成、Web Push、离线功能与 Docker 部署示例。"
+  description: "了解 CleanAspire 如何组合 .NET 11 Minimal APIs、Blazor WebAssembly、PWA 和 Aspire，查看 Kiota 客户端生成、Web Push、离线功能与 Docker 部署示例。"
 slug: "cleanaspire-项目模板"
 ---
 
@@ -15,7 +15,7 @@ slug: "cleanaspire-项目模板"
 {{< button "查看 GitHub 项目" "https://github.com/neozhu/cleanaspire" >}}  
 {{< /brick_title >}}
 
-CleanAspire 是一个基于 .NET 9 的前沿开源项目模板，旨在加速开发轻量级、高性能、易于维护的 Blazor WebAssembly 或渐进式 Web 应用（PWA）。它无缝集成了 Minimal APIs、Aspire 监控支持，以及 Scalar 现代化 API 文档生成方案。
+CleanAspire 是一个基于 .NET 11 的前沿开源项目模板，旨在加速开发轻量级、高性能、易于维护的 Blazor WebAssembly 或渐进式 Web 应用（PWA）。它无缝集成了 Minimal APIs、Aspire 监控支持，以及 Scalar 现代化 API 文档生成方案。
 
 本模板强调 Clean Architecture 架构和极致简洁的代码风格，开发者可以快速构建响应式、高可维护性的前端应用。同时还支持 Microsoft.Kiota 自动生成 API 客户端代码，确保项目结构的一致性与开发效率。
 
@@ -30,7 +30,7 @@ CleanAspire 结合 Clean Code Generator，能够基于此模板自动生成后�
 ## 主要特性
 
 - **Aspire 仪表板集成**：内置 .NET Aspire 监控仪表板支持。
-- **Minimal APIs 架构**：基于 .NET 9 Minimal APIs 构建，快速且极简。
+- **Minimal APIs 架构**：基于 .NET 11 Minimal APIs 构建，快速且极简。
 - **性能与可维护性**：设计简洁，高度关注应用的性能表现和代码的可维护性。
 - **Blazor Wasm & PWA**：全面集成 Blazor WebAssembly 与渐进式 Web 应用 (PWA) 支持。
 - **API 客户端生成**：支持 Microsoft Kiota，实现简洁高效的 API 客户端代码自动生成。

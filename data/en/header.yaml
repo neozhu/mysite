@@ -1,5 +1,5 @@
 logo_image:
-logo_subtitle: Focused on Blazor development.
+logo_subtitle: Blazor · .NET · AI Engineering
 dark_header: false
 mobile_view_width: 1100
 menuitems:
@@ -20,4 +20,4 @@ cta:
   active: true
   title: Contact me
   link: /contact/
-preheader: Working with Blazor to build modern web apps — open to collaboration!
+preheader: Blazor × .NET 11 × AI · Enterprise apps, integration & workflows

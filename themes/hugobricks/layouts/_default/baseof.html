@@ -9,7 +9,22 @@
     {{- $color := "style" -}}
     {{- if .Params.color_name -}}{{- $color = .Params.color_name -}}{{- end -}}
     {{- if hugo.Data.settings.color_name -}}{{- $color = hugo.Data.settings.color_name -}}{{- end -}}
-    <link href="/css/{{ $color }}.css?version={{ now }}" rel="stylesheet">
+    {{- $cssParts := slice -}}
+    {{- range (slice "css/fonts.css" "css/base.css" "css/header-footer.css" "css/bricks.css" (printf "css/%s.css" $color)) -}}
+      {{- $staticPath := printf "static/%s" . -}}
+      {{- $themePath := printf "themes/hugobricks/static/%s" . -}}
+      {{- if fileExists $staticPath -}}
+        {{- $cssParts = $cssParts | append (readFile $staticPath) -}}
+      {{- else if fileExists $themePath -}}
+        {{- $cssParts = $cssParts | append (readFile $themePath) -}}
+      {{- else -}}
+        {{- with resources.Get . -}}
+          {{- $cssParts = $cssParts | append .Content -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $cssVersion := md5 (delimit $cssParts "") -}}
+    <link href="/css/{{ $color }}.css?v={{ $cssVersion }}" rel="stylesheet">
 
     {{ template "_internal/google_analytics.html" . }}
   </head>

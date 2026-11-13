@@ -3,11 +3,11 @@ title: 'Blazor Server项目模板'
 image: /uploads/illustrations/cuate/blazorserver.png
 date: 2025-04-04 00:00:00
 tags: ["Blazor Server", "Clean Architecture", ".NET"]
-description: "采用 .NET 9 与 Clean Architecture 的 Blazor Server 项目模板，集成代码生成、第三方登录、SignalR 实时交互和 Hangfire 后台任务，支持多种数据库及 Docker Compose 部署。"
+description: "采用 .NET 11 与 Clean Architecture 的 Blazor Server 项目模板，集成代码生成、第三方登录、SignalR 实时交互和 Hangfire 后台任务，支持多种数据库及 Docker Compose 部署。"
 summary: "以 Domain、Application、Infrastructure 和 UI 分层组织企业应用，并通过代码生成器减少重复开发。模板提供 NuGet 入口、多数据库支持和可直接参考的容器部署配置。"
 seo:
   title: "Blazor Server Clean Architecture 项目模板 | BlazorStudio"
-  description: "查看 .NET 9 Blazor Server 模板的分层架构、代码生成、OAuth2 登录与 Hangfire 集成，了解 PostgreSQL、MSSQL、SQLite 支持及 Docker Compose 部署。"
+  description: "查看 .NET 11 Blazor Server 模板的分层架构、代码生成、OAuth2 登录与 Hangfire 集成，了解 PostgreSQL、MSSQL、SQLite 支持及 Docker Compose 部署。"
 slug: "blazor-server项目模板"
 ---
 
@@ -16,9 +16,9 @@ slug: "blazor-server项目模板"
 {{< /brick_title >}}
 
 
-本项目是一款基于 Clean Architecture 架构设计的 Blazor Server 应用，拥有现代化的用户界面和高效的代码生成器。该应用采用 .NET 9 构建，旨在提供更卓越的性能、更高的开发效率以及更流畅的开发体验。
+本项目是一款基于 Clean Architecture 架构设计的 Blazor Server 应用，拥有现代化的用户界面和高效的代码生成器。该应用采用 .NET 11 构建，旨在提供更卓越的性能、更高的开发效率以及更流畅的开发体验。
 
-.NET 9 全面支持 Blazor Server，它将 C# 的强大功能与现代 Web 开发体验融为一体。这使得开发者无需在 JavaScript 和 C# 之间频繁切换，从而简化了开发流程，能够更轻松地构建响应迅速、交互性强的 Web 应用。结合 Blazor 的实时通信能力和 .NET 强大的生态系统，开发者可以快速打造功能丰富、可扩展且用户体验出色的系统。
+.NET 11 全面支持 Blazor Server，它将 C# 的强大功能与现代 Web 开发体验融为一体。这使得开发者无需在 JavaScript 和 C# 之间频繁切换，从而简化了开发流程，能够更轻松地构建响应迅速、交互性强的 Web 应用。结合 Blazor 的实时通信能力和 .NET 强大的生态系统，开发者可以快速打造功能丰富、可扩展且用户体验出色的系统。
 
 {{< youtube "hCsHSNAs-70" "/uploads/youtube01.png" >}}
 

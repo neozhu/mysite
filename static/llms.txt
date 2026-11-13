@@ -1,11 +1,11 @@
 # BlazorStudio (blazorserver.com)
 
-> BlazorStudio is the enterprise software engineering studio and open-source portfolio of Hualin (neozhu), specializing in .NET 9/10, Blazor Server & WebAssembly, Clean Architecture, enterprise B2B integration (BizTalk, Salesforce, SAP), and AI Agent workflow orchestration.
+> BlazorStudio is the enterprise software engineering studio and open-source portfolio founded by Hualin (neozhu), specializing in .NET 11, Blazor Server & WebAssembly, Clean Architecture, .NET Aspire, enterprise B2B integration (BizTalk, Salesforce, SAP), and AI Agent workflow orchestration.
 
 ## Core Pages (English & Chinese)
 
-- [Home (EN)](https://blazorserver.com/): Custom Blazor & .NET enterprise application development, B2B system integration, and AI-powered business workflows.
-- [首页 (中文)](https://blazorserver.com/cn/): 专注 Blazor 与 .NET 企业级应用开发、企业平台集成与 AI 智能工作流。
+- [Home (EN)](https://blazorserver.com/): Custom Blazor & .NET 11 enterprise application development, B2B system integration, and AI-powered business workflows.
+- [首页 (中文)](https://blazorserver.com/cn/): 专注 Blazor 与 .NET 11 企业级应用开发、企业平台集成与 AI 智能工作流。
 - [Project Showcases (EN)](https://blazorserver.com/showcases/): Delivered enterprise systems across HR, visitor safety, CPQ quotation, logistics, smart water IoT, and digital product passports.
 - [项目交付案例 (中文)](https://blazorserver.com/cn/showcases/): 面向制造、园区、人力资源、物流与物联网场景的企业级真实交付案例。
 - [Open Source Projects (EN)](https://blazorserver.com/projects/): Open-source .NET, Blazor, Python, and Next.js templates and developer tools on GitHub (3k+ stars).
@@ -15,20 +15,27 @@
 
 ## Flagship Open-Source Templates
 
-- [Clean Architecture with Blazor Server](https://blazorserver.com/projects/clean-architecture-with-blazor-server/): Modular .NET 9 Blazor Server enterprise application template with CQRS, MudBlazor, Docker, and OpenSpec AI workflow support.
-- [CleanAspire (.NET 10 & Aspire PWA Template)](https://blazorserver.com/projects/cleanaspire-template/): Cloud-native Blazor WebAssembly Progressive Web App (PWA) with Minimal API, .NET 10, .NET Aspire, Scalar, and Microsoft Kiota.
+- [Clean Architecture with Blazor Server](https://blazorserver.com/projects/clean-architecture-with-blazor-server/): Modular .NET 11 Blazor Server enterprise application template with CQRS, MudBlazor, Docker, and OpenSpec AI workflow support.
+- [CleanAspire (.NET 11 & Aspire PWA Template)](https://blazorserver.com/projects/cleanaspire-template/): Cloud-native Blazor WebAssembly Progressive Web App (PWA) with Minimal API, .NET 11, .NET Aspire, Scalar, and Microsoft Kiota.
 - [Botchat AI Chat Workspace](https://blazorserver.com/projects/botchat-ai-chat-workspace/): Multi-persona AI chat workspace built with Next.js, Vercel AI SDK, and Supabase Row Level Security.
 - [Wattlas Global Energy Opportunity Radar](https://blazorserver.com/projects/wattlas-global-energy-opportunity-radar/): Geospatial energy intelligence and opportunity analytics platform.
 
 ## Featured Enterprise Showcases
 
-- [VisitSafe: Connected Visitor Management & Safety Training](https://blazorserver.com/showcases/visitsafe-visitor-safety-training/): End-to-end factory visitor registration, host/area approval, mobile safety training, exam verification, and gate check-in/out platform (React + Blazor + .NET).
+- [Enterprise Visitor Management Platform](https://blazorserver.com/showcases/visitor-management-workflow-system/): Mobile pre-registration, dual-track business and area approvals, gate verification, and departure archive (React + Blazor Server).
+- [VisitorTraining: Enterprise Visitor Compliance Management](https://blazorserver.com/showcases/visitor-training-enterprise-visitor-compliance/): End-to-end factory visitor registration, host/area approval, mobile safety training, exam verification, and gate check-in/out platform (React + Blazor + .NET).
 - [HR HUB: Integrated Staffing, Attendance & Billing Cloud](https://blazorserver.com/showcases/hr-hub-integrated-hr-cloud-platform/): Multi-party workforce outsourcing, shift attendance verification, and dual-rate monthly billing reconciliation platform built on .NET 10 and Blazor.
 - [Fabric Quotation CPQ for Paper Machine Clothing](https://blazorserver.com/showcases/fabric-quotation-cpq-for-paper-machine-fabric/): Configure-Price-Quote (CPQ) and application engineering platform for paper machine clothing (PMC) manufacturers.
 - [Delivery Print: Delivery Note & Material Label System](https://blazorserver.com/showcases/delivery-print-delivery-note-and-material-label-system/): Supplier shipment validation, delivery note PDF generation, and barcode/QR carton labeling workflow.
 - [Ace Parking Platform](https://blazorserver.com/showcases/ace-parking-platform/): Multi-tenant car park, gate, membership, and charging management platform built with .NET 9, Blazor Server, SignalR, and Hangfire.
 - [Smart Attendance Platform](https://blazorserver.com/showcases/attendance-platform/): Enterprise attendance platform connecting facial recognition terminals, shift scheduling, and agency workforce management.
 - [Digital Product Passport (DPP)](https://blazorserver.com/showcases/digital-product-passport/): Blockchain-backed product lifecycle traceability and EU Digital Product Passport compliance system.
+
+## Key Facts
+
+- Open-source footprint: 3k+ GitHub Stars across flagship .NET & Blazor Clean Architecture templates
+- Delivered portfolio: 12+ production enterprise case studies across manufacturing, HR staffing, logistics, smart campus, parking, and IoT
+- Languages supported: English (`https://blazorserver.com/`) and Simplified Chinese (`https://blazorserver.com/cn/`)
 
 ## Author & Contact
 

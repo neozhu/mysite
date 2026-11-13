@@ -20,11 +20,19 @@
             </div>
             {{- with $images -}}
                 <div class="intro-visual">
-                    {{- $attributes := `fetchpriority="high" decoding="async"` -}}
-                    {{- with resources.Get (strings.TrimPrefix "/" page.Params.seo.image) -}}
-                        {{- $attributes = printf `%s width="%d" height="%d"` $attributes .Width .Height -}}
+                    {{- $heroImg := replaceRE `\s+loading="[^"]*"` "" (index . 0) -}}
+                    {{- if not (in $heroImg "fetchpriority=") -}}
+                        {{- $heroImg = replace $heroImg "<img " `<img fetchpriority="high" ` 1 -}}
                     {{- end -}}
-                    {{- replace (index . 0) "<img " (printf "<img %s " $attributes) 1 | safeHTML -}}
+                    {{- if not (in $heroImg "decoding=") -}}
+                        {{- $heroImg = replace $heroImg "<img " `<img decoding="async" ` 1 -}}
+                    {{- end -}}
+                    {{- if not (in $heroImg "width=") -}}
+                        {{- with resources.Get (strings.TrimPrefix "/" page.Params.seo.image) -}}
+                            {{- $heroImg = replace $heroImg "<img " (printf `<img width="%d" height="%d" ` .Width .Height) 1 -}}
+                        {{- end -}}
+                    {{- end -}}
+                    {{- $heroImg | safeHTML -}}
                 </div>
             {{- end -}}
         </div>

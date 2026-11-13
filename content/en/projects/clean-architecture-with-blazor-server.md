@@ -3,11 +3,11 @@ title: 'Clean Architecture With Blazor Server'
 image: /uploads/illustrations/cuate/blazorserver.png
 date: 2025-04-04 00:00:00
 tags: ["GitHub", "Blazor Server", "Clean Architecture", ".NET"]
-description: "A .NET 9 Blazor Server template with Clean Architecture, OAuth login, CRUD code generation, database options and Docker support for interactive business apps."
+description: "A .NET 11 Blazor Server template with Clean Architecture, OAuth login, CRUD code generation, database options and Docker support for interactive business apps."
 summary: "Separate domain, application, infrastructure and UI concerns while building in C#. The template combines SignalR updates, Hangfire jobs, authentication and a Visual Studio extension for feature scaffolding."
 seo:
   title: "Clean Architecture with Blazor Server | BlazorStudio"
-  description: "Explore a .NET 9 Blazor Server template with Clean Architecture, OAuth integrations, code generation and PostgreSQL, SQL Server or SQLite deployment options."
+  description: "Explore a .NET 11 Blazor Server template with Clean Architecture, OAuth integrations, code generation and PostgreSQL, SQL Server or SQLite deployment options."
 slug: "clean-architecture-with-blazor-server"
 ---
 
@@ -17,7 +17,7 @@ slug: "clean-architecture-with-blazor-server"
 
 This project showcases a Blazor Server application meticulously designed using Clean Architecture principles. It features a sophisticated user interface and an integrated, efficient code generator.
 
-Built on .NET 9, the application benefits from enhanced performance, improved developer productivity, and a smoother development workflow. .NET 9's full support for Blazor Server combines the power of C# with a modern web development experience, eliminating the need to constantly switch between JavaScript and C#. This streamlined setup simplifies development, enabling the creation of fast, responsive, and highly interactive web applications. By leveraging Blazor’s real-time communication capabilities and the robust .NET ecosystem, developers can rapidly build feature-rich, scalable applications that offer a seamless user experience.
+Built on .NET 11, the application benefits from enhanced performance, improved developer productivity, and a smoother development workflow. .NET 11's full support for Blazor Server combines the power of C# with a modern web development experience, eliminating the need to constantly switch between JavaScript and C#. This streamlined setup simplifies development, enabling the creation of fast, responsive, and highly interactive web applications. By leveraging Blazor’s real-time communication capabilities and the robust .NET ecosystem, developers can rapidly build feature-rich, scalable applications that offer a seamless user experience.
 
 {{< youtube "hCsHSNAs-70" "/uploads/youtube01.png" >}}
 

@@ -1,5 +1,7 @@
 Read more:
   other: 阅读更多
+View all showcases:
+  other: 查看全部 {{ .Count }} 个交付案例
 Load more posts:
   other: 加载更多文章
 Filter tags:

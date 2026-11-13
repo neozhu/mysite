@@ -3,11 +3,11 @@ title: 'CleanAspire Template'
 image: /uploads/illustrations/cuate/blazorclient.jpg
 date: 2025-04-04 00:00:00
 tags: ["GitHub", "Blazor WebAssembly", ".NET Aspire", "PWA", "Clean Architecture"]
-description: "CleanAspire is a .NET 9 template combining Blazor WebAssembly, PWA support, Minimal APIs and .NET Aspire observability with Clean Architecture and Docker deployment."
+description: "CleanAspire is a .NET 11 template combining Blazor WebAssembly, PWA support, Minimal APIs and .NET Aspire observability with Clean Architecture and Docker deployment."
 summary: "Build a lightweight Blazor frontend and Minimal API backend with a shared architectural starting point. Kiota client generation, Scalar documentation, Web Push and offline support round out the template."
 seo:
   title: "CleanAspire Blazor PWA Template | BlazorStudio"
-  description: "Discover CleanAspire for .NET 9 Blazor WebAssembly and PWA development, with Minimal APIs, Aspire observability, Kiota clients and Docker deployment examples."
+  description: "Discover CleanAspire for .NET 11 Blazor WebAssembly and PWA development, with Minimal APIs, Aspire observability, Kiota clients and Docker deployment examples."
 slug: "cleanaspire-template"
 ---
 
@@ -15,7 +15,7 @@ slug: "cleanaspire-template"
 {{< button "View on GitHub" "https://github.com/neozhu/cleanaspire" >}}
 {{< /brick_title >}}
 
-CleanAspire is a cutting-edge, open-source template built on .NET 9, designed to accelerate the development of lightweight, high-performance, and streamlined Blazor WebAssembly applications or Progressive Web Applications (PWA). It seamlessly integrates Minimal APIs, .NET Aspire for observability, and Scalar for modern API documentation.
+CleanAspire is a cutting-edge, open-source template built on .NET 11, designed to accelerate the development of lightweight, high-performance, and streamlined Blazor WebAssembly applications or Progressive Web Applications (PWA). It seamlessly integrates Minimal APIs, .NET Aspire for observability, and Scalar for modern API documentation.
 
 Focusing on Clean Architecture principles and utmost code simplicity, CleanAspire equips developers to create responsive and maintainable web applications with minimal effort. The template also leverages Microsoft.Kiota to simplify API client generation, ensuring consistency and boosting productivity across projects.
 
@@ -30,7 +30,7 @@ Leverage the Clean Code Generator, which automates the creation of clean, mainta
 ## Key Features
 
 - **Built-in .NET Aspire Support:** For enhanced observability and cloud-native orchestration.
-- **.NET 9 Minimal APIs:** Fast, concise, and efficient backend development.
+- **.NET 11 Minimal APIs:** Fast, concise, and efficient backend development.
 - **Optimized for Simplicity and Speed:** Core design philosophy emphasizing ease of use and high performance.
 - **Blazor WebAssembly & PWA:** Seamless integration for modern frontend experiences and offline capabilities.
 - **Streamlined API Client Generation:** Utilizes Microsoft Kiota for easy integration.

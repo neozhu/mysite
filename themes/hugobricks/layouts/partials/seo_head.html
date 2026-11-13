@@ -109,14 +109,19 @@
   {{- $logoURL := "/uploads/branding/brick_icon2_bw.svg" | absURL -}}
   {{- $avatarURL := "/uploads/photos/avatars/me.png" | absURL -}}
 
+  {{- $orgDesc := cond (eq $lang "cn") "BlazorStudio 是由资深 .NET 架构师华林 (neozhu) 创立的企业级软件工程工作室，专注 .NET 11、Blazor、Clean Architecture 业务系统定制、BizTalk/SAP/Salesforce 企业集成与 AI Agent 工作流。" "BlazorStudio is an enterprise software engineering studio founded by Hualin (neozhu), specializing in .NET 11, Blazor, Clean Architecture business apps, BizTalk/SAP/Salesforce integration, and AI Agent workflows." -}}
+  {{- $knowsAbout := slice "Blazor" ".NET" ".NET 11" "C#" "ASP.NET Core" ".NET Aspire" "Clean Architecture" "CQRS" "Enterprise B2B Integration" "BizTalk" "Salesforce" "SAP" "AI Agent Workflows" "Multi-Agent Orchestration" "OpenSpec" "PWA" -}}
+
   {{- $organization := dict
     "@type" "Organization"
     "@id" $orgID
     "name" "BlazorStudio"
+    "description" $orgDesc
     "url" $rootURL
     "logo" (dict "@type" "ImageObject" "url" $logoURL)
     "email" "neo.js.cn@gmail.com"
     "founder" (dict "@id" $personID)
+    "knowsAbout" $knowsAbout
     "sameAs" (slice "https://github.com/neozhu" "https://x.com/new163cn")
   -}}
 
@@ -129,7 +134,7 @@
     "url" ("about/" | absLangURL)
     "image" $avatarURL
     "worksFor" (dict "@id" $orgID)
-    "knowsAbout" (slice "Blazor" ".NET" "C#" "Clean Architecture" "Enterprise B2B Integration" "AI Agent Workflows" "CQRS")
+    "knowsAbout" $knowsAbout
     "sameAs" (slice "https://github.com/neozhu" "https://x.com/new163cn")
   -}}
 

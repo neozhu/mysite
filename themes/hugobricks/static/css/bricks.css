@@ -73,7 +73,12 @@ section.intro-home .intro-visual {position: relative; isolation: isolate;}
 section.intro-home .intro-visual::before {content: ""; position: absolute; inset: -15% -5%; z-index: -1; background: radial-gradient(ellipse, #eaf4fb, transparent 68%);}
 section.intro-home .intro-visual p {margin: 0;}
 section.intro-home .intro-visual img {width: 100%; max-width: none; height: auto; aspect-ratio: 3 / 2; margin: 0; border-radius: 0; mix-blend-mode: multiply;}
-section.intro-home + section.image.alt {margin-top: 0;}
+section.intro-home .hero-proof {display: flex; flex-wrap: wrap; align-items: stretch; gap: 0.75rem 1.25rem; margin-top: 1.5rem; padding-top: 1.35rem; border-top: 1px solid var(--borderLight);}
+section.intro-home .hero-proof-item {display: flex; align-items: baseline; gap: 0.55rem; padding: 0.55rem 0.9rem; background: white; border: 1px solid var(--borderLight); border-radius: 0.65rem; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);}
+section.intro-home .hero-proof-value {color: var(--intro-accent); font-family: var(--fontTitles); font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; white-space: nowrap;}
+section.intro-home .hero-proof-label {color: var(--textMedium); font-size: 0.84rem; line-height: 1.45;}
+section.intro-home + section.image.alt,
+section.intro-home + section.posts {margin-top: 0;}
 @media (max-width: 1000px) {
     section.intro-home .intro-layout {grid-template-columns: 1.1fr 0.9fr; gap: 1.5rem;}
     section.intro-home h1 {font-size: 2.75rem;}
@@ -645,28 +650,33 @@ main:has(> section.cta-contact.hasbackgroundcolor:last-child) + footer {margin-t
 /* brick image (homepage flagship sections)
 /*------------------------*/
 
+section.image,
+section.image.alt {padding: clamp(2.5rem, 4vw, 3.25rem) 0;}
+section.image + section.image,
 section.image + section.image.alt {margin-top: 0!important;}
 section.image.alt {background: #f8fafc; border-top: 1px solid var(--borderLight); border-bottom: 1px solid var(--borderLight);}
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
-section.image .twocols {align-items: center; row-gap: 2.5rem;}
-section.image .twocols .text h2 {margin-bottom: 1rem; font-size: clamp(1.85rem, 3vw, 2.35rem); letter-spacing: -0.03em;}
-section.image .twocols .text p {line-height: 1.8; color: var(--textMedium);}
+section.image .section-eyebrow {margin-bottom: 0.65rem;}
+section.image .twocols {align-items: center; gap: 2rem clamp(2rem, 4vw, 3.5rem);}
+section.image .twocols .text h2 {margin-bottom: 0.65rem; font-size: clamp(1.6rem, 2.5vw, 2rem); letter-spacing: -0.025em;}
+section.image .twocols .text p {font-size: 0.96rem; line-height: 1.65; color: var(--textMedium); margin-bottom: 0.4rem;}
 section.image .twocols .text ul {
     list-style: none;
-    margin: 1.25rem 0 1.75rem;
+    margin: 0.9rem 0 1.25rem;
     padding: 0;
     display: grid;
-    gap: 0.55rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
 }
 section.image .twocols .text ul li {
-    padding: 0.55rem 0.85rem;
+    padding: 0.48rem 0.72rem;
     background: white;
     border: 1px solid var(--borderLight);
-    border-radius: 0.6rem;
+    border-radius: 0.55rem;
     color: var(--textDark);
-    font-size: 0.9375rem;
-    line-height: 1.6;
+    font-size: 0.875rem;
+    line-height: 1.45;
     box-shadow: 0 1px 2px rgba(15, 23, 42, 0.02);
 }
 section.image:not(.alt) .twocols .text ul li {
@@ -677,15 +687,123 @@ section.image .twocols .image p {margin: 0; width: 100%;}
 section.image .twocols .image img {
     display: block;
     width: 100%;
+    max-height: 21rem;
+    object-fit: cover;
+    object-position: top center;
     height: auto;
     margin: auto;
-    border-radius: 1rem;
+    border-radius: 0.9rem;
     border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: 0 24px 48px -12px rgba(15, 23, 42, 0.14), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.13), 0 4px 12px -2px rgba(15, 23, 42, 0.05);
 }
-section.image .twocols .image img.is_svg {max-width: 85%; border-radius: 0; border: 0; box-shadow: none;}
+section.image .twocols .image img.is_svg {max-width: 85%; max-height: none; border-radius: 0; border: 0; box-shadow: none;}
+section.image .section-actions {display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 0.25rem;}
+section.image .section-actions .button {margin: 0;}
+section.image .section-actions .button.secondary {background: white; color: var(--textDarker); border-color: var(--borderMedium); box-shadow: none;}
+section.image .section-actions .button.secondary:hover {background: #f1f7fb; border-color: var(--accent);}
+section.image .section-actions .button.secondary::after {content: "↗"; margin-left: 0.45rem; font-size: 1em;}
+@media (max-width: 640px) {
+    section.image .twocols .text ul {grid-template-columns: 1fr;}
+}
 @media (max-width: 600px) {
     section.image .twocols .image {text-align: left;}
+}
+
+/*------------------------*/
+/* homepage compact faq
+/*------------------------*/
+
+section.home-faq {
+    padding: clamp(2.5rem, 4vw, 3.25rem) 0;
+    background: #f8fafc;
+    border-top: 1px solid var(--borderLight);
+}
+section.home-faq .home-faq-header {
+    max-width: 44rem;
+    margin-bottom: 1.5rem;
+}
+section.home-faq .section-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 0.65rem;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+section.home-faq .section-eyebrow::before {
+    content: "";
+    width: 1.5rem;
+    height: 2px;
+    background: currentColor;
+    flex-shrink: 0;
+}
+section.home-faq h2 {
+    margin: 0;
+    font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+    letter-spacing: -0.025em;
+}
+section.home-faq .home-faq-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+section.home-faq details {
+    background: white;
+    border: 1px solid var(--borderLight);
+    border-radius: 0.75rem;
+    padding: 0.9rem 1.1rem;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+}
+section.home-faq details[open] {
+    border-color: rgba(8, 120, 173, 0.35);
+}
+section.home-faq summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    font-weight: 600;
+    color: var(--textDarker);
+    font-size: 0.96rem;
+    line-height: 1.45;
+}
+section.home-faq summary::-webkit-details-marker {
+    display: none;
+}
+section.home-faq summary::after {
+    content: "+";
+    color: var(--accent);
+    font-size: 1.15rem;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+section.home-faq details[open] summary::after {
+    content: "−";
+}
+section.home-faq details p {
+    margin: 0.65rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--textMedium);
+}
+section.home-faq details p a {
+    color: var(--accent);
+    font-weight: 500;
+}
+section.home-faq + section.cta-contact.hasbackgroundcolor {
+    margin-top: 0;
+    padding-top: 3rem;
+}
+@media (max-width: 760px) {
+    section.home-faq .home-faq-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /*------------------------*/
@@ -952,6 +1070,10 @@ section.posts .filter .tags {display: flex; margin: 0; gap: 0.5rem; flex-wrap: w
 section.posts .filter .tags li {list-style: none;}
 section.posts .filter .tags.nofilter li {display: none;}
 section.posts #loadmoreposts {position: relative; margin-top: 1.5rem;}
+section.posts .posts-footer-action {display: flex; justify-content: center; margin-top: 2.5rem;}
+section.posts .posts-footer-action .button {margin: 0; min-height: 3rem; padding: 0.7rem 1.65rem; border-color: var(--borderMedium); color: var(--textDarker); font-weight: 600;}
+section.posts .posts-footer-action .button:hover {background: #f1f7fb; border-color: var(--accent); color: var(--accent);}
+section.posts .posts-footer-action .button::after {content: "→"; margin-left: 0.5rem;}
 section.posts .filter .tags li {
     list-style: none; 
     background: var(--accent);
