@@ -5,10 +5,11 @@ document.querySelectorAll('section, footer').forEach(function(section,index) {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-	function handler(entries) {
-		for (entry of entries) {
-            if(entry.intersectionRatio>0) {
+	function handler(entries, obs) {
+		for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0 || entry.boundingClientRect.top < window.innerHeight) {
                 entry.target.classList.remove('opaque');
+                obs.unobserve(entry.target);
     		}
 		}
 	}

@@ -1,0 +1,42 @@
+{{- $lang := page.Language.Lang -}}
+{{- $isCN := eq $lang "cn" -}}
+{{- $faqGroups := (index hugo.Data $lang).faqs -}}
+{{- $firstGroup := index $faqGroups 0 -}}
+{{- $contactURL := "contact/" | relLangURL -}}
+{{- $showcasesURL := "showcases/" | relLangURL -}}
+<section class="home-faq" id="faq" aria-labelledby="home-faq-heading">
+  <div class="container">
+    <div class="home-faq-layout">
+      <div class="home-faq-aside">
+        <p class="section-kicker">{{ if $isCN }}常见问题 · FAQ{{ else }}Working Together · FAQ{{ end }}</p>
+        <h2 id="home-faq-heading">{{ if $isCN }}合作与技术选型常见问题{{ else }}Frequently Asked Questions{{ end }}</h2>
+        <p class="home-faq-lead">{{ if $isCN }}围绕项目范围、系统集成、源码归属与交付节奏的高频疑问，帮助团队在合作前快速对齐技术细节。{{ else }}Direct answers on project scope, legacy integration, source ownership, and milestone delivery before we start working together.{{ end }}</p>
+        <div class="home-faq-aside-cta">
+          <p class="home-faq-aside-note">{{ if $isCN }}需要针对您的业务架构做具体评估？{{ else }}Have a specific architecture or timeline question?{{ end }}</p>
+          <div class="home-faq-aside-links">
+            <a class="button smaller" href="{{ $contactURL }}">{{ if $isCN }}预约项目沟通{{ else }}Start a conversation{{ end }}</a>
+            <a class="home-faq-textlink" href="{{ $showcasesURL }}">{{ if $isCN }}查看交付案例{{ else }}View delivered work{{ end }} <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="home-faq-list">
+        {{- range $index, $item := $firstGroup.faqs -}}
+        <details{{ if eq $index 0 }} open{{ end }}>
+          <summary>
+            <span class="home-faq-q-meta">
+              {{- if $item.tag -}}<span class="home-faq-tag">{{ $item.tag }}</span>{{- end -}}
+              <span class="home-faq-q-text">{{ $item.question }}</span>
+            </span>
+            <span class="home-faq-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="home-faq-answer">
+            <div>
+              {{- $item.answer | markdownify -}}
+            </div>
+          </div>
+        </details>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+</section>

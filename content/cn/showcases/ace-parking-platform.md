@@ -34,7 +34,7 @@ Ace Parking 是一个支持多租户的停车场运营与管理系统。它提�
 - 资源文件驱动的本地化（Cookie 方式选择语言）
 - PDF 生成（QuestPDF）与 Excel 导出（ClosedXML）
 - 图片处理（ImageSharp）
-- 基于 OpenSpec 的 AI 规范驱动开发流程（可审查提案、差异与任务协同）
+- 基于 pstack 的 AI 多智能体协同开发流程（架构设计、多方案竞技与严格审查）
 
 ## 架构说明
 

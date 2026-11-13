@@ -1,22 +1,26 @@
-- title: Hugobricks theme
+- title: 合作范围与技术选型
   faqs:
-    - question: Why choose Hugobricks for my next project?
-      answer: Hugo allows you to build a fast, efficient, and scalable website. It offers you a clean separation of concerns, content vs layout and styles. The Hugobricks brings a pagebuilder to that workflow.
-    - question: I need to develop a performant website. Does Hugobricks offer a good performance?
-      answer:  Hugobricks is renowned for its exceptional speed and performance. It is built using the Go programming language, which enables it to generate websites at an astonishing pace. Whether you have a small blog or a large enterprise site, Hugobricks’s speed ensures that your pages load quickly, providing an excellent user experience. This advantage becomes especially significant when dealing with large websites or making frequent updates.
-- title: Scalability, ease of use and flexibility?
-  faqs:
-    - question: What about scalability and portability
-      answer: Whether you’re building a personal blog or a large-scale enterprise website, Hugobricks scales effortlessly. Its ability to handle thousands of pages with consistent speed and efficiency makes it an ideal choice for projects of any size. Moreover, Hugobricks generates static websites that can be hosted on any web server or content delivery network (CDN) without any specific server requirements, ensuring portability and easy deployment.
-    - question: How easy is it to set up?
-      answer: Hugobricks offers a straightforward and hassle-free setup process. It comes with pre-built binaries for various operating systems, making it accessible to developers across different platforms. Additionally, Hugobricks has a user-friendly command-line interface (CLI) that allows you to create and manage your site effortlessly. Its simplicity makes it a great choice for both experienced developers and beginners alike.
-    - question: How flexible is the offered architecture?
-      answer: Hugobricks provides a flexible architecture that empowers developers to create websites tailored to their specific needs. With its powerful templating system, you can easily customize the look and feel of your site. Hugobricks supports a wide range of themes, allowing you to choose from a vast collection or create your own. Furthermore, its extensive plugin ecosystem enables you to extend its functionality and add features seamlessly.
-- title: Markdown content and SEO
-  faqs:
-    - question: What about Markdown and content management?
-      answer: Content creation and management are made convenient with Hugobricks. It supports Markdown, a lightweight markup language that simplifies the process of writing content-rich web pages. Markdown’s simplicity and readability make it a favorite among writers and developers alike. Hugobricks’s content organization system allows you to easily structure your content, making it effortless to manage and update your website’s information.
-    - question: What about SEO-friendliness?
-      answer:  Hugobricks is designed with search engine optimization (SEO) in mind. It generates clean HTML markup, adhering to best practices for search engine discoverability. This helps your site rank higher in search engine results, increasing its visibility to potential visitors. 
-    - question: What about hugobricks security?
-      answer: Additionally, Hugobricks’s static nature eliminates the need for databases or complex server configurations, making it inherently more secure than dynamic content management systems.
+    - tag: 合作范围
+      question: BlazorStudio 适合承担哪些类型的企业软件项目？
+      answer: >
+        适合需要长期稳定运行、权限与审批流程复杂的定制业务系统、跨平台企业集成以及 AI 智能工作流落地。我们以 **.NET 11 与 Blazor** 为核心，已在制造、人力外包、访客合规、物流运输与智慧水务等场景累计交付 [12+ 套生产系统](/cn/showcases/)，同时也支持 BizTalk、SAP、Salesforce 等企业平台对接。
+    - tag: 系统改造
+      question: 能否对现有 .NET 遗留系统升级，或与 SAP、ERP 及硬件设备集成？
+      answer: >
+        可以。我们支持在不中断现有业务的前提下，将传统 .NET Framework、WebForms 或单体系统渐进式重构为 Clean Architecture 与 .NET 11 架构，并具备通过 REST API、消息总线、EDI 或 HTTP 协议对接 SAP、Salesforce、人脸识别终端、条码打印及 NB-IoT 设备的成熟交付经验。
+    - tag: 源码归属
+      question: 定制项目交付是否包含完整源码与技术架构文档？
+      answer: >
+        是的，所有定制项目均交付完整源代码与知识产权归属，不存在供应商绑定。代码严格遵循 Clean Architecture 与 CQRS 分层规范，并配套 Docker 容器化配置、CI/CD 部署脚本及关键架构说明文档，确保企业内部研发团队能够顺利接手、独立维护与二次扩展。
+    - tag: 技术栈
+      question: 系统支持哪些数据库、前端形态与部署环境？
+      answer: >
+        后端原生支持 SQL Server、PostgreSQL 与 SQLite 多数据库切换，并可接入 .NET Aspire 云原生可观测架构；前端可根据业务角色选择 Blazor Server、Blazor WebAssembly PWA，或搭配 React 访客端与微信小程序，支持本地私有化服务器、企业内网 Docker 及主流云平台部署。
+    - tag: 交付方式
+      question: 项目合作如何评估报价、排期与阶段交付节奏？
+      answer: >
+        不同于传统人工瀑布流长周期开发，我们采用 **AI Multi-Agent 多智能体协同开发模式**（融合 pstack 架构设计、多方案竞技与严格 Diff 审查流），由资深架构师统筹架构设计与质量把关，借助多智能体并行完成脚手架搭建、接口联调与自动化验证。相比传统开发大幅压缩研发周期并降低综合成本，项目支持按里程碑快速迭代，每 2–3 天即可交付可运行、可验收的增量版本。
+    - tag: 开启沟通
+      question: 如何发起新项目评估或预约技术架构咨询？
+      answer: >
+        您可以通过[联系页面](/cn/contact/)发送业务背景、现有系统痛点或初步需求，也可以直接通过微信或邮件 `neo.js.cn@gmail.com` 取得联系。明确核心目标后，我们会尽快给出初步技术路径、可行性建议与合作时间安排。

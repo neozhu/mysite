@@ -1,7 +1,7 @@
 logo_image:
 logo_subtitle: Blazor · .NET · AI 企业应用
 dark_header: false
-mobile_view_width: 1100
+mobile_view_width: 860
 menuitems:
   - title: 开源项目
     link: /cn/projects/

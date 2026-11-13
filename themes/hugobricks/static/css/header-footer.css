@@ -61,7 +61,7 @@ body:not(.transparent_header) .preheader.light .container a.icon img {filter: in
     font-weight: 600;
     line-height: 1;
     letter-spacing: 0.01em;
-    color: #64748b;
+    color: var(--textMedium);
     text-decoration: none;
     transition: background 0.16s ease, color 0.16s ease, box-shadow 0.16s ease;
     white-space: nowrap;
@@ -329,9 +329,11 @@ body.mobilemenu header .navnav > ul > li > ul {
     background: transparent;
     border-radius: 0;
 }
+body.mobilemenu header .navnav > ul > li > a {color: rgba(255,255,255,0.92);}
+body.mobilemenu header .navnav > ul > li > a:hover {color: #ffffff;}
 body.mobilemenu header .navnav > ul li.active > a {color: #38bdf8!important; font-weight: 600; font-size: 1.2rem;}
 body.mobilemenu header .navnav > ul > li.active.haschildren > a::after {border-color: #38bdf8;}
-body.mobilemenu header .navnav > ul > li a {padding: 0.55rem 2.5rem 0.55rem 2.5rem; font-size: 1.1rem;}
+body.mobilemenu header .navnav > ul > li a {padding: 0.55rem 2.5rem 0.55rem 2.5rem; font-size: 1.1rem; color: rgba(255,255,255,0.9);}
 body.mobilemenu header .navnav > ul > li > ul > li:last-child {margin-bottom: 0.5rem;}
 body.mobilemenu header .navnav > ul > li > ul {max-height: 0px; height: 0; overflow: hidden; transition: max-height 0.4s ease-in;}
 body.mobilemenu header .navnav > ul > li.active ul,

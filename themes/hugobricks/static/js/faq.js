@@ -1,18 +1,38 @@
-const detailssummaryels = document.querySelectorAll("details summary");
-detailssummaryels.forEach( function(el) {
-  el.addEventListener("click", (e) => {
-    if (el.parentElement.hasAttribute("open")) { // since it's not closed yet, it's open!
-      e.preventDefault(); // stop the default behavior, meaning - the hiding
-      el.parentElement.classList.add("closing"); // add a class which applies the animation in CSS
-    }
-  });
-  // when the "close" animation is over
-  el.parentElement.addEventListener("animationend", (e) => {
-    if (el.parentElement.classList.contains("closing")){
-      if (e.animationName === "closedetails") {
-        el.parentElement.removeAttribute("open"); // close the element
-        el.parentElement.classList.remove("closing"); // remove the animation
+(function () {
+  const prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const summaries = document.querySelectorAll("details summary");
+
+  summaries.forEach(function (summary) {
+    const details = summary.parentElement;
+    if (!details) return;
+
+    let closeTimer = null;
+
+    summary.addEventListener("click", function (e) {
+      if (prefersReducedMotion) {
+        return;
       }
-    }
+      if (details.hasAttribute("open")) {
+        e.preventDefault();
+        if (details.classList.contains("closing")) return;
+        details.classList.add("closing");
+        closeTimer = window.setTimeout(function () {
+          details.removeAttribute("open");
+          details.classList.remove("closing");
+          closeTimer = null;
+        }, 220);
+      }
+    });
+
+    details.addEventListener("animationend", function (e) {
+      if (e.animationName === "closedetails" && details.classList.contains("closing")) {
+        if (closeTimer) {
+          window.clearTimeout(closeTimer);
+          closeTimer = null;
+        }
+        details.removeAttribute("open");
+        details.classList.remove("closing");
+      }
+    });
   });
-});
+})();

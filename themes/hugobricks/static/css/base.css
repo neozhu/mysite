@@ -31,6 +31,8 @@ img, figure, video, audio {max-width: 100%; height: auto; display: block;}
 a {color: var(--textMedium); transition: color 0.16s ease;}
 h1, h2 {line-height: 1.18; font-size: clamp(2rem, 3.2vw, 2.55rem); color: var(--textDarker); font-weight: 700; letter-spacing: -0.03em; text-wrap: balance;}
 html[lang="cn"] :is(h1, h2), html[lang="zh-CN"] :is(h1, h2) {line-height: 1.28; letter-spacing: -0.015em;}
+h3, summary {text-wrap: balance;}
+section p, section li {text-wrap: pretty;}
 a.logo {line-height: 1.15; color: var(--textDarker); letter-spacing: -0.025em;}
 h1 {font-size: clamp(2.35rem, 3.8vw, 3.1rem); margin-bottom: 1.5rem;}
 h1 + p {padding-top: 0.25rem;}

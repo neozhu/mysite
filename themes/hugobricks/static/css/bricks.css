@@ -45,54 +45,66 @@ section.intro h1 + p {padding-top: 0;}
 section.intro-home {
     --intro-accent: #0878ad;
     text-align: left;
-    padding-bottom: clamp(3rem, 6vw, 5.5rem);
-    background: linear-gradient(180deg, white 80%, #f7fafc);
+    padding-bottom: clamp(3.25rem, 6vw, 5.25rem);
+    background: linear-gradient(180deg, #ffffff 78%, #f8fafc 100%);
+    border-bottom: 1px solid var(--borderLight);
 }
-section.intro-home .intro-layout {display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(2rem, 4vw, 4rem);}
+section.intro-home .intro-layout {display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr); align-items: center; gap: clamp(2rem, 4.5vw, 4.25rem);}
 section.intro-home .intro-copy, section.intro-home .intro-visual {min-width: 0;}
-section.intro-home .intro-eyebrow,
-section.image .section-eyebrow {display: flex; align-items: center; gap: 0.75rem; margin: 0 0 1.25rem; color: var(--accent); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; line-height: 1.6; text-transform: uppercase;}
-section.intro-home .intro-eyebrow::before,
-section.image .section-eyebrow::before {content: ""; width: 1.5rem; height: 2px; background: currentColor; flex-shrink: 0;}
-section.intro-home h1 {margin: 0 0 1.5rem; font-family: var(--fontTitles); font-size: clamp(2.75rem, 4.2vw, 3.5rem); font-weight: 700; line-height: 1.12; letter-spacing: -0.04em; text-wrap: balance;}
+section.intro-home h1 {margin: 0 0 1.15rem; font-family: var(--fontTitles); font-size: clamp(2.65rem, 4.1vw, 3.45rem); font-weight: 700; line-height: 1.12; letter-spacing: -0.035em; text-wrap: balance;}
 section.intro-home h1 strong {color: var(--intro-accent); font-weight: inherit;}
-html[lang="cn"] section.intro-home h1, html[lang="zh-CN"] section.intro-home h1 {font-size: clamp(2.5rem, 4.5vw, 3.85rem); line-height: 1.22; letter-spacing: -0.025em;}
-section.intro-home .intro-copy > p {max-width: 38rem; line-height: 1.85;}
-section.intro-home h1 + p {color: var(--textDark); font-size: 1.2rem; line-height: 1.7; margin-bottom: 1rem; font-weight: 500;}
-section.intro-home .intro-actions {display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.75rem 0 2rem;}
+html[lang="cn"] section.intro-home h1, html[lang="zh-CN"] section.intro-home h1 {font-size: clamp(2.45rem, 4.3vw, 3.7rem); line-height: 1.22; letter-spacing: -0.02em;}
+section.intro-home .intro-copy > p {max-width: 39rem; line-height: 1.8; text-wrap: pretty;}
+section.intro-home .hero-lead {color: var(--textDarker); font-size: 1.16rem; line-height: 1.65; margin-bottom: 0.85rem; font-weight: 600;}
+section.intro-home .intro-actions {display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.65rem 0 2rem;}
 section.intro-home .intro-actions p {margin: 0;}
-section.intro-home .button {display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; margin: 0; padding: 0.75rem 1.35rem; background: var(--intro-accent); border: 1px solid var(--intro-accent); border-radius: 0.5rem; font-weight: 600; letter-spacing: 0; transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease;}
+section.intro-home .button {display: inline-flex; align-items: center; justify-content: center; min-height: 3.15rem; margin: 0; padding: 0.72rem 1.35rem; background: var(--intro-accent); border: 1px solid var(--intro-accent); border-radius: 0.5rem; font-weight: 600; letter-spacing: 0; transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease;}
 section.intro-home .button:hover {background: #06648f; border-color: #06648f; transform: none;}
 section.intro-home .button.secondary {background: white; color: var(--textDarker); border-color: var(--borderMedium); box-shadow: none;}
-section.intro-home .button.secondary:hover {background: #f1f7fb; border-color: var(--intro-accent);}
-section.intro-home .button.secondary::after {content: "↗"; margin-left: 0.65rem; font-size: 1.05em;}
+section.intro-home .button.secondary:hover {background: #f1f7fb; border-color: var(--intro-accent); color: var(--accentDarker);}
+section.intro-home .button.secondary::after {content: "↗"; margin-left: 0.55rem; font-size: 1.05em;}
 section.intro-home .button:focus-visible {outline: 3px solid var(--intro-accent); outline-offset: 4px;}
-section.intro-home ul {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0; padding-top: 1.5rem; border-top: 1px solid var(--borderLight); list-style: none; font-size: 0.875rem; line-height: 1.7;}
-section.intro-home li strong {display: inline-block; margin-bottom: 0.35rem; color: var(--textDarker); font-size: 0.9rem; font-weight: 600;}
+section.intro-home ul {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem 1.25rem; margin: 0; padding-top: 1.35rem; border-top: 1px solid var(--borderLight); list-style: none; font-size: 0.86rem; line-height: 1.6; color: var(--textMedium);}
+section.intro-home li strong {display: inline-block; margin-bottom: 0.25rem; color: var(--textDarker); font-size: 0.9rem; font-weight: 600;}
 section.intro-home .intro-visual {position: relative; isolation: isolate;}
-section.intro-home .intro-visual::before {content: ""; position: absolute; inset: -15% -5%; z-index: -1; background: radial-gradient(ellipse, #eaf4fb, transparent 68%);}
 section.intro-home .intro-visual p {margin: 0;}
 section.intro-home .intro-visual img {width: 100%; max-width: none; height: auto; aspect-ratio: 3 / 2; margin: 0; border-radius: 0; mix-blend-mode: multiply;}
-section.intro-home .hero-proof {display: flex; flex-wrap: wrap; align-items: stretch; gap: 0.75rem 1.25rem; margin-top: 1.5rem; padding-top: 1.35rem; border-top: 1px solid var(--borderLight);}
-section.intro-home .hero-proof-item {display: flex; align-items: baseline; gap: 0.55rem; padding: 0.55rem 0.9rem; background: white; border: 1px solid var(--borderLight); border-radius: 0.65rem; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);}
-section.intro-home .hero-proof-value {color: var(--intro-accent); font-family: var(--fontTitles); font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; white-space: nowrap;}
+section.intro-home .hero-proof {display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.65rem 1.75rem; margin-top: 1.25rem; padding-top: 1.15rem; border-top: 1px dashed var(--borderMedium);}
+section.intro-home .hero-proof-item {display: inline-flex; align-items: baseline; gap: 0.5rem;}
+section.intro-home .hero-proof-value {color: var(--accentDarker); font-family: var(--fontMono); font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; white-space: nowrap;}
 section.intro-home .hero-proof-label {color: var(--textMedium); font-size: 0.84rem; line-height: 1.45;}
 section.intro-home + section.image.alt,
 section.intro-home + section.posts {margin-top: 0;}
+
+/* Section index kickers */
+.section-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.7rem;
+    color: var(--accentDarker);
+    font-family: var(--fontMono);
+    font-size: max(0.8125rem, 13px);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+}
+section.posts .container.small .section-kicker {
+    justify-content: center;
+}
 @media (max-width: 1000px) {
-    section.intro-home .intro-layout {grid-template-columns: 1.1fr 0.9fr; gap: 1.5rem;}
-    section.intro-home h1 {font-size: 2.75rem;}
-    section.intro-home ul {grid-template-columns: 1fr; gap: 0.65rem;}
+    section.intro-home .intro-layout {grid-template-columns: 1.08fr 0.92fr; gap: 1.5rem;}
+    section.intro-home h1 {font-size: 2.65rem;}
+    section.intro-home ul {grid-template-columns: 1fr; gap: 0.6rem;}
     section.intro-home li br {display: none;}
-    section.intro-home li strong {margin: 0 0.75rem 0 0;}
+    section.intro-home li strong {margin: 0 0.65rem 0 0;}
 }
 @media (max-width: 760px) {
-    section.intro-home .intro-layout {grid-template-columns: minmax(0, 1fr); gap: 2.25rem;}
+    section.intro-home .intro-layout {grid-template-columns: minmax(0, 1fr); gap: 2rem;}
     section.intro-home .intro-copy {font-size: 16px;}
     section.intro-home .intro-copy > p {max-width: 42rem;}
-    section.intro-home h1 {font-size: clamp(2.4rem, 7vw, 3.5rem);}
-    html[lang="cn"] section.intro-home h1, html[lang="zh-CN"] section.intro-home h1 {font-size: clamp(2.4rem, 7.5vw, 3.5rem);}
-    section.intro-home .intro-eyebrow {font-size: 12px; letter-spacing: 0.05em; margin-bottom: 1.25rem;}
+    section.intro-home h1 {font-size: clamp(2.25rem, 7vw, 3.35rem);}
+    html[lang="cn"] section.intro-home h1, html[lang="zh-CN"] section.intro-home h1 {font-size: clamp(2.25rem, 7.2vw, 3.35rem);}
     section.intro-home .intro-visual {width: 100%; max-width: 38rem; justify-self: center;}
     section.intro-home ul {font-size: 14px;}
     section.intro-home li strong {font-size: inherit;}
@@ -609,24 +621,35 @@ section.cta .twocols .image img.is_svg {margin: 0!important;}
 }
 
 /* Shared project contact CTA */
-section.cta-contact.hasbackgroundcolor {padding-bottom: 5rem;}
-section.cta-contact .cta-panel {position: relative; overflow: hidden; padding: clamp(1.75rem, 5vw, 4.5rem); border: 1px solid #24455e; border-radius: 1.25rem; background: #112c42; color: #d4e2ec; box-shadow: 0 24px 48px -16px rgba(15, 23, 42, 0.22);}
-section.cta-contact .cta-panel::before {content: ""; position: absolute; width: 24rem; height: 24rem; top: -17rem; right: -5rem; border: 1px solid #36556c; border-radius: 50%; pointer-events: none;}
+section.cta-contact.hasbackgroundcolor {padding-top: 3.5rem; padding-bottom: 5rem; margin-top: 0;}
+section.cta-contact .cta-panel {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(2rem, 5vw, 4.25rem);
+    border: 1px solid #24455e;
+    border-radius: 1.25rem;
+    background-color: #0b1926;
+    background-image: linear-gradient(102deg, rgba(11, 25, 38, 0.92) 0%, rgba(17, 44, 66, 0.82) 55%, rgba(11, 25, 38, 0.78) 100%), url('/uploads/illustrations/cta-dark-bg.webp');
+    background-size: cover;
+    background-position: center right;
+    color: #dbe7f0;
+    box-shadow: 0 24px 48px -16px rgba(15, 23, 42, 0.28);
+}
 section.cta-contact .cta-content {position: relative; display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(14rem, 0.85fr); column-gap: clamp(2rem, 5vw, 4.5rem);}
 section.cta-contact .cta-content > * {grid-column: 1;}
-section.cta-contact .cta-eyebrow {margin-bottom: 1.25rem; color: #9dc6df; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; line-height: 1.7;}
-section.cta-contact h2 {margin: 0 0 1.25rem; color: white; font-family: var(--fontTitles); font-size: clamp(2rem, 3.1vw, 2.6rem); font-weight: 700; line-height: 1.25; letter-spacing: -0.025em; text-wrap: balance;}
+section.cta-contact .cta-eyebrow {margin-bottom: 1rem; color: #9ad2f0; font-family: var(--fontMono); font-size: max(0.8125rem, 13px); font-weight: 500; letter-spacing: 0.02em; line-height: 1.5;}
+section.cta-contact h2 {margin: 0 0 1.15rem; color: white; font-family: var(--fontTitles); font-size: clamp(2rem, 3.1vw, 2.6rem); font-weight: 700; line-height: 1.24; letter-spacing: -0.025em; text-wrap: balance;}
 section.cta-contact h2 strong {color: #8ed4fa; font-weight: inherit;}
-section.cta-contact .cta-content > p:not([class]) {margin-bottom: 1.25rem; line-height: 1.85;}
-section.cta-contact .cta-content > .cta-actions {grid-column: 2; grid-row: 2 / span 3; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 0.85rem; padding-left: clamp(1.5rem, 3vw, 3rem); border-left: 1px solid #36556c;}
+section.cta-contact .cta-content > p:not([class]) {margin-bottom: 1.25rem; line-height: 1.82; text-wrap: pretty;}
+section.cta-contact .cta-content > .cta-actions {grid-column: 2; grid-row: 2 / span 3; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 0.85rem; padding-left: clamp(1.5rem, 3vw, 3rem); border-left: 1px solid rgba(142, 212, 250, 0.22);}
 section.cta-contact .cta-actions p {margin: 0;}
-section.cta-contact .button {display: flex; align-items: center; justify-content: center; width: 100%; min-height: 3.25rem; margin: 0; padding: 0.75rem 1rem; background: white; border: 1px solid white; color: #112c42; font-weight: 600; letter-spacing: 0; transition: background 160ms ease, border-color 160ms ease;}
+section.cta-contact .button {display: flex; align-items: center; justify-content: center; width: 100%; min-height: 3.25rem; margin: 0; padding: 0.75rem 1rem; background: white; border: 1px solid white; color: #0f2537; font-weight: 600; letter-spacing: 0; transition: background 160ms ease, border-color 160ms ease;}
 section.cta-contact .button:hover {background: #dff2ff; border-color: #dff2ff; transform: none;}
-section.cta-contact .button.secondary {background: transparent; border-color: #718da2; color: white; box-shadow: none;}
-section.cta-contact .button.secondary:hover {background: #24455e; border-color: #a5cbe5;}
+section.cta-contact .button.secondary {background: rgba(11, 25, 38, 0.45); border-color: rgba(180, 210, 232, 0.45); color: white; box-shadow: none;}
+section.cta-contact .button.secondary:hover {background: rgba(36, 69, 94, 0.75); border-color: #a5cbe5;}
 section.cta-contact .button.secondary::after {content: "↗"; margin-left: 0.75rem;}
 section.cta-contact .button:focus-visible {outline: 3px solid #8ed4fa; outline-offset: 4px;}
-section.cta-contact .cta-note {margin: 0; color: #b4c7d5; font-size: 0.875rem; line-height: 1.8;}
+section.cta-contact .cta-note {margin: 0; color: #c4d7e5; font-size: 0.875rem; line-height: 1.75; text-wrap: pretty;}
 section.cta-contact.hasbackgroundcolor + footer,
 main:has(> section.cta-contact.hasbackgroundcolor:last-child) + footer {margin-top: 0;}
 @media (max-width: 900px) {
@@ -639,7 +662,7 @@ main:has(> section.cta-contact.hasbackgroundcolor:last-child) + footer {margin-t
     section.cta-contact .cta-note {font-size: 14px;}
 }
 @media (max-width: 480px) {
-    section.cta-contact.hasbackgroundcolor {padding-bottom: 3rem;}
+    section.cta-contact.hasbackgroundcolor {padding-top: 2.5rem; padding-bottom: 3rem;}
     section.cta-contact .cta-actions > *, section.cta-contact .cta-actions .button {width: 100%;}
 }
 @media (prefers-reduced-motion: reduce) {
@@ -651,43 +674,48 @@ main:has(> section.cta-contact.hasbackgroundcolor:last-child) + footer {margin-t
 /*------------------------*/
 
 section.image,
-section.image.alt {padding: clamp(2.5rem, 4vw, 3.25rem) 0;}
+section.image.alt {padding: clamp(3rem, 4.5vw, 4rem) 0;}
 section.image + section.image,
 section.image + section.image.alt {margin-top: 0!important;}
 section.image.alt {background: #f8fafc; border-top: 1px solid var(--borderLight); border-bottom: 1px solid var(--borderLight);}
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
-section.image .section-eyebrow {margin-bottom: 0.65rem;}
-section.image .twocols {align-items: center; gap: 2rem clamp(2rem, 4vw, 3.5rem);}
-section.image .twocols .text h2 {margin-bottom: 0.65rem; font-size: clamp(1.6rem, 2.5vw, 2rem); letter-spacing: -0.025em;}
-section.image .twocols .text p {font-size: 0.96rem; line-height: 1.65; color: var(--textMedium); margin-bottom: 0.4rem;}
+section.image .twocols {align-items: center; gap: 2rem clamp(2.25rem, 4.5vw, 4rem);}
+section.image .twocols .text h2 {margin-bottom: 0.75rem; font-size: clamp(1.65rem, 2.5vw, 2.05rem); letter-spacing: -0.025em;}
+section.image .twocols .text p {font-size: 0.98rem; line-height: 1.72; color: var(--textMedium); margin-bottom: 0.4rem; text-wrap: pretty;}
 section.image .twocols .text ul {
     list-style: none;
-    margin: 0.9rem 0 1.25rem;
+    margin: 1.15rem 0 1.5rem;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.5rem;
+    gap: 0.6rem 1.25rem;
 }
 section.image .twocols .text ul li {
-    padding: 0.48rem 0.72rem;
-    background: white;
-    border: 1px solid var(--borderLight);
-    border-radius: 0.55rem;
+    position: relative;
+    padding: 0.25rem 0 0.25rem 1.15rem;
     color: var(--textDark);
-    font-size: 0.875rem;
-    line-height: 1.45;
-    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.02);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-wrap: pretty;
 }
-section.image:not(.alt) .twocols .text ul li {
-    background: #f8fafc;
+section.image .twocols .text ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 2px;
+    background: var(--accent);
 }
 section.image .twocols .image {text-align: center; position: relative; height: 100%; display: flex; align-items: center;}
 section.image .twocols .image p {margin: 0; width: 100%;}
 section.image .twocols .image img {
     display: block;
     width: 100%;
-    max-height: 21rem;
+    max-height: 22rem;
     object-fit: cover;
     object-position: top center;
     height: auto;
@@ -700,109 +728,258 @@ section.image .twocols .image img.is_svg {max-width: 85%; max-height: none; bord
 section.image .section-actions {display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 0.25rem;}
 section.image .section-actions .button {margin: 0;}
 section.image .section-actions .button.secondary {background: white; color: var(--textDarker); border-color: var(--borderMedium); box-shadow: none;}
-section.image .section-actions .button.secondary:hover {background: #f1f7fb; border-color: var(--accent);}
+section.image .section-actions .button.secondary:hover {background: #f1f7fb; border-color: var(--accent); color: var(--accentDarker);}
 section.image .section-actions .button.secondary::after {content: "↗"; margin-left: 0.45rem; font-size: 1em;}
 @media (max-width: 640px) {
-    section.image .twocols .text ul {grid-template-columns: 1fr;}
+    section.image .twocols .text ul {grid-template-columns: 1fr; gap: 0.45rem;}
 }
 @media (max-width: 600px) {
     section.image .twocols .image {text-align: left;}
 }
 
 /*------------------------*/
-/* homepage compact faq
+/* homepage editorial faq
 /*------------------------*/
 
 section.home-faq {
-    padding: clamp(2.5rem, 4vw, 3.25rem) 0;
+    padding: clamp(3.25rem, 5vw, 4.5rem) 0;
     background: #f8fafc;
     border-top: 1px solid var(--borderLight);
+    border-bottom: 1px solid var(--borderLight);
 }
-section.home-faq .home-faq-header {
-    max-width: 44rem;
-    margin-bottom: 1.5rem;
+section.home-faq .home-faq-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.38fr);
+    gap: clamp(2rem, 4.5vw, 4.5rem);
+    align-items: start;
 }
-section.home-faq .section-eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin: 0 0 0.65rem;
-    color: var(--accent);
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    line-height: 1.6;
-    text-transform: uppercase;
-}
-section.home-faq .section-eyebrow::before {
-    content: "";
-    width: 1.5rem;
-    height: 2px;
-    background: currentColor;
-    flex-shrink: 0;
+section.home-faq .home-faq-aside {
+    position: sticky;
+    top: 6.5rem;
 }
 section.home-faq h2 {
-    margin: 0;
-    font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+    margin: 0 0 0.85rem;
+    font-size: clamp(1.65rem, 2.6vw, 2.1rem);
+    line-height: 1.24;
     letter-spacing: -0.025em;
 }
+section.home-faq .home-faq-lead {
+    margin: 0 0 1.5rem;
+    font-size: 0.96rem;
+    line-height: 1.75;
+    color: var(--textMedium);
+    text-wrap: pretty;
+}
+section.home-faq .home-faq-aside-cta {
+    padding: 1.15rem 1.25rem;
+    background: #ffffff;
+    border: 1px solid var(--borderLight);
+    border-radius: 0.875rem;
+    box-shadow: 0 2px 10px -4px rgba(15, 23, 42, 0.04);
+}
+section.home-faq .home-faq-aside-note {
+    margin: 0 0 0.85rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--textDark);
+    line-height: 1.5;
+}
+section.home-faq .home-faq-aside-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem 1.15rem;
+}
+section.home-faq .home-faq-aside-links .button {
+    margin: 0;
+}
+section.home-faq .home-faq-textlink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accentDarker);
+    text-decoration: none;
+}
+section.home-faq .home-faq-textlink:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
 section.home-faq .home-faq-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 0;
 }
 section.home-faq details {
-    background: white;
+    margin: 0;
+    background: #ffffff;
     border: 1px solid var(--borderLight);
-    border-radius: 0.75rem;
-    padding: 0.9rem 1.1rem;
-    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+    border-radius: 0.875rem;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
-section.home-faq details[open] {
-    border-color: rgba(8, 120, 173, 0.35);
+section.home-faq details + details {
+    margin-top: 0;
+    border-top: 1px solid var(--borderLight);
+}
+section.home-faq details:hover {
+    border-color: var(--borderMedium);
+}
+section.home-faq details[open]:not(.closing) {
+    border-color: rgba(8, 120, 173, 0.42);
+    box-shadow: 0 12px 28px -14px rgba(15, 23, 42, 0.1);
 }
 section.home-faq summary {
-    cursor: pointer;
-    list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.75rem;
+    gap: 1rem;
+    padding: 1.05rem 1.25rem;
+    min-height: 3.25rem;
     font-weight: 600;
     color: var(--textDarker);
-    font-size: 0.96rem;
-    line-height: 1.45;
+    font-size: 1rem;
+    line-height: 1.48;
+    cursor: pointer;
 }
-section.home-faq summary::-webkit-details-marker {
-    display: none;
+section.home-faq summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 0.75rem;
 }
 section.home-faq summary::after {
-    content: "+";
-    color: var(--accent);
-    font-size: 1.15rem;
-    font-weight: 500;
-    flex-shrink: 0;
+    content: none;
+    display: none;
 }
-section.home-faq details[open] summary::after {
-    content: "−";
+section.home-faq .home-faq-q-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4rem 0.75rem;
+    min-width: 0;
+}
+section.home-faq .home-faq-tag {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.16rem 0.6rem;
+    border-radius: 9999px;
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    color: var(--accentDarker);
+    font-family: var(--fontMono);
+    font-size: max(0.75rem, 12px);
+    font-weight: 600;
+    line-height: 1.4;
+}
+section.home-faq .home-faq-q-text {
+    color: var(--textDarker);
+    text-wrap: balance;
+}
+section.home-faq .home-faq-toggle {
+    position: relative;
+    flex-shrink: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 9999px;
+    background: #f1f5f9;
+    transition: background-color 0.18s ease;
+}
+section.home-faq details[open]:not(.closing) .home-faq-toggle {
+    background: #e0f2fe;
+}
+section.home-faq .home-faq-toggle::before,
+section.home-faq .home-faq-toggle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0.68rem;
+    height: 1.75px;
+    border-radius: 2px;
+    background: var(--textDark);
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.18s ease;
+}
+section.home-faq .home-faq-toggle::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+section.home-faq details[open]:not(.closing) .home-faq-toggle::before,
+section.home-faq details[open]:not(.closing) .home-faq-toggle::after {
+    background: var(--accentDarker);
+}
+section.home-faq details[open]:not(.closing) .home-faq-toggle::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+section.home-faq details > div.home-faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+}
+section.home-faq details[open] > div.home-faq-answer {
+    animation: opendetails 0.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+section.home-faq details[open].closing > div.home-faq-answer {
+    animation: closedetails 0.18s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+section.home-faq details > div.home-faq-answer > div {
+    overflow: hidden;
+    padding: 0 1.25rem;
+    max-width: 58ch;
+}
+section.home-faq details > div.home-faq-answer > div::before {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-bottom: 0.85rem;
+    background: var(--borderLight);
+}
+section.home-faq details > div.home-faq-answer > div::after {
+    content: "";
+    display: block;
+    height: 1.15rem;
 }
 section.home-faq details p {
-    margin: 0.65rem 0 0;
-    font-size: 0.9rem;
-    line-height: 1.65;
+    margin: 0;
+    max-width: 56ch;
+    font-size: 0.94rem;
+    line-height: 1.75;
     color: var(--textMedium);
+    text-wrap: pretty;
+}
+section.home-faq details p strong {
+    color: var(--textDarker);
+    font-weight: 600;
 }
 section.home-faq details p a {
+    color: var(--accentDarker);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+section.home-faq details p a:hover {
     color: var(--accent);
-    font-weight: 500;
 }
-section.home-faq + section.cta-contact.hasbackgroundcolor {
-    margin-top: 0;
-    padding-top: 3rem;
+section.home-faq details code {
+    font-size: 0.85em;
 }
-@media (max-width: 760px) {
-    section.home-faq .home-faq-list {
+@media (max-width: 900px) {
+    section.home-faq .home-faq-layout {
         grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+    section.home-faq .home-faq-aside {
+        position: static;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    section.home-faq details[open] > div.home-faq-answer {
+        animation: none;
+        grid-template-rows: 1fr;
+    }
+    section.home-faq .home-faq-toggle::after,
+    section.home-faq details {
+        transition: none;
     }
 }
 
@@ -1020,7 +1197,7 @@ section.posts .grid .item .card-tag {
     padding: 0.18rem 0.58rem;
     border-radius: 9999px;
     background: #f0f9ff;
-    color: var(--accent);
+    color: var(--accentDarker);
     font-size: 0.74rem;
     font-weight: 600;
     letter-spacing: 0.01em;
@@ -1032,6 +1209,7 @@ section.posts .grid .item h3 {
     font-size: 1.15rem;
     line-height: 1.4;
     letter-spacing: -0.015em;
+    text-wrap: balance;
 }
 section.posts .grid .item h3 a {
     color: var(--textDarker);

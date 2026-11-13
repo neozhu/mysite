@@ -3,8 +3,8 @@
   <head>
     {{ partial "seo_head.html" . }}
     <link rel="shortcut icon" href="{{ hugo.Data.settings.favicon_image }}">
-    <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/heebo-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/signika-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     
     {{- $color := "style" -}}
     {{- if .Params.color_name -}}{{- $color = .Params.color_name -}}{{- end -}}
@@ -100,7 +100,7 @@
           <a href="{{ (index hugo.Data .Language.Lang).header.cta.link }}" class="button smaller">{{ (index hugo.Data .Language.Lang).header.cta.title }}</a>
           {{ end }}
         </div>
-        <button id="togglemenu" type="button" aria-label="{{ if eq $currentLang `cn` }}切换导航菜单{{ else }}Toggle navigation menu{{ end }}" onclick="event.stopPropagation(); document.body.classList.add('menushown');"><span class="black_2_textDark">Toggle menu</span></button>
+        <button id="togglemenu" type="button" aria-label="{{ if eq $currentLang `cn` }}切换导航菜单{{ else }}Toggle navigation menu{{ end }}" onclick="event.stopPropagation(); document.body.classList.add('menushown');"><span class="black_2_textDark" aria-hidden="true"></span></button>
         <script>
           function navClick(event,el) {
             var li = el.parentElement;

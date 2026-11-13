@@ -9,28 +9,26 @@ seo:
 ---
 {{< brick_intro >}}
 
-<p class="intro-eyebrow">AI × BLAZOR · BUILT FOR BUSINESS</p>
-
 # Next-generation<br>**business applications.**
 
-Connect your business, data and intelligence. Turn complex workflows into a foundation for growth.
+<p class="hero-lead">Connect your operations, enterprise data, and AI workflows on .NET 11 and Blazor.</p>
 
-**BlazorStudio**, founded by enterprise architect Hualin (neozhu), delivers production-ready business systems built on **.NET 11, Blazor, and Clean Architecture**—spanning custom applications, BizTalk / SAP / Salesforce B2B integrations, and AI Agent workflows.
+**BlazorStudio**, founded by enterprise architect Hualin, delivers maintainable production software built with **Clean Architecture, Blazor, and .NET Aspire**—spanning custom business applications, BizTalk / SAP / Salesforce integrations, and AI Agent orchestration.
 
 <div class="intro-actions">{{< button "Start a conversation" "/contact/" >}} {{< button "Explore delivered work" "/showcases/" "secondary ghost" >}}</div>
 
-- **Custom applications**<br>Built around the way you work
-- **Enterprise integration**<br>Connect systems, data and teams
-- **AI-powered workflows**<br>Put intelligence into everyday work
+- **Custom applications**<br>Built for complex workflows and long-term ownership
+- **Enterprise integration**<br>Connect ERP, CRM, and field devices cleanly
+- **AI-powered workflows**<br>Bring reliable Agent automation into daily operations
 
-<div class="hero-proof">
+<div class="hero-proof" aria-label="Delivery track record">
   <div class="hero-proof-item">
     <span class="hero-proof-value">3k+</span>
     <span class="hero-proof-label">GitHub Stars across open-source templates</span>
   </div>
   <div class="hero-proof-item">
     <span class="hero-proof-value">12+</span>
-    <span class="hero-proof-label">Delivered enterprise systems (Manufacturing, HR, Logistics, Campus, IoT)</span>
+    <span class="hero-proof-label">Production systems in manufacturing, HR, logistics & IoT</span>
   </div>
 </div>
 
@@ -40,24 +38,26 @@ Connect your business, data and intelligence. Turn complex workflows into a foun
 
 {{< brick_showcases >}}
 
+<p class="section-kicker">Delivered Work</p>
+
 ## Featured Project Showcases
 
-A curated selection of delivered enterprise systems across manufacturing, workforce management, visitor compliance, logistics, and IoT — built with clean architecture, reliable performance, and intuitive UI.
+A curated selection of delivered enterprise systems across manufacturing, workforce management, visitor compliance, logistics, and IoT—built with clean architecture and dependable performance.
 
 {{< /brick_showcases >}}
 
 {{< brick_image2 >}}
 
-<p class="section-eyebrow">OPEN-SOURCE FLAGSHIP · .NET 11 & AI WORKFLOW</p>
+<p class="section-kicker">Open-Source Flagship</p>
 
 ## Clean Architecture Blazor Server
 
-A modular Blazor Server framework built on Clean Architecture with AI spec-driven workflows (OpenSpec), designed for maintainable and scalable enterprise applications.
+A modular Blazor Server framework built on Clean Architecture with pstack AI agent workflows, designed for maintainable and scalable enterprise applications.
 
-- 🧱 Powered by .NET 11 & pure C# UI
-- 🚀 Built-in code generator & multi-DB
-- 📋 OpenSpec AI spec-driven workflow
-- 🐳 Ready-to-use CI/CD, Docker & NuGet
+- Built on .NET 11 & pure C# UI
+- Code generator & multi-DB support
+- pstack agentic engineering workflow
+- Preconfigured CI/CD, Docker & NuGet
 
 <div class="section-actions">{{< button "Explore project details" "/projects/clean-architecture-with-blazor-server" >}} {{< button "View on GitHub" "https://github.com/neozhu/CleanArchitectureWithBlazorServer" "secondary ghost" >}}</div>
 
@@ -67,16 +67,16 @@ A modular Blazor Server framework built on Clean Architecture with AI spec-drive
 
 {{< brick_image >}}
 
-<p class="section-eyebrow">CLOUD-NATIVE PWA · .NET 11 & ASPIRE</p>
+<p class="section-kicker">Cloud-Native PWA</p>
 
 ## CleanAspire Cloud-Native PWA
 
-Combines Blazor WebAssembly, Minimal API, PWA, and .NET 11 + Aspire with built-in offline caching and push notifications for fast, cleanly architected web apps.
+Combines Blazor WebAssembly, Minimal API, PWA, and .NET 11 + Aspire with built-in offline caching and push notifications for fast, cleanly architected web software.
 
-- ⚡ Blazor WASM + Minimal API & Aspire
-- 🌐 Offline-first IndexedDB & Web Push
-- 🔄 Automated Microsoft.Kiota API client
-- 🚀 Preconfigured Docker & GitHub Actions
+- Blazor WASM & Minimal API stack
+- .NET Aspire cloud-native telemetry
+- Offline IndexedDB & Web Push
+- Automated Kiota API clients
 
 <div class="section-actions">{{< button "Explore project details" "/projects/cleanaspire-template" >}} {{< button "View on GitHub" "https://github.com/neozhu/cleanaspire" "secondary ghost" >}}</div>
 
@@ -84,31 +84,6 @@ Combines Blazor WebAssembly, Minimal API, PWA, and .NET 11 + Aspire with built-i
 
 {{< /brick_image >}}
 
-<section class="home-faq">
-  <div class="container">
-    <div class="home-faq-header">
-      <p class="section-eyebrow">FAQ · WORKING TOGETHER</p>
-      <h2>Frequently Asked Questions</h2>
-    </div>
-    <div class="home-faq-list">
-      <details open>
-        <summary>What types of enterprise projects does BlazorStudio specialize in?</summary>
-        <p>BlazorStudio specializes in custom .NET 11 and Blazor business applications, enterprise B2B integrations (such as BizTalk, SAP, and Salesforce), and AI Agent workflow orchestration, with 12+ delivered systems across manufacturing, HR staffing, visitor compliance, logistics, and IoT.</p>
-      </details>
-      <details>
-        <summary>Do custom engagements include full source code and architecture ownership?</summary>
-        <p>Yes. Every project is structured around Clean Architecture and CQRS principles and delivered with full source code, Docker and CI/CD deployment configurations, and architecture documentation so your internal team can own and extend it long term.</p>
-      </details>
-      <details>
-        <summary>Which databases, UI stacks, and hosting models are supported?</summary>
-        <p>Backends support SQL Server, PostgreSQL, SQLite, and .NET Aspire observability. Frontends can run on Blazor Server, Blazor WebAssembly PWA, or React/mini-program portals, deployed on-premises via Docker or in the cloud.</p>
-      </details>
-      <details>
-        <summary>How do we start a project discussion or architecture review?</summary>
-        <p>Share your business context, existing technology stack, or goals through the <a href="/contact/">contact page</a> to schedule an initial technical assessment and shape a practical delivery roadmap.</p>
-      </details>
-    </div>
-  </div>
-</section>
+{{< home_faq >}}
 
 {{< brick_cta >}}{{< /brick_cta >}}

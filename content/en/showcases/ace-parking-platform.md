@@ -33,7 +33,7 @@ Ace Parking is a multi-tenant parking management system. It provides administrat
 - Localization with resource files (cookie-based culture selection)
 - PDF generation (QuestPDF) and Excel exports (ClosedXML)
 - Image processing (ImageSharp)
-- AI spec-driven development workflows via OpenSpec (reviewable proposals, deltas, tasks)
+- AI multi-agent engineering workflows powered by pstack (architecture, candidate racing, diff review)
 
 ## Architecture
 
