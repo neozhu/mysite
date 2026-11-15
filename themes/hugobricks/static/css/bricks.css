@@ -68,7 +68,7 @@ section.intro-home ul {display: grid; grid-template-columns: repeat(3, minmax(0,
 section.intro-home li strong {display: inline-block; margin-bottom: 0.25rem; color: var(--textDarker); font-size: 0.9rem; font-weight: 600;}
 section.intro-home .intro-visual {position: relative; isolation: isolate;}
 section.intro-home .intro-visual p {margin: 0;}
-section.intro-home .intro-visual img {width: 100%; max-width: none; height: auto; aspect-ratio: 3 / 2; margin: 0; border-radius: 0; mix-blend-mode: multiply;}
+section.intro-home .intro-visual img {width: 100%; max-width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; margin: 0; border-radius: 0; mix-blend-mode: multiply;}
 section.intro-home .hero-proof {display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.65rem 1.75rem; margin-top: 1.25rem; padding-top: 1.15rem; border-top: 1px dashed var(--borderMedium);}
 section.intro-home .hero-proof-item {display: inline-flex; align-items: baseline; gap: 0.5rem;}
 section.intro-home .hero-proof-value {color: var(--accentDarker); font-family: var(--fontMono); font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; white-space: nowrap;}
@@ -710,21 +710,21 @@ section.image .twocols .text ul li::before {
     border-radius: 2px;
     background: var(--accent);
 }
-section.image .twocols .image {text-align: center; position: relative; height: 100%; display: flex; align-items: center;}
-section.image .twocols .image p {margin: 0; width: 100%;}
+section.image .twocols .image {text-align: center; position: relative; width: 100%; min-width: 0; height: auto; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+section.image .twocols .image > div,
+section.image .twocols .image p {margin: 0; width: 100%; flex: 0 0 auto;}
 section.image .twocols .image img {
     display: block;
     width: 100%;
-    max-height: 22rem;
-    object-fit: cover;
-    object-position: top center;
+    max-width: 100%;
     height: auto;
-    margin: auto;
+    object-fit: contain;
+    margin: 0 auto;
     border-radius: 0.9rem;
     border: 1px solid rgba(15, 23, 42, 0.08);
     box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.13), 0 4px 12px -2px rgba(15, 23, 42, 0.05);
 }
-section.image .twocols .image img.is_svg {max-width: 85%; max-height: none; border-radius: 0; border: 0; box-shadow: none;}
+section.image .twocols .image img.is_svg {width: 100%; max-width: 92%; height: auto; border-radius: 0; border: 0; box-shadow: none;}
 section.image .section-actions {display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 0.25rem;}
 section.image .section-actions .button {margin: 0;}
 section.image .section-actions .button.secondary {background: white; color: var(--textDarker); border-color: var(--borderMedium); box-shadow: none;}
@@ -735,6 +735,7 @@ section.image .section-actions .button.secondary::after {content: "↗"; margin-
 }
 @media (max-width: 600px) {
     section.image .twocols .image {text-align: left;}
+    section.image .twocols .image img.is_svg {max-width: 100%;}
 }
 
 /*------------------------*/
@@ -1143,7 +1144,7 @@ ul.prices li div.box h3 em {vertical-align: top; font-style: normal;}
 
 section.posts .container.small {margin-bottom: 3.25rem; text-align: center;}
 section.posts .container.small p {font-size: 1.08rem; line-height: 1.8; color: var(--textMedium);}
-section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr)); grid-gap: 1.75rem;}
+section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(min(21rem, 100%), 1fr)); grid-gap: 1.75rem;}
 section.posts .grid .item {
     background: white;
     border: 1px solid var(--borderLight);
@@ -1164,16 +1165,28 @@ section.posts .grid .item:hover {
 }
 section.posts .grid .item .card-media {
     display: block;
+    width: 100%;
+    flex-shrink: 0;
     border-bottom: 1px solid var(--borderLight);
     background: #f8fafc;
 }
 section.posts .grid .item .img {
+    position: relative;
+    width: 100%;
     border-radius: 0;
     margin-bottom: 0;
     overflow: hidden;
     aspect-ratio: 1200 / 630;
 }
+@supports not (aspect-ratio: 1200 / 630) {
+    section.posts .grid .item .img {
+        height: 0;
+        padding-bottom: 52.5%;
+    }
+}
 section.posts .grid .item .img img {
+    position: absolute;
+    inset: 0;
     display: block;
     width: 100%;
     height: 100%;
