@@ -1,8 +1,8 @@
 ---
 title: Home
 seo:
-  title: Blazor 与 .NET 11 企业级应用开发、AI 工作流 | BlazorStudio
-  description: BlazorStudio 专注 .NET 11、Blazor、Clean Architecture 与 Aspire 企业级应用定制、BizTalk/SAP/Salesforce 系统集成及 AI 智能工作流。查看 12+ 真实交付案例与 3k+ Stars 开源模板。
+  title: Blazor 与 .NET 11 企业级应用开发、AI 智能体与微信集成 | BlazorStudio
+  description: BlazorStudio 专注 .NET 11、Blazor、Clean Architecture 企业系统定制，BizTalk/SAP/Salesforce 集成，以及 AstrBot + WeChat Native 企业微信智能机器人与 AI 工作流。
   image: /uploads/illustrations/ai-blazor-enterprise-hero.webp
   image_alt: BlazorStudio 企业级业务工作台、系统集成与 AI 智能工作流
   locale: zh_CN
@@ -67,20 +67,20 @@ seo:
 
 {{< brick_image >}}
 
-<p class="section-kicker">云原生 PWA 模板</p>
+<p class="section-kicker">开源 AI 插件 · 微信接入</p>
 
-## CleanAspire 云原生 PWA 模板
+## WeChat Native - AstrBot 微信插件
 
-整合 Blazor WebAssembly、Minimal API、PWA 与 .NET 11 + Aspire 技术栈，开箱支持离线缓存与实时推送，快速构建轻量级现代 Web 应用。
+直接运行在 AstrBot 内的开源个人微信接入插件，直连 agent-wechat-native /v1 API，无需额外部署 Bridge 服务，即可将大模型对话、企业知识库与智能体工具带入微信私聊与群聊。
 
-- Blazor WASM + Minimal API 架构
-- .NET Aspire 云原生可观测支持
-- IndexedDB 离线缓存与消息推送
-- Microsoft.Kiota 自动生成强类型客户端
+- 直连 /v1 API，无需额外 Bridge 中间件
+- 支持私聊、群聊 @回复、白名单与同群独立会话
+- SSE 断线游标恢复与消息撤回即时拦截
+- SQLite 原子去重与幂等回执，零聊天正文落盘
 
-<div class="section-actions">{{< button "查看项目详情" "/cn/projects/cleanaspire-template" >}} {{< button "前往 GitHub" "https://github.com/neozhu/cleanaspire" "secondary ghost" >}}</div>
+<div class="section-actions">{{< button "查看项目详情" "/cn/projects/wechat-native-astrbot-个人微信接入插件" >}} {{< button "前往 GitHub" "https://github.com/neozhu/astrbot-plugin-wechat-native" "secondary ghost" >}}</div>
 
-![CleanAspire Blazor WebAssembly 应用界面](/uploads/illustrations/cuate/blazorclient.jpg)
+![WeChat Native AstrBot 个人微信接入插件](/uploads/illustrations/cuate/wechat-native-home-cn.svg)
 
 {{< /brick_image >}}
 

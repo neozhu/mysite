@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgMcpEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="arrGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrIndigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#818cf8"/>
+    </marker>
+    <marker id="arrAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="720" rx="16" fill="url(#bgMcpEn)"/>
+
+  <!-- Header -->
+  <text x="600" y="38" text-anchor="middle" fill="#f8fafc" font-size="21" font-weight="700">Case Walkthrough: How a WeChat Question Connects to Your ERP System</text>
+  <text x="600" y="62" text-anchor="middle" fill="#94a3b8" font-size="13">Following "@AI-Support Check shipment status for PO-2026-108" from the Client Group to ERP and Back</text>
+
+  <!-- 4 Swimlane Headers -->
+  <rect x="38" y="88" width="246" height="56" rx="10" fill="#064e3b" fill-opacity="0.65" stroke="#10b981" stroke-width="1.5"/>
+  <text x="161" y="112" text-anchor="middle" fill="#34d399" font-size="14" font-weight="700">1. Client Delivery Group</text>
+  <text x="161" y="131" text-anchor="middle" fill="#a7f3d0" font-size="11">Customer Buyer / Project Lead</text>
+
+  <rect x="330" y="88" width="256" height="56" rx="10" fill="#0c4a6e" fill-opacity="0.65" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="458" y="112" text-anchor="middle" fill="#38bdf8" font-size="14" font-weight="700">2. WeChat Access Guardrail</text>
+  <text x="458" y="131" text-anchor="middle" fill="#bae6fd" font-size="11">Whitelist · Anti-Spam · Zero Text Saved</text>
+
+  <rect x="632" y="88" width="256" height="56" rx="10" fill="#312e81" fill-opacity="0.65" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="760" y="112" text-anchor="middle" fill="#a5b4fc" font-size="14" font-weight="700">3. Enterprise AI Assistant</text>
+  <text x="760" y="131" text-anchor="middle" fill="#c7d2fe" font-size="11">Understands Request · Picks Right Tool</text>
+
+  <rect x="934" y="88" width="228" height="56" rx="10" fill="#78350f" fill-opacity="0.55" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="1048" y="112" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="700">4. ERP &amp; Ticket Connector</text>
+  <text x="1048" y="131" text-anchor="middle" fill="#fde68a" font-size="11">Read-Only Lookup + Draft Handoff</text>
+
+  <!-- Lifelines -->
+  <line x1="161" y1="144" x2="161" y2="638" stroke="#10b981" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="458" y1="144" x2="458" y2="638" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="760" y1="144" x2="760" y2="638" stroke="#818cf8" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="1048" y1="144" x2="1048" y2="638" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5,5"/>
+
+  <!-- Step 1: User @mention -->
+  <rect x="52" y="164" width="218" height="54" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+  <text x="161" y="184" text-anchor="middle" fill="#34d399" font-size="11.5" font-weight="700">Step 1 · Asks in WeChat Group</text>
+  <text x="161" y="203" text-anchor="middle" fill="#f8fafc" font-size="11">"@AI-Support Status of PO-2026-108?"</text>
+  <line x1="270" y1="191" x2="342" y2="191" stroke="#10b981" stroke-width="2" marker-end="url(#arrGreen)"/>
+
+  <!-- Step 2: WeChat Native Gate -->
+  <rect x="346" y="164" width="224" height="86" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="458" y="184" text-anchor="middle" fill="#38bdf8" font-size="11.5" font-weight="700">Step 2 · Checks Access Rules</text>
+  <text x="458" y="203" text-anchor="middle" fill="#e2e8f0" font-size="11">Confirms this is an approved group</text>
+  <text x="458" y="220" text-anchor="middle" fill="#94a3b8" font-size="11">Verifies fresh message &amp; real @mention</text>
+  <text x="458" y="237" text-anchor="middle" fill="#34d399" font-size="11">Marks once so it never replies twice</text>
+  <line x1="570" y1="224" x2="644" y2="224" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrCyan)"/>
+
+  <!-- Step 3: AstrBot LLM Intent & Tool Call -->
+  <rect x="648" y="200" width="224" height="84" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1"/>
+  <text x="760" y="220" text-anchor="middle" fill="#a5b4fc" font-size="11.5" font-weight="700">Step 3 · Understands &amp; Routes</text>
+  <text x="760" y="239" text-anchor="middle" fill="#e2e8f0" font-size="11">Loads this buyer's isolated context</text>
+  <text x="760" y="256" text-anchor="middle" fill="#c7d2fe" font-size="11">Recognizes order-tracking request</text>
+  <text x="760" y="273" text-anchor="middle" fill="#94a3b8" font-size="11">Extracts order ID: PO-2026-108</text>
+  <line x1="872" y1="260" x2="942" y2="260" stroke="#818cf8" stroke-width="2" marker-end="url(#arrIndigo)"/>
+
+  <!-- Step 4: MCP Server -> Internal ERP API -->
+  <rect x="946" y="236" width="204" height="122" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1048" y="256" text-anchor="middle" fill="#fbbf24" font-size="11.5" font-weight="700">Step 4 · Safe ERP Lookup (MCP)</text>
+  <text x="1048" y="275" text-anchor="middle" fill="#e2e8f0" font-size="11">Uses read-only query permission</text>
+  <text x="1048" y="294" text-anchor="middle" fill="#fde68a" font-size="10.5">Fetches live dispatch &amp; ETA status</text>
+  <text x="1048" y="314" text-anchor="middle" fill="#94a3b8" font-size="10.5">Hides internal cost &amp; margin data</text>
+  <text x="1048" y="330" text-anchor="middle" fill="#94a3b8" font-size="10.5">Returns: Dispatched · SF-Freight</text>
+  <text x="1048" y="348" text-anchor="middle" fill="#34d399" font-size="10.5">No permission to edit or cancel orders</text>
+
+  <!-- Return Arrow Step 4 -> Step 5 -->
+  <line x1="946" y1="382" x2="876" y2="382" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrAmber)"/>
+
+  <!-- Step 5: AstrBot Synthesis -->
+  <rect x="648" y="356" width="224" height="92" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1"/>
+  <text x="760" y="376" text-anchor="middle" fill="#a5b4fc" font-size="11.5" font-weight="700">Step 5 · Drafts Clear Answer</text>
+  <text x="760" y="395" text-anchor="middle" fill="#e2e8f0" font-size="11">Combines live ERP status with</text>
+  <text x="760" y="412" text-anchor="middle" fill="#c7d2fe" font-size="11">plant receiving hours from SOPs</text>
+  <text x="760" y="429" text-anchor="middle" fill="#94a3b8" font-size="11">Formats a concise, polite message</text>
+
+  <!-- Return Arrow Step 5 -> Step 6 -->
+  <line x1="648" y1="442" x2="574" y2="442" stroke="#818cf8" stroke-width="2" marker-end="url(#arrCyan)"/>
+
+  <!-- Step 6: Recall Re-check + Idempotent Send -->
+  <rect x="346" y="418" width="224" height="114" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="458" y="438" text-anchor="middle" fill="#38bdf8" font-size="11.5" font-weight="700">Step 6 · Final Check &amp; Send</text>
+  <text x="458" y="457" text-anchor="middle" fill="#fbbf24" font-size="11">Confirms buyer didn't recall question</text>
+  <text x="458" y="475" text-anchor="middle" fill="#e2e8f0" font-size="11">Sends once &amp; verifies delivery</text>
+  <text x="458" y="493" text-anchor="middle" fill="#94a3b8" font-size="11">Tags buyer cleanly in the first line</text>
+  <text x="458" y="511" text-anchor="middle" fill="#34d399" font-size="11">Leaves zero chat text in local logs</text>
+
+  <!-- Return Arrow Step 6 -> Group -->
+  <line x1="346" y1="518" x2="274" y2="518" stroke="#10b981" stroke-width="2" marker-end="url(#arrGreen)"/>
+
+  <!-- Final Delivered Message -->
+  <rect x="52" y="486" width="218" height="82" rx="8" fill="#065f46" stroke="#10b981" stroke-width="1"/>
+  <text x="161" y="506" text-anchor="middle" fill="#a7f3d0" font-size="11.5" font-weight="700">Single Accurate Reply in Group</text>
+  <text x="161" y="525" text-anchor="middle" fill="#ecfdf5" font-size="11">@Buyer Lin PO-2026-108 dispatched</text>
+  <text x="161" y="542" text-anchor="middle" fill="#ecfdf5" font-size="11">via SF-Freight · ETA: Nov 16, 14:00.</text>
+  <text x="161" y="558" text-anchor="middle" fill="#a7f3d0" font-size="10.5">Ask to reschedule to create a staff draft</text>
+
+  <!-- Bottom Security Guardrails Bar -->
+  <rect x="38" y="646" width="1124" height="52" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="600" y="668" text-anchor="middle" fill="#f8fafc" font-size="12.5" font-weight="600">Business Safety Principle:  ① Read-Only Data Lookups by Default   ·   ② Any Order Change Creates a Draft Ticket for Staff Approval   ·   ③ Final Decisions Stay With Your Team</text>
+  <text x="600" y="687" text-anchor="middle" fill="#94a3b8" font-size="11">If the buyer replies 10 seconds later ("Can we switch unloading to Gate 3?"), the assistant remembers PO-2026-108 and prepares a pre-filled reschedule ticket for your coordinator to confirm.</text>
+</svg>

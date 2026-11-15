@@ -1,8 +1,8 @@
 ---
 title: Home
 seo:
-  title: Blazor & .NET 11 Enterprise Development | BlazorStudio
-  description: BlazorStudio builds .NET 11 & Blazor enterprise apps, BizTalk/SAP/Salesforce integrations, and AI workflows. View 12+ showcases and 3k+ star templates.
+  title: Blazor & .NET 11 Enterprise Apps, AI Workflows & WeChat Bots | BlazorStudio
+  description: BlazorStudio builds .NET 11 & Blazor enterprise software, BizTalk/SAP/Salesforce integrations, and AstrBot + WeChat Native AI workflows. Explore 12+ showcases & open-source tools.
   image: /uploads/illustrations/ai-blazor-enterprise-hero.webp
   image_alt: BlazorStudio enterprise workspace, system integration and intelligent AI workflows
   locale: en_US
@@ -67,20 +67,20 @@ A modular Blazor Server framework built on Clean Architecture with pstack AI age
 
 {{< brick_image >}}
 
-<p class="section-kicker">Cloud-Native PWA</p>
+<p class="section-kicker">Open-Source AI Plugin</p>
 
-## CleanAspire Cloud-Native PWA
+## WeChat Native for AstrBot
 
-Combines Blazor WebAssembly, Minimal API, PWA, and .NET 11 + Aspire with built-in offline caching and push notifications for fast, cleanly architected web software.
+An open-source AstrBot plugin that connects directly to the agent-wechat-native /v1 API without an extra bridge service—bringing LLM conversations, knowledge bases, and Agent tools into private and group WeChat chats.
 
-- Blazor WASM & Minimal API stack
-- .NET Aspire cloud-native telemetry
-- Offline IndexedDB & Web Push
-- Automated Kiota API clients
+- Direct /v1 API integration with zero bridge overhead
+- Private chats, genuine group @mentions & whitelists
+- Resilient SSE cursor recovery & recall cancellation
+- Atomic SQLite dedup & idempotent delivery (zero chat text saved)
 
-<div class="section-actions">{{< button "Explore project details" "/projects/cleanaspire-template" >}} {{< button "View on GitHub" "https://github.com/neozhu/cleanaspire" "secondary ghost" >}}</div>
+<div class="section-actions">{{< button "Explore project details" "/projects/wechat-native-astrbot-personal-wechat-plugin" >}} {{< button "View on GitHub" "https://github.com/neozhu/astrbot-plugin-wechat-native" "secondary ghost" >}}</div>
 
-![CleanAspire Blazor WebAssembly application interface](/uploads/illustrations/cuate/blazorclient.jpg)
+![WeChat Native plugin for AstrBot connecting personal WeChat](/uploads/illustrations/cuate/wechat-native-home.svg)
 
 {{< /brick_image >}}
 

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" font-family="'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgChatCn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="660" rx="16" fill="url(#bgChatCn)"/>
+
+  <!-- Header -->
+  <text x="600" y="40" text-anchor="middle" fill="#f8fafc" font-size="21" font-weight="700">真实业务群聊中，智能机器人如何表现？</text>
+  <text x="600" y="64" text-anchor="middle" fill="#94a3b8" font-size="13">平时安静不打扰、多人同时提问各记各的、撤回立刻停止、断网绝不刷屏</text>
+
+  <!-- Card 1: Precision @mention & Anti-Noise -->
+  <rect x="36" y="92" width="356" height="532" rx="14" fill="#131c2e" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="36" y="92" width="356" height="58" rx="14" fill="#064e3b" fill-opacity="0.55"/>
+  <text x="214" y="118" text-anchor="middle" fill="#34d399" font-size="15" font-weight="700">1. 只在真正被 @ 时开口</text>
+  <text x="214" y="138" text-anchor="middle" fill="#a7f3d0" font-size="11.5">绝不在同事日常沟通时乱插嘴</text>
+
+  <!-- Msg 1 -->
+  <text x="58" y="176" fill="#94a3b8" font-size="11">销售同事（日常同步信息）</text>
+  <rect x="56" y="184" width="260" height="44" rx="10" fill="#1e293b"/>
+  <text x="70" y="203" fill="#e2e8f0" font-size="12">各位早，#42 批次设备上午</text>
+  <text x="70" y="220" fill="#e2e8f0" font-size="12">已经运抵苏州现场仓库了。</text>
+  <rect x="56" y="234" width="168" height="22" rx="6" fill="#334155"/>
+  <text x="140" y="249" text-anchor="middle" fill="#94a3b8" font-size="10.5">安静旁听 · 不打断沟通</text>
+
+  <!-- Msg 2 -->
+  <text x="58" y="280" fill="#94a3b8" font-size="11">合作方（手打普通 @所有人）</text>
+  <rect x="56" y="288" width="260" height="44" rx="10" fill="#1e293b"/>
+  <text x="70" y="307" fill="#e2e8f0" font-size="12">@所有人 请确认一下今天</text>
+  <text x="70" y="324" fill="#e2e8f0" font-size="12">联调验收的检查清单。</text>
+  <rect x="56" y="338" width="196" height="22" rx="6" fill="#334155"/>
+  <text x="154" y="353" text-anchor="middle" fill="#94a3b8" font-size="10.5">安静旁听 · 不会被普通提醒误触</text>
+
+  <!-- Msg 3 -->
+  <text x="58" y="384" fill="#34d399" font-size="11">客户现场工程师（真正 @智能助手）</text>
+  <rect x="56" y="392" width="290" height="44" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+  <text x="70" y="411" fill="#34d399" font-size="12" font-weight="600">@AI客服助手 <tspan fill="#f8fafc" font-weight="400">网关报错 E-402</tspan></text>
+  <text x="70" y="428" fill="#f8fafc" font-size="12">一般是什么原因，怎么排查？</text>
+
+  <!-- Bot Reply -->
+  <text x="372" y="460" text-anchor="end" fill="#38bdf8" font-size="11">AI客服助手（秒级给出标准排查）</text>
+  <rect x="76" y="468" width="296" height="106" rx="10" fill="#065f46"/>
+  <text x="90" y="490" fill="#a7f3d0" font-size="12" font-weight="600">@张工</text>
+  <text x="90" y="510" fill="#ecfdf5" font-size="12">E-402 代表通信采集超时：</text>
+  <text x="90" y="528" fill="#ecfdf5" font-size="11.5">1. 检查 24V 供电与 A/B 端子接线</text>
+  <text x="90" y="546" fill="#ecfdf5" font-size="11.5">2. 核对设备通信速率（默认 9600）</text>
+  <text x="90" y="564" fill="#a7f3d0" font-size="11">依据：《现场网关运维手册 v3.2》</text>
+
+  <text x="214" y="604" text-anchor="middle" fill="#64748b" font-size="11">回复较长分成多条时，只在第一条 @提问人</text>
+
+  <!-- Card 2: Multi-User Session Isolation -->
+  <rect x="422" y="92" width="356" height="532" rx="14" fill="#131c2e" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="422" y="92" width="356" height="58" rx="14" fill="#0c4a6e" fill-opacity="0.55"/>
+  <text x="600" y="118" text-anchor="middle" fill="#38bdf8" font-size="15" font-weight="700">2. 同群多人同时问，互不串台</text>
+  <text x="600" y="138" text-anchor="middle" fill="#bae6fd" font-size="11.5">系统为群内每位成员单独保留对话记忆</text>
+
+  <!-- User A -->
+  <text x="444" y="176" fill="#38bdf8" font-size="11">林经理 · 客户采购负责人</text>
+  <rect x="442" y="184" width="296" height="44" rx="10" fill="#1e293b" stroke="#0284c7" stroke-width="1"/>
+  <text x="456" y="203" fill="#38bdf8" font-size="12" font-weight="600">@AI客服助手 <tspan fill="#f8fafc" font-weight="400">帮我查一下采购单</tspan></text>
+  <text x="456" y="220" fill="#f8fafc" font-size="12">PO-2026-108 的当前发货进度。</text>
+
+  <!-- User B -->
+  <text x="444" y="252" fill="#a5b4fc" font-size="11">张工 · 现场维保人员（3秒后追问）</text>
+  <rect x="442" y="260" width="296" height="44" rx="10" fill="#1e293b" stroke="#6366f1" stroke-width="1"/>
+  <text x="456" y="279" fill="#a5b4fc" font-size="12" font-weight="600">@AI客服助手 <tspan fill="#f8fafc" font-weight="400">DN80 法兰阀门的</tspan></text>
+  <text x="456" y="296" fill="#f8fafc" font-size="12">紧固力矩标准是多少？</text>
+
+  <!-- Bot Reply A -->
+  <text x="758" y="328" text-anchor="end" fill="#38bdf8" font-size="11">专属对话上下文：林经理</text>
+  <rect x="462" y="336" width="296" height="72" rx="10" fill="#0f3a54" stroke="#0284c7" stroke-width="1"/>
+  <text x="476" y="357" fill="#7dd3fc" font-size="12" font-weight="600">@林经理（采购）</text>
+  <text x="476" y="376" fill="#f0f9ff" font-size="11.5">PO-2026-108 已完成打包并出库。</text>
+  <text x="476" y="394" fill="#bae6fd" font-size="11.5">预计送达：11 月 16 日 14:00（ERP 实时）</text>
+
+  <!-- Bot Reply B -->
+  <text x="758" y="432" text-anchor="end" fill="#a5b4fc" font-size="11">专属对话上下文：张工</text>
+  <rect x="462" y="440" width="296" height="72" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+  <text x="476" y="461" fill="#c7d2fe" font-size="12" font-weight="600">@张工（维保）</text>
+  <text x="476" y="480" fill="#eef2ff" font-size="11.5">DN80 法兰推荐紧固力矩为：</text>
+  <text x="476" y="498" fill="#c7d2fe" font-size="11.5">65–75 N·m（请按对角交叉顺序拧紧）</text>
+
+  <!-- Footer Note -->
+  <rect x="442" y="534" width="316" height="58" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="600" y="558" text-anchor="middle" fill="#e2e8f0" font-size="11.5" font-weight="600">同一群内多人接连提问绝不混淆</text>
+  <text x="600" y="578" text-anchor="middle" fill="#94a3b8" font-size="11">林经理继续追问物流时，依然只衔接他的订单</text>
+
+  <!-- Card 3: Recall Interception & Idempotency -->
+  <rect x="808" y="92" width="356" height="532" rx="14" fill="#131c2e" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="808" y="92" width="356" height="58" rx="14" fill="#78350f" fill-opacity="0.45"/>
+  <text x="986" y="118" text-anchor="middle" fill="#fbbf24" font-size="15" font-weight="700">3. 撤回即停 · 防刷屏 · 保护隐私</text>
+  <text x="986" y="138" text-anchor="middle" fill="#fde68a" font-size="11.5">把商业群聊的风险降到最低</text>
+
+  <!-- Recall Case -->
+  <text x="830" y="176" fill="#fbbf24" font-size="11">情况 A · 客户发错后 2 秒内撤回</text>
+  <rect x="828" y="184" width="316" height="92" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="1"/>
+  <text x="844" y="206" fill="#f8fafc" font-size="12">1. 客户发问：“@AI客服助手 发一下型号 X 报价”</text>
+  <text x="844" y="226" fill="#94a3b8" font-size="11.5">2. 发现输错型号，2 秒后立即撤回消息</text>
+  <text x="844" y="246" fill="#fbbf24" font-size="11.5" font-weight="600">3. 机器人瞬间感知撤回并取消正在准备的回复</text>
+  <text x="844" y="264" fill="#fbbf24" font-size="11.5">   静默收手，绝不对着空气尴尬作答</text>
+
+  <!-- Network Blip Case -->
+  <text x="830" y="304" fill="#34d399" font-size="11">情况 B · 发送答复时正好遇到网络闪断</text>
+  <rect x="828" y="312" width="316" height="128" rx="10" fill="#1e293b" stroke="#059669" stroke-width="1"/>
+  <text x="844" y="334" fill="#f8fafc" font-size="12">1. 每次回复前先生成唯一投递凭证</text>
+  <text x="844" y="354" fill="#f8fafc" font-size="12">2. 遇到短暂网络超时，未立即收到回执</text>
+  <text x="844" y="374" fill="#38bdf8" font-size="11.5" font-weight="600">3. 先查核原投递是否已成功送达，</text>
+  <text x="844" y="394" fill="#34d399" font-size="11.5">   绝不盲目重试，杜绝客户群刷屏！</text>
+  <text x="844" y="414" fill="#94a3b8" font-size="11">结果：客户群始终只收到准确的一条答复</text>
+
+  <!-- Privacy Badge -->
+  <text x="830" y="468" fill="#a5b4fc" font-size="11">情况 C · 商业对话隐私保护</text>
+  <rect x="828" y="476" width="316" height="116" rx="10" fill="#0f172a" stroke="#6366f1" stroke-width="1"/>
+  <text x="986" y="502" text-anchor="middle" fill="#e0e7ff" font-size="12.5" font-weight="600">本地运行记录严格遵守最小化原则：</text>
+  <text x="986" y="524" text-anchor="middle" fill="#34d399" font-size="11.5">✗ 全程不保存客户的任何聊天正文</text>
+  <text x="986" y="544" text-anchor="middle" fill="#34d399" font-size="11.5">✗ 系统日志文件绝不记录敏感访问密钥</text>
+  <text x="986" y="568" text-anchor="middle" fill="#94a3b8" font-size="11">仅记录消息是否已处理的状态标记，防漏防重</text>
+</svg>

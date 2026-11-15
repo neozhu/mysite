@@ -1,9 +1,9 @@
 ---
 title: Open Source Projects
-description: "Explore open-source .NET, Blazor, Python, and Next.js projects by Hualin (neozhu), featuring Clean Architecture templates, AI workspaces, and developer tools."
+description: "Explore open-source .NET, Blazor, Python, and Next.js projects by Hualin (neozhu), featuring Clean Architecture templates, the WeChat Native AstrBot plugin, and AI workspaces."
 seo:
   title: "Open Source Blazor, .NET & AI Projects | BlazorStudio"
-  description: "Explore open-source .NET, Blazor, Python, and Next.js projects by Hualin (neozhu), featuring Clean Architecture templates, AI workspaces, and developer tools."
+  description: "Explore open-source .NET, Blazor, Python, and Next.js projects by Hualin (neozhu), including Clean Architecture templates, WeChat Native for AstrBot, and AI tools."
 ---
 {{< brick_projects >}}
 

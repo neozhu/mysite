@@ -13,15 +13,17 @@
 - [About Hualin](https://blazorserver.com/about/): Background, technical architecture expertise, and open-source contributions of Hualin (neozhu).
 - [Contact](https://blazorserver.com/contact/): Start a conversation about custom .NET/Blazor development, enterprise integration, or AI workflow projects.
 
-## Flagship Open-Source Templates
+## Flagship Open-Source Templates & AI Plugins
 
 - [Clean Architecture with Blazor Server](https://blazorserver.com/projects/clean-architecture-with-blazor-server/): Modular .NET 11 Blazor Server enterprise application template with CQRS, MudBlazor, Docker, and OpenSpec AI workflow support.
+- [WeChat Native - AstrBot Personal WeChat Plugin](https://blazorserver.com/projects/wechat-native-astrbot-personal-wechat-plugin/): Open-source AstrBot plugin (`astrbot-plugin-wechat-native`) connecting directly to the `agent-wechat-native` `/v1` API with SSE cursor recovery, atomic SQLite deduplication, recall cancellation, and zero-text local state.
 - [CleanAspire (.NET 11 & Aspire PWA Template)](https://blazorserver.com/projects/cleanaspire-template/): Cloud-native Blazor WebAssembly Progressive Web App (PWA) with Minimal API, .NET 11, .NET Aspire, Scalar, and Microsoft Kiota.
 - [Botchat AI Chat Workspace](https://blazorserver.com/projects/botchat-ai-chat-workspace/): Multi-persona AI chat workspace built with Next.js, Vercel AI SDK, and Supabase Row Level Security.
 - [Wattlas Global Energy Opportunity Radar](https://blazorserver.com/projects/wattlas-global-energy-opportunity-radar/): Geospatial energy intelligence and opportunity analytics platform.
 
 ## Featured Enterprise Showcases
 
+- [Enterprise WeChat Intelligent Bot with AstrBot](https://blazorserver.com/showcases/enterprise-wechat-intelligent-bot-astrbot/): Enterprise customer-group support and internal operations assistant powered by AstrBot and WeChat Native, featuring @mention gating, per-member session isolation, scoped read-only ERP lookups via MCP, and zero-text privacy.
 - [Enterprise Visitor Management Platform](https://blazorserver.com/showcases/visitor-management-workflow-system/): Mobile pre-registration, dual-track business and area approvals, gate verification, and departure archive (React + Blazor Server).
 - [VisitorTraining: Enterprise Visitor Compliance Management](https://blazorserver.com/showcases/visitor-training-enterprise-visitor-compliance/): End-to-end factory visitor registration, host/area approval, mobile safety training, exam verification, and gate check-in/out platform (React + Blazor + .NET).
 - [HR HUB: Integrated Staffing, Attendance & Billing Cloud](https://blazorserver.com/showcases/hr-hub-integrated-hr-cloud-platform/): Multi-party workforce outsourcing, shift attendance verification, and dual-rate monthly billing reconciliation platform built on .NET 10 and Blazor.

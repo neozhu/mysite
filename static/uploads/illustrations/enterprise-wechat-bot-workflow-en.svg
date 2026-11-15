@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="greenCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="cyanCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="indigoCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.08"/>
+    </linearGradient>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowIndigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#818cf8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="680" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Header -->
+  <text x="600" y="42" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">How Your Enterprise WeChat Assistant Works End-to-End</text>
+  <text x="600" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">Connecting Customer Groups &amp; Staff Chats to Company Knowledge and Business Systems Safely</text>
+
+  <!-- Private Host Boundary -->
+  <rect x="370" y="92" width="795" height="552" rx="14" fill="#1e293b" fill-opacity="0.35" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,6"/>
+  <text x="392" y="116" fill="#94a3b8" font-size="12" font-weight="600">Hosted Inside Your Own Enterprise Environment (Zero Third-Party Chat Relay · Full Data Ownership)</text>
+
+  <!-- Column 1: Enterprise WeChat Channels -->
+  <rect x="35" y="132" width="290" height="492" rx="12" fill="url(#greenCard)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="180" y="164" text-anchor="middle" fill="#34d399" font-size="16" font-weight="700">1. Business Chat Channels</text>
+  <text x="180" y="184" text-anchor="middle" fill="#a7f3d0" font-size="12">Where Customers &amp; Staff Talk</text>
+
+  <rect x="55" y="206" width="250" height="114" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="180" y="232" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Customer &amp; WeCom Interop Groups</text>
+  <text x="180" y="254" text-anchor="middle" fill="#94a3b8" font-size="11.5">Active only in approved client groups</text>
+  <text x="180" y="274" text-anchor="middle" fill="#34d399" font-size="11.5">Replies only when genuinely @mentioned</text>
+  <text x="180" y="294" text-anchor="middle" fill="#64748b" font-size="11">Silent during casual chat &amp; @all notices</text>
+
+  <rect x="55" y="338" width="250" height="106" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="180" y="364" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Internal Staff 1-on-1 Desk</text>
+  <text x="180" y="386" text-anchor="middle" fill="#94a3b8" font-size="11.5">Open strictly to authorized employees</text>
+  <text x="180" y="406" text-anchor="middle" fill="#34d399" font-size="11.5">Look up SOPs, HR rules &amp; order status</text>
+  <text x="180" y="426" text-anchor="middle" fill="#64748b" font-size="11">Keeps internal queries out of client groups</text>
+
+  <rect x="55" y="462" width="250" height="92" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="180" y="488" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Live-Only &amp; Recall Protection</text>
+  <text x="180" y="510" text-anchor="middle" fill="#94a3b8" font-size="11.5">Only answers fresh messages (&lt;5 mins)</text>
+  <text x="180" y="530" text-anchor="middle" fill="#fbbf24" font-size="11.5">Stops immediately if sender recalls message</text>
+
+  <rect x="55" y="570" width="250" height="36" rx="8" fill="#064e3b" fill-opacity="0.55" stroke="#10b981" stroke-width="1"/>
+  <text x="180" y="593" text-anchor="middle" fill="#ecfdf5" font-size="12" font-weight="600">Clean, Readable Text Replies</text>
+
+  <!-- Column 2: Reliability & Privacy Guardrails -->
+  <rect x="395" y="132" width="350" height="492" rx="12" fill="url(#cyanCard)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="570" y="164" text-anchor="middle" fill="#38bdf8" font-size="16" font-weight="700">2. Enterprise Reliability Guardrails</text>
+  <text x="570" y="184" text-anchor="middle" fill="#bae6fd" font-size="12">Predictable Behavior in Live Client Groups</text>
+
+  <rect x="417" y="206" width="306" height="96" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="570" y="232" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Seamless Recovery After Restarts</text>
+  <text x="570" y="254" text-anchor="middle" fill="#94a3b8" font-size="11.5">Picks up cleanly after network blips</text>
+  <text x="570" y="274" text-anchor="middle" fill="#38bdf8" font-size="11.5">Never replays months-old chat history</text>
+
+  <rect x="417" y="318" width="306" height="106" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="570" y="344" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Per-Member Memory Isolation</text>
+  <text x="570" y="366" text-anchor="middle" fill="#94a3b8" font-size="11.5">Separates context for each person in a group</text>
+  <text x="570" y="386" text-anchor="middle" fill="#38bdf8" font-size="11.5">Buyer &amp; engineer questions never mix up</text>
+  <text x="570" y="406" text-anchor="middle" fill="#64748b" font-size="11">Every question is answered accurately once</text>
+
+  <rect x="417" y="440" width="306" height="108" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="570" y="466" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Zero Double-Posting &amp; Zero Text Stored</text>
+  <text x="570" y="488" text-anchor="middle" fill="#94a3b8" font-size="11.5">Verifies delivery instead of spamming retries</text>
+  <text x="570" y="508" text-anchor="middle" fill="#34d399" font-size="11.5">Halts remaining parts if a send fails</text>
+  <text x="570" y="528" text-anchor="middle" fill="#fbbf24" font-size="11">Chat content is never saved to local logs</text>
+
+  <rect x="417" y="564" width="306" height="42" rx="8" fill="#0c4a6e" fill-opacity="0.55" stroke="#38bdf8" stroke-width="1"/>
+  <text x="570" y="590" text-anchor="middle" fill="#e0f2fe" font-size="12" font-weight="600">Tags the Asker Once on Long Replies</text>
+
+  <!-- Column 3: AstrBot Intelligence & Enterprise Data -->
+  <rect x="785" y="132" width="355" height="492" rx="12" fill="url(#indigoCard)" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="962" y="164" text-anchor="middle" fill="#a5b4fc" font-size="16" font-weight="700">3. Enterprise AI &amp; Business Systems</text>
+  <text x="962" y="184" text-anchor="middle" fill="#c7d2fe" font-size="12">Company Knowledge + Live System Lookups</text>
+
+  <rect x="807" y="206" width="311" height="106" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1"/>
+  <text x="962" y="232" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Company Knowledge Base</text>
+  <text x="962" y="254" text-anchor="middle" fill="#94a3b8" font-size="11.5">Product specs, manuals &amp; service SLAs</text>
+  <text x="962" y="274" text-anchor="middle" fill="#a5b4fc" font-size="11.5">HR leave, expense &amp; IT self-help guides</text>
+  <text x="962" y="294" text-anchor="middle" fill="#64748b" font-size="11">Answers grounded in approved documents</text>
+
+  <rect x="807" y="328" width="311" height="106" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1"/>
+  <text x="962" y="354" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Safe Business System Connectors</text>
+  <text x="962" y="376" text-anchor="middle" fill="#94a3b8" font-size="11.5">Check live order &amp; delivery status in ERP</text>
+  <text x="962" y="396" text-anchor="middle" fill="#a5b4fc" font-size="11.5">Create pre-filled draft tickets for staff</text>
+  <text x="962" y="416" text-anchor="middle" fill="#64748b" font-size="11">Strict read-only scope for external chats</text>
+
+  <rect x="807" y="450" width="311" height="100" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1"/>
+  <text x="962" y="476" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">Role-Specific AI Personas</text>
+  <text x="962" y="498" text-anchor="middle" fill="#94a3b8" font-size="11.5">Polite support tone for external clients</text>
+  <text x="962" y="518" text-anchor="middle" fill="#a5b4fc" font-size="11.5">Direct operational assistant for staff</text>
+  <text x="962" y="536" text-anchor="middle" fill="#64748b" font-size="11">Works with private or cloud AI models</text>
+
+  <rect x="807" y="564" width="311" height="42" rx="8" fill="#312e81" fill-opacity="0.55" stroke="#818cf8" stroke-width="1"/>
+  <text x="962" y="590" text-anchor="middle" fill="#e0e7ff" font-size="12" font-weight="600">Clear Human Escalation on Edge Cases</text>
+
+  <!-- Bidirectional Arrows -->
+  <line x1="325" y1="265" x2="393" y2="265" stroke="#10b981" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+  <line x1="393" y1="494" x2="325" y2="494" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrowCyan)"/>
+
+  <line x1="745" y1="265" x2="783" y2="265" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrowIndigo)"/>
+  <line x1="783" y1="494" x2="745" y2="494" stroke="#818cf8" stroke-width="2.2" marker-end="url(#arrowCyan)"/>
+</svg>
