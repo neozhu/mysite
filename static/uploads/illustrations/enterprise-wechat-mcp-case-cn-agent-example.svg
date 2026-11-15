@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgMcpCn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="arrGreenCn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrCyanCn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrIndigoCn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#818cf8"/>
+    </marker>
+    <marker id="arrAmberCn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="720" rx="16" fill="url(#bgMcpCn)"/>
+
+  <!-- Header -->
+  <text x="600" y="38" text-anchor="middle" fill="#f8fafc" font-size="21" font-weight="700">示例流程：客户群查询订单与员工协同</text>
+  <text x="600" y="62" text-anchor="middle" fill="#94a3b8" font-size="13">以交付群提问「@AI客服助手 查一下采购单 PO-2026-108 的发货进度」为例，看清每一步业务协同与权限边界</text>
+
+  <!-- 4 Swimlane Headers -->
+  <rect x="38" y="88" width="246" height="56" rx="10" fill="#064e3b" fill-opacity="0.65" stroke="#10b981" stroke-width="1.5"/>
+  <text x="161" y="112" text-anchor="middle" fill="#34d399" font-size="14" font-weight="700">1. 微信客户交付群</text>
+  <text x="161" y="131" text-anchor="middle" fill="#a7f3d0" font-size="11">客户采购 / 现场交付专员</text>
+
+  <rect x="330" y="88" width="256" height="56" rx="10" fill="#0c4a6e" fill-opacity="0.65" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="458" y="112" text-anchor="middle" fill="#38bdf8" font-size="14" font-weight="700">2. 微信安全准入护栏</text>
+  <text x="458" y="131" text-anchor="middle" fill="#bae6fd" font-size="11">群聊白名单 · 触发规则 · 状态检查</text>
+
+  <rect x="632" y="88" width="256" height="56" rx="10" fill="#312e81" fill-opacity="0.65" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="760" y="112" text-anchor="middle" fill="#a5b4fc" font-size="14" font-weight="700">3. 企业 AI 服务中枢</text>
+  <text x="760" y="131" text-anchor="middle" fill="#c7d2fe" font-size="11">读懂诉求 · 隔离记忆 · 组织回复</text>
+
+  <rect x="934" y="88" width="228" height="56" rx="10" fill="#78350f" fill-opacity="0.55" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="1048" y="112" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="700">4. 业务系统连接器</text>
+  <text x="1048" y="131" text-anchor="middle" fill="#fde68a" font-size="11">示例：只读查询 + 待审请求</text>
+
+  <!-- Lifelines -->
+  <line x1="161" y1="144" x2="161" y2="638" stroke="#10b981" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="458" y1="144" x2="458" y2="638" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="760" y1="144" x2="760" y2="638" stroke="#818cf8" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="1048" y1="144" x2="1048" y2="638" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5,5"/>
+
+  <!-- Step 1: User @mention -->
+  <rect x="52" y="164" width="218" height="54" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+  <text x="161" y="184" text-anchor="middle" fill="#34d399" font-size="11.5" font-weight="700">第 1 步 · 客户在群内 @提问</text>
+  <text x="161" y="203" text-anchor="middle" fill="#f8fafc" font-size="11">「@AI客服助手 查 PO-2026-108 发货」</text>
+  <line x1="270" y1="191" x2="342" y2="191" stroke="#10b981" stroke-width="2" marker-end="url(#arrGreenCn)"/>
+
+  <!-- Step 2: WeChat Native Gate -->
+  <rect x="346" y="164" width="224" height="86" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="458" y="184" text-anchor="middle" fill="#38bdf8" font-size="11.5" font-weight="700">第 2 步 · 核验权限与去重</text>
+  <text x="458" y="203" text-anchor="middle" fill="#e2e8f0" font-size="11">确认属于已授权的客户服务群</text>
+  <text x="458" y="220" text-anchor="middle" fill="#94a3b8" font-size="11">确认是 5 分钟内新消息且真正 @自己</text>
+  <text x="458" y="237" text-anchor="middle" fill="#34d399" font-size="11">登记处理标记，防止同一问题重复回答</text>
+  <line x1="570" y1="224" x2="644" y2="224" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrCyanCn)"/>
+
+  <!-- Step 3: AstrBot LLM Intent & Tool Call -->
+  <rect x="648" y="200" width="224" height="84" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1"/>
+  <text x="760" y="220" text-anchor="middle" fill="#a5b4fc" font-size="11.5" font-weight="700">第 3 步 · 理解意图并转派查数</text>
+  <text x="760" y="239" text-anchor="middle" fill="#e2e8f0" font-size="11">只读取林经理自己的专属对话记忆</text>
+  <text x="760" y="256" text-anchor="middle" fill="#c7d2fe" font-size="11">识别出这是「查发货进度」诉求</text>
+  <text x="760" y="273" text-anchor="middle" fill="#94a3b8" font-size="11">识别采购单号：PO-2026-108</text>
+  <line x1="872" y1="260" x2="942" y2="260" stroke="#818cf8" stroke-width="2" marker-end="url(#arrIndigoCn)"/>
+
+  <!-- Step 4: MCP Server -> Internal ERP API -->
+  <rect x="946" y="236" width="204" height="122" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1048" y="256" text-anchor="middle" fill="#fbbf24" font-size="11.5" font-weight="700">第 4 步 · 安全查询内部 ERP</text>
+  <text x="1048" y="275" text-anchor="middle" fill="#e2e8f0" font-size="11">仅使用只读查数权限访问系统</text>
+  <text x="1048" y="294" text-anchor="middle" fill="#fde68a" font-size="10.5">接口按权限过滤敏感字段</text>
+  <text x="1048" y="314" text-anchor="middle" fill="#94a3b8" font-size="10.5">查得结果：已出库、顺丰快运、</text>
+  <text x="1048" y="330" text-anchor="middle" fill="#94a3b8" font-size="10.5">预计 11月16日 14:00 送达苏州仓</text>
+  <text x="1048" y="348" text-anchor="middle" fill="#34d399" font-size="10.5">无权修改、取消或删除任何订单</text>
+
+  <!-- Return Arrow Step 4 -> Step 5 -->
+  <line x1="946" y1="382" x2="876" y2="382" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrAmberCn)"/>
+
+  <!-- Step 5: AstrBot Synthesis -->
+  <rect x="648" y="356" width="224" height="92" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1"/>
+  <text x="760" y="376" text-anchor="middle" fill="#a5b4fc" font-size="11.5" font-weight="700">第 5 步 · 结合服务规范生成答复</text>
+  <text x="760" y="395" text-anchor="middle" fill="#e2e8f0" font-size="11">把实时物流进度与公司收货注意事项</text>
+  <text x="760" y="412" text-anchor="middle" fill="#c7d2fe" font-size="11">整理成通俗清晰、易读的纯文本消息</text>
+  <text x="760" y="429" text-anchor="middle" fill="#94a3b8" font-size="11">可直接阅读，不生成多余图片干扰视线</text>
+
+  <!-- Return Arrow Step 5 -> Step 6 -->
+  <line x1="648" y1="442" x2="574" y2="442" stroke="#818cf8" stroke-width="2" marker-end="url(#arrCyanCn)"/>
+
+  <!-- Step 6: Recall Re-check + Idempotent Send -->
+  <rect x="346" y="418" width="224" height="114" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="458" y="438" text-anchor="middle" fill="#38bdf8" font-size="11.5" font-weight="700">第 6 步 · 确认未撤回并安全发回</text>
+  <text x="458" y="457" text-anchor="middle" fill="#fbbf24" font-size="11">发出前再次确认林经理没有撤回提问</text>
+  <text x="458" y="475" text-anchor="middle" fill="#e2e8f0" font-size="11">发送状态不确定时查询回执</text>
+  <text x="458" y="493" text-anchor="middle" fill="#94a3b8" font-size="11">自动在回复开头 @林经理 提醒查收</text>
+  <text x="458" y="511" text-anchor="middle" fill="#34d399" font-size="11">插件日志和状态库不存聊天正文</text>
+
+  <!-- Return Arrow Step 6 -> Group -->
+  <line x1="346" y1="518" x2="274" y2="518" stroke="#10b981" stroke-width="2" marker-end="url(#arrGreenCn)"/>
+
+  <!-- Final Delivered Message -->
+  <rect x="52" y="486" width="218" height="82" rx="8" fill="#065f46" stroke="#10b981" stroke-width="1"/>
+  <text x="161" y="506" text-anchor="middle" fill="#a7f3d0" font-size="11.5" font-weight="700">在群内回复查询结果</text>
+  <text x="161" y="525" text-anchor="middle" fill="#ecfdf5" font-size="11">@林经理 PO-2026-108 已打包出库，</text>
+  <text x="161" y="542" text-anchor="middle" fill="#ecfdf5" font-size="11">承运：顺丰快运 · 预计明日 14:00 送达。</text>
+  <text x="161" y="558" text-anchor="middle" fill="#a7f3d0" font-size="10.5">可再次 @助手 提出改约请求</text>
+
+  <!-- Bottom Security Guardrails Bar -->
+  <rect x="38" y="646" width="1124" height="52" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="600" y="668" text-anchor="middle" fill="#f8fafc" font-size="12.5" font-weight="600">示例权限设计：只读查询订单 · 变更请求交由员工审核 · 接口权限与审批流程需单独配置</text>
+  <text x="600" y="687" text-anchor="middle" fill="#94a3b8" font-size="11">此流程需要对接 ERP、身份权限与工单系统；图中订单数据仅供说明。</text>
+</svg>

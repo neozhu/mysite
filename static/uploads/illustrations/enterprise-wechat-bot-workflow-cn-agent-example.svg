@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGradCn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="greenCardCn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="cyanCardCn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="indigoCardCn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.08"/>
+    </linearGradient>
+    <marker id="arrowGreenCn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowCyanCn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowIndigoCn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#818cf8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="680" rx="16" fill="url(#bgGradCn)"/>
+
+  <!-- Header -->
+  <text x="600" y="42" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">企业微信智能 Agent：连接客户群与业务系统</text>
+  <text x="600" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">按需响应 · 独立会话 · 受控查询 · 人工审核</text>
+
+  <!-- Private Host Boundary -->
+  <rect x="370" y="92" width="795" height="552" rx="14" fill="#1e293b" fill-opacity="0.35" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,6"/>
+  <text x="392" y="116" fill="#94a3b8" font-size="12" font-weight="600">部署和数据处理方式取决于所选组件及配置</text>
+
+  <!-- Column 1: Enterprise WeChat Channels -->
+  <rect x="35" y="132" width="290" height="492" rx="12" fill="url(#greenCardCn)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="180" y="164" text-anchor="middle" fill="#34d399" font-size="16" font-weight="700">1. 微信协作入口</text>
+  <text x="180" y="184" text-anchor="middle" fill="#a7f3d0" font-size="12">客户群、企微互通群与员工私聊</text>
+
+  <rect x="55" y="206" width="250" height="114" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="180" y="232" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">客户群与企微外部互通群</text>
+  <text x="180" y="254" text-anchor="middle" fill="#94a3b8" font-size="11.5">仅在授权的签约客户群中启用</text>
+  <text x="180" y="274" text-anchor="middle" fill="#34d399" font-size="11.5">可配置为仅在真正 @机器人 时回应</text>
+  <text x="180" y="294" text-anchor="middle" fill="#64748b" font-size="11">正常交流与普通提醒不触发回复</text>
+
+  <rect x="55" y="338" width="250" height="106" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="180" y="364" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">内部员工 1 对 1 服务台</text>
+  <text x="180" y="386" text-anchor="middle" fill="#94a3b8" font-size="11.5">仅对白名单内的内部员工开放私聊</text>
+  <text x="180" y="406" text-anchor="middle" fill="#34d399" font-size="11.5">查询内部流程或授权业务数据</text>
+  <text x="180" y="426" text-anchor="middle" fill="#64748b" font-size="11">内部查数与外部客户群互不干扰</text>
+
+  <rect x="55" y="462" width="250" height="92" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+  <text x="180" y="488" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">只回当下与撤回保护</text>
+  <text x="180" y="510" text-anchor="middle" fill="#94a3b8" font-size="11.5">只响应 5 分钟内新消息，不翻历史旧账</text>
+  <text x="180" y="530" text-anchor="middle" fill="#fbbf24" font-size="11.5">处理待处理消息的撤回事件</text>
+
+  <rect x="55" y="570" width="250" height="36" rx="8" fill="#064e3b" fill-opacity="0.55" stroke="#10b981" stroke-width="1"/>
+  <text x="180" y="593" text-anchor="middle" fill="#ecfdf5" font-size="12" font-weight="600">清晰稳定的纯文本专业答复</text>
+
+  <!-- Column 2: Reliability & Privacy Guardrails -->
+  <rect x="395" y="132" width="350" height="492" rx="12" fill="url(#cyanCardCn)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="570" y="164" text-anchor="middle" fill="#38bdf8" font-size="16" font-weight="700">2. 企业级稳定与安全护栏</text>
+  <text x="570" y="184" text-anchor="middle" fill="#bae6fd" font-size="12">按配置管理群聊触发与消息处理</text>
+
+  <rect x="417" y="206" width="306" height="96" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="570" y="232" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">断网重连与状态恢复</text>
+  <text x="570" y="254" text-anchor="middle" fill="#94a3b8" font-size="11.5">网络闪断或系统维护后自动续接进度</text>
+  <text x="570" y="274" text-anchor="middle" fill="#38bdf8" font-size="11.5">过滤历史消息和过期积压</text>
+
+  <rect x="417" y="318" width="306" height="106" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="570" y="344" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">可配置按成员隔离会话</text>
+  <text x="570" y="366" text-anchor="middle" fill="#94a3b8" font-size="11.5">群里多位成员同时提问，上下文各自独立</text>
+  <text x="570" y="386" text-anchor="middle" fill="#38bdf8" font-size="11.5">不同成员使用各自的对话上下文</text>
+  <text x="570" y="406" text-anchor="middle" fill="#64748b" font-size="11">结合消息状态处理降低重复风险</text>
+
+  <rect x="417" y="440" width="306" height="108" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+  <text x="570" y="466" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">发送状态与插件记录</text>
+  <text x="570" y="488" text-anchor="middle" fill="#94a3b8" font-size="11.5">发送超时先查询回执，避免盲目重发</text>
+  <text x="570" y="508" text-anchor="middle" fill="#34d399" font-size="11.5">长内容若发送异常立即中止后续分段</text>
+  <text x="570" y="528" text-anchor="middle" fill="#fbbf24" font-size="11">插件日志与状态库不保存聊天正文</text>
+
+  <rect x="417" y="564" width="306" height="42" rx="8" fill="#0c4a6e" fill-opacity="0.55" stroke="#38bdf8" stroke-width="1"/>
+  <text x="570" y="590" text-anchor="middle" fill="#e0f2fe" font-size="12" font-weight="600">长回答分段输出时，仅首段 @提问人</text>
+
+  <!-- Column 3: AstrBot Intelligence & Enterprise Data -->
+  <rect x="785" y="132" width="355" height="492" rx="12" fill="url(#indigoCardCn)" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="962" y="164" text-anchor="middle" fill="#a5b4fc" font-size="16" font-weight="700">3. 企业智能大脑与业务系统</text>
+  <text x="962" y="184" text-anchor="middle" fill="#c7d2fe" font-size="12">企业知识库 + 内部业务系统授权对接</text>
+
+  <rect x="807" y="206" width="311" height="106" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1"/>
+  <text x="962" y="232" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">企业专属知识库问答</text>
+  <text x="962" y="254" text-anchor="middle" fill="#94a3b8" font-size="11.5">产品手册、故障排查清单与服务 SLA</text>
+  <text x="962" y="274" text-anchor="middle" fill="#a5b4fc" font-size="11.5">HR 考勤报销制度、IT 办公自助指引</text>
+  <text x="962" y="294" text-anchor="middle" fill="#64748b" font-size="11">回答质量需要结合实际问题验证</text>
+
+  <rect x="807" y="328" width="311" height="106" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1"/>
+  <text x="962" y="354" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">业务系统连接器（需对接）</text>
+  <text x="962" y="376" text-anchor="middle" fill="#94a3b8" font-size="11.5">可配置只读查询订单与物流进度</text>
+  <text x="962" y="396" text-anchor="middle" fill="#a5b4fc" font-size="11.5">可对接工单系统生成待审请求</text>
+  <text x="962" y="416" text-anchor="middle" fill="#64748b" font-size="11">接口权限与审批流程需单独设计</text>
+
+  <rect x="807" y="450" width="311" height="100" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1"/>
+  <text x="962" y="476" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">分场景服务话术与人设</text>
+  <text x="962" y="498" text-anchor="middle" fill="#94a3b8" font-size="11.5">对外客户群：专业克制、主动标注来源</text>
+  <text x="962" y="518" text-anchor="middle" fill="#a5b4fc" font-size="11.5">对内员工助手：简明扼要、直给结论</text>
+  <text x="962" y="536" text-anchor="middle" fill="#64748b" font-size="11">支持企业本地部署大模型或云端模型</text>
+
+  <rect x="807" y="564" width="311" height="42" rx="8" fill="#312e81" fill-opacity="0.55" stroke="#818cf8" stroke-width="1"/>
+  <text x="962" y="590" text-anchor="middle" fill="#e0e7ff" font-size="12" font-weight="600">超纲与审批事项可交由员工处理</text>
+
+  <!-- Bidirectional Arrows -->
+  <line x1="325" y1="265" x2="393" y2="265" stroke="#10b981" stroke-width="2.2" marker-end="url(#arrowGreenCn)"/>
+  <line x1="393" y1="494" x2="325" y2="494" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrowCyanCn)"/>
+
+  <line x1="745" y1="265" x2="783" y2="265" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrowIndigoCn)"/>
+  <line x1="783" y1="494" x2="745" y2="494" stroke="#818cf8" stroke-width="2.2" marker-end="url(#arrowCyanCn)"/>
+</svg>
